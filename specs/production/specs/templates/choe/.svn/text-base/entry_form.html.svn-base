@@ -1,0 +1,292 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Pieni- ja Isokenk&auml;iset ry</title>
+<style TYPE="text/css" title="asgb">
+body {
+	background-color: #ddd;		
+}
+tr {
+	font-size: 13px;
+	background-color: #efefef;
+	color: #000000;
+	font-family: 'arial', 'helvetica';	
+	}
+ul {
+	/* margin-left: -20px; */
+    margin-left: 0;
+    padding-left: 0;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	}
+li {
+	list-style: none;
+	color: #ccc;
+	text-align: left;
+	}
+.header {
+	color:#FFFFFF;
+	background-color: #324796;
+	}
+.grouping {
+	background-color: #efefef;
+	margin-bottom: 16px;
+	border: 1px solid #666;
+	}
+.tabletop {
+	background-color: #7CB6BB;
+	border: 1px solid #666;
+	color: #fff;
+	font-weight: bold;
+	padding: 4px;
+	}
+.label_cell_top {
+	text-align: right;
+	vertical-align: top;
+	}
+.label_cell {
+	text-align: right;
+	}
+.span_right {
+	text-align: right;
+	}
+.span_left {
+	text-align: left;
+	}
+.help_cell {
+	vertical-align: top;
+	color: #006;
+	padding-right: 20px;
+ 	padding-left: 20px;
+	}
+.help_text {
+	color: #006;
+	}
+</style>
+
+</head>
+<body>
+
+
+<div align="center">
+	
+<table width="700" cellpadding="0" cellspacing="4" border="0">
+<tr>
+  <td width="300" bgcolor="#dddddd">
+  	<strong>MITTAVA-kysely</strong><br />
+	Yhteisty&ouml;ss&auml;:<br />
+	Ammattikorkeakoulu Metropolia<br />
+	Pieni- ja Isokenk&auml;iset ry
+  </td>
+  <td bgcolor="#dddddd">
+  	<img src="http://www.metropolia.fi/fileadmin/template/images/logo2.gif"><br /><br />
+  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% now "d.m.Y h:i" %}
+  </td>
+  <td align="right" bgcolor="#dddddd"><img src="http://www.tallsmall.fi:8080/site_media/img/specs/pikry_logo.gif"></td>
+</tr>
+</table>
+	
+<form method="post" action=".">
+
+<table width="700" cellpadding="0" cellspacing="4" border="0" class="grouping">
+  <tr><td colspan="3" class="tabletop">Mittauksen tekij&auml; (Metropolian opiskelija tai muu mittauksessa avustava henkil&ouml;)</td></tr>
+  <tr><td colspan="3"></td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.etunimi.label }}&nbsp;&nbsp;{{ entry_form.etunimi }}</td>
+	<td class="label_cell_top">{{ entry_form.sukunimi.label }}&nbsp;&nbsp;{{ entry_form.sukunimi }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.puhelinnumero.label }}&nbsp;&nbsp;{{ entry_form.puhelinnumero }}</td>
+	<td class="label_cell_top">{{ entry_form.email.label }}&nbsp;&nbsp;{{ entry_form.email }}</td></tr>
+  <tr><td colspan="3"></td></tr>
+</table>
+
+<table width="700" cellpadding="0" cellspacing="4" border="0" class="grouping">
+  <tr><td colspan="3" class="tabletop">Mitattavan yhteystiedot (s&auml;ilytet&auml;&auml;n erill&auml;&auml;n mittatiedoista)</td></tr>
+  <tr><td colspan="3"></td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.etunimi.label }}&nbsp;&nbsp;{{ entry_form.etunimi }}</td>
+	<td class="label_cell_top">{{ entry_form.sukunimi.label }}&nbsp;&nbsp;{{ entry_form.sukunimi }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.katuosoite.label }}&nbsp;&nbsp;{{ entry_form.katuosoite }}</td>
+	<td class="label_cell_top">{{ entry_form.postinumero.label }} {{ entry_form.postitoimipaikka.label }}&nbsp;&nbsp;{{ entry_form.postinumero }} {{ entry_form.postitoimipaikka }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.puhelinnumero.label }}&nbsp;&nbsp;{{ entry_form.puhelinnumero }}</td>
+	<td class="label_cell_top">{{ entry_form.email.label }}&nbsp;&nbsp;{{ entry_form.email }}</td></tr>
+  <tr><td colspan="3"></td></tr>
+</table>
+
+<table width="700" cellpadding="0" cellspacing="4" border="0" class="grouping">
+  <tr><td colspan="2" class="tabletop">Henkil&ouml;tiedot</td></tr>
+  <tr><td colspan="2"></td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.sukupuoli.label }}</td>
+	<td class="select_cell">{{ entry_form.sukupuoli|removetags:"ul li" }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ entry_form.ikaryhma.label }} {{ entry_form.ikaryhma|removetags:"ul li" }}</td></tr>
+  <tr><td colspan="2"></td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.kenkakoko.label }}</td>
+	<td>
+
+<input type="radio" id="id_kenkakoko_0" value="32" name="kenkakoko" /> 31		
+<input type="radio" id="id_kenkakoko_1" value="32" name="kenkakoko" /> 32
+<input type="radio" id="id_kenkakoko_2" value="33" name="kenkakoko" /> 33
+<input type="radio" id="id_kenkakoko_3" value="34" name="kenkakoko" /> 34
+<input type="radio" id="id_kenkakoko_4" value="35" name="kenkakoko" /> 35
+<input type="radio" id="id_kenkakoko_5" value="36" name="kenkakoko" /> 36
+<input type="radio" id="id_kenkakoko_6" value="37" name="kenkakoko" /> 37
+<input type="radio" id="id_kenkakoko_7" value="38" name="kenkakoko" /> 38
+<input type="radio" id="id_kenkakoko_8" value="39" name="kenkakoko" /> 39
+<input type="radio" id="id_kenkakoko_9" value="40" name="kenkakoko" /> 40
+<br />
+<input type="radio" id="id_kenkakoko_10" value="41" name="kenkakoko" /> 41
+<input type="radio" id="id_kenkakoko_11" value="42" name="kenkakoko" /> 42
+<input type="radio" id="id_kenkakoko_12" value="43" name="kenkakoko" /> 43
+<input type="radio" id="id_kenkakoko_13" value="44" name="kenkakoko" /> 44
+<input type="radio" id="id_kenkakoko_14" value="45" name="kenkakoko" /> 45
+<input type="radio" id="id_kenkakoko_15" value="46" name="kenkakoko" /> 46
+<input type="radio" id="id_kenkakoko_16" value="47" name="kenkakoko" /> 47
+<input type="radio" id="id_kenkakoko_17" value="48" name="kenkakoko" /> 48
+<input type="radio" id="id_kenkakoko_18" value="49" name="kenkakoko" /> 49
+<input type="radio" id="id_kenkakoko_19" value="50" name="kenkakoko" /> 50
+<br />
+<input type="radio" id="id_kenkakoko_20" value="51" name="kenkakoko" /> 51
+<input type="radio" id="id_kenkakoko_21" value="52" name="kenkakoko" /> 52
+<input type="radio" id="id_kenkakoko_22" value="53" name="kenkakoko" /> 53
+<input type="radio" id="id_kenkakoko_23" value="54" name="kenkakoko" /> 54
+<input type="radio" id="id_kenkakoko_24" value="55" name="kenkakoko" /> 55
+<input type="radio" id="id_kenkakoko_25" value="56" name="kenkakoko" /> 56
+<input type="radio" id="id_kenkakoko_26" value="57" name="kenkakoko" /> 57
+<input type="radio" id="id_kenkakoko_27" value="58" name="kenkakoko" /> 58
+<input type="radio" id="id_kenkakoko_28" value="59" name="kenkakoko" /> 59
+<input type="radio" id="id_kenkakoko_29" value="60" name="kenkakoko" /> 60
+<br />
+<input type="radio" id="id_kenkakoko_30" value="51" name="kenkakoko" /> 61
+<input type="radio" id="id_kenkakoko_31" value="52" name="kenkakoko" /> 62
+<input type="radio" id="id_kenkakoko_32" value="53" name="kenkakoko" /> 63
+<input type="radio" id="id_kenkakoko_33" value="54" name="kenkakoko" /> 64
+<input type="radio" id="id_kenkakoko_34" value="55" name="kenkakoko" /> 65
+<input type="radio" id="id_kenkakoko_35" value="56" name="kenkakoko" /> 66
+<input type="radio" id="id_kenkakoko_36" value="57" name="kenkakoko" /> 67
+<input type="radio" id="id_kenkakoko_37" value="58" name="kenkakoko" /> 68
+<input type="radio" id="id_kenkakoko_38" value="59" name="kenkakoko" /> 69
+<input type="radio" id="id_kenkakoko_39" value="60" name="kenkakoko" /> 70
+<br />
+
+<span class="help_text">Merkitse koko, jota yleens&auml; k&auml;yt&auml;t ja/tai sovitat.</span>
+	</td></tr>
+  <tr><td colspan="2"></td></tr>
+</table>
+
+<table width="700" cellpadding="0" cellspacing="4" border="0" class="grouping">
+  <tr><td colspan="2" class="tabletop">Mittatiedot</td></tr>
+  <tr><td colspan="2"></td></tr>
+  <tr>
+	<td class="label_cell_top" width="300">{{ entry_form.vartalon_pituus.label }}&nbsp;&nbsp;{{ entry_form.vartalon_pituus }},<input type="text" size="1" maxlength="1"> cm</td>
+	<td class="help_cell">{{ entry_form.vartalon_pituus.help_text }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.rinnan_ymparys.label }}&nbsp;&nbsp;{{ entry_form.rinnan_ymparys }},<input type="text" size="1" maxlength="1"> cm</td>
+	<td class="help_cell">{{ entry_form.rinnan_ymparys.help_text }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.vyotaron_ymparys.label }}&nbsp;&nbsp;{{ entry_form.vyotaron_ymparys }},<input type="text" size="1" maxlength="1"> cm</td>
+	<td class="help_cell">{{ entry_form.vyotaron_ymparys.help_text }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.lantion_ymparys.label }}&nbsp;&nbsp;{{ entry_form.lantion_ymparys }},<input type="text" size="1" maxlength="1"> cm</td>
+	<td class="help_cell">{{ entry_form.lantion_ymparys.help_text }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.jalan_sivupituus.label }}&nbsp;&nbsp;{{ entry_form.jalan_sivupituus }},<input type="text" size="1" maxlength="1"> cm</td>
+	<td class="help_cell">{{ entry_form.jalan_sivupituus.help_text }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.saaren_takapituus.label }}&nbsp;&nbsp;{{ entry_form.saaren_takapituus }},<input type="text" size="1" maxlength="1"> cm</td>
+	<td class="help_cell">{{ entry_form.saaren_takapituus.help_text }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.pohkeen_ymparys.label }}&nbsp;&nbsp;{{ entry_form.pohkeen_ymparys }},<input type="text" size="1" maxlength="1"> cm</td>
+	<td class="help_cell">{{ entry_form.pohkeen_ymparys.help_text }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.nilkan_ymparys.label }}&nbsp;&nbsp;{{ entry_form.nilkan_ymparys }},<input type="text" size="1" maxlength="1"> cm</td>
+	<td class="help_cell">{{ entry_form.nilkan_ymparys.help_text }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.jalkapohjan_pituus.label }}&nbsp;&nbsp;{{ entry_form.jalkapohjan_pituus }},<input type="text" size="1" maxlength="1"> cm</td>
+	<td class="help_cell">{{ entry_form.jalkapohjan_pituus.help_text }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.pakian_ymparys.label }}&nbsp;&nbsp;{{ entry_form.pakian_ymparys }},<input type="text" size="1" maxlength="1"> cm</td>
+	<td class="help_cell">{{ entry_form.pakian_ymparys.help_text }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.jalkama.label }}&nbsp;&nbsp;{{ entry_form.jalkama }},<input type="text" size="1" maxlength="1"> cm</td>
+	<td class="help_cell">{{ entry_form.jalkama.help_text }}</td></tr>
+  <tr><td colspan="2"></td></tr>
+</table>
+
+<table width="700" cellpadding="0" cellspacing="4" border="0" class="grouping">
+  <tr><td colspan="6" class="tabletop">Jalkojen terveyteen liittyvi&auml; ongelmia</td></tr>
+  <tr><td colspan="6"></td></tr>
+  <tr>
+	<td class="label_cell_top" width="210">{{ entry_form.jalkakipuja.label }}</td>
+	<td width="10"></td>
+    <td colspan="2">
+      <input type="radio" id="id_jalkakipuja_1" value="1" name="jalkakipuja" /> ei<br />
+      <input type="radio" id="id_jalkakipuja_2" value="2" name="jalkakipuja" /> harvoin, satunnaisesti<br />
+	</td>
+	<td colspan="2">
+      <input type="radio" id="id_jalkakipuja_3" value="3" name="jalkakipuja" /> toistuvasti, silloin t&auml;ll&ouml;in<br />
+      <input type="radio" id="id_jalkakipuja_4" value="4" name="jalkakipuja" /> jatkuvasti, l&auml;hes p&auml;ivitt&auml;in<br />
+	</td></tr>
+  <tr><td colspan="6"></td></tr>
+  <tr>
+	<td class="label_cell">{{ entry_form.missa_jalkakipuja.label }}</td>
+	<td></td>
+    <td colspan="4">{{ entry_form.missa_jalkakipuja|removetags:"ul li" }}</td></tr>
+  <tr><td colspan="6"></td></tr>
+  <tr>
+	<td class="label_cell_top">Kipu asteikolla<br />1=liev&auml;, 10=eritt&auml;in voimakas</td>
+	<td></td>
+    <td colspan="4">{{ entry_form.kipuasteikko|removetags:"ul li" }}</td></tr>
+  <tr><td colspan="6"></td></tr>	
+  <tr>
+	<td class="label_cell" colspan="5">
+      Onko asiantuntija, esim. jalkaterapeutti tai kouluterveydenhoitaja tutkinut jalkojen kuntoa&nbsp;&nbsp;</td>
+    <td>{{ entry_form.asiantuntija|removetags:"ul li" }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.tukipohjallinen_suositeltu.label }}</td>
+	<td></td>
+    <td colspan="2">{{ entry_form.tukipohjallinen_suositeltu|removetags:"ul li" }}</td>
+	<td class="label_cell_top">{{ entry_form.tukipohjallinen_kaytossa.label }}&nbsp;&nbsp;</td>
+	<td width="120">{{ entry_form.tukipohjallinen_kaytossa|removetags:"ul li" }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.asentovirhe.label }}</td>
+	<td></td>
+    <td colspan="2">{{ entry_form.asentovirhe|removetags:"ul li" }}</td>
+	<td class="label_cell_top">{{ entry_form.pitk_laskeuma.label }}&nbsp;&nbsp;</td>
+	<td>{{ entry_form.pitk_laskeuma|removetags:"ul li" }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.kovettumia.label }}</td>
+	<td></td>
+    <td colspan="2">{{ entry_form.kovettumia|removetags:"ul li" }}</td>
+	<td class="label_cell_top">{{ entry_form.poik_laskeuma.label }}&nbsp;&nbsp;</td>
+	<td>{{ entry_form.poik_laskeuma|removetags:"ul li" }}</td></tr>
+  <tr>
+	<td class="label_cell_top">{{ entry_form.vaivasenluu.label }}</td>
+	<td></td>
+    <td colspan="2">{{ entry_form.vaivasenluu|removetags:"ul li" }}</td>
+	<td class="label_cell_top">{{ entry_form.vasaravarpaat.label }}&nbsp;&nbsp;</td>
+	<td>{{ entry_form.vasaravarpaat|removetags:"ul li" }}</td></tr>
+  <tr><td colspan="6"></td></tr>
+  <tr>
+	<td colspan="6">
+	  &nbsp;&nbsp;Tavoitteena on, ett&auml; jalkasi ovat mahdollisimman hyv&auml;ss&auml; kunnossa koko elini&auml;n.<br />
+	  &nbsp;&nbsp;Mitk&auml; ovat sinun ja/tai vanhempiesi toiveet ja ehdotukset jalkojen tutkimukseen ja hoitoon liittyen?</td></tr>
+  <tr><td colspan="6"></td></tr>
+  <tr>
+	<td colspan="6" align="center">
+      {{ entry_form.muuta_vaivaa }}</td></tr>	  
+  <tr><td colspan="6"></td></tr>
+</table>
+
+
+<table width="700" cellpadding="0" cellspacing="0" border="0">
+  <tr><td colspan="3"><input type="submit" name="SUB" value="L&auml;het&auml; kysely"></td></tr>
+</table>
+
+</form>
+</div>
+
+</body>
+</html>

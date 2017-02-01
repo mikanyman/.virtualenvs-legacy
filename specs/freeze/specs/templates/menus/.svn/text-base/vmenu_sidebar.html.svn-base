@@ -1,0 +1,10 @@
+{{ css|safe }}
+<div id="{{ menu_id }}" class="vmenu_sidebar">
+  <div class="vmenu_sidebar_hea"><span>{{ menu_visible_name }}</span></div>
+  <div class="vmenu_sidebar_content">
+    <ul>
+      {{ menu_items|safe }}
+    </ul>
+  </div>
+</div>
+

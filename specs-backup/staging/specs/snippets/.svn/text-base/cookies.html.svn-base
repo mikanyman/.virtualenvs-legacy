@@ -1,0 +1,21 @@
+    # Cookie-testi:
+    if "favorite_color" in request.GET:
+        color_from_query = request.GET['favorite_color']
+    else:
+        color_from_query = ''
+        
+    if "favorite_color" in request.COOKIES:
+        color_from_cookie = request.COOKIES['favorite_color']
+    else:
+        color_from_cookie = ''
+    #user = color_from_query + ' ' + color_from_cookie
+
+    #menu_items = Menuitem.objects.filter(menu__name="topnavi")
+    
+    
+LISÄÄ COOKIET NÄIN:
+
+    template = 'frontpg/'+ str(url_pg) +'.html'         
+    response = render_to_response(template, context, context_instance=RequestContext(request))
+    response.set_cookie('favorite_color', 'Galuboi') <====
+    return response

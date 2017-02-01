@@ -1,0 +1,144 @@
+<style type="text/css">
+p {
+	margin-top: 25px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	}
+div.wrap {
+	width:auto;
+	height: 24px;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding: 0
+        }
+div.left {
+	float: left;
+	}
+div.right {
+	float: right;
+	}
+a.arrow {
+	text-decoration:none;
+	font-size: 12pt;
+	color: #e5a83e
+	}
+</style>
+<p>
+<img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/etusivu4.jpg">
+</p>
+
+<div class="wrap">
+  <div class="left"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/etusivu.html">&larr; Edellinen sivu</a></div>
+  <div class="right"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/1.html">Seuraava sivu &rarr;</a></div>
+</div>
+
+<div style="font-size:20px; font-weight:bold; color:#FF9900; margin-top:30px;">
+  Sis&auml;llysluettelo
+</div>
+<div style="margin-top: 30px">
+<img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/etusivu2.jpg">
+</div>
+
+<table style="width:561px; border:0; cellspacing:0; cellpadding:0; margin-top: 30px">
+        <tr>
+        <td><a href="1.html">1 JOHDANTO</a></td>
+        </tr>    
+        <tr>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td><a href="2.html">2 PIENI- JA ISOKENK&Auml;ISET ry; TAVOITTEENA OIKEAN KOKOISET KENG&Auml;T JOKAISELLE</a></td>
+        </tr>
+        <tr>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td>3 IHMISEN ALARAAJOJEN MITAT JALKINEIDEN MITOITUKSEN L&Auml;HT&Ouml;KOHTANA</td>
+        </tr>
+        <tr>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="3_1.html">3.1 Ihmisen mittojen ker&auml;&auml;misen tausta</a></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="3_2.html">3.2 Standardisoinnin merkitys kuluttajalle</a></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="3_3.html">3.3 Alaraajan mitat ja niiden mittaaminen</a></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="3_4.html">3.4 Itse ilmoitettujen mittatietojen luotettavuus</a></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="3_5.html">3.5 Sopivat jalkineet erikokoisten jalkaterien mittoihin</a></td>
+        </tr>
+        <tr>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td><a href="4.html">4 TUTKIMUKSEN TARKOITUS JA TUTKIMUKYSYMYKSET</a></td>
+        </tr>
+        <tr>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td>5 TUTKIMUKSEN MENETELM&Auml;LLISET RATKAISUT</td>
+        </tr>
+        <tr>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="5_1.html">5.1 Tutkimusmenetelm&auml;t</a></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="5_2.html">5.2 Tutkimuksen eteneminen</a></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="5_3.html">5.3 Tutkimusjoukkojen valinta ja kuvaus</a></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="5_4.html">5.4 Aineiston ker&auml;&auml;minen</a></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="5_5.html">5.5 Aineiston analysointi</a></td>
+        </tr>
+        <tr>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td>6 TUTKIMUSTULOKSET</td>
+        </tr>
+        <tr>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="6_1.html">6.1 T&auml;sm&auml;llist&auml; mittatietoa tuottava alaraajojen mittaamisen ohjeistus</a></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 3em"><a href="6_2.html">6.2 Koehenkil&ouml;iden ja asiantuntijoiden mittausten v&auml;liset erot</a></td>
+        </tr>
+        <tr>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td><a href="7.html">7 JOHTOP&Auml;&Auml;T&Ouml;KSET</a></td>
+        </tr>
+        <tr>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td><a href="8.html">8 POHDINTA</a></td>
+        </tr>
+        <tr>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td><a href="lahteet.html">L&Auml;HTEET</a></td>
+        </tr>
+</table>
+
+<div style="margin-top:30px;">
+  <img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/etusivu2.jpg">
+</div>

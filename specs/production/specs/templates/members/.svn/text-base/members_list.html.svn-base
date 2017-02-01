@@ -1,0 +1,68 @@
+<div class="clvuds" id={{ call }}>
+	
+  <div class="topnavi">
+    <ul>
+      <li><a href="./?call=list" id="listLink"><span>Luettelo</span></a></li>
+      <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/{{ app }}/member/?call=create" id="searchLink"><span>Uusi</span></a></li>
+      <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/{{ app }}/member/?call=search" id="searchLink"><span>Hae</span></a></li>
+    </ul>	
+  </div>
+
+  <div class="content">
+  {% ifequal class 'mail' %}
+  
+	  <form method="POST" action="./pass/">
+	  <input type="submit" value="Tallenna" />
+	  <br /><br />
+      <table>
+      {% for member in members %}
+      <tr class="{% cycle blue,white %}">
+      <td class="counter">{{ forloop.counter }}</td>
+      {% if member.yri %}
+      <td class="yritys"><a href="/{{ lang }}/{{ profile }}/{{ event }}/{{ app }}/member/{{ member.id }}/?call=update">{{ member.yritys|safe }}</a></td>
+      {% else %}
+      <td class="nimi"><a href="/{{ lang }}/{{ profile }}/{{ event }}/{{ app }}/member/{{ member.id }}/?call=update">{% if member.sukunimi%}{{ member.sukunimi|safe }}, {% else %}Nimi puuttuu{% endif %}</a>{{ member.etunimi|safe }}</td>
+      {% endif %}
+      <td class="jasennumero">{{ member.jasennumero|safe }}</td>
+      <td class="last"> {{ member.muuta|safe }}</td>
+      <td class="pass"><input type="radio" name="{{ member.id }}" value="act" {% ifequal member.tila 'act' %}checked="checked"{% endifequal %} />postia<input type="radio" name="{{ member.id }}" value="pass" {% ifequal member.tila 'pass' %}checked="checked"{% endifequal %}/>ei</td>
+      </tr>
+      {% endfor %}
+      </table>
+	  <br />
+	  <input type="submit" value="Tallenna" />
+	  </form>
+	  
+  {% else %}{% ifequal class 'send' %}
+  
+      {% for member in members %}
+      {{ member.jasennumero|safe }} |
+      {% if member.yri %}{{ member.yritys|safe }}{% else %}{{ member.sukunimi|safe }}, {{ member.etunimi|safe }}{% endif %} |
+      {{ member.postiosoite|safe }} |
+      {{ member.postitoimipaikka|safe }}<br />
+      {% endfor %}
+	  	  
+  {% else %}
+  
+      <table>
+      {% for member in members %}
+      <tr class="{% cycle blue,white %}">
+      {% if member.yri %}
+      <td class="yritys"><a href="/{{ lang }}/{{ profile }}/{{ event }}/{{ app }}/member/{{ member.id }}/?call=update">{{ member.yritys|safe }}</a></td>
+      {% else %}
+      <td class="nimi"><a href="/{{ lang }}/{{ profile }}/{{ event }}/{{ app }}/member/{{ member.id }}/?call=update">{% if member.sukunimi%}{{ member.sukunimi|safe }}, {% else %}Nimi puuttuu{% endif %}</a>{{ member.etunimi|safe }}</td>
+      {% endif %}
+      <td class="jasennumero"><a href="./?call=list&class=query&mid={{ member.jasennumero|urlencode }}">{{ member.jasennumero|safe }}</td>
+	  <td class="postiosoite">{{ member.postiosoite|safe }}</td>
+	  <td class="postitoimipaikka">{{ member.postitoimipaikka|safe }}</td>
+	  <td class="jasenmaksu">{{ member.latest_payment }}</td>
+      </tr>
+      {% endfor %}
+      </table>
+	  
+  {% endifequal %}
+  {% endifequal %}
+  </div>
+  
+</div>
+

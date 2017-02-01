@@ -1,0 +1,64 @@
+<style type="text/css">
+p {
+	margin-top: 25px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	}
+div.wrap {
+	width:auto;
+	height: 24px;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding: 0
+        }
+div.left {
+	float: left;
+	}
+div.center {
+	float: left;
+	margin-left: 130px;
+	}
+div.right {
+	float: right;
+	}
+a.arrow {
+	text-decoration:none;
+	font-size: 12pt;
+	color: #e5a83e
+	}
+</style>
+<p>
+<img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/etusivu4.jpg">
+</p>
+
+<div class="wrap">
+  <div class="left"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/5_2.html">&larr; Edellinen sivu</a></div>
+  <div class="center"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/sisallysluettelo.html">Sis&auml;llysluettelo</a></div>
+  <div class="right"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/5_4.html">Seuraava sivu &rarr;</a></div>
+</div>
+
+<h2>5.3 Tutkimusjoukkojen valinta ja kuvaus</h2>
+<p>
+Tutkimuksen ensimm&auml;isen vaiheen tutkimusjoukoksi valittiin Metropolia ammattikorkeakoulun
+Hyvinvointi- ja Toimintakyky klusterin ty&ouml;ntekij&ouml;it&auml;. Lomakkeen ja sen
+k&auml;ytt&ouml;ohjeistuksen koek&auml;ytt&ouml;&ouml;n osallistui kuusi henkil&ouml;&auml; (n=6). Osallistujista nelj&auml; oli
+opettajia ja kaksi Hyvinvointi- ja Toimintakyky klusterin henkil&ouml;kunnan edustajaa. Tutkimusjoukossa
+oli kaksi miest&auml; ja nelj&auml; naista. Tutkimusjoukoksi valittiin Hyvinvointija
+Toimintakyky klusterin henkil&ouml;kuntaa, koska kyseiset henkil&ouml;t oli helppo tavoittaa ja
+heid&auml;n oli helppo sovittaa mittaukset omaan aikatauluunsa.
+</p>
+<p>
+Tutkimuksen toisen vaiheen tutkimusjoukko oli 31 harkinnanvaraisesti valittua koehenkil&ouml;&auml;
+(n=31). Harkinnanvaraisessa otoksessa tutkija valitsee koehenkil&ouml;t oman harkintansa
+mukaan parhaaksi katsomallaan tavalla (Vilkka 2007: 58 ). Kun tutkimusjoukko
+valitaan sill&auml; perustein, ett&auml; se on helposti saavutettavissa ja sopii tutkimuksen tarkoitukseen,
+on kyseess&auml; harkinnanvarainen otanta (Soininen - Merisuo 2009: 122). Joukko
+valikoitui vapaaehtoisuuteen perustuen, mahdollisimman helposti saavutettavissa olevista
+henkil&ouml;ist&auml;, eik&auml; poissulkevia tekij&ouml;it&auml; ollut. Tutkimusjoukko koostui 6 - 88 -
+vuotiaista henkil&ouml;ist&auml;, joista kuusi oli miest&auml;, 24 naista ja yksi lapsi. Joukosta 18 oli alle
+40-vuotiasta ja 13 yli 40-vuotiasta. Aikuiset edustivat eri ammattikuntia. Mittaustuloksia
+on pariton m&auml;&auml;r&auml;, koska yksi koehenkil&ouml;ist&auml; oli kuusivuotias lapsi. Kuusivuotiaan
+lapsen ei voi olettaa mittaavan luotettavasti alaraajan mittoja. Koehenkil&ouml;t olivat opinn&auml;ytety&ouml;n
+tekij&ouml;iden tuttavia.
+</p>

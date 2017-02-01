@@ -1,0 +1,43 @@
+{% extends "etreg/base.html" %}
+{% load i18n %}
+{% load cms_tags %}
+
+{% block content %}
+
+{% ifequal gen_view "create" %}<form action="." method="POST">{% csrf_token %}{% endifequal %}
+{% ifequal gen_view "update" %}<form action="." method="POST">{% csrf_token %}{% endifequal %}
+{% ifequal gen_view "detail" %}{% endifequal %}
+
+<table class="ereg_hea">
+<tbody>
+<tr>
+  <td>
+  </td>
+  <td class="rcol">
+    <div class="header">{% trans "45th European Convention 2012 Finland" %}</div>
+    <div class="date">{% trans "10th June &ndash; 17th June 2012" %}</div>
+  </td>
+</tr>
+</tbody>
+</table>
+
+<table class="ereg_1">
+<tr class="hea">
+  <td class="hea_bold">{% trans "Registration form" %}</td>
+  <td class="hea"></td>
+</tr>
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+<!-- ---------- r 1:1 ---------- -->
+<tr>
+  <td class="error" colspan="2">
+    <div style="min-height: 100px">
+    {% trans "Electronic registration will open here." %}
+    {% trans "Please be patient!" %}
+  </td>
+</tr>
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+</table>
+
+
+{% endblock %}
+

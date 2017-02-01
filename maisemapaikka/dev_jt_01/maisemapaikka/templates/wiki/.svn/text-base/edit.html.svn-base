@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+
+{% block description %}
+  <h2>Mik&auml; sivu t&auml;m&auml; on...</h2>
+{% endblock description %}
+
+
+{% block content %}
+
+  
+<p>{{ slug }}</p>
+  
+{% ifequal crud_role "create" %}
+<p>Luo uusi sivu</p>
+{% endifequal %}
+
+<form action="/maisemapaikka/wiki/page/edit/" method="post">{% csrf_token %}
+<table id="form_table">
+{{ form.as_table }}
+</table>
+
+<div class="submit">
+{% ifequal crud_role "create" %}
+  <input type="submit" name="create" value="Luo tiedosto" />
+{% else %}
+  <input type="submit" name="update" value="V&auml;liltallenna" />
+  <input type="submit" name="version" value="Tallenna versio" />
+{% endifequal %}
+</div>
+
+<div class="meta">
+  Tekstin ainutkertainen tunniste: {{ uuid }}<br />
+  Luotu: <br />
+  Viimeksi muokattu: <br />
+  Muokaaja: <br />
+  Versio: <br />
+  Version päivämäärä: <br />
+  Version luoja: <br />
+  Nyt: {{ now }}
+</div>
+
+</form>
+{% endblock content %}
+
+
+
+{% block navi %}
+  <a href="/maisemapaikka/wiki/page/edit/">Luo uusi sivu</a><br />
+  Tassa otsikossa on 40 merkkia jos laskee
+{% endblock navi %}

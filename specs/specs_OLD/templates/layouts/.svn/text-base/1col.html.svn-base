@@ -1,0 +1,7 @@
+{% extends "common/base.html" %}
+
+{% block content %}
+<div id="col_1_full">
+  {% block main %}{% endblock %}
+</div>
+{% endblock %}

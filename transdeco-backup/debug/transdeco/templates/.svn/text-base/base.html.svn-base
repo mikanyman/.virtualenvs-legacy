@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <title>{{ site.0.title }}</title>
+  {# <link href="http://a29.myrootshell.com/transdeco/{{ dmode }}/site_media/css/styles.css" rel="stylesheet" type="text/css" /> #}
+  <link href="{{ STATIC_URL }}css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="{{ pg }}" onLoad="rollover()">
+{% load view_count_for_url %}
+{% view_count_for_url "/" as count %}
+<!-- /site_media/css/styles.css -->
+<div id="wrap">
+  <div id="topbanner">{{ count }}</div>
+  <div id="topnavi">
+  	<div id="topnavi_left"></div>
+    <ul>
+      <li><a href="/" id="aloitusLink">ALOITUSSIVU</a></li>xxxxxxxxxxxxx
+      <li><a href="/taiteilijat/gullichsen/" id="taiteilijatLink">TAITEILIJAT</a></li>
+      <li><a href="/yhteys/" id="yhteysLink">YHTEYDENOTOT</a></li>
+      <li><a href="/tilaus/" id="tilausLink">TILAAMINEN</a></li>
+    </ul>
+  </div>
+  {% block content %}{% endblock %}
+</div>
+</body>
+</html>

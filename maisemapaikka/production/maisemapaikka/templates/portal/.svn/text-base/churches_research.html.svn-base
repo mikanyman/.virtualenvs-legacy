@@ -1,0 +1,16 @@
+{% extends "portal/base_churches.html" %}
+{% load i18n %}
+
+{% block description %}
+<span class="section_header">{% trans "Buildings and Monuments" %}</span><span class="section_aspect"> | {% trans "Research" %}</span>
+{% endblock %}
+
+{% block content %}
+<div class="padding_10">
+  <ul class="navlist_333">
+    {% for rhtml in rhtml_list %}
+    <li><a href="{{ rhtml.url }}">{{ rhtml.link_header|safe }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

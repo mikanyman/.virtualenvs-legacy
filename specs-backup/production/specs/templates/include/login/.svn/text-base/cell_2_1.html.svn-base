@@ -1,0 +1,39 @@
+{% extends "boxes/borderfade_yellow_185.html" %}
+
+{% block content %}
+<h2 class="orange">Liity j&auml;seneksi!</h2>
+<div class="blog_list">
+
+  <div style="margin: 10px 0px">
+  <strong class="333">J&auml;senmaksut 2010</strong><br />
+  </div>
+
+  <div style="margin: 10px 0px">
+  <ul style="line-height:110%">
+    <li>Varsinainen j&auml;sen 20 &euro;</li>
+    <li>Perheenj&auml;sen 0 &euro;</li>
+    <li>Kannatusj&auml;sen 20 &euro;</li>
+    <li>Yritysj&auml;sen 100 &euro;</li>
+  </ul>
+  </div>
+
+  <div style="margin: 10px 0px">
+  Nordea 111430-101209<br />
+  </div>
+
+  <div style="margin: 10px 0px">
+  Pieni- ja Isokenk&auml;iset ry<br />
+  PL 186, 00931 Helsinki<br />
+  </div>
+  
+  <div style="margin: 10px 0px">
+  Yhdistyksen rekisteri-<br />
+  numero: 168047<br />
+  </div>
+ 
+  <div style="margin: 10px 0px">
+  <strong>Tule mukaan iloiseen, kokoistesi joukkoon!</strong>
+  </div>
+  
+</div>
+{% endblock %}

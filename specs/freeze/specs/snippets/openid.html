@@ -1,0 +1,42 @@
+    # -------------------------------------------------------------------------------------
+
+    #if request.openid:
+    #    return HttpResponse("OpenID is %s" % escape(str(request.openid)))
+    #user = request.GET['openid.identity']
+
+    #user = str(request)
+    #user = request.session['openids'][0]
+    #user = request.session['openids']
+    #user = request.session['_yadis_services__openid_consumer_']
+    #user = request.session['_openid_consumer_last_token']
+    #user = openid.consumer.discover.OpenIDServiceEndpoint
+    #<openid.consumer.discover.OpenIDServiceEndpoint server_url='http://pip.verisignlabs.com/server' claimed_id='http://mnyman.pip.verisignlabs.com/' local_id='http://mnyman.pip.verisignlabs.com/' canonicalID=None used_yadis=True >
+    #['openids', '_yadis_services__openid_consumer_', '_openid_consumer_last_token']    
+
+    #Tulos Firefoxilla: ['openids', '_yadis_services__openid_consumer_', '_openid_consumer_last_token']
+    # request.session['openids'][0]: Tulee Key Error jos ei ole
+    # user = request.session['openids']: Tulee Key Error jos ei ole
+    #request.session: <django.contrib.sessions.backends.db.SessionStore object at 0xb225c7ec>
+    #user = str(request.session)
+    #user = request.session['_auth_user_backend']
+    #if request.session['openids']:
+    #    user = str(request.session['openids'][0])
+    #else:
+    #    user = 'Tunnistamaton'
+    #user = str(request.openid)   
+    
+    # -------------------------------------------------------------------------------------
+
+    #if request.openid:
+    #    # esimerkisi http://mnyman.pip.verisignlabs.com/
+    #    open_id = 'OpenID is %s' % escape(str(request.openid))
+    #else:
+    #    open_id = 'No OpenIDxxxxxxxxx'
+    
+    #if request.openid:
+    #    return HttpResponse( "OpenID is %s" % escape(str(request.openid)) )
+    #else:
+    #    myvar = str(request)
+    #    return HttpResponse("No OpenID"+myvar)
+    
+    # -------------------------------------------------------------------------------------

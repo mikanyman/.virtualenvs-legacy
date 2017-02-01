@@ -1,0 +1,16 @@
+{% extends "portal/base_landscapes.html" %}
+{% load i18n %}
+{% load cms_tags %}
+
+{% block description %}
+<span class="section_header">{% trans "Landscapes" %}</span><span class="section_aspect"> | {% trans "Home" %}</span>
+{% endblock %}
+
+{% block content %}
+<div class="padding_10">
+  {% placeholder landscapes_frontpg_content %}
+</div>
+{% endblock %}
+
+
+

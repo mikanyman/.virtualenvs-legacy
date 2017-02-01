@@ -1,0 +1,10 @@
+<style>
+.patch {
+    width: 600px;
+    height: 30px;
+    display: block;
+    background-color: #EFEFEF
+}
+</style>
+
+<div class="patch">Lorem ipsum</div>

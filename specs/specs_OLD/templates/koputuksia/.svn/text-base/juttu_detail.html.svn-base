@@ -1,0 +1,35 @@
+{% extends "base_1n.html" %}
+
+{% block content %}
+
+<div id="admin">
+{% include "/var/django/specs/templates/admin_edit_list.inc" %}
+</div>
+
+<h1>{{ object.headline }}</h1>
+
+<div id="comment_link">
+  {% load comments %}
+  {% get_free_comment_count for koputuksia.juttu object.id as comment_count %}
+  {{ comment_count }} kommenttia {% if object.add_date %}| Viimeisin kommentti: {{ object.add_date|date:"F j, Y" }} {% endif %}| <a href="{{ object.get_absolute_url }}#comments">L&auml;het&auml; kommentti</a> 
+</div>
+<p><strong>{{ object.summary }}</strong></p>
+<p>{{ object.body }}</p>
+<p>{{ object.author }}</p>
+
+<div id="comment"><a name="comments"></a>
+{% get_free_comment_list for koputuksia.juttu object.id as comment_list %}
+<h2>Kommentit:</h2>
+{% for comment in comment_list %}
+<b>{{ comment.person_name }}</b> <span class="comment_count"> | {{ comment.submit_date|date:"d.m.Y" }} klo {{ comment.submit_date|date:"H:m" }}</span>
+{{ comment.comment|escape|urlizetrunc:40|linebreaks }}
+{% endfor %}
+<h2>L&auml;het&auml; kommentti</h2>
+{% free_comment_form for koputuksia.juttu object.id %}
+</div>
+
+{% endblock %}
+
+{% block sidebar %}
+{% include "/var/django/specs/templates/koputuksia/sidebar.inc" %}
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<script type="text/javascript">
+<!--
+{% for object in object_list %}
+loadImage{{ forloop.counter }} = new Image();
+loadImage{{ forloop.counter }}.src = "{{ STATIC_URL }}{{ object.square_image_filename_in }}";
+staticImage{{ forloop.counter }} = new Image();
+staticImage{{ forloop.counter }}.src = "{{ STATIC_URL }}{{ object.square_image_filename_out }}";
+{% endfor %}
+// End -->
+</script>
+<div id="content">
+<!-- <a class="pict_link" href="/taiteilijat/" onmouseover="image1.src=loadImage1.src;" onmouseout="image1.src=staticImage1.src;">
+<img name="image1" src="/pics/square_113/gullichsen_out.jpg" border=0></a>-->
+<!-- Otsikko & esittely -->
+<div id="headline"><h1>{{ site.0.headline }}</h1></div>
+<div id="abstract">{{ site.0.abstract }}</div>
+
+<!-- Kuvaluettelo -->
+{% spaceless %}
+<table id="frontpg_images_table">
+<tr>
+  {% for object in object_list %}
+  <td><a class="pict_link" 
+    href="/taiteilijat/{{ object.label}}/" 
+    onmouseover="image{{ forloop.counter }}.src=loadImage{{ forloop.counter }}.src;" 
+    onmouseout="image{{ forloop.counter }}.src=staticImage{{ forloop.counter }}.src;"><img 
+    name="image{{ forloop.counter }}" 
+    src="{{ STATIC_URL }}{{ object.square_image_filename_out }}" 
+    alt="{{ object.person_name }}" 
+    title="{{ object.person_name }}" /></a></td>
+  {# <!--<td><a class="pict_link" href="/taiteilijat/{{ object.label}}/"><img src="/{{ object.square_image_filename_out }}" alt="{{ object.person_name }}" title="{{ object.person_name }}" /></a></td>-->#}
+  {% ifequal forloop.counter 8 %}</tr><tr>{% endifequal%}
+  {% ifequal forloop.counter 16 %}</tr><tr>{% endifequal%}
+  {% endfor %}
+</tr>
+</table>
+{% endspaceless %}
+
+<!-- Nimiluettelo -->
+{% spaceless %}
+<table id="artist_names">
+<tr>
+  {% for object in object_list %}
+  <td><a class="name_link" href="./taiteilijat/{{ object.label}}/">{{ object.person_name }}</a>{% if object.new_work %}<span class="uutta">UUTTA</span>{% endif %}</td>
+  {% ifequal forloop.counter 6 %}</tr><tr>{% endifequal%}
+  {% ifequal forloop.counter 12 %}</tr><tr>{% endifequal%}
+  {% ifequal forloop.counter 18 %}</tr><tr>{% endifequal%}
+  {% endfor %}
+</tr>
+</table>
+{% endspaceless %}
+
+</div>
+
+<!-- Foter -->
+<div id="footer">
+  <div id="footer_text">{{ site.0.footer_text }}</div>
+</div>
+{% endblock %}

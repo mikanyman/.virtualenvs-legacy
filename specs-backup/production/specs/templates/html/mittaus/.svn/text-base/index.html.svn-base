@@ -1,0 +1,19 @@
+{% extends layout %}
+
+{% block main %}
+<!-- template_beg: html/koputuksia/index.html -->
+  <div class="fadcorner1_308_lmarg10-auto">
+    <div class="textbody">
+      {% include html_url %}
+	</div>
+  </div>
+<!-- template_end: html/koputuksia/index.html -->
+{% endblock %}
+
+{% block blogbar_right %}
+  {% if feed_3_1_dict %}{% include "cells/common/cell_3_1.html" %}{% endif %}
+  {% if feed_3_2_dict %}{% include "cells/common/cell_3_2.html" %}{% endif %}
+  {% if feed_3_3_dict %}{% include "cells/common/cell_3_3.html" %}{% endif %}
+  {% if feed_3_4_dict %}{% include "cells/common/cell_3_4.html" %}{% endif %}
+  {% if feed_3_5_dict %}{% include "cells/common/cell_3_5.html" %}{% endif %}
+{% endblock %}

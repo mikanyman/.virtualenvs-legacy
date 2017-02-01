@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>palkki.html</title>
+<style type="text/css">
+a:link {
+	color: #7CB6BB
+	}
+a:visited {
+	color: #7CB6BB
+	}
+a:hover {
+	color: #7CB6BB;
+	background-color: #7CB6BB;
+	text-decoration: none
+	}
+a:active {
+	color: #7CB6BB
+	}
+#l_navi {
+	width: 180px;
+	margin-left: 10px;
+	}
+</style>
+<script language="JavaScript">
+function drawnappit( nn, nm )
+{
+    if( nn == 1 )
+    {
+        nm == 1 ? document.nf.src='/media/wrk/specs/img/mpoli/info6.gif' : 
+        document.nf.src='/media/wrk/specs/img/mpoli/Info6.2.gif';
+    }
+    else if( nn == 2 )
+    {
+        nm == 1 ? document.na.src='/media/wrk/specs/img/mpoli/yhteystiedot1.gif' : 
+        document.na.src='/media/wrk/specs/img/mpoli/yhteystiedot1.2.gif';
+    }
+    else if( nn == 3 )
+    {
+        nm == 1 ? document.nb.src='/media/wrk/specs/img/mpoli/lehti2.gif' : 
+        document.nb.src='/media/wrk/specs/img/mpoli/lehti2.2.gif';
+    }
+    else if( nn == 4 )
+    {
+        nm == 1 ? document.nc.src='/media/wrk/specs/img/mpoli/kkaupat3.gif' : 
+        document.nc.src='/media/wrk/specs/img/mpoli/Kkaupat3.2.gif';
+    }
+    else if( nn == 5 )
+    {
+        nm == 1 ? document.nd.src='/media/wrk/specs/img/mpoli/vkaupat4.gif' : 
+        document.nd.src='/media/wrk/specs/img/mpoli/Vkaupat4.2.gif';
+    }
+    else if( nn == 6 )
+    {
+        nm == 1 ? document.ne.src='/media/wrk/specs/img/mpoli/kirpputori5.gif' : 
+        document.ne.src='/media/wrk/specs/img/mpoli/kirpputori5.2.gif';
+    }
+    else if( nn == 7 )
+    {
+	nm == 1 ? document.ng.src='/media/wrk/specs/img/mpoli/epages7.gif' :
+	document.ng.src='/media/wrk/specs/img/mpoli/Epages7.2.gif' ;
+    }
+}
+</script>
+</head>
+	
+<body bgcolor="#7CB6BB">
+<br><br>
+
+<div id="l_navi">
+<a href="alkusivu.html" target="paakehys" onMouseOver="drawnappit(1, 0)"; onMouseOut="drawnappit(1, 1)">
+<img border=0 name=nf hspace="5" src="/media/wrk/specs/img/mpoli/info6.gif" alt="info"></a>
+
+<a href="yhteystiedot.html" target="paakehys" onMouseOver="drawnappit(2, 0)"; onMouseOut="drawnappit(2, 1)">
+<img border=0 name=na hspace="5" src="/media/wrk/specs/img/mpoli/yhteystiedot1.gif" alt="yhteystiedot"></a>
+
+<a href="lehti.html" target="paakehys" onMouseOver="drawnappit(3, 0)"; onMouseOut="drawnappit(3, 1)">
+<img border=0 name=nb hspace="5" src="/media/wrk/specs/img/mpoli/lehti2.gif" alt="lehti"></a>
+
+<a href="kenkakaupat.html" target="paakehys" onMouseOver="drawnappit(4, 0)"; onMouseOut="drawnappit(4, 1)">
+<img border=0 name=nc hspace="5" src="/media/wrk/specs/img/mpoli/kkaupat3.gif" alt="kenkäkaupat"></a>
+
+<a href="vaatekaupat.html" target="paakehys" onMouseOver="drawnappit(5, 0)"; onMouseOut="drawnappit(5, 1)">
+<img border=0 name=nd hspace="5" src="/media/wrk/specs/img/mpoli/vkaupat4.gif" alt="vaatekaupat"></a>
+
+<a href="kirppis.html" target="paakehys" onMouseOver="drawnappit(6, 0)"; onMouseOut="drawnappit(6, 1)">
+<img border=0 name=ne hspace="5" src="/media/wrk/specs/img/mpoli/kirpputori5.gif" alt="kirpputori"></a>
+
+<a href="/media/pub/specs/framesets/mpoli/paakehys.eng.html" target="_parent" onMouseOver="drawnappit(7, 0)"; onMouseOut="drawnappit(7, 1)">
+<img border=0 name=ng hspace="5" src="/media/wrk/specs/img/mpoli/epages7.gif" alt="english pages"></a>
+
+<!--
+<input align=middle type="button" Value="Vieraskirja" ONCLICK="window.open('http://www.mpoli.fi/koputuksia/guestbook/guestbook.html',
+ 'Sample', 'toolbar=no,location=middle,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=yes,copyhistory=yes,width=1000,height=500')">
+-->
+
+<table cellspacing="0" cellpadding="0"><tr><td width="8"></td><td>
+	
+<!-- javascript:parent.location='http://b71.myrootshell.com/dev/specs/guestbook/ -->
+	
+<input align=middle type="button" Value="Vieraskirja" onClick="javascript:parent.paakehys.location='http://b71.myrootshell.com/dev/specs/guestbook/';">
+<br>
+<!--
+<br><a href="artikkelit.html" target="paakehys"><IMG border=0 SRC="/media/wrk/specs/img/mpoli/new7.gif"></a>
+-->
+<br>
+<!---<BR>
+<a href="http://www.valtikka.fi" target="paakehys"><IMG border=0 SRC="/media/wrk/specs/img/mpoli/VALTIKKA_banneri_140X60.gif"></a>
+<BR> --->
+
+<!--- Free Web-Counter Code Begin --->
+<br>
+<div align='left'><a href='http://www.businesslogo.net/portfolio.php'><img src='http://www.hit-counts.com/counter.php?t=15&digits=6&ic=81096&cid=508230' border='0' alt='Logo design portfolio'></a><BR><a href='http://www.businesslogo.net/portfolio.php' target="_blank">Logo design</a></div>
+<!--- OX Web-Counter Code End --->
+
+</td></tr></table>
+
+</div>
+
+
+</body>
+
+
+</HTML>

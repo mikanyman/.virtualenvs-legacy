@@ -1,0 +1,126 @@
+{% extends "layouts/blog.html" %}
+{% load markup %}
+
+{% block main %}
+<!-- Page status -->
+<div id="page_status_top">
+  <div class="page_status_left">
+    {% ifequal page 1 %}
+      <span class="arrow"><img src="/img/arrows/naviarr_grey_beg.gif" border="0"></span> Alkuun  
+    {% else %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/list/?page=1"><span class="arrow"><img src="/img/arrows/naviarr_or_beg.gif" border="0"></span> Alkuun</a> 
+    {% endifequal %}
+    {% ifequal has_previous 1 %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/list/?page={{ previous }}"><span class="prev_arrow"><img src="/img/arrows/naviarr_or_prev.gif" border="0"></span> Edellinen sivu</a> <span class="mid_space"></span>
+    {% else %}
+      <span class="prev_arrow"><img src="/img/arrows/naviarr_grey_prev.gif" border="0"></span> Edellinen sivu <span class="mid_space"></span>
+    {% endifequal %}
+  </div>
+  <div class="page_status_right">
+    {% ifequal has_next 1 %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/list/?page={{ next }}">Seuraava sivu <span class="next_arrow"><img src="/img/arrows/naviarr_or_next.gif" border="0"></span></a> 
+    {% else %}
+      Seuraava sivu <span class="next_arrow"><img src="/img/arrows/naviarr_grey_next.gif" border="0"></span>  
+    {% endifequal %}
+    {% ifequal page pages %}
+      Loppuun <span class="arrow"><img src="/img/arrows/naviarr_grey_end.gif" border="0"></span> 
+    {% else %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/list/?page={{ pages }}">Loppuun <span class="arrow"><img src="/img/arrows/naviarr_or_end.gif" border="0"></span></a>
+    {% endifequal %} 
+    <span class="text_666">&nbsp;&nbsp;&nbsp;{{ hits }} viesti&auml; (Sivu {{ page }}/{{ pages }})</span>
+  </div>
+</div>
+<!-- /Page status -->
+
+<!-- messages -->
+{% for entry in object_list %}
+<div class="roundbox_660">
+  <div class="roundbox_660_top"></div>
+  <div class="roundbox_660_mid">
+    <br />
+	<div class="post_text">{{ entry.content }}</div><!-- |escape|markdown entry.content|markdown|escape -->
+	<div class="post_info">
+      <span class="text_333"><span class="speech"><img src="/img/icons/eb/speech2.png"></span> <strong>{{ entry.username|lower|capfirst }}</strong></span>
+	  <span class="text_666">{{ entry.first_created|date:"d.m.Y H:i" }} Viesti l&auml;hetetty IP-numerosta {{ entry.ip_address }}</span>
+	</div>
+    </div>
+  <div class="roundbox_660_bottom"></div>
+</div>
+{% endfor %}
+<!-- /messages -->
+
+<!-- Page status -->
+<div id="page_status_bottom">
+  <div class="page_status_left">
+    {% ifequal page 1 %}
+      <span class="arrow"><img src="/img/arrows/naviarr_grey_beg.gif" border="0"></span> Alkuun  
+    {% else %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/list/?page=1"><span class="arrow"><img src="/img/arrows/naviarr_or_beg.gif" border="0"></span> Alkuun</a> 
+    {% endifequal %}
+    {% ifequal has_previous 1 %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/list/?page={{ previous }}"><span class="prev_arrow"><img src="/img/arrows/naviarr_or_prev.gif" border="0"></span> Edellinen sivu</a> <span class="mid_space"></span>
+    {% else %}
+      <span class="prev_arrow"><img src="/img/arrows/naviarr_grey_prev.gif" border="0"></span> Edellinen sivu <span class="mid_space"></span>
+    {% endifequal %}
+  </div>
+  <div class="page_status_right">
+    {% ifequal has_next 1 %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/list/?page={{ next }}">Seuraava sivu <span class="next_arrow"><img src="/img/arrows/naviarr_or_next.gif" border="0"></span></a> 
+    {% else %}
+      Seuraava sivu <span class="next_arrow"><img src="/img/arrows/naviarr_grey_next.gif" border="0"></span>  
+    {% endifequal %}
+    {% ifequal page pages %}
+      Loppuun <span class="arrow"><img src="/img/arrows/naviarr_grey_end.gif" border="0"></span> 
+    {% else %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/list/?page={{ pages }}">Loppuun <span class="arrow"><img src="/img/arrows/naviarr_or_end.gif" border="0"></span></a>
+    {% endifequal %} 
+    <span class="text_666">&nbsp;&nbsp;&nbsp;{{ hits }} viesti&auml; (Sivu {{ page }}/{{ pages }})</span>
+  </div>
+</div>
+<!-- /Page status -->
+{% endblock %}
+
+{% block blogbar_right %}
+<!-- Kirjoita oma tervehdyksesi -->
+<div class="kirjoita"></div>
+
+<!--
+<div class="heablock_digg_blue"><span>Lorem ipsum dolor sit amet</span></div>
+<div class="heablock_basecamp_green"><span>Lorem ipsum dolor sit amet</span></div>
+<div class="heablock_rss_orange"><span>Lorem ipsum dolor sit amet</span></div>
+<br />
+<div class="heablock_lastfm_red"><span>Lorem ipsum dolor sit amet</span></div>
+<div class="heablock_black"><span>Lorem ipsum dolor sit amet</span></div>
+<br />
+<div class="heablock_gmail_blue"><span>Lorem ipsum dolor sit amet</span></div>
+<div class="heablock_qoop_mint"><span>Lorem ipsum dolor sit amet</span></div>
+<div class="heablock_interactiveaction_yellow"><span>Lorem ipsum dolor sit amet</span></div>
+-->
+<div class="blog_link_set">
+  <h2>Aihepiiri 1</h2>
+  <ul>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+  </ul>
+</div>
+<div class="blog_link_set">
+  <h2>Aihepiiri 2</h2>
+  <ul>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+    <li><a href="#">Lorem ipsum dolor sit amet</a>
+  </ul>
+</div>
+{% endblock %}
+

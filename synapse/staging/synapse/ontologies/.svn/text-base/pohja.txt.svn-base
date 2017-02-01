@@ -1,0 +1,56 @@
+        ### Quantification: 0,n:0,n
+        self.domain.min = 0
+        self.domain.max = -1
+        self.range.min = 0
+        self.range.max = -1
+        
+        ### Quantification: 0,1:0,n
+        self.domain.min = 0
+        self.domain.max = 1
+        self.range.min = 0
+        self.range.max = -1
+        
+        ### Quantification: 1,n:0,n
+        self.domain.min = 1
+        self.domain.max = -1
+        self.range.min = 0
+        self.range.max = -1
+
+class P2(object):
+    ""
+    def __init__(self):
+        self.domain = 
+        self.range = 
+        self.flabel = ""
+        self.rlabel = ""
+        
+        ### Quantification: 0,n:0,n
+        self.domain.min = 
+        self.domain.max = 
+        self.range.min = 
+        self.range.max = 
+    def __str__(self):
+        return ""
+
+
+
+class F(crm.):
+    ""
+    def __init__(self):
+        
+        ### Forward FRBRoo properties
+        pass
+        
+        ### Reverse FRBRoo properties
+        pass
+        
+    def crm_fproperties(self):
+        return ()
+    def crm_rproperties(self):
+        return ()
+    def __str__(self):
+        return ""
+
+
+
+

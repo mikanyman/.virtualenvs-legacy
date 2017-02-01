@@ -1,0 +1,10 @@
+Page
+   Layout
+      ConCom (content component) | Cell -------- Box
+         + Entry
+              Content Class
+         + Include
+         + Callable
+              Operates on Class (types of operations) 
+         + Menu
+         + Application

@@ -1,0 +1,32 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>GeoMaster</title>
+<style type="text/css">
+#wrap {
+	width: 800px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+<p><< <a href="/rdf/geomaster/">&Aring;terv&auml;nd till f&ouml;rsta sidan</a></p>
+
+<hr>
+<h3>Sveriges kommuner:</h3>
+<p><a href="/rdf/kommuner/?init=all">Alla</a>&nbsp;&nbsp;| <a href="/rdf/kommuner/?init=A">A</a> | <a href="/rdf/kommuner/?init=B">B</a> | <a href="/rdf/kommuner/?init=D">D</a> | <a href="/rdf/kommuner/?init=E">E</a> | <a href="/rdf/kommuner/?init=F">F</a> | <a href="/rdf/kommuner/?init=G">G</a> | <a href="/rdf/kommuner/?init=H">H</a> | <a href="/rdf/kommuner/?init=J">J</a> | <a href="/rdf/kommuner/?init=K">K</a> | <a href="/rdf/kommuner/?init=L">L</a> | 
+<a href="/rdf/kommuner/?init=M">M</a> | <a href="/rdf/kommuner/?init=N">N</a> | <a href="/rdf/kommuner/?init=O">O</a> | <a href="/rdf/kommuner/?init=P">P</a> | <a href="/rdf/kommuner/?init=R">R</a> | <a href="/rdf/kommuner/?init=S">S</a> | <a href="/rdf/kommuner/?init=T">T</a> | <a href="/rdf/kommuner/?init=U">U</a> | <a href="/rdf/kommuner/?init=V">V</a> | <a href="/rdf/kommuner/?init=AR">&Aring;</a> | <a href="/rdf/kommuner/?init=AU">&Auml;</a> | <a href="/rdf/kommuner/?init=OU">&Ouml;</a></p>
+<p>
+{% for element in graph_as_list %}
+  {{ element }}<br />
+{% endfor %}
+</p>
+<hr>
+<p>
+  <small><a href="email:mika.nyman@inbox.com">mika.nyman@inbox.com</a></small>
+</p>
+</div>
+</body>
+</html>

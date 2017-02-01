@@ -1,0 +1,12 @@
+{% comment %}
+<ul>
+  <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/frontpg/etusivu/" id="etusivuLink"><span>Etusivu</span></a></li>
+  <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/frontpg/verkkolehti/" id="verkkolehtiLink"><span>Verkkolehti</span></a></li>
+  <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/frontpg/kuvagalleria/" id="kuvagalleriaLink"><span>Kuvagalleria</span></a></li>
+  <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/" id="tagforumLink"><span>Keskustele</span></a></li>
+  <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/frontpg/vaikuta/" id="vaikutaLink"><span>Vaikuta</a></span></li>
+  <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/frontpg/apua_ongelmiin/" id="apua_ongelmiinLink"><span>Apua ongelmiin</span></a></li>
+  <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/frontpg/tuotteet/" id="tuotteetLink"><span>Tuotteet</span></a></li>
+  <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/frontpg/yhdistys/" id="yhdistysLink"><span>Yhdistys</span></a></li>
+</ul>
+{% endcomment %}

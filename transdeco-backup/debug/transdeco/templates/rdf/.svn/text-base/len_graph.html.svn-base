@@ -1,0 +1,6 @@
+{{ html }}
+<br /><br />
+
+{% for st in g %}
+  print {{ st }}<br />
+{% endfor %}

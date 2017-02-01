@@ -1,0 +1,15 @@
+{% extends "portal/base_rockart.html" %}
+{% load i18n %}
+
+{% block description %}
+<span class="section_header">{% trans "Rock Art" %}</span><span class="section_aspect"> | {% trans "Images" %}</span>
+{% endblock %}
+
+{% block content %}
+<div class="padding_10">
+  <div id="controls"></div>
+  <div id="loading"></div>
+  <div id="slideshow"></div>
+  <div id="caption"></div>
+</div>
+{% endblock %}

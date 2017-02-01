@@ -1,0 +1,21 @@
+{% extends "base_1n.html" %}
+
+{% block content %}
+{% include "/var/django/specs/templates/admin_view_list.inc" %}
+<form id="confirm_delete" method="post" action="">
+<div id="error">
+  <p>Haluatko varmasti poistaa alla olevan jutun?</p>
+  <div id="admin">
+    <input type="image" src="/icon/bitcons/trash.gif">&nbsp;&nbsp;<a href="javascript:confirm_delete.submit();">Kyll&auml;. Poistan jutun lopullisesti.</a>
+  </div>
+</div>
+</form>
+<h1>{{ object.headline }}</h1>
+<p><strong>{{ object.summary }}</strong></p>
+<p>{{ object.body }}</p>
+<p>{{ object.author }}</p>
+{% endblock %}
+
+{% block sidebar %}
+{% include "/var/django/specs/templates/koputuksia/sidebar.inc" %}
+{% endblock %}

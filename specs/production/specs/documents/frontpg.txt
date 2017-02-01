@@ -1,0 +1,3 @@
+frontpg sovellus (ks. 'application.txt') on luonteeltaan kunkin osaston etusivun sovellus
+
+se voi sisältää myös esim listauksia jne. jotka johtavat esim. blogityyppiselle sisältösivulle.

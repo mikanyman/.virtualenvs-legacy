@@ -1,0 +1,30 @@
+{% extends "etreg/base.html" %}
+
+{% block content %}
+  {% if object %}
+    <h1>Person Info</h1>
+    <ul>
+      <li>ID: {{ object.id }}</li>
+      <li>Description: {{ object.description }}</li>
+      <li>Rule text:
+          {{ object.rule }}
+      </li>
+    </ul>
+    ( <a href="{% url person-update object.id %}">Modify</a> |
+      <a href="{% url person-delete object.id %}">Delete</a> )
+  {% else %}
+    <h1>List of all Persons</h1>
+    {% if object_list %}
+      <ul>
+        {% for person in object_list %}
+          <li>{{ person.lastname }} ( <a href="{% url person-detail rule.id %}">Details</a> |
+                                       <a href="{% url person-update rule.id %}">Modify</a> |
+                                       <a href="{% url person-delete rule.id %}">Delete</a> )</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      No persons defined yet.
+    {% endif %}
+  <p><a href="{% url person-create %}">Add new person</a><p>
+{% endif %}
+{% endblock %}

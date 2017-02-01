@@ -1,0 +1,11 @@
+<h1>Parse remote graph:</h1>
+
+<p>
+  {{ len_g }}
+</p>
+
+<p>
+{% for stmt in graph %}
+    {{ stmt }}<br />
+{% endfor %}
+</p>

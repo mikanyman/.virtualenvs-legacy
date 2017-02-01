@@ -1,0 +1,180 @@
+{% load i18n %}
+
+
+{% ifequal lang "en" %}
+Thank you for your registration! Please note that your registration is not
+complete until payment has been received! We will confirm your full payment
+either by email of by fax.
+
+Last day for registration and payment April 10th 2012!
+
+Payments only by Bank Transfer to
+Beneficiary’s name and address:
+Pieni- ja Isokenkäiset ry/ET2012FI
+Po Box 186
+FI-00931 Helsinki
+Finland
+
+Beneficiary bank account / bank details:
+IBAN: FI17 1153 3000 2126 69
+BIC/SWIFT: NDEAFIHH
+Nordea Bank Finland Plc.
+Aleksanterinkatu 36, 00100 Helsinki
+
+All bank charges are at the responsibility of the participants. For payments
+outside Europe, add 7 EUR to the total amount to cover receiving bank’s fee of
+incoming payment!
+
+Message for payment: ET2012FI/participant’s name/-s.
+{% endifequal %}
+
+{% ifequal lang "fi" %}
+Kiitos rekisteröitymisestäsi! Kun olet hyväksynyt tiedot, suorita maksu alla
+olevien ohjeiden mukaan. Huomioithan, että rekisteröitymisesi on lopullinen
+vasta sen jälkeen, kun olemme vastaanottaneet maksusi. Lähetämme suorituksesta
+vahvistuksen joko sähköpostilla tai kirjeitse. 
+
+Viimeinen rekisteröinti- ja maksupäivä 10.4.2012!
+
+Maksut vain tilisiirtona
+Saajan nimi ja osoite:
+Pieni- ja Isokenkäiset ry/ET2012FI
+PL 186
+00931 Helsinki
+
+Saajan pankkiyhteys:
+IBAN: FI17 1153 3000 2126 69
+BIC: NDEAFIHH
+Nordea Pankki Suomi Oyj,
+Aleksanterinkatu 36, 00100 Helsinki
+
+Maksaja maksaa kaikki kulut. Maksut Euroopan ulkopuolelta lisää loppusummaan
+7 euroa kattamaan saapuvan ulkomaan maksun kulut.
+
+Viesti maksuun: ET2012FI/Osallistujan/-jien nimi/nimet.
+{% endifequal %}
+
+{% ifequal lang "de" %}
+Danke für Deine Anmeldung! Bitte bedenken dass Eure Anmeldung nicht komplett 
+ist bevor die Zahlung erhalten wurde! Eure Anmeldung wird per EMail oder per
+FAX bestätigt. Letzter Tag für die Anmeldung und Zahlung ist der 10. April 2012!
+
+Zahlungen nur per Überweisung an
+Begünstigter und Adresse:
+Pieni- ja Isokenkäiset ry/ET2012FI
+Po Box 186
+FI-00931 Helsinki
+Finnland
+
+Kontonummer des Begünstigten / Bank Details:
+IBAN: FI17 1153 3000 2126 69
+BIC: NDEAFIHH
+Nordea Bank Finland Plc,
+Aleksanterinkatu 36, 00100 Helsinki
+
+Alle Bankgebühren obliegen der Verantwortung der Teilnehmer. Für Zahlungen von
+ausserhalb Europas, bitte 7.00 Euro zusätzlich für die Gebühr des Empfangs der
+erhaltenden Bank!
+
+Kommentar für die Zahlung: ET2012 FI / Name des/r Teilnehmer/s.
+{% endifequal %}
+
+{% trans "ONLINE REGISTRATION" %}
+
+* {% trans "Gender" %}: {{ object.gender }}
+* {% trans "First name" %}: {{ object.firstname }}
+* {% trans "Last name" %}: {{ object.lastname }}
+* {% trans "Address" %}: {{ object.address }}
+* {% trans "Postcode" %}: {{ object.postalcode }}
+* {% trans "City" %}: {{ object.city }}
+* {% trans "Country" %}: {{ object.country }}
+* {% trans "Date of birth (yyyy-mm-dd)" %}: {{ object.dateofbirth }}
+* {% trans "Height" %}: {{ object.height }}
+* {% trans "Member of a Tall Club" %}: {% if object.clubmember %}{% trans "Yes" %}{% else %}---{% endif %}
+* {% trans "Which Tall Club are you registered with?" %}: {{ object.whichclub }}
+* {% trans "Membership number" %}: {{ object.membnumb }}
+* {% trans "Email" %}: {{ object.email }}
+* {% trans "Mobile phone number with country code" %}: {{ object.mobilephone }}
+* {% trans "Home phone number with country code" %}: {{ object.homephone }}
+* {% trans "Fax number with country code" %}: {{ object.fax }}
+* {% trans "Language for welcome packets and guided tours" %}:
+  {% ifequal object.language "Finnish" %}{% trans "Finnish" %}{% endifequal%}
+  {% ifequal object.language "English" %}{% trans "English" %}{% endifequal%}
+  {% ifequal object.language "German" %}{% trans "German" %}{% endifequal%}
+* {% ifequal object.flightarrlocation "Arrival to Helsinki" %}{% trans "Arrival to Helsinki" %}:{% endifequal %}
+  {% ifequal object.flightarrlocation "Arrival to Tampere" %}{% trans "Arrival to Tampere" %}:{% endifequal %} 
+  {{ object.flightarrdate }} {% trans "Time" %}: {{ object.flightarrtime }}
+* {% ifequal object.flightdeplocation "Departure from Tampere" %}{% trans "Departure from Tampere" %}:{% endifequal %}
+  {% ifequal object.flightdeplocation "Departure from Helsinki" %}{% trans "Departure from Helsinki" %}:{% endifequal %} 
+  {{ object.flightdepdate }} {% trans "Time" %}: {{ object.flightdeptime }}
+* {% trans "In which hotel/hostel you are staying?" %}:
+  {% ifequal object.hotel "1" %}Scandic Rosendahl{% endifequal %}
+  {% ifequal object.hotel "2" %}Scandic City Tampere{% endifequal %}
+  {% ifequal object.hotel "3" %}Cumulus Hämeenpuisto{% endifequal %}
+  {% ifequal object.hotel "4" %}Omena Hotel Tampere 1{% endifequal %}
+  {% ifequal object.hotel "5" %}Omena Hotel Tampere 2{% endifequal %}
+  {% ifequal object.hotel "6" %}Hostel Sofia{% endifequal %}
+  {% ifequal object.hotel "7" %}{{ object.hotelother }}{% endifequal %}
+* {% trans "Check-in date (yyyy-mm-dd)" %}: {{ object.hotelarrdate }}
+* {% trans "Check-out date (yyyy-mm-dd)" %}: {{ object.hoteldepdate }}
+* {% trans "Young & Tall" %}: {% if object.youngtall %}{% trans "Yes" %}{% else %}---{% endif %}
+* {% trans "Are you travelling with your parents?" %}:
+ {% ifequal object.withparents "Yes" %}{% trans "Yes" %}{% endifequal %}
+ {% ifequal object.withparents "No" %}{% trans "No" %}{% endifequal %}
+* {% trans "Parents name" %}: {{ object.parentsname }}<br>
+*  {% trans "Parents mobile phone number" %}: {{ object.parentsmobile }}
+* {% trans "Guardians name" %}: {{ object.guardiansname }}
+* {% trans "Guardians mobile phone number" %}: {{ object.gurardiansmobile }}
+* {% trans "Vegetarian" %}: {% if object.dietvegetarian %}{% trans "Yes" %}{% else %}---{% endif %} 
+* {% trans "Gluten-free" %}: {% if object.dietglutenfree %}{% trans "Yes" %}{% else %}---{% endif %} 
+* {% trans "Diabetic" %}: {% if object.dietdiabetic %}{% trans "Yes" %}{% else %}---{% endif %} 
+* {% trans "Low lactose" %}: {% if object.dietlowlactose %}{% trans "Yes" %}{% else %}---{% endif %}
+* {% trans "Do you need any personal assistance (if available) during the events?" %}: {% if object.assistance %}{% trans "Yes" %}{% else %}---{% endif %}
+* {% trans "Please specify" %}: {{ object.assistancespecify }}
+* {% trans "Other special needs or health risk factors the Organisation team should know?" %}: {% if object.specialneeds %}{% trans "Yes" %}{% else %}---{% endif %}
+* {% trans "Please specify" %}: {{ object.specialneedsspecify }}
+
+{% trans "PROGRAM CHOICES" %}
+
+* {% trans "Arrival in Tampere &ndash; Welcome and Info packets" %}: 
+{% if object.prsuarrival %}{% trans "Yes" %}{% else %}{% trans "No" %}{% endif %}
+* {% trans "Viking Evening and 1st Big Welcome Evening" %}: 
+{% if object.prsu1welcome %}27,00 &#8364;{% else %}---{% endif %}
+* {% trans "Choose your wish for setting time*" %}: 
+{% ifequal object.prsusetting "setting_1" %}{% trans "First setting* at 6pm" %}{% endifequal %}
+{% ifequal object.prsusetting "setting_2" %}{% trans "Second setting* at 9pm" %}{% endifequal %}
+* {% trans "Trip to the town of Nokia & Tampere sightseeing tour by bus" %}: 
+{% if object.prmonokia %}27,00 &#8364;{% else %}---{% endif %}
+* {% trans "Young&Tall &ndash; guided sightseeing tours in Tampere and a lot of fun" %}: 
+{% if object.prmotampere %}27,00 &#8364;{% else %}---{% endif %}
+* {% trans "2nd Big Welcome Evening with infotainment, professional shows and live music" %}: 
+{% if object.prmo2welcome %}53,00 &#8364;{% else %}---{% endif %}
+* {% trans "Public meeting of the representatives of the European Council/Board" %}: 
+{% if object.prtuboard %}{% trans "Yes" %}{% else %}---{% endif %}
+* {% trans "A possibility also for lunch exists, at additional cost" %}:
+{% if object.prtulunch %}8,00 &#8364;{% else %}---{% endif %}
+* {% trans "Young&Tall &ndash; trip to the Särkänniemi Adventure park. Approx. 35 euro/person*" %}: 
+{% if object.prtuadvpark %}{% trans "Yes" %}{% else %}---{% endif %}
+* {% trans "Boat trip on Lake Pyhäjärvi & an outdoor evening on Viikinsaari Island." %}: 
+{% if object.prtuboat %}40,00 &#8364;{% else %}---{% endif %}
+* {% trans "Full day trip to the capital of Finland, and&#133; (check one below)" %}: 
+{% if object.prwehelsinki %}68,00 &#8364;{% else %}---{% endif %}
+* {% trans "Boat trip to Suomenlinna incl. a historical video presentation. (Max 240 guests)" %}: 
+{% if object.prwesuomenlinna %}17,00 &#8364;{% else %}---{% endif %}
+* {% trans "OR free time in Helsinki (approx. 4 hrs)" %}: 
+{% if object.prwefree %}{% trans "Yes" %}{% else %}---{% endif %}
+* {% trans "The biggest summer celebration in Finland called &quot;Juhannus&quot;. A long day in the beautiful, authentic countryside atmosphere." %}: 
+{% if object.prthujuhannus %}55,00 &#8364;{% else %}---{% endif %}
+* {% trans "Pispala & Pyynikki &ndash; The Pearls of Tampere. Guided walking & bus tour to the most essential part of the Finnish daily life and sauna traditions. Feel the heat&#133;" %}:
+{% if object.prfrisaunapis %}37,00 &#8364;{% else %}---{% endif %}
+* {% trans "Optional Sauna at hotel Scandic Rosendahl / Cumulus Hämeenpuisto" %}: 
+{% if object.prfrisaunaros %}{% trans "Yes" %}{% else %}---{% endif %}{{ object. }}
+* {% trans "Dancing and Entertainment in Scandic Rosendahl until the morning&#133;" %}: 
+{% if object.prsatgala %}70,00 &#8364;{% else %}---{% endif %}
+* {% trans "Sunday June 17th &ndash; Kiitos ja näkemiin! &ndash; Thank you and goodbye!" %}: 
+{% if object.prsugoodbye %}{% trans "Yes" %}{% else %}---{% endif %}
+* {% trans "Additional yearly fee for the voluntary work on the European level" %}: 8,00 &#8364;
+* {% trans "Additional fee for Non-Tall Club members" %}: 
+{% if object.nontallclub %}20,00 &#8364;{% else %}---{% endif %}
+  
+{% trans "Total amount EUR" %}: {{ object.total }} &#8364;

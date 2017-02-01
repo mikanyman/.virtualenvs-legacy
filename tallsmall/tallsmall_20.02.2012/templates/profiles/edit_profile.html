@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% comment %}
+profiles/edit_profile.html
+This will display the form for users to edit their profiles; it
+receives one variable -- "form", representing the form for
+profile editing -- directly, and also uses "RequestContext" so
+that context processors will be applied.
+
+The edit_profile view takes optional form_class and success_url arguments
+{% endcomment %}
+
+{% block title %}Edit Profile{% endblock %}
+
+{% block description %}
+<span class="section_header">Minun maisemani</span><span class="section_aspect"> | Muokkaa profiilia</span>
+{% endblock %}
+ 
+{% block content %}
+<h1>Edit contact info for {{ user }} </h1>
+<form method="POST" action="">{% csrf_token %}
+<table id="form_table">
+{{ form.as_table }}
+</table>
+
+<div class="submit">
+  <input type="submit" name="submit" value="Update" id="submit">
+</div>
+</form>
+{% endblock content %}

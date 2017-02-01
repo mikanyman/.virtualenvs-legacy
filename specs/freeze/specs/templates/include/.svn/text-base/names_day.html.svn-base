@@ -1,0 +1,9 @@
+{% block content %}
+<div id="names_day">
+  <div class="calendar calendar-icon-{% now "m" %}">
+    <div class="calendar-day">{% now "d" %}</div>
+  </div>
+  <strong>T&auml;n&auml;&auml;n</strong> on {% now "l d.m.Y" %}.<br /><br />
+  <strong>Nimip&auml;iv&auml;&auml;</strong> viett&auml;&auml; {{ content_from_callable }}
+</div>
+{% endblock %}

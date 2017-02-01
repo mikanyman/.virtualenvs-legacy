@@ -1,0 +1,174 @@
+body {
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+    margin:0;
+    padding:0;
+    }
+h1 {
+    color: #000066;
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 10px 0;
+    }
+h3 {
+    color: #000066;
+    font-weight: bold;
+}
+a {
+    color: #000066;
+    }
+th {
+    vertical-align: top;
+    text-align: right;
+    font-weight: bold;
+    color: #666666;
+    padding-top: 2px;
+    }
+hr {
+    border: 0;
+    color: #DEDEDE;
+    background-color: #DEDEDE;
+    height: 1px;
+    }
+#banner {
+    width: auto;
+    border-bottom:solid 1px #666666;
+    margin: 0px;
+    padding: 0 20px;
+    background: url(" http://www.jyu.fi/hallinto/++theme++jyu.theme2011dz/images/top-gradient.png") repeat-x scroll 0 0 #F1F1F1;
+    height: 120px;
+    }
+#login {
+    color: #666666;
+    }
+#login a {
+    color: #666666;
+    }
+.logotype {
+    color: #EE0000;
+    font-size: 28pt;
+    font-weight: bold;    
+    }
+#wrapper {
+    background-color: #FFFFFF;
+    width: 980px;
+    margin: 0 auto;
+    margin: solid 1px #666;
+    }
+#topnavi  {
+    width: auto;
+    height: 20px;
+    padding: 20px 0px 0px 0px;
+    }
+#content {
+    width: auto;
+    min-height: 400px;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 1px #666666;
+    }
+#footer {
+    color: #666666;
+    padding: 10px 0;
+    }
+table.list {
+    width:980px;
+    margin: 0;
+    border: 0;
+    border-collapse: collapse;
+    }
+table.list td.list_blue {
+    text-align: left;
+    background-color: #F6F6F6;
+    margin: 0;
+    padding: 5px;
+    }
+table.list td.list_white {
+    text-align: left;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 5px;
+    }
+    
+/* django-userena */
+fieldset {
+    border: 1px solid #999999;
+    }
+legend {
+    color: #666666;
+}
+div.row {
+    width: 900px;
+    height: 26px;
+    }
+div.label_tag {
+    width: 200px;
+    float: left;
+    text-align: right;
+    vertical-align: bottom;
+    padding: 2px 8px 0px 0px;
+    }
+div.field {
+    float: left;
+    }
+.submit {
+    margin-top: 10px;
+    }
+    
+/* crud_menu */
+
+/* http://www.dynamicdrive.com/dynamicindex1/hover.htm */
+.crud_menu_top {
+
+}
+.crud_menu_top ul {
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    }
+.crud_menu_top ul li {
+    list-style: none;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    }
+.crud_menu_top ul li a{
+    padding: 1px 1em;
+    text-decoration: none;
+    float: left;
+    color: #FFFFFF;
+    background-color: #5390C8;
+    border: 1px solid #FFFFFF;
+    }
+.crud_menu_top ul li a:hover{
+    background-color: #205C90;
+    }
+
+
+.crud_menu {
+
+}
+.crud_menu ul {
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    }
+.crud_menu ul li {
+    list-style: none;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    }
+.crud_menu ul li a{
+    padding: 1px 1em;
+    text-decoration: none;
+    float: left;
+    color: #FFFFFF;
+    background-color: #5390C8;
+    border: 1px solid #FFFFFF;
+    }
+.crud_menu ul li a:hover{
+    background-color: #205C90;
+    }

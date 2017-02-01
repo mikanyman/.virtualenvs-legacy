@@ -1,0 +1,16 @@
+applicationit n‰kyv‰t url-osoitteessa, esim 
+
+http://www.tallsmall.fi/fi/all/e0/frontpg/etusivu/
+
+T‰ss‰ tapauksessa 'frontpg' on application, joka ohjautuu urlin kautta omaan 
+kansioonsa, missa on omat resurssit, erityisesti views.py.
+
+'etusivu' on frontpg sovellukselle ohjautuva paramentri, t‰ss‰ tapauksessa
+dynaaminen sivu.
+
+TO-DO. Yksitt‰iselle sivulle pit‰isi viel‰ m‰‰ritty‰ ID, joka edustaa
+dynaamisen sivun n‰kym‰‰ tiettyn‰ hetken‰. Siksi olisi luontevaa, ett‰
+ID:ss‰ olisi p‰iv‰m‰‰r‰ (viimeksi muokattu) yhten‰ tekij‰n‰. T‰m‰ pit‰isi voida
+tallettaa paketiksi siten, ett‰ myˆs sivun kuvat tallentuvat samaan pakettiin.
+
+

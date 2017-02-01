@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CHRI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-06 17:08+0300\n"
+"PO-Revision-Date: 2012-08-10 02:25+0200\n"
+"Last-Translator: Mika Nyman <mika.nyman@synapse-computing.com>\n"
+"Language-Team: Synapse Computing <mika.nyman@synapse-computing.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Language: fi_FI\n"
+
+#: .\settings.py:40
+msgid "English"
+msgstr "English"
+
+#: .\settings.py:41
+msgid "Finnish"
+msgstr "Suomi"
+
+#: .\settings.py:42
+msgid "Swedish"
+msgstr "Svenska"
+
+#: .\profiles\forms.py:11
+msgid "First name"
+msgstr "Etunimi"
+
+#: .\profiles\forms.py:15
+msgid "Last name"
+msgstr "Sukunimi"
+
+#: .\profiles\models.py:21
+msgid "Male"
+msgstr "Mies"
+
+#: .\profiles\models.py:22
+msgid "Female"
+msgstr "Nainen"
+
+#: .\profiles\models.py:25
+msgid "user"
+msgstr "Käyttäjätunnus"
+
+#: .\profiles\models.py:26
+msgid "gender"
+msgstr "Sukupuoli"
+
+#: .\profiles\models.py:27
+msgid "website"
+msgstr "WWW-sivu"
+
+#: .\profiles\models.py:28
+msgid "location"
+msgstr "Paikkakunta"
+
+#: .\profiles\models.py:29
+msgid "birth date"
+msgstr "Syntymäaika"
+
+#: .\profiles\models.py:30
+msgid "about me"
+msgstr "Kerro itsestäsi"
+
+#: .\templates\rules\base.html.py:19
+msgid "Logout"
+msgstr "Kirjaudu ulos"
+
+#: .\templates\rules\base.html.py:20
+msgid "View profile"
+msgstr "Tarkastele profiilia"
+
+#: .\templates\rules\base.html.py:22
+msgid "Login"
+msgstr "Kirjaudu sisään"
+
+#: .\templates\rules\base.html.py:23
+msgid "Register"
+msgstr "Rekisteröidy"

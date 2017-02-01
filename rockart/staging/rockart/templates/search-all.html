@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+
+{% block search_all %}
+
+<h2>Kalliomaalaukset:</h2>
+{% if results %}
+<table class="list2">
+  <tr>
+    <td class="title"> Kohteen nimi: </td>
+    <td class="title"> Paikkakunta: </td>
+  </tr>
+  {% for waypoint in results %}
+    <tr>
+      <td class="text"><a href="/rock-art/search/?id={{ waypoint.id }}">{{ waypoint.name }}</a></td>
+      <td clas="text">{{ waypoint.place }}</td>
+    </tr>
+  {% endfor %}
+</table>
+{% else %}
+<p>0 tulosta.</p>
+{% endif %}
+
+{% endblock %}

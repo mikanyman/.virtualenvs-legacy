@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 34
+*.mo
+*.pyc
+django.wsgi
+migrations
+
+END

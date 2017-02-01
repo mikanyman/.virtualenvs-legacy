@@ -1,0 +1,777 @@
+# PIKRY
+# Copyright (C) 2009 MIKA NYMAN
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <INFO@SYNAPSE-COMPUTING.COM>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-12-30 23:26+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Mika Nyman <info@synapse-computing.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\frontpg\models.py:17
+#: .\guestbook\models.py:27
+#: .\tagforum\models.py:27
+msgid "kirjoitus"
+msgstr ""
+
+#: .\frontpg\models.py:18
+#: .\guestbook\models.py:28
+#: .\tagforum\models.py:28
+msgid "Kirjoitukset"
+msgstr ""
+
+#: .\lehtiarkisto\models.py:13
+msgid "Lehdet"
+msgstr ""
+
+#: .\lehtiarkisto\models.py:14
+msgid "Lehti"
+msgstr ""
+
+#: .\members\forms.py:14
+#: .\members\forms.py:28
+#: .\members\models.py:153
+#: .\members\models.py:189
+msgid "Etunimi"
+msgstr ""
+
+#: .\members\forms.py:15
+#: .\members\forms.py:29
+#: .\members\models.py:154
+#: .\members\models.py:188
+msgid "Sukunimi"
+msgstr ""
+
+#: .\members\forms.py:16
+#: .\members\models.py:155
+msgid "Katuosoite"
+msgstr ""
+
+#: .\members\forms.py:17
+#: .\members\models.py:156
+msgid "Postinumero"
+msgstr ""
+
+#: .\members\forms.py:18
+#: .\members\forms.py:59
+#: .\members\models.py:157
+#: .\members\models.py:194
+msgid "Postitoimipaikka"
+msgstr ""
+
+#: .\members\forms.py:19
+#: .\members\models.py:158
+msgid "Puhelin"
+msgstr ""
+
+#: .\members\forms.py:20
+#: .\members\forms.py:64
+#: .\members\models.py:159
+#: .\members\models.py:199
+msgid "Sähköposti"
+msgstr ""
+
+#: .\members\forms.py:27
+#: .\members\models.py:191
+msgid "Arvo"
+msgstr ""
+
+#: .\members\forms.py:30
+#: .\members\models.py:190
+msgid "Entinen sukunimi"
+msgstr ""
+
+#: .\members\forms.py:34
+#: .\members\models.py:179
+msgid "Jäsennumero"
+msgstr ""
+
+#: .\members\forms.py:35
+#: .\members\models.py:186
+msgid "Liittymisvuosi"
+msgstr ""
+
+#: .\members\forms.py:36
+#: .\members\models.py:187
+msgid "Eroaminen"
+msgstr ""
+
+#: .\members\forms.py:37
+msgid "Varsinainen jäsen"
+msgstr ""
+
+#: .\members\forms.py:38
+msgid "Perhejäsen"
+msgstr ""
+
+#: .\members\forms.py:39
+msgid "Kannatusjäsen"
+msgstr ""
+
+#: .\members\forms.py:40
+msgid "Kunniajäsen"
+msgstr ""
+
+#: .\members\forms.py:41
+msgid "Yritysjäsen"
+msgstr ""
+
+#: .\members\forms.py:42
+msgid "Uusi jäsen"
+msgstr ""
+
+#: .\members\forms.py:43
+#: .\members\models.py:219
+#: .\portal\models.py:204
+msgid "Tila"
+msgstr ""
+
+#: .\members\forms.py:52
+msgid "Jäsennumerossa oltava kuusi numeroa. Vain numerot ovat sallittuja"
+msgstr ""
+
+#: .\members\forms.py:57
+#: .\members\models.py:150
+#: .\members\models.py:184
+#: .\members\models.py:192
+msgid "Yritys"
+msgstr ""
+
+#: .\members\forms.py:58
+#: .\members\models.py:193
+msgid "Postiosoite"
+msgstr ""
+
+#: .\members\forms.py:60
+#: .\members\models.py:195
+msgid "Postinumeroalue"
+msgstr ""
+
+#: .\members\forms.py:61
+#: .\members\models.py:196
+msgid "Maa osoitteessa"
+msgstr ""
+
+#: .\members\forms.py:62
+#: .\members\models.py:197
+msgid "Lääni"
+msgstr ""
+
+#: .\members\forms.py:63
+#: .\members\models.py:198
+msgid "Puhelin, kännykkä, faksi"
+msgstr ""
+
+#: .\members\forms.py:68
+#: .\members\models.py:203
+msgid "Syntymävuosi"
+msgstr ""
+
+#: .\members\forms.py:69
+#: .\members\models.py:200
+msgid "Mies"
+msgstr ""
+
+#: .\members\forms.py:70
+#: .\members\models.py:201
+msgid "Nainen"
+msgstr ""
+
+#: .\members\forms.py:71
+msgid "Pituustyyppi"
+msgstr ""
+
+#: .\members\forms.py:72
+#: .\members\models.py:202
+#: .\members\models.py:204
+msgid "Pituus"
+msgstr ""
+
+#: .\members\forms.py:73
+#: .\members\models.py:207
+msgid "Vartalotyyppi"
+msgstr ""
+
+#: .\members\forms.py:74
+#: .\members\models.py:208
+msgid "Päänympärys"
+msgstr ""
+
+#: .\members\forms.py:78
+#: .\members\models.py:205
+msgid "Kenkä"
+msgstr ""
+
+#: .\members\forms.py:79
+#: .\members\models.py:206
+msgid "Vaate"
+msgstr ""
+
+#: .\members\forms.py:80
+#: .\members\models.py:209
+msgid "Käsinekoko"
+msgstr ""
+
+#: .\members\forms.py:84
+#: .\members\models.py:217
+msgid "Messuavustus"
+msgstr ""
+
+#: .\members\forms.py:85
+#: .\members\models.py:218
+msgid "Muut liikkeet"
+msgstr ""
+
+#: .\members\forms.py:89
+#: .\members\models.py:210
+msgid "1 tietosuoja"
+msgstr ""
+
+#: .\members\forms.py:90
+#: .\members\models.py:211
+msgid "2 tietosuoja"
+msgstr ""
+
+#: .\members\forms.py:91
+#: .\members\models.py:212
+msgid "3 tietosuoja"
+msgstr ""
+
+#: .\members\forms.py:92
+#: .\members\models.py:213
+msgid "4 tietosuoja"
+msgstr ""
+
+#: .\members\forms.py:93
+#: .\members\models.py:214
+msgid "5 tietosuoja"
+msgstr ""
+
+#: .\members\forms.py:96
+#: .\members\models.py:216
+msgid "Tiedot päivitetty"
+msgstr ""
+
+#: .\members\forms.py:100
+#: .\members\models.py:215
+msgid "Muuta"
+msgstr ""
+
+#: .\members\models.py:170
+msgid "Jäsenyttä hakeva henkilö"
+msgstr ""
+
+#: .\members\models.py:171
+msgid "Jäsenyyttä hakevat henkilöt"
+msgstr ""
+
+#: .\members\models.py:180
+msgid "Varsinainen"
+msgstr ""
+
+#: .\members\models.py:181
+msgid "Perhe"
+msgstr ""
+
+#: .\members\models.py:182
+msgid "Kannatus"
+msgstr ""
+
+#: .\members\models.py:183
+msgid "Kunnia"
+msgstr ""
+
+#: .\members\models.py:185
+msgid "Uusi"
+msgstr ""
+
+#: .\members\models.py:240
+msgid "Jäsen"
+msgstr ""
+
+#: .\members\models.py:241
+msgid "Jäsenet"
+msgstr ""
+
+#: .\members\models.py:262
+msgid "Tapahtumatyyppi"
+msgstr ""
+
+#: .\members\models.py:263
+msgid "Päivämäärä, jolloin maksettu"
+msgstr ""
+
+#: .\members\models.py:264
+msgid "Vuosi jota maksu koskee"
+msgstr ""
+
+#: .\members\models.py:273
+msgid "tapahtuma"
+msgstr ""
+
+#: .\members\models.py:274
+msgid "Tapahtumat"
+msgstr ""
+
+#: .\portal\models.py:21
+msgid "sovellukset (Application)"
+msgstr ""
+
+#: .\portal\models.py:22
+msgid "sovellus"
+msgstr ""
+
+#: .\portal\models.py:33
+msgid "ohjelmakomponentit (Callable)"
+msgstr ""
+
+#: .\portal\models.py:34
+msgid "ohjelmakomponentti"
+msgstr ""
+
+#: .\portal\models.py:44
+msgid "layoutit (Layout)"
+msgstr ""
+
+#: .\portal\models.py:45
+msgid "layout"
+msgstr ""
+
+#: .\portal\models.py:55
+msgid "lomakeluokat (Form)"
+msgstr ""
+
+#: .\portal\models.py:56
+msgid "lomakeluokka"
+msgstr ""
+
+#: .\portal\models.py:71
+msgid "lomakepohjat (FormLayout)"
+msgstr ""
+
+#: .\portal\models.py:72
+msgid "lomakepohja"
+msgstr ""
+
+#: .\portal\models.py:82
+msgid "templatet (Template)"
+msgstr ""
+
+#: .\portal\models.py:83
+msgid "template"
+msgstr ""
+
+#: .\portal\models.py:95
+msgid "menut (Menu)"
+msgstr ""
+
+#: .\portal\models.py:96
+msgid "menu"
+msgstr ""
+
+#: .\portal\models.py:112
+msgid "menulinkit (MenuItem)"
+msgstr ""
+
+#: .\portal\models.py:113
+msgid "menulinkki"
+msgstr ""
+
+#: .\portal\models.py:124
+msgid "pääosastot (Tab)"
+msgstr ""
+
+#: .\portal\models.py:125
+msgid "pääosasto"
+msgstr ""
+
+#: .\portal\models.py:140
+msgid "sivut (Page)"
+msgstr ""
+
+#: .\portal\models.py:141
+msgid "sivu"
+msgstr ""
+
+#: .\portal\models.py:151
+msgid "taustat (Box)"
+msgstr ""
+
+#: .\portal\models.py:152
+msgid "tausta"
+msgstr ""
+
+#: .\portal\models.py:161
+msgid "solujen sijainnit (CellLocation)"
+msgstr ""
+
+#: .\portal\models.py:162
+msgid "solun sijainti"
+msgstr ""
+
+#: .\portal\models.py:177
+msgid "solut (Cell)"
+msgstr ""
+
+#: .\portal\models.py:178
+msgid "solu"
+msgstr ""
+
+#: .\portal\models.py:189
+msgid "HTML-tekstit (Include)"
+msgstr ""
+
+#: .\portal\models.py:190
+msgid "HTML-teksti"
+msgstr ""
+
+#: .\portal\models.py:200
+msgid "kategoriat (Category)"
+msgstr ""
+
+#: .\portal\models.py:201
+msgid "kategoria"
+msgstr ""
+
+#: .\portal\models.py:205
+#: .\questionaries\models.py:34
+msgid "Järjestys"
+msgstr ""
+
+#: .\portal\models.py:212
+msgid "Jutun tilavaihtoehdot (EntryStatus)"
+msgstr ""
+
+#: .\portal\models.py:213
+msgid "Jutun tila"
+msgstr ""
+
+#: .\portal\models.py:217
+msgid "Kaikki"
+msgstr ""
+
+#: .\portal\models.py:218
+msgid "Lyhyet"
+msgstr ""
+
+#: .\portal\models.py:219
+msgid "Pitkät"
+msgstr ""
+
+#: .\portal\models.py:251
+msgid "jutut (Entry)"
+msgstr ""
+
+#: .\portal\models.py:252
+msgid "juttu"
+msgstr ""
+
+#: .\portal\models.py:266
+msgid "Varmistettu"
+msgstr ""
+
+#: .\portal\models.py:283
+msgid "syötteet (Feed)"
+msgstr ""
+
+#: .\portal\models.py:284
+msgid "syöte"
+msgstr ""
+
+#: .\questionaries\forms.py:24
+msgid "Mistä sait tiedon yhdistyksen olemassaolosta?"
+msgstr ""
+
+#: .\questionaries\forms.py:27
+msgid "Mikä sai sinut liittymään yhdistykseen?"
+msgstr ""
+
+#: .\questionaries\forms.py:30
+msgid "Minkä ongelmista koet kohdallasi jo korjaantuneen?"
+msgstr ""
+
+#: .\questionaries\forms.py:33
+msgid "Mitä nyt odotat yhdistykseltä?"
+msgstr ""
+
+#: .\questionaries\forms.py:36
+msgid "Vertaistukitapahtumien järjestäminen "
+msgstr ""
+
+#: .\questionaries\forms.py:39
+msgid "Etujen ajaminen"
+msgstr ""
+
+#: .\questionaries\forms.py:42
+msgid "Tiedotus tuotteiden ostopaikoista"
+msgstr ""
+
+#: .\questionaries\forms.py:45
+msgid "Parasta, mitä Sinulle on koitunut yhdistyksen jäsenyyden takia?"
+msgstr ""
+
+#: .\questionaries\forms.py:48
+msgid "Mikä on tuottanut pettymyksen?"
+msgstr ""
+
+#: .\questionaries\forms.py:51
+msgid "Mitä olet ihmetellyt toiminnassa?"
+msgstr ""
+
+#: .\questionaries\forms.py:54
+msgid "Toivomuksiasi jäsenlehden sisällöstä?"
+msgstr ""
+
+#: .\questionaries\forms.py:57
+msgid "Miksi olet osallistunut/ et ole osallistunut yhdistyksen järjestämiin tapahtumiin?"
+msgstr ""
+
+#: .\questionaries\forms.py:60
+msgid "Ehditkö mukaan toimijaksi?"
+msgstr ""
+
+#: .\questionaries\models.py:6
+#: .\questionaries\models.py:30
+msgid "Kysymys"
+msgstr ""
+
+#: .\questionaries\models.py:7
+msgid "Johdanto"
+msgstr ""
+
+#: .\questionaries\models.py:8
+msgid "Ohjeet"
+msgstr ""
+
+#: .\questionaries\models.py:9
+msgid "Julkaisu"
+msgstr ""
+
+#: .\questionaries\models.py:15
+msgid "kysely"
+msgstr ""
+
+#: .\questionaries\models.py:16
+msgid "Kyselyt"
+msgstr ""
+
+#: .\questionaries\models.py:19
+msgid "Nimi"
+msgstr ""
+
+#: .\questionaries\models.py:25
+msgid "kenttätyyppi"
+msgstr ""
+
+#: .\questionaries\models.py:26
+msgid "Kenttätyypit"
+msgstr ""
+
+#: .\questionaries\models.py:29
+msgid "Kysely"
+msgstr ""
+
+#: .\questionaries\models.py:31
+msgid "Kenttätyyppi"
+msgstr ""
+
+#: .\questionaries\models.py:32
+msgid "Tekstisisältö"
+msgstr ""
+
+#: .\questionaries\models.py:33
+msgid "Valinta"
+msgstr ""
+
+#: .\questionaries\models.py:40
+msgid "kysymys"
+msgstr ""
+
+#: .\questionaries\models.py:41
+msgid "Kysymykset"
+msgstr ""
+
+#: .\templates\clvuds\submit_button.html.py:3
+msgid "Tallenna uudet tiedot"
+msgstr ""
+
+#: .\templates\clvuds\submit_button.html.py:4
+msgid "P&auml;ivit&auml; tiedot"
+msgstr ""
+
+#: .\templates\clvuds\submit_button.html.py:5
+msgid "Poista tiedot"
+msgstr ""
+
+#: .\templates\clvuds\submit_button.html.py:6
+msgid "Hae tietoja"
+msgstr ""
+
+#: .\templates\include\header_left_registration.html.py:8
+#, fuzzy
+msgid "Log out"
+msgstr "Kirjautunut ulos"
+
+#: .\templates\include\header_left_registration.html.py:9
+#: .\templates\registration\password_change_form.html.py:7
+msgid "Change password"
+msgstr "Vaihda salasanaa"
+
+#: .\templates\include\header_left_registration.html.py:10
+msgid "Manage profile"
+msgstr "Ylläpidä yhteystietojasi"
+
+#: .\templates\include\header_left_registration.html.py:11
+msgid "Welcome"
+msgstr "Tervetuloa"
+
+#: .\templates\include\header_left_registration.html.py:13
+#: .\templates\registration\activate.html.py:10
+#: .\templates\registration\login.html.py:7
+#: .\templates\registration\login.html.py:12
+#: .\templates\registration\password_reset_complete.html.py:10
+msgid "Log in"
+msgstr "Kirjaudu sisään"
+
+#: .\templates\include\header_left_registration.html.py:14
+#: .\templates\registration\login.html.py:16
+msgid "Register"
+msgstr "Rekisteröidy"
+
+#: .\templates\include\header_left_registration.html.py:15
+msgid "Apply for Membership"
+msgstr "Liity jäseneksi"
+
+#: .\templates\members\application.html.py:8
+msgid "Membership Application"
+msgstr "Jäsenhakemus"
+
+#: .\templates\members\application.html.py:13
+#: .\templates\members\jasenhakemus_form.html.py:11
+#: .\templates\members\jasenhakemus_preview.html.py:25
+#: .\templates\registration\password_change_form.html.py:12
+#: .\templates\registration\password_reset_confirm.html.py:13
+#: .\templates\registration\password_reset_form.html.py:13
+#: .\templates\registration\registration_form.html.py:29
+msgid "Submit"
+msgstr "Lähetä"
+
+#: .\templates\members\jasenhakemus_form.html.py:9
+msgid "Please correct the following errors"
+msgstr "Korjaa seuraavat virheet:"
+
+#: .\templates\members\jasenhakemus_form.html.py:19
+#: .\templates\members\jasenhakemus_preview.html.py:39
+msgid "Preview"
+msgstr "Esikatsele"
+
+#: .\templates\members\jasenhakemus_preview.html.py:8
+msgid "Preview your submission"
+msgstr "Tietojen esikatselu"
+
+#: .\templates\members\jasenhakemus_preview.html.py:32
+msgid "Or edit it again"
+msgstr "Korjaa tietoja tarvittaessa"
+
+#: .\templates\registration\activate.html.py:8
+#: .\templates\registration\activate.html.py:15
+#: .\templates\registration\registration_complete.html.py:7
+msgid "Registration complete"
+msgstr "Rekisteröitymisen vahvistus"
+
+#: .\templates\registration\activate.html.py:10
+msgid "Account successfully activated."
+msgstr "Käyttäjätili on aktivoitu."
+
+#: .\templates\registration\activate.html.py:17
+msgid "Account activation failed"
+msgstr "Käyttäjätilin aktivoiminen epäonnistui."
+
+#: .\templates\registration\activation_email.txt.py:1
+msgid "Activate account at"
+msgstr "Aktivoi käyttäjätili osoitteessa "
+
+#: .\templates\registration\activation_email.txt.py:2
+#, python-format
+msgid "Link is valid for %(expiration_days)s days."
+msgstr "Linkki on voimassa %(expiration_days)s päivää."
+
+#: .\templates\registration\activation_email_subject.txt.py:1
+msgid "Account activation on"
+msgstr "Tilin aktivoiminen palvelussa"
+
+#: .\templates\registration\login.html.py:15
+msgid "Forgot username or password?"
+msgstr "Unohditko käyttäjätunnuksesi tai salasanasi? "
+
+#: .\templates\registration\login.html.py:15
+msgid "Send remeinder email"
+msgstr "Lähetä muistutusviesti sähköpostiisi "
+
+#: .\templates\registration\login.html.py:16
+msgid "Not member?"
+msgstr "Ei vielä käyttäjätunnusta?"
+
+#: .\templates\registration\logout.html.py:7
+#: .\templates\registration\password_change_done.html.py:7
+#: .\templates\registration\password_reset_complete.html.py:7
+#: .\templates\registration\password_reset_confirm.html.py:18
+#: .\templates\registration\password_reset_done.html.py:7
+msgid "Message"
+msgstr "Viesti"
+
+#: .\templates\registration\logout.html.py:8
+msgid "Logged out"
+msgstr "Olet kirjautunut ulos."
+
+#: .\templates\registration\password_change_done.html.py:9
+msgid "Password changed"
+msgstr "Salasana vaihdettiin onnistuneesti"
+
+#: .\templates\registration\password_reset_complete.html.py:9
+msgid "Password reset successfully"
+msgstr "Salasanan vaihto onnistui"
+
+#: .\templates\registration\password_reset_confirm.html.py:8
+msgid "Password reset"
+msgstr "Vaihda salasana"
+
+#: .\templates\registration\password_reset_confirm.html.py:20
+msgid "Password reset failed"
+msgstr "Salasanan vaihto epäonnistui"
+
+#: .\templates\registration\password_reset_done.html.py:9
+msgid "Email with password reset link has been sent."
+msgstr "Sähköposti jossa on linkki salasanan vaihtamiseksi on lähetetty."
+
+#: .\templates\registration\password_reset_email.html.py:1
+#, python-format
+msgid "Reset password for user '%(user)s' on the site '%(site_name)s':"
+msgstr "Nollaa (uudista) salasana käyttäjälle '%(user)s' sivustolla '%(site_name)s':"
+
+#: .\templates\registration\password_reset_form.html.py:7
+msgid "Send email for password reset"
+msgstr "Lähetä sähköposti salasanan uudistamiseksi"
+
+#: .\templates\registration\password_reset_form.html.py:11
+msgid "Use the email address you gave at registering"
+msgstr "Anna sama sähköpostiosoite, jonka ilmoitit kirjautuessasi. "
+
+#: .\templates\registration\registration_complete.html.py:9
+msgid "You are now registered. Activation email sent."
+msgstr "Olet nyt rekisteröitynyt käyttäjäksi. Sinulle on lähetetty sähköpostiviesti ilmoittamaasi sähköpostiosoitteeseen. Viestissä olevan linkin kautta voit aktivoida käyttäjätunnuksesi."
+
+#: .\templates\registration\registration_form.html.py:7
+msgid "Please register an account!"
+msgstr "Rekisteröidy palvelun käyttäjäksi!"
+
+#: .\templates\registration\registration_form.html.py:33
+msgid "Spaces or Scandinavian letters are not allowed in the user name"
+msgstr "Käyttäjätunnuksessa ei saa olla välilyöntejä eikä ääkkösiä."
+

@@ -1,0 +1,37 @@
+{% extends "layouts/2col_sidebar_right.html" %}
+{% load i18n %}
+
+{% block main %}
+<div class="form-box">
+  <fieldset>
+  <legend>{% trans "Please register an account!" %}</legend>
+  <form method="post" action="">{% csrf_token %}
+  <table>
+  {% for field in form %}
+  <tr>
+    <td>{{ field.label_tag }}&nbsp;&nbsp;</td>
+    <td>{{ field }}</td>
+  </tr>
+  {% if field.help_text %}
+  <tr>
+    <td></td>
+    <td>{{ field.help_text }}</td>
+  </tr>
+  {% endif %}
+  {% if field.errors %}
+  <tr>
+    <td></td>
+    <td><span class="myerrors">{{ field.errors }}</span></td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+  </table>
+  <input type="submit" class="submit" value="{% trans 'Submit' %}" />
+  </form>
+  <div id="message">
+  	<br />
+    <ul><li>{% trans "Spaces or Scandinavian letters are not allowed in the user name" %}</li></ul>
+  </div>
+  </fieldset>
+</div>
+{% endblock %}

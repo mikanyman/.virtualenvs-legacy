@@ -1,0 +1,8 @@
+<div class="rbox1_180">
+  <div class="top"></div>
+  <div class="body">
+    <span>
+      {% block content %}{% endblock %}
+    </span>
+  </div> 	
+</div>

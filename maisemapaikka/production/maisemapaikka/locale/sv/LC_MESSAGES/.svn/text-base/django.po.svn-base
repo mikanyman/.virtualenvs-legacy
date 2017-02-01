@@ -1,0 +1,905 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Maisemapaikka\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-02 19:47+0300\n"
+"PO-Revision-Date: 2012-04-03 00:45+0200\n"
+"Last-Translator: Mika Nyman <mika.nyman@synapse-computing.com>\n"
+"Language-Team: Synapse Computing <info@synapse-computing.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: .\context_processors.py:26
+msgid "Accounts"
+msgstr "Konton"
+
+#: .\context_processors.py:35
+#: .\templates\includes\aspects_churches.html.py:6
+#: .\templates\includes\aspects_churches.html.py:8
+#: .\templates\includes\aspects_home.html.py:6
+#: .\templates\includes\aspects_home.html.py:8
+#: .\templates\includes\aspects_landscapes.html.py:6
+#: .\templates\includes\aspects_landscapes.html.py:8
+#: .\templates\includes\aspects_mylocation.html.py:6
+#: .\templates\includes\aspects_mylocation.html.py:8
+#: .\templates\includes\aspects_rockart.html.py:6
+#: .\templates\includes\aspects_rockart.html.py:8
+#: .\templates\portal\churches_frontpg.html.py:6
+#: .\templates\portal\landscapes_frontpg.html.py:6
+#: .\templates\portal\mylocation_frontpg.html.py:6
+#: .\templates\portal\rockart_frontpg.html.py:6
+msgid "Home"
+msgstr "Hem"
+
+#: .\context_processors.py:36
+#: .\templates\includes\aspects_churches.html.py:12
+#: .\templates\includes\aspects_churches.html.py:14
+#: .\templates\includes\aspects_landscapes.html.py:12
+#: .\templates\includes\aspects_landscapes.html.py:14
+#: .\templates\includes\aspects_mylocation.html.py:12
+#: .\templates\includes\aspects_mylocation.html.py:14
+#: .\templates\includes\aspects_rockart.html.py:12
+#: .\templates\includes\aspects_rockart.html.py:14
+msgid "Travel in Time"
+msgstr "Resa i tiden"
+
+#: .\context_processors.py:37
+#: .\templates\includes\aspects_churches.html.py:18
+#: .\templates\includes\aspects_churches.html.py:20
+#: .\templates\includes\aspects_landscapes.html.py:18
+#: .\templates\includes\aspects_landscapes.html.py:20
+#: .\templates\includes\aspects_mylocation.html.py:18
+#: .\templates\includes\aspects_mylocation.html.py:20
+#: .\templates\includes\aspects_rockart.html.py:18
+#: .\templates\includes\aspects_rockart.html.py:20
+#: .\templates\portal\churches_photo.html.py:5
+#: .\templates\portal\landscapes_photo.html.py:5
+#: .\templates\portal\rockart_photo.html.py:5
+msgid "Images"
+msgstr "Bilder"
+
+#: .\context_processors.py:38
+#: .\templates\includes\aspects_churches.html.py:24
+#: .\templates\includes\aspects_churches.html.py:26
+#: .\templates\includes\aspects_landscapes.html.py:24
+#: .\templates\includes\aspects_landscapes.html.py:26
+#: .\templates\includes\aspects_mylocation.html.py:24
+#: .\templates\includes\aspects_mylocation.html.py:26
+#: .\templates\includes\aspects_rockart.html.py:24
+#: .\templates\includes\aspects_rockart.html.py:26
+#: .\templates\portal\churches_research.html.py:5
+#: .\templates\portal\churches_rhtml.html.py:5
+#: .\templates\portal\landscapes_research.html.py:5
+#: .\templates\portal\landscapes_rhtml.html.py:5
+#: .\templates\portal\rockart_research.html.py:5
+#: .\templates\portal\rockart_rhtml.html.py:5
+msgid "Research"
+msgstr "Forskning"
+
+#: .\context_processors.py:39
+#: .\templates\includes\aspects_churches.html.py:30
+#: .\templates\includes\aspects_churches.html.py:32
+#: .\templates\includes\aspects_landscapes.html.py:30
+#: .\templates\includes\aspects_landscapes.html.py:32
+#: .\templates\includes\aspects_mylocation.html.py:30
+#: .\templates\includes\aspects_mylocation.html.py:32
+#: .\templates\includes\aspects_rockart.html.py:30
+#: .\templates\includes\aspects_rockart.html.py:32
+#: .\templates\portal\churches_map.html.py:67
+#: .\templates\portal\landscapes_map.html.py:67
+#: .\templates\portal\mylocation_map.html.py:61
+#: .\templates\portal\rockart_map.html.py:67
+msgid "Map"
+msgstr "Karta"
+
+#: .\context_processors.py:40
+#: .\templates\includes\aspects_churches.html.py:36
+#: .\templates\includes\aspects_churches.html.py:38
+#: .\templates\includes\aspects_landscapes.html.py:36
+#: .\templates\includes\aspects_landscapes.html.py:38
+#: .\templates\includes\aspects_mylocation.html.py:36
+#: .\templates\includes\aspects_mylocation.html.py:38
+#: .\templates\includes\aspects_rockart.html.py:36
+#: .\templates\includes\aspects_rockart.html.py:38
+#: .\templates\portal\churches_story.html.py:5
+#: .\templates\portal\landscapes_story.html.py:5
+#: .\templates\portal\rockart_story.html.py:5
+msgid "Stories"
+msgstr "Berättelser"
+
+#: .\settings.py:51
+msgid "Finnish"
+msgstr "Suomi"
+
+#: .\settings.py:52
+msgid "Swedish"
+msgstr "Svenska"
+
+#: .\settings.py:53
+#: .\settings_backup.py:58
+msgid "English"
+msgstr "English"
+
+#: .\apps\wiki\models.py:16
+msgid "creator"
+msgstr "upphovsman"
+
+#: .\apps\wiki\models.py:17
+msgid "Creators"
+msgstr "Upphovsmän"
+
+#: .\apps\wiki\models.py:27
+msgid "tab"
+msgstr "flik"
+
+#: .\apps\wiki\models.py:28
+msgid "Tabs"
+msgstr "Flikar"
+
+#: .\apps\wiki\models.py:41
+msgid "remote page"
+msgstr "fjörrsida"
+
+#: .\apps\wiki\models.py:42
+msgid "Remote pages"
+msgstr "Fjörrsidor"
+
+#: .\apps\wiki\models.py:69
+msgid "page"
+msgstr "sida"
+
+#: .\apps\wiki\models.py:70
+msgid "Pages"
+msgstr "Sidor"
+
+#: .\profiles\forms.py:13
+msgid "First name"
+msgstr "Förnamn"
+
+#: .\profiles\forms.py:17
+msgid "Last name"
+msgstr "Efternamn"
+
+#: .\profiles\models.py:30
+msgid "Male"
+msgstr "Man"
+
+#: .\profiles\models.py:31
+msgid "Female"
+msgstr "Kvinna"
+
+#: .\profiles\models.py:36
+msgid "user"
+msgstr "användare"
+
+#: .\profiles\models.py:39
+msgid "gender"
+msgstr "kön"
+
+#: .\profiles\models.py:43
+msgid "website"
+msgstr "webbsida"
+
+#: .\profiles\models.py:44
+msgid "location"
+msgstr "ort"
+
+#: .\profiles\models.py:45
+msgid "birth date"
+msgstr "födelsedatum"
+
+#: .\profiles\models.py:46
+msgid "about me"
+msgstr "om mig"
+
+#: .\templates\base.html.py:41
+#: .\templates\base.html.py:91
+#: .\templates\portal\home_frontpg.html.py:6
+#: .\templates\portal\home_info.html.py:6
+msgid "Mindscapes"
+msgstr "Vägvisaren"
+
+#: .\templates\base.html.py:42
+msgid "Discover the Landscape"
+msgstr "Upptäck landskapet"
+
+#: .\templates\base.html.py:68
+msgid "Login"
+msgstr "Logga in"
+
+#: .\templates\base.html.py:69
+msgid "Register"
+msgstr "Ny användare"
+
+#: .\templates\base.html.py:72
+msgid "Logout"
+msgstr "Logga ut"
+
+#: .\templates\base.html.py:92
+#: .\templates\portal\landscapes_frontpg.html.py:6
+#: .\templates\portal\landscapes_map.html.py:67
+#: .\templates\portal\landscapes_photo.html.py:5
+#: .\templates\portal\landscapes_research.html.py:5
+#: .\templates\portal\landscapes_rhtml.html.py:5
+#: .\templates\portal\landscapes_story.html.py:5
+#: .\templates\portal\landscapes_time.html.py:5
+msgid "Landscapes"
+msgstr "Landskap"
+
+#: .\templates\base.html.py:93
+msgid "Buildings"
+msgstr "Byggnader"
+
+#: .\templates\base.html.py:94
+#: .\templates\portal\rockart_frontpg.html.py:6
+#: .\templates\portal\rockart_map.html.py:67
+#: .\templates\portal\rockart_photo.html.py:5
+#: .\templates\portal\rockart_research.html.py:5
+#: .\templates\portal\rockart_rhtml.html.py:5
+#: .\templates\portal\rockart_story.html.py:5
+#: .\templates\portal\rockart_time.html.py:5
+msgid "Rock Art"
+msgstr "Hällbilder"
+
+#: .\templates\base.html.py:95
+#: .\templates\portal\mylocation_frontpg.html.py:6
+#: .\templates\portal\mylocation_map.html.py:61
+msgid "My Location"
+msgstr "Mina Platser"
+
+#: .\templates\base.html.py:96
+#: .\templates\translations.html.py:2
+msgid "My Account"
+msgstr "Mitt konto"
+
+#: .\templates\base.html.py:97
+msgid "Administration"
+msgstr "Administrering"
+
+#: .\templates\base.html.py:151
+#: .\templates\base.html.py:160
+#: .\templates\base.html.py:169
+#: .\templates\base.html.py:178
+#: .\templates\base.html.py:187
+msgid "Select Aspect"
+msgstr "Välj aspekt"
+
+#: .\templates\base.html.py:276
+msgid "Play Slideshow"
+msgstr "Visa slideshow"
+
+#: .\templates\base.html.py:277
+msgid "Pause Slideshow"
+msgstr "Stoppa slideshow"
+
+#: .\templates\base.html.py:278
+msgid "Previous Photo"
+msgstr "Föregående bild"
+
+#: .\templates\base.html.py:279
+msgid "Next Photo"
+msgstr "Nästa bild"
+
+#: .\templates\base.html.py:280
+msgid "Next"
+msgstr "Nästa"
+
+#: .\templates\base.html.py:281
+msgid "Prev"
+msgstr "Föregående"
+
+#: .\templates\translations.html.py:5
+msgid "Email or username"
+msgstr "E-post eller användarnamn"
+
+#: .\templates\translations.html.py:6
+msgid "Remember me for a month"
+msgstr "Kom ihåg mig för en månad"
+
+#: .\templates\translations.html.py:7
+#: .\templates\userena\signin_form.html.py:27
+msgid "Forgot your password?"
+msgstr "Glömt ditt lösenord?"
+
+#: .\templates\includes\aspects_home.html.py:12
+#: .\templates\includes\aspects_home.html.py:14
+msgid "Info about the Site"
+msgstr "Information om tjänsten"
+
+#: .\templates\includes\gallerific\churches_thumbs.html.py:13
+#: .\templates\includes\gallerific\churches_thumbs.html.py:14
+#: .\templates\includes\gallerific\churches_thumbs.html.py:17
+#: .\templates\includes\gallerific\churches_thumbs.html.py:23
+#: .\templates\includes\gallerific\churches_thumbs.html.py:24
+#: .\templates\includes\gallerific\churches_thumbs.html.py:27
+#: .\templates\includes\gallerific\churches_thumbs.html.py:33
+#: .\templates\includes\gallerific\churches_thumbs.html.py:34
+#: .\templates\includes\gallerific\churches_thumbs.html.py:37
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:13
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:14
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:17
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:23
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:24
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:27
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:33
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:34
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:37
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:43
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:44
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:47
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:53
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:54
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:57
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:63
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:64
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:67
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:73
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:74
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:77
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:83
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:84
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:87
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:93
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:94
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:97
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:13
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:14
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:17
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:23
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:24
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:27
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:33
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:34
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:37
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:43
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:44
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:47
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:53
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:54
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:57
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:63
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:64
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:67
+#: .\templates\includes\gallerific\thumbs.html.py:13
+#: .\templates\includes\gallerific\thumbs.html.py:14
+#: .\templates\includes\gallerific\thumbs.html.py:17
+#: .\templates\includes\gallerific\thumbs.html.py:23
+#: .\templates\includes\gallerific\thumbs.html.py:24
+#: .\templates\includes\gallerific\thumbs.html.py:27
+#: .\templates\includes\gallerific\thumbs.html.py:33
+#: .\templates\includes\gallerific\thumbs.html.py:34
+#: .\templates\includes\gallerific\thumbs.html.py:39
+#: .\templates\includes\gallerific\thumbs.html.py:40
+#: .\templates\includes\gallerific\thumbs.html.py:43
+#: .\templates\includes\gallerific\thumbs.html.py:49
+#: .\templates\includes\gallerific\thumbs.html.py:50
+#: .\templates\includes\gallerific\thumbs.html.py:53
+#: .\templates\includes\gallerific\thumbs.html.py:59
+#: .\templates\includes\gallerific\thumbs.html.py:60
+#: .\templates\includes\gallerific\thumbs.html.py:63
+#: .\templates\includes\gallerific\thumbs.html.py:69
+#: .\templates\includes\gallerific\thumbs.html.py:70
+#: .\templates\includes\gallerific\thumbs.html.py:73
+#: .\templates\includes\gallerific\thumbs.html.py:79
+#: .\templates\includes\gallerific\thumbs.html.py:80
+#: .\templates\includes\gallerific\thumbs.html.py:83
+#: .\templates\includes\gallerific\thumbs.html.py:89
+#: .\templates\includes\gallerific\thumbs.html.py:90
+#: .\templates\includes\gallerific\thumbs.html.py:93
+#: .\templates\includes\gallerific\thumbs.html.py:99
+#: .\templates\includes\gallerific\thumbs.html.py:100
+#: .\templates\includes\gallerific\thumbs.html.py:103
+#: .\templates\includes\gallerific\thumbs.html.py:109
+#: .\templates\includes\gallerific\thumbs.html.py:110
+#: .\templates\includes\gallerific\thumbs.html.py:113
+#: .\templates\includes\gallerific\thumbs.html.py:119
+#: .\templates\includes\gallerific\thumbs.html.py:120
+#: .\templates\includes\gallerific\thumbs.html.py:123
+#: .\templates\includes\gallerific\thumbs.html.py:129
+#: .\templates\includes\gallerific\thumbs.html.py:130
+#: .\templates\includes\gallerific\thumbs.html.py:133
+#: .\templates\includes\gallerific\thumbs.html.py:139
+#: .\templates\includes\gallerific\thumbs.html.py:140
+#: .\templates\includes\gallerific\thumbs.html.py:143
+#: .\templates\includes\gallerific\thumbs.html.py:149
+#: .\templates\includes\gallerific\thumbs.html.py:150
+#: .\templates\includes\gallerific\thumbs.html.py:153
+#: .\templates\includes\gallerific\thumbs.html.py:159
+#: .\templates\includes\gallerific\thumbs.html.py:160
+#: .\templates\includes\gallerific\thumbs.html.py:163
+#: .\templates\includes\gallerific\thumbs.html.py:169
+#: .\templates\includes\gallerific\thumbs.html.py:170
+#: .\templates\includes\gallerific\thumbs.html.py:173
+#: .\templates\includes\gallerific\thumbs.html.py:179
+#: .\templates\includes\gallerific\thumbs.html.py:180
+#: .\templates\includes\gallerific\thumbs.html.py:183
+#: .\templates\includes\gallerific\thumbs.html.py:189
+#: .\templates\includes\gallerific\thumbs.html.py:190
+#: .\templates\includes\gallerific\thumbs.html.py:193
+#: .\templates\includes\gallerific\thumbs.html.py:199
+#: .\templates\includes\gallerific\thumbs.html.py:200
+#: .\templates\includes\gallerific\thumbs.html.py:203
+#: .\templates\includes\gallerific\thumbs.html.py:209
+#: .\templates\includes\gallerific\thumbs.html.py:210
+#: .\templates\includes\gallerific\thumbs.html.py:213
+#: .\templates\includes\gallerific\thumbs.html.py:219
+#: .\templates\includes\gallerific\thumbs.html.py:220
+#: .\templates\includes\gallerific\thumbs.html.py:223
+#: .\templates\includes\gallerific\thumbs.html.py:229
+#: .\templates\includes\gallerific\thumbs.html.py:230
+#: .\templates\includes\gallerific\thumbs.html.py:233
+#: .\templates\includes\gallerific\thumbs.html.py:239
+#: .\templates\includes\gallerific\thumbs.html.py:240
+#: .\templates\includes\gallerific\thumbs.html.py:243
+#: .\templates\includes\gallerific\thumbs.html.py:249
+#: .\templates\includes\gallerific\thumbs.html.py:250
+#: .\templates\includes\gallerific\thumbs.html.py:253
+msgid "Caption"
+msgstr "Bildtext"
+
+#: .\templates\includes\gallerific\churches_thumbs.html.py:16
+#: .\templates\includes\gallerific\churches_thumbs.html.py:26
+#: .\templates\includes\gallerific\churches_thumbs.html.py:36
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:16
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:26
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:36
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:46
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:56
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:66
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:76
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:86
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:96
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:16
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:26
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:36
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:46
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:56
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:66
+#: .\templates\includes\gallerific\thumbs.html.py:16
+#: .\templates\includes\gallerific\thumbs.html.py:26
+#: .\templates\includes\gallerific\thumbs.html.py:42
+#: .\templates\includes\gallerific\thumbs.html.py:52
+#: .\templates\includes\gallerific\thumbs.html.py:62
+#: .\templates\includes\gallerific\thumbs.html.py:72
+#: .\templates\includes\gallerific\thumbs.html.py:82
+#: .\templates\includes\gallerific\thumbs.html.py:92
+#: .\templates\includes\gallerific\thumbs.html.py:102
+#: .\templates\includes\gallerific\thumbs.html.py:112
+#: .\templates\includes\gallerific\thumbs.html.py:122
+#: .\templates\includes\gallerific\thumbs.html.py:132
+#: .\templates\includes\gallerific\thumbs.html.py:142
+#: .\templates\includes\gallerific\thumbs.html.py:152
+#: .\templates\includes\gallerific\thumbs.html.py:162
+#: .\templates\includes\gallerific\thumbs.html.py:172
+#: .\templates\includes\gallerific\thumbs.html.py:182
+#: .\templates\includes\gallerific\thumbs.html.py:192
+#: .\templates\includes\gallerific\thumbs.html.py:202
+#: .\templates\includes\gallerific\thumbs.html.py:212
+#: .\templates\includes\gallerific\thumbs.html.py:222
+#: .\templates\includes\gallerific\thumbs.html.py:232
+#: .\templates\includes\gallerific\thumbs.html.py:242
+#: .\templates\includes\gallerific\thumbs.html.py:252
+msgid "Download Original"
+msgstr "Ladda ner originalbilden"
+
+#: .\templates\includes\gallerific\churches_thumbs.html.py:18
+#: .\templates\includes\gallerific\churches_thumbs.html.py:28
+#: .\templates\includes\gallerific\churches_thumbs.html.py:38
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:18
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:28
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:38
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:48
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:58
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:68
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:78
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:88
+#: .\templates\includes\gallerific\landscapes_thumbs.html.py:98
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:18
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:28
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:38
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:48
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:58
+#: .\templates\includes\gallerific\rockart_thumbs.html.py:68
+#: .\templates\includes\gallerific\thumbs.html.py:18
+#: .\templates\includes\gallerific\thumbs.html.py:28
+#: .\templates\includes\gallerific\thumbs.html.py:44
+#: .\templates\includes\gallerific\thumbs.html.py:54
+#: .\templates\includes\gallerific\thumbs.html.py:64
+#: .\templates\includes\gallerific\thumbs.html.py:74
+#: .\templates\includes\gallerific\thumbs.html.py:84
+#: .\templates\includes\gallerific\thumbs.html.py:94
+#: .\templates\includes\gallerific\thumbs.html.py:104
+#: .\templates\includes\gallerific\thumbs.html.py:114
+#: .\templates\includes\gallerific\thumbs.html.py:124
+#: .\templates\includes\gallerific\thumbs.html.py:134
+#: .\templates\includes\gallerific\thumbs.html.py:144
+#: .\templates\includes\gallerific\thumbs.html.py:154
+#: .\templates\includes\gallerific\thumbs.html.py:164
+#: .\templates\includes\gallerific\thumbs.html.py:174
+#: .\templates\includes\gallerific\thumbs.html.py:184
+#: .\templates\includes\gallerific\thumbs.html.py:194
+#: .\templates\includes\gallerific\thumbs.html.py:204
+#: .\templates\includes\gallerific\thumbs.html.py:214
+#: .\templates\includes\gallerific\thumbs.html.py:224
+#: .\templates\includes\gallerific\thumbs.html.py:234
+#: .\templates\includes\gallerific\thumbs.html.py:244
+#: .\templates\includes\gallerific\thumbs.html.py:254
+msgid "Metadata"
+msgstr "Metadata"
+
+#: .\templates\includes\gallerific\thumbs.html.py:35
+msgid "Any html can be placed here..."
+msgstr "Plats för HTML här..."
+
+#: .\templates\portal\churches_frontpg.html.py:6
+#: .\templates\portal\churches_map.html.py:67
+#: .\templates\portal\churches_photo.html.py:5
+#: .\templates\portal\churches_research.html.py:5
+#: .\templates\portal\churches_rhtml.html.py:5
+#: .\templates\portal\churches_story.html.py:5
+#: .\templates\portal\churches_time.html.py:5
+msgid "Buildings and Monuments"
+msgstr "Byggnader"
+
+#: .\templates\portal\churches_rhtml.html.py:11
+#: .\templates\portal\landscapes_rhtml.html.py:11
+#: .\templates\portal\rockart_rhtml.html.py:11
+msgid "Back to List"
+msgstr "Listsidan"
+
+#: .\templates\portal\churches_story.html.py:15
+#: .\templates\portal\churches_time.html.py:15
+#: .\templates\portal\landscapes_story.html.py:16
+#: .\templates\portal\landscapes_time.html.py:15
+#: .\templates\portal\rockart_story.html.py:15
+#: .\templates\portal\rockart_time.html.py:15
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: .\templates\portal\churches_time.html.py:5
+#: .\templates\portal\landscapes_time.html.py:5
+#: .\templates\portal\rockart_time.html.py:5
+msgid "Travel in time"
+msgstr "Resa i tiden"
+
+#: .\templates\portal\home_frontpg.html.py:6
+#: .\templates\portal\home_info.html.py:6
+msgid "A Location Based Service for Culture"
+msgstr "Kulturens platser på webben"
+
+#: .\templates\profiles\create_profile.html.py:11
+msgid "Create Profile"
+msgstr "Skapa profil"
+
+#: .\templates\profiles\create_profile.html.py:14
+msgid "My Profile"
+msgstr "Min profil"
+
+#: .\templates\profiles\create_profile.html.py:14
+#: .\templates\profiles\create_profile.html.py:25
+msgid "Create"
+msgstr "Skapa"
+
+#: .\templates\profiles\create_profile.html.py:18
+msgid "Create profile"
+msgstr "Skapa profil"
+
+#: .\templates\userena\activate_fail.html.py:4
+msgid "Account activation failed."
+msgstr "Kontoaktiveringen misslyckades."
+
+#: .\templates\userena\activate_fail.html.py:5
+msgid "Your account could not be activated.."
+msgstr "Ditt konto kunde inte aktiveras."
+
+#: .\templates\userena\activate_fail.html.py:8
+msgid "Your account could not be activated. This could be because your activation link has aged."
+msgstr "Ditt konto kunde inte aktiveras. Detta kan bero på att din aktiveringslänk har åldrats."
+
+#: .\templates\userena\activate_fail.html.py:9
+msgid "Please try signing up again or contact us if you think something went wrong."
+msgstr "Försök registrera dig igen eller kontakta oss om du tycker att något gick  fel."
+
+#: .\templates\userena\disabled.html.py:4
+msgid "Disabled account"
+msgstr "Inaktiverat konto"
+
+#: .\templates\userena\disabled.html.py:5
+msgid "Your account has been disabled"
+msgstr "Ditt konto har inaktiverats"
+
+#: .\templates\userena\disabled.html.py:7
+msgid "It seems your account has been disabled."
+msgstr "Det verkar ditt konto har inaktiverats."
+
+#: .\templates\userena\disabled.html.py:8
+msgid "If you feel that injustice has been done to you, feel free to contact the administrators to find out why"
+msgstr "Om du känner att orättvisa har gjorts får du gärna kontakta administratörerna att ta reda på varför."
+
+#: .\templates\userena\email_change_complete.html.py:4
+msgid "Email verification"
+msgstr "E-post verifiering"
+
+#: .\templates\userena\email_change_complete.html.py:5
+msgid "Confirm your new email"
+msgstr "Bekräfta din nya e-post"
+
+#: .\templates\userena\email_change_complete.html.py:8
+#, python-format
+msgid "You have received an email at %(email)s."
+msgstr "Du har fått ett mail till %(email)s ."
+
+#: .\templates\userena\email_change_complete.html.py:9
+#, python-format
+msgid "To associate this email address with your account (%(username)s) click on the link provided in this email."
+msgstr "Om du vill associera denna e-postadress med ditt konto (%(username)s) klicka på länken i det här meddelandet."
+
+#: .\templates\userena\email_confirm_complete.html.py:4
+msgid "Email changed!"
+msgstr "E-post förändrats!"
+
+#: .\templates\userena\email_confirm_complete.html.py:6
+msgid "New email"
+msgstr "Ny e-post"
+
+#: .\templates\userena\email_confirm_complete.html.py:8
+msgid "Your new email address is saved. You can continue using userena with this email."
+msgstr "Din nya e-postadress sparas. Du kan fortsätta använda userena med denna e-post."
+
+#: .\templates\userena\email_confirm_fail.html.py:4
+msgid "Email verification failed."
+msgstr "E-post verifiering misslyckades."
+
+#: .\templates\userena\email_confirm_fail.html.py:5
+msgid "Your email could not be verified.."
+msgstr "Din e-post kunde inte verifieras."
+
+#: .\templates\userena\email_confirm_fail.html.py:8
+msgid "Your email could not be verified..."
+msgstr "Din e-post kunde inte verifieras."
+
+#: .\templates\userena\email_confirm_fail.html.py:9
+msgid "You could try changing it again in your account settings."
+msgstr "Du kan prova att ändra den igen i dina kontoinställningar."
+
+#: .\templates\userena\email_form.html.py:4
+#: .\templates\userena\password_form.html.py:6
+#: .\templates\userena\profile_form.html.py:6
+#, python-format
+msgid "Account &raquo; %(username)s"
+msgstr "Konto &raquo; %(username)s"
+
+#: .\templates\userena\email_form.html.py:9
+#: .\templates\userena\password_form.html.py:11
+#: .\templates\userena\profile_detail.html.py:14
+#: .\templates\userena\profile_form.html.py:12
+msgid "View profile"
+msgstr "Visa profil"
+
+#: .\templates\userena\email_form.html.py:10
+#: .\templates\userena\password_form.html.py:12
+#: .\templates\userena\profile_form.html.py:13
+msgid "Edit profile"
+msgstr "Redigera profil"
+
+#: .\templates\userena\email_form.html.py:11
+#: .\templates\userena\password_form.html.py:4
+#: .\templates\userena\password_form.html.py:13
+#: .\templates\userena\password_form.html.py:21
+#: .\templates\userena\profile_detail.html.py:16
+#: .\templates\userena\profile_form.html.py:14
+msgid "Change password"
+msgstr "Ändra lösenord"
+
+#: .\templates\userena\email_form.html.py:12
+#: .\templates\userena\email_form.html.py:19
+#: .\templates\userena\password_form.html.py:14
+#: .\templates\userena\profile_detail.html.py:17
+#: .\templates\userena\profile_form.html.py:15
+msgid "Change email"
+msgstr "Ändra e-mail"
+
+#: .\templates\userena\email_form.html.py:16
+msgid "Change email address"
+msgstr "Ändra e-postadress"
+
+#: .\templates\userena\password_complete.html.py:4
+msgid "Password changed"
+msgstr "Lösenord ändrat"
+
+#: .\templates\userena\password_complete.html.py:5
+msgid "Your password has been changed"
+msgstr "Ditt lösenord har ändrats"
+
+#: .\templates\userena\password_complete.html.py:8
+msgid "From now on you can use your new password to signin"
+msgstr "Från och med nu kan du använda ditt nya lösenord för att logga in"
+
+#: .\templates\userena\password_form.html.py:17
+msgid "Change Password"
+msgstr "Ändra lösenord"
+
+#: .\templates\userena\password_reset_complete.html.py:4
+msgid "Password reset"
+msgstr "Lösenordet har återställts"
+
+#: .\templates\userena\password_reset_complete.html.py:5
+msgid "Your password has been reset"
+msgstr "Ditt lösenord har återställts"
+
+#: .\templates\userena\password_reset_complete.html.py:7
+msgid "You can now "
+msgstr "Du kan nu "
+
+#: .\templates\userena\password_reset_complete.html.py:7
+msgid "signin"
+msgstr "logga in"
+
+#: .\templates\userena\password_reset_complete.html.py:7
+msgid "with your new password."
+msgstr "med ditt nya lösenord."
+
+#: .\templates\userena\password_reset_confirm_form.html.py:4
+#: .\templates\userena\password_reset_confirm_form.html.py:13
+#: .\templates\userena\password_reset_form.html.py:4
+msgid "Reset password"
+msgstr "Återställ lösenord"
+
+#: .\templates\userena\password_reset_confirm_form.html.py:9
+#: .\templates\userena\password_reset_form.html.py:7
+msgid "Reset Password"
+msgstr "Återställ lösenord"
+
+#: .\templates\userena\password_reset_done.html.py:4
+#: .\templates\userena\password_reset_done.html.py:5
+msgid "Reset password email is send"
+msgstr "E-postmeddelande om återställning av lösenordet har skickats"
+
+#: .\templates\userena\password_reset_done.html.py:8
+msgid "An e-mail has been send to you which explains how to reset your password."
+msgstr "Ett e-postmeddelande har skickats till dig som förklarar hur du återställer ditt lösenord."
+
+#: .\templates\userena\password_reset_form.html.py:14
+msgid "Send password"
+msgstr "Skicka lösenord"
+
+#: .\templates\userena\profile_detail.html.py:4
+#, python-format
+msgid "%(username)s's profile."
+msgstr "Användarens %(username)s profil."
+
+#: .\templates\userena\profile_detail.html.py:15
+msgid "Edit details"
+msgstr "Ändra uppgifter"
+
+#: .\templates\userena\profile_detail.html.py:22
+msgid "Your mugshot"
+msgstr "Ditt foto"
+
+#: .\templates\userena\profile_detail.html.py:24
+msgid "Name"
+msgstr "Namn"
+
+#: .\templates\userena\profile_detail.html.py:27
+msgid "Email"
+msgstr "E-post"
+
+#: .\templates\userena\profile_detail.html.py:30
+msgid "Age"
+msgstr "Ålder"
+
+#: .\templates\userena\profile_detail.html.py:33
+msgid "Website"
+msgstr "Webbplats"
+
+#: .\templates\userena\profile_detail.html.py:36
+msgid "Location"
+msgstr "Ort"
+
+#: .\templates\userena\profile_detail.html.py:39
+msgid "About me"
+msgstr "Om mig"
+
+#: .\templates\userena\profile_form.html.py:4
+msgid "Account setup"
+msgstr "Kontoinställningar"
+
+#: .\templates\userena\profile_form.html.py:19
+msgid "Edit Profile"
+msgstr "Redigera profil"
+
+#: .\templates\userena\profile_form.html.py:22
+msgid "Save changes"
+msgstr "Spara ändringar"
+
+#: .\templates\userena\profile_list.html.py:4
+msgid "Profiles"
+msgstr "Profiler"
+
+#: .\templates\userena\profile_list.html.py:21
+msgid "previous"
+msgstr "föregående"
+
+#: .\templates\userena\profile_list.html.py:25
+#, python-format
+msgid ""
+"\n"
+"      Page %(page)s of %(num_pages)s\n"
+"      "
+msgstr ""
+"\n"
+"      Sida %(page)s av %(num_pages)s\n"
+"      "
+
+#: .\templates\userena\profile_list.html.py:31
+msgid "next"
+msgstr "följande"
+
+#: .\templates\userena\signin_form.html.py:4
+#: .\templates\userena\signin_form.html.py:7
+#: .\templates\userena\signin_form.html.py:26
+msgid "Signin"
+msgstr "Logga in"
+
+#: .\templates\userena\signout.html.py:4
+msgid "Signed out"
+msgstr "Utloggad"
+
+#: .\templates\userena\signout.html.py:5
+msgid "You have been signed out"
+msgstr "Du har loggats ut"
+
+#: .\templates\userena\signout.html.py:8
+msgid "You have been signed out. Till we meet again."
+msgstr "Du har loggats ut. Välkommen åter!"
+
+#: .\templates\userena\signup_complete.html.py:4
+msgid "Signup almost done!"
+msgstr "Registreringen nästan klar!"
+
+#: .\templates\userena\signup_complete.html.py:6
+#: .\templates\userena\signup_form.html.py:4
+#: .\templates\userena\signup_form.html.py:7
+#: .\templates\userena\signup_form.html.py:25
+msgid "Signup"
+msgstr "Registrera dig"
+
+#: .\templates\userena\signup_complete.html.py:9
+msgid "Thank you for signing up with us!"
+msgstr "Tack för att du registrerar dig med oss!"
+
+#: .\templates\userena\signup_complete.html.py:12
+msgid "You have been send an e-mail with an activation link to the supplied email."
+msgstr "Du har skickats ett e-postmeddelande med en aktiveringslänk till den angivna e-postadressen."
+
+#: .\templates\userena\signup_complete.html.py:13
+msgid ""
+"We will store your signup information for {{\n"
+"  userena_activation_days }} days on our server. "
+msgstr "Vi kommer att lagra dina registrerinsinformation %(userena_activation_days)s dagar på vår server."
+
+#: .\templates\userena\signup_complete.html.py:16
+msgid "You can now use the supplied credentials to signin."
+msgstr "Du kan nu logga in med dina nya autentiseringsuppgifter."
+
+#~ msgid "My Places"
+#~ msgstr "Mina platser"
+
+#~ msgid "Culture in Place and Time"
+#~ msgstr "Kulturen in plats och tid"
+
+#~ msgid "Place"
+#~ msgstr "Plats"
+
+#~ msgid "Photographer"
+#~ msgstr "Fotograf"

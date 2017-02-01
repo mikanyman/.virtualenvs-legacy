@@ -1,0 +1,249 @@
+{% load i18n %}
+{% load cms_tags sekizai_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" >
+  <meta name="robots" content="noindex, nofollow">
+  <link type="text/css" rel="stylesheet" media="screen" href="{{ STATIC_URL }}css/styles.css?{% now "YmdHis" %}"/>
+  <link type="text/css" rel="stylesheet" media="screen" href="{{ STATIC_URL }}css/tabs/tabs.css?{% now "YmdHis" %}"/>
+  <!-- form.media -->
+  {{ form.media }}
+  
+  {% ifequal aspect "photo" %}
+  <!-- Gallerific -->
+  <link type="text/css" href="{{ STATIC_URL }}css/galleriffic-2.css" rel="stylesheet">
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.3.2.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.galleriffic.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.history.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.opacityrollover.js"></script>
+  {% endifequal %}
+
+  {% ifequal aspect "map" %}
+  <!-- Google Maps -->
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  {% block googlemaps %}{% endblock googlemaps %}
+  {% endifequal %}
+
+  <!-- django-cms -->
+  {% render_block "css" %}
+</head>
+<body id="{{ tab }}" onload='initialize()'>
+
+<div id="wrapper">
+    
+  <div id="top">
+
+    <!-- Select Language -->
+    <span id="logo">{% trans "Mindscapes" %}</span>
+    <span id="slogan">{% trans "Discover the Landscape" %}</span>
+    <script type="text/javascript">
+    function setLangAndSubmit(lang) {
+    document.forms[0].elements["language"].value = lang;
+    document.forms[0].elements["next"].value = '/maisemapaikka/'+lang+'/{{ tab }}/{{ aspect }}/';
+    document.forms[0].submit();
+    }
+    </script>
+    <form method="post" action="/maisemapaikka/i18n/setlang/">{% csrf_token %}
+    <input type="hidden" name="language" value="">
+    <input type="hidden" name="next" value="">
+    <span id="flags">
+    <a href="javascript:setLangAndSubmit('fi')"><img src="{{ STATIC_URL }}img/fi.png"></a> 
+    <a href="javascript:setLangAndSubmit('sv')"><img src="{{ STATIC_URL }}img/se.png"></a> 
+    <a href="javascript:setLangAndSubmit('en')"><img src="{{ STATIC_URL }}img/gb.png"></a>
+    </span>
+    </form>
+
+    <!-- Login or Register -->
+    <span id="login">
+      {% if not user.is_authenticated %}
+      <a href="/maisemapaikka/{{ lang }}/accounts/login/?next=/maisemapaikka/{{ lang }}/accounts/profiles/">{% trans "Login" %}</a>
+      <a href="/maisemapaikka/{{ lang }}/accounts/register/"> | {% trans "Register" %}</a>
+      {% endif %}
+      {% if user.is_authenticated %}
+      <a href="/maisemapaikka/{{ lang }}/accounts/logout/?next=/maisemapaikka/{{ lang }}/landscapes/">{% trans "Logout" %}</a>
+      {% endif %}
+    </span>
+    
+  </div>
+
+  <div id="topbanner">
+  {% if tab %}
+  {% ifequal tab "landscapes" %}<img src="{{ STATIC_URL }}img/koli_980x300.jpg">{% endifequal %}
+  {% ifequal tab "churches" %}<img src="{{ STATIC_URL }}img/petajaveden_kirkko_980x300.jpg">{% endifequal %}
+  {% ifequal tab "rockart" %}<img src="{{ STATIC_URL }}img/astuvansalmi_hirvia_980.jpg">{% endifequal %}
+  {% ifequal tab "accounts" %}<img src="{{ STATIC_URL }}img/astuvansalmi_hirvia_980.jpg">{% endifequal %}
+  {% ifequal tab "admin" %}<img src="{{ STATIC_URL }}img/astuvansalmi_hirvia_980.jpg">{% endifequal %}
+  {% else %}
+  <img src="{{ STATIC_URL }}img/astuvansalmi_hirvia_980.jpg">
+  {% endif %}
+  </div>
+  
+  <div id="topnavi">
+    <ul>
+      <li><a id="landscapesLink" href="/maisemapaikka/{{ lang }}/landscapes/frontpg/"><span>{% trans "Landscapes" %}</span></a></li>
+      <li><a id="churchesLink" href="/maisemapaikka/{{ lang }}/churches/frontpg/"><span>{% trans "Buildings" %}</span></a></li>
+      <li><a id="rockartLink" href="/maisemapaikka/{{ lang }}/rockart/frontpg/"><span>{% trans "Rock Art" %}</span></a></li>
+      {% ifequal tab "accounts" %}<li><a id="accountsLink" href="/maisemapaikka/{{ lang }}/rockart/frontpg/"><span>{% trans "My Places" %}</span></a></li>{% endifequal %}
+      {% ifequal tab "admin" %}<li><a id="adminLink" href="/maisemapaikka/{{ lang }}/rockart/frontpg/"><span>{% trans "Administration" %}</span></a></li>{% endifequal %}
+    </ul>
+  </div>
+  
+  <div id="mid_container">
+    
+    <!-- main col -->
+    <div id="main_col">
+     
+      <!-- page description -->
+      {% if tab %}
+      {% ifequal tab "landscapes" %}<div class="box_sq_616_blue">{% endifequal %}
+      {% ifequal tab "churches" %}<div class="box_sq_616_green">{% endifequal %}
+      {% ifequal tab "rockart" %}<div class="box_sq_616_red">{% endifequal %}
+      {% ifequal tab "accounts" %}<div class="box_sq_616_red_E40045">{% endifequal %}
+      {% ifequal tab "admin" %}<div class="box_sq_616_red_E40045">{% endifequal %}
+      {% else %}
+      <div class="box_sq_616_blue">
+      {% endif %}
+        <div class="padding_10">
+        {% block description %}{% endblock %}
+        </div>
+      </div>
+
+      <!-- clearer -->
+      <div id="clearer"></div>
+      
+      <!-- main content -->
+      {% ifequal aspect "photo" %}
+      <div class="box_sq_616_ss">
+      {% else %}
+      <div class="box_sq_616">
+      {% endifequal %}
+      {% block content %}{% endblock %}
+      </div>
+        
+    </div>
+    <!-- /main col -->
+    
+    <!-- navi col -->
+    <div id="navi_col">
+
+      <!-- navi col box 1 -->
+      {% ifequal tab "landscapes" %}
+      <div class="box_sq_320">
+        <div class="box_header">{% trans "Select Aspect" %}</div>
+        <div class="padding_10">
+          {% include "includes/aspects_landscapes.html" %}
+        </div>
+      </div>
+      {% endifequal %}
+
+      {% ifequal tab "churches" %}
+      <div class="box_sq_320">
+        <div class="box_header">{% trans "Select Aspect" %}</div>
+        <div class="padding_10">
+          {% include "includes/aspects_churches.html" %}
+        </div>
+      </div>
+      {% endifequal %}
+
+      {% ifequal tab "rockart" %}
+      <div class="box_sq_320">
+        <div class="box_header">{% trans "Select Aspect" %}</div>
+        <div class="padding_10">
+          {% include "includes/aspects_rockart.html" %}
+        </div>
+      </div>
+      {% endifequal %}
+      <!-- /navi col box 1 -->
+
+      <!-- navi col box 2 -->
+      {% ifequal aspect "photo" %}
+      <div class="box_sq_320_666">
+      <div class="box_header">{{ aspect_visible_name }}</div>
+        <div class="padding_thumbs">
+          {% include "includes/gallerific/thumbs.html" %}
+          <div id="clearer"></div>
+        </div>
+      </div>
+      <br/>
+      {% endifequal %}
+      <!-- /navi col box 2 -->
+
+    </div>
+    <!-- /navi_col -->
+    
+    <!-- clearer -->
+    <div id="clearer"></div>
+    <!-- clearer -->
+
+  </div><!-- mid_container -->
+
+  <div id="footer">
+    <div id="textfooter_textblock">
+    Text footer
+    </div>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      // We only want these styles applied when javascript is enabled
+      $('div.navigation').css({'width' : '300px', 'float' : 'left'});
+      $('div.content').css('display', 'block');
+      // Initially set opacity on thumbs and add
+      // additional styling for hover effect on thumbs
+      var onMouseOutOpacity = 0.67;
+      $('#thumbs ul.thumbs li').opacityrollover({
+        mouseOutOpacity:   onMouseOutOpacity,
+        mouseOverOpacity:  1.0,
+        fadeSpeed:         'fast',
+        exemptionSelector: '.selected'
+      });
+         
+      // Initialize Advanced Galleriffic Gallery
+      var gallery = $('#thumbs').galleriffic({
+        delay:                     2500,
+        numThumbs:                 15,
+        preloadAhead:              10,
+        enableTopPager:            true,
+        enableBottomPager:         true,
+        maxPagesToShow:            7,
+        imageContainerSel:         '#slideshow',
+        controlsContainerSel:      '#controls',
+        captionContainerSel:       '#caption',
+        loadingContainerSel:       '#loading',
+        renderSSControls:          true,
+        renderNavControls:         true,
+        playLinkText:              "{% trans 'Play Slideshow' %}",
+        pauseLinkText:             "{% trans 'Pause Slideshow' %}",
+        prevLinkText:              "&lsaquo; {% trans 'Previous Photo' %}",
+        nextLinkText:              "{% trans 'Next Photo' %} &rsaquo;",
+        nextPageLinkText:          "{% trans 'Next' %} &rsaquo;",
+        prevPageLinkText:          "&lsaquo; {% trans 'Prev' %}",
+        enableHistory:             false,
+        autoStart:                 false,
+        syncTransitions:           true,
+        defaultTransitionDuration: 900,
+        onSlideChange:             function(prevIndex, nextIndex) {
+          // 'this' refers to the gallery, which is an extension of $('#thumbs')
+          this.find('ul.thumbs').children()
+            .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+            .eq(nextIndex).fadeTo('fast', 1.0);
+        },
+        onPageTransitionOut:       function(callback) {
+          this.fadeTo('fast', 0.0, callback);
+        },
+        onPageTransitionIn:        function() {
+          this.fadeTo('fast', 1.0);
+        }
+      });
+    });
+    </script>
+  </div>  
+  
+</div>
+
+
+
+{% render_block "js" %}<!-- django-cms -->
+
+
+</html>
+</body>

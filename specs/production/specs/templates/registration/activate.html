@@ -1,0 +1,22 @@
+{% extends "layouts/2col_sidebar_right.html" %}
+{% load i18n %}
+
+{% block main %}
+<div class="form-box">
+{% if account %}
+  <fieldset>
+  <legend>{% trans "Registration complete" %}</legend>
+  <div id="message">
+    {% trans "Account successfully activated." %} <a href="{% url auth_login %}">{% trans "Log in" %}</a>
+  </div>
+  </fieldset>
+{% else %}
+  <fieldset>
+  <legend>{% trans "Registration complete" %}</legend>
+  <div id="message">
+    {% trans "Account activation failed" %}
+  </div>
+  </fieldset>
+{% endif %}
+</div>
+{% endblock %}

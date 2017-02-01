@@ -1,0 +1,69 @@
+{% extends "portal/base_mylocation.html" %}
+{% load i18n %}
+
+{% block googlemaps %}
+<script>
+
+
+function createMarker(point, text) {
+	var marker = new GMarker(point, {draggable:false});
+	GEvent.addListener(marker, 'click', function() {
+		map.closeInfoWindow();
+		marker.openInfoWindowHtml(text);
+	});
+	return marker;
+}
+
+var map;
+var waypointByID = new Array();
+var o = [];	
+var infowindow;	
+	
+function initialize() {
+
+	if (GBrowserIsCompatible()) {
+		// Make sure that SVG is on.
+		if (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#SVG", "1.1")) {
+			_mSvgEnabled = true;
+			_mSvgForced = true;
+		} 
+		
+		if (document.getElementById("map_canvas")) {
+			map = new GMap2(document.getElementById("map_canvas"));
+			var center = new GLatLng(62.236273,25.734673);
+			map.setCenter(center, 7);
+			map.enableScrollWheelZoom();
+			map.addControl(new GLargeMapControl());
+			map.addControl(new GMapTypeControl());
+			map.addControl(new GScaleControl());
+			infowindow = map.getInfoWindow();
+			
+			<!-- Create waypoint marker overlay //-->
+			{% for waypoint in waypoints %}
+			var geoY = "{{waypoint.geometry.y}}";
+			var geoX = "{{waypoint.geometry.x}}";
+			geoY = parseFloat(geoY.replace(",", "."));
+			geoX = parseFloat(geoX.replace(",", "."));
+			waypointByID[{{forloop.counter0}}] = new Array({{waypoint.id}},"{{waypoint.name}}",geoY,geoX, "{{waypoint.description}}");
+			{% endfor %}
+		}
+		for (var i = 0; i < waypointByID.length; i++) {
+			var markerLatLng = new GLatLng(waypointByID[i][2], waypointByID[i][3]);
+			var marker = createMarker(markerLatLng, "<b><a href='http://maisemapaikka.synapse-computing.com/fi/mylocation/edit?object_id="+waypointByID[i][0]+"'>"+waypointByID[i][1]+"</b></a><br/><p>"+waypointByID[i][4]+"</p>");
+			map.addOverlay(marker);
+		}
+	}
+}
+</script>
+{% endblock %}
+
+{% block description %}
+<span class="section_header">{% trans "My Location" %}</span><span class="section_aspect"> | {% trans "Map" %}</span>
+{% endblock %}
+
+{% block content %}
+<div class="map_index">
+  <div id="map_canvas" style="width: 610.7px; height: 600px" class="map_canvas"></div>
+</div>
+{% endblock %}
+

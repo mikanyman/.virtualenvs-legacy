@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load markup %}
+
+{% block content %}
+ <div id="content">
+
+<!-- Flatpage content -->
+<div id="headline"><h1>{{ flatpage.title }}</h1></div>
+<div id="abstract">{{ flatpage.content|markdown }}</div>
+
+<!-- Nimiluettelo -->
+{% spaceless %}
+<table id="artist_names">
+<tr>
+  {% for object in object_list %}
+  <td><a class="name_link" href="./taiteilijat/{{ object.label}}/">{{ object.person_name }}</a></td>
+  {% ifequal forloop.counter 6 %}</tr><tr>{% endifequal%}
+  {% ifequal forloop.counter 12 %}</tr><tr>{% endifequal%}
+  {% ifequal forloop.counter 18 %}</tr><tr>{% endifequal%}
+  {% endfor %}
+</tr>
+</table>
+{% endspaceless %}
+
+</div>
+<!-- Foter -->
+<div id="footer">
+  <div id="footer_text">{% ifequal pg 'tilaus' %}{{ site.0.footer_text }}{% else %}<br /><br />{% endifequal %}</div>
+</div>
+{% endblock %}

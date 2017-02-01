@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" >
+  <meta name="robots" content="noindex, nofollow">
+  <link type="text/css" rel="stylesheet" media="screen" href="{{ STATIC_URL }}css/styles.css?{% now "YmdHis" %}"/>
+  <!-- django-cms -->
+  {% render_block "css" %}
+</head>
+<body class="home page page-id-76 page-template-default custom-background">
+  <div id="ancestor-homepage" class="siteframe page-siteframe ">
+  <div id="container">
+    <div id="container2">
+        
+<!-- ---------- menu ---------- -->
+<div id="menu" class="nav-horz nav-main">
+  <div class="nav-main-left">
+    <div class="nav-main-right">
+      <div class="menu">
+        <ul>
+          <li class="page_item page-item-76 current_page_item">
+            <a href="http://www.europatreffen.com/">Home</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<!-- ---------- !manu ---------- -->
+
+
+<!-- ---------- header ---------- -->
+<div id="header">
+<div id="header2">
+<div id="header3">
+<div id="header4">
+<div id="logo">
+<div id="logo-2">
+<div id="logo-3">
+<table>
+<tbody>
+<tr>
+<td>
+<a href="http://www.europatreffen.com/">
+<img alt="45. Europatreffen 2012 Finland" src="http://www.europatreffen.com/kuvia/Banner_sticker.jpg">
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="banner">
+<img width="920" height="360" alt="" src="http://www.europatreffen.com/wp-content/uploads/2011/05/cropped-Pyynikki-7-Custom.jpg">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ---------- !header ---------- -->
+
+<!-- ---------- col-3 ---------- -->
+<div id="col-3" class="content">
+<div id="col-main" style="">
+
+        <!-- BEGIN Main Content-->
+        {% block content %}{% endblock %}                        
+        <!-- END Main Content-->
+
+
+</div>
+</div>
+<!-- ---------- !col-3 ---------- -->
+        
+        	
+
+        
+    </div><!-- container2 -->
+  </div><!-- container -->
+  
+  <div id="colophon">
+    <a id="ctxophon" title="A WordPress Theme by Contexture International" href="http://www.contextureintl.com/?sref=aj"></a>
+    <div class="clear"></div>
+  </div><!-- colophon -->
+  </div><!-- ancestor-homepage -->
+</body>
+</html>
+
+<!-- django-cms -->
+{% render_block "js" %}

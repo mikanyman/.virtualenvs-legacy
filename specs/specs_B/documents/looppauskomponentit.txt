@@ -1,0 +1,18 @@
+LINKKILISTA
+
++ Etusivu blogit	=	+ Verkkolehti blogit	+ Blogit blogit
+  etusivu_1_1			  verkkolehti_3_1		  blogit_3_1
+  get_blog_list.list_blogs() include/blogilinkit.html
+
++ Etusivu uusimmat
+  etusivu_1_2
+  get_list.list_latest() common/list_latest.html
+  
+						+ Verkkolehti jutut
+						  verkkolehti_3_2
+  get_list.list_published(url_pg) common/list_published.html
+
+
+NÄYTTÖSIVU
+
+xxx

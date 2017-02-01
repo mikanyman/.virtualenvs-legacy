@@ -1,0 +1,412 @@
+<style type="text/css">
+table {
+        border-collapse:collapse;
+        }
+table, th, td {
+        border: 1 px; solid black;
+        text-align: center;
+        }
+p {
+        margin-top: 25px;
+        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+        }
+p.joo {
+        margin-top: 0px;
+        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+        }
+div.wrap {
+	width:auto;
+	height: 24px;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding: 0
+        }
+div.left {
+	float: left;
+	}
+div.center {
+	float: left;
+	margin-left: 130px;
+	}
+div.right {
+	float: right;
+	}
+a.arrow {
+	text-decoration:none;
+	font-size: 12pt;
+	color: #e5a83e
+	}
+</style>
+<p>
+<img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/etusivu4.jpg">
+</p>
+
+<div class="wrap">
+  <div class="left"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/5_3.html">&larr; Edellinen sivu</a></div>
+  <div class="center"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/sisallysluettelo.html">Sis&auml;llysluettelo</a></div>
+  <div class="right"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/5_5.html">Seuraava sivu &rarr;</a></div>
+</div>
+
+<h2>5.4 Aineiston ker&auml;&auml;minen</h2>
+<p>
+Ensimm&auml;isen tutkimuskysymyksen kohdalla aineisto ker&auml;ttiin puolistrukturoidun haastattelun
+ja havainnoinnin avulla. Haastatteluun valittiin yksi avainkysymys, jonka ymp&auml;rille
+haastattelu rakentui. (Kylm&auml; - Juvakka 2007: 77- 80.)
+</p>
+<p>
+<b>Tutkimuksen ensimm&auml;isen vaiheen</b> aineiston keruu alkoi 23.3.2010 tutkimusluvan
+saannilla Metropolia Ammattikorkeakoulun, Hyvinvointi ja toimintakyky-klusterin johtajalta
+(LIITE 3). Tutkimuslupa koski tutkimuksen ensimm&auml;isen vaiheen tiedonkeruuta.
+</p>
+<p>
+Tutkimuksen ensimm&auml;isess&auml; vaiheessa lomake ja sen k&auml;ytt&ouml;ohjeistus koek&auml;ytettiin. Saatujen
+tulosten perusteella lomaketta ja sen k&auml;ytt&ouml;ohjeistusta muokattiin. Lomakkeen
+koek&auml;ytt&ouml; on t&auml;rke&auml;&auml; lomakkeen luotettavuuden kannalta, jotta siin&auml; olevat virheet ja
+ep&auml;johdonmukaisuudet saadaan mahdollisimman tarkasti poistettua. (Vilkka 2007: 78-
+79.)
+</p>
+<p>
+Ensimm&auml;isen vaiheen mittauksiin osallistui 6 koehenkil&ouml;&auml;, jotka mittasivat toisensa
+pareittain. Tiedonkeruu tapahtui kahtena per&auml;kk&auml;isen&auml; p&auml;iv&auml;n&auml;, Metropolia Ammattikorkeakoulun
+Vanhan viertotien toimipisteen jalkaterapiaklinikalla, yksik&ouml;ss&auml; numero
+6. Ensimm&auml;inen pari, koehenkil&ouml;t 1 ja 2, aloittivat mittaukset 23.3.2010 klo 10.05, aikaa
+mittausten suorittamiseen kului 40 minuuttia. Toinen pari, koehenkil&ouml;t 3 ja 4, aloittivat
+mittaukset samana p&auml;iv&auml;n&auml; klo 14.00, aikaa mittausten suorittamiseen kului 90 minuuttia.
+Kolmas pari, koehenkil&ouml;t 5 ja 6, aloittivat mittaukset 24.3.2010 klo 10.00 ja aikaa
+mittausten suorittamiseen kului 70 minuuttia.
+</p>
+<p>
+Opinn&auml;ytety&ouml;n tekij&ouml;iden itse kehitt&auml;m&auml;&auml; havainnointilomaketta (LIITE 4) k&auml;ytettiin
+tutkimuksen ensimm&auml;isess&auml; vaiheessa. Lomakkeessa oli 15 numeroitua kohtaa, joissa
+jokaisessa oli viisi rivi&auml; varattuna havainnoille. Havainnointilomaketta k&auml;ytettiin apuna
+lomakkeen k&auml;ytt&ouml;ohjeistuksen yksiselitteisyytt&auml; selvitett&auml;ess&auml;. Lomakkeen havaintojen
+lukum&auml;&auml;r&auml; oli sama kuin omatoimiseen mittaamiseen k&auml;ytett&auml;v&auml;n lomakkeen mittauskohtien
+lukum&auml;&auml;r&auml;. Havainnoitsijat merkitsiv&auml;t tekem&auml;ns&auml; havainnot havainnointilomakkeelle
+numeroj&auml;rjestyksess&auml; sen mukaan, mist&auml; mittauskohdasta oli kyse. Mittauskohtien
+mukaista havainnointia k&auml;ytettiin, jotta aineiston k&auml;sittely j&auml;lkeenp&auml;in olisi selke&auml;mp&auml;&auml;.
+</p>
+<p>
+Haastattelulomaketta (LIITE 5) k&auml;ytettiin tutkimuksen ensimm&auml;isess&auml; vaiheessa ja se
+sis&auml;lsi yhden kysymyksen, joka toistui samana jokaisessa mittauskohdassa. Kysymyksen
+tarkoituksena oli selvitt&auml;&auml;, oliko mittauksen k&auml;ytt&ouml;ohje yksiselitteinen vai ei. Jos
+haastateltavan mielest&auml; k&auml;ytt&ouml;ohjeistus oli yksiselitteinen, h&auml;n ympyr&ouml;i lomakkeesta
+KYLL&Auml; -kohdan. Jos k&auml;ytt&ouml;ohjeistus ei ollut yksiselitteinen, esitettiin jatkokysymys:
+Mik&auml; ohjeistuksessa tai mittauksessa tuotti vaikeuksia? Vastaus kirjattiin haastattelulomakkeelle.
+</p>
+<p>
+Haastattelun nauhoitukseen k&auml;ytettiin sanelukonetta, Olympus VN-31 00PC digital voice
+recorder. Tiedonsiirto-ohjelma, Digital wave playerill&auml; nauhoitteet siirrettiin digitaaliseen
+muotoon. Lupa haastattelun nauhoitukseen kysyttiin jokaiselta haastateltavalta
+kirjallisesti suostumuslomakkeella (LIITE 6).
+</p>
+<p>
+Mittanauhat, Prym junior, joita k&auml;ytettiin sek&auml; tutkimuksen ensimm&auml;isess&auml; ett&auml; toisessa
+vaiheessa olivat jokaisella mittauskerralla samanlaisia. Mittanauhat olivat 150 senttimetri&auml;
+pitki&auml; ja niiss&auml; oli merkinn&auml;t 1 millimetrin v&auml;lein. Mittanauhat oli hankittu yhdell&auml;
+ostokerralla, n&auml;in varmistettiin, ett&auml; mittanauhat olivat samaa valmistuser&auml;&auml;.
+</p>
+<p>
+Tutkimuksen ensimm&auml;isess&auml; vaiheessa k&auml;ytetty lomake (LIITE 7) koostui esitiedoista,
+mittauksen yleisohjeista, 19 mittatietojen merkitsemiskohdasta/mittausohjeesta ja kolmesta
+piirroskuvasta. Esitiedoissa kysyttiin koehenkil&ouml;n sukupuolta ja syntym&auml;vuotta.
+Mittauskohtia olivat paino, pituus, keng&auml;n koko, vy&ouml;t&auml;r&ouml;n- ja lantion ymp&auml;rys, alaraajojen
+sis&auml;pituus, oikean jalan sivupituus, oikean reiden ymp&auml;rys, oikean s&auml;&auml;ren pituus,
+oikean pohkeen ymp&auml;rys, oikean nilkan ymp&auml;rys, oikean ja vasemman kantap&auml;&auml;n ymp&auml;rys,
+oikean ja vasemman jalkap&ouml;yd&auml;n rintavuus, oikean ja vasemman p&auml;ki&auml;n leveys sek&auml;
+oikean ja vasemman jalkater&auml;n pituus. Piirroskuvien tarkoituksena oli auttaa mittauksen
+suorittajaa mittaamaan oikeasta paikasta. Ensimm&auml;inen piirroskuva oli ihmisen koko
+vartalokuva, edest&auml; ja sivusuunnasta esitettyn&auml;. Toisessa piirroskuvassa kuvattiin jalkater&auml;
+sivusuunnasta ja kolmannessa havainnollistettiin jalkater&auml;n &auml;&auml;riviivapiirros. Piirroskuviin
+oli lis&auml;tty apuviivat mittauskohtien numeroinnin mukaisesti.
+</p>
+<p>
+Ensimm&auml;isen vaiheen tiedonkeruu toteutettiin siten, ett&auml; mittaustilaisuuteen osallistujat
+suorittavat pareittain mittaukset lomakkeen ohjeistuksen mukaisesti ja merkitsiv&auml;t saamansa
+tulokset lomakkeelle. Opinn&auml;ytety&ouml;n tekij&auml;t havainnoivat mittaustilaisuutta, sek&auml;
+haastattelivat osallistujat heti mittausten j&auml;lkeen. Haastattelut nauhoitettiin.
+</p>
+<p>
+Ennen mittausten aloittamista koehenkil&ouml;t lukivat saatekirjeen (LIITE 8) ja allekirjoittivat
+kirjallisen suostumuksen (LIITE 6) mittaustilaisuuteen osallistumisesta. Allekirjoitusten
+j&auml;lkeen heille annettiin mittaukseen tarvittavat v&auml;lineet: kaksi kyn&auml;&auml;, kaksi lomaketta,
+nelj&auml; valkoista A4- paperia ja yksi avaamattomassa pakkauksessa ollut mittanauha.
+</p>
+<p>
+Kaikissa mittaustilaisuuksissa olivat l&auml;sn&auml; kaikki opinn&auml;ytety&ouml;n tekij&auml;t. Koehenkil&ouml;iden
+suorittaessa mittauksia pareittain, heid&auml;n toimintaansa havainnoitiin. Havainnoitsijoilla
+oli apunaan ryhm&auml;n itse kehitt&auml;m&auml;t havainnointilomakkeet, johon kirjattiin koehenkil&ouml;iden
+kommentteja sek&auml; havaintoja ohjeistuksen ymm&auml;rrett&auml;vyydest&auml; (LIITE 4). Havainnoitsijat
+eiv&auml;t puuttuneet mittausten kulkuun mill&auml;&auml;n tavalla. Ensimm&auml;inen koehenkil&ouml;pari
+ei suostunut riisumaan housujaan eik&auml; sukkiaan, vaikka ohjeistuksessa niin ohjattiin.
+Muut koehenkil&ouml;t suorittivat mittaukset alaraajat paljaina.
+</p>
+<p>
+Haastattelu toteutettiin pareittain ja se nauhoitettiin. Haastattelutilanteessa olivat mukana
+mittaukseen osallistunut koehenkil&ouml;pari sek&auml; kaikki opinn&auml;ytety&ouml;n tekij&auml;t. Yksi
+opinn&auml;ytety&ouml;n tekij&ouml;ist&auml; kysyi kysymykset haastateltavilta, mutta my&ouml;s muilla oli mahdollisuus
+osallistua puheeseen ja tehd&auml; tarkentavia kysymyksi&auml;. Haastattelukysymykset
+oli ennalta m&auml;&auml;ritelty yksinkertaisiksi. Haastattelu eteni mittauslomakkeen mittauskohtien
+numeroinnin mukaisesti.
+</p>
+<p>
+<b>Tutkimuksen toisen vaiheen</b> aineistonkeruu alkoi 6.5.2010 ja p&auml;&auml;ttyi 31.8.2010.
+Kaikki opinn&auml;ytety&ouml;n tekij&auml;t osallistuivat aineistonkeruuseen. Jokainen suoritti mittauksia
+itsen&auml;isesti. Yhden mittaustilanteen kokonaisaika oli noin tunti. Tutkimukset suoritettiin
+koehenkil&ouml;iden kotona tai ty&ouml;paikoilla tai opinn&auml;ytety&ouml;ntekij&ouml;iden kotona. Mittausymp&auml;rist&ouml;&auml;
+valittaessa varmistettiin, ett&auml; tila oli rauhallinen ja koehenkil&ouml;iden yksityisyytt&auml;
+kunnioittava.
+</p>
+<p>
+Tutkimuksen toisessa vaiheessa k&auml;ytetty lomake (LIITE 9) muotoutui ensimm&auml;isen vaiheen
+mittauslomakkeesta. Se koostui esitiedoista, lomakekoodista, mittauksen yleisohjeista,
+19 mittausohjeesta/mittatietojen merkitsemiskohdasta ja nelj&auml;st&auml; kuvallisesta ohjeesta.
+Lomakkeet numeroitiin juoksevalla numerolla, sek&auml; kirjaintunnuksilla. Koehenkil&ouml;n
+tekem&auml; mittaus erotettiin opinn&auml;ytety&ouml;n tekij&auml;n suorittamasta mittauksesta siten,
+ett&auml; koehenkil&ouml;n lomakkeessa oli h&auml;nen numeronsa, esimerkiksi 11, ja kirjain A. Opinn&auml;ytety&ouml;ntekij&auml;n
+lomakkeessa oli koehenkil&ouml;n numero sek&auml; tunnus B. Lomakekoodi
+tallennettiin havaintomatriisiin havaintoyksik&ouml;t toisistaan erottavaksi tunnistemuuttujaksi.
+Sen avulla havaintoyksik&ouml;t voitiin my&ouml;hemmin yhdist&auml;&auml; lomakkeisiin. (Yhteiskuntatieteellinen
+tietoarkisto 2009) Lomakekoodin tarkoituksena oli varmistaa, ett&auml; samasta koehenkil&ouml;st&auml; saatuja
+mittaustietoja voitiin verrata toisiinsa. Koodi merkittiin k&auml;sin lomakkeen oikeassa yl&auml;reunassa
+oleviin laatikoihin.
+</p>
+<p>
+Tutkimuksen toisen vaiheen mittaukset toistettiin aina kolme kertaa ja lomakkeeseen
+merkittiin mittausten keskimm&auml;inen arvo. Keskimm&auml;isell&auml; arvolla tarkoitetaan jakauman
+keskimm&auml;ist&auml; havaintoa eli mediaania. Mediaania k&auml;ytet&auml;&auml;n, koska mittauksen
+ollessa j&auml;rjestysasteikollinen se kuvaa paremmin aineiston painopistett&auml; kuin aritmeettinen
+keskiarvo, joka on hyvin herkk&auml; poikkeaville havainnoille. (Vilkka 2007: 122 - 123;
+Mets&auml;muuronen 2005: 326.)
+</p>
+<p>
+Kolmen eri mittaustuloksen merkitsemist&auml; varten kehitettiin apulomake (LIITE 10) selkeytt&auml;m&auml;&auml;n
+tulosten kirjaamista. Esimerkiksi koehenkil&ouml;n 44 vy&ouml;t&auml;r&ouml;n ymp&auml;rysmitan
+mittaustulokset olivat: 74, 74.5 ja 75 senttimetri&auml;. Saadut tulokset merkittiin niille merkittyihin
+sarakkeisiin. Tulosten mediaani on 74.5 senttimetri&auml;. Opinn&auml;ytety&ouml;ntekij&auml;n
+saamat mittaustulokset koehenkil&ouml;n 44 vy&ouml;t&auml;r&ouml;nymp&auml;ryksest&auml; olivat: 78, 79.8 ja 78
+senttimetri&auml;. Eli mittausten mediaani oli 78 senttimetri&auml;.
+</p>
+<p>
+Opinn&auml;ytety&ouml;n toisessa vaiheessa 31 koehenkil&ouml;&auml;, jotka olivat eri henkil&ouml;it&auml; kuin ensimm&auml;isen
+vaiheen henkil&ouml;t, mittasivat mittalomaketta apuna k&auml;ytt&auml;en alaraajojensa
+mitat. V&auml;litt&ouml;m&auml;sti koehenkil&ouml;n tekem&auml;n mittauksen j&auml;lkeen opinn&auml;ytety&ouml;n tekij&auml; mittasi
+koehenkil&ouml;n alaraajojen mitat.
+</p>
+<p>
+Ennen varsinaisen mittaustilanteen alkua koehenkil&ouml;t lukivat saatekirjeen (LIITE 11),
+jonka j&auml;lkeen he allekirjoittivat henkil&ouml;kohtaisen kirjallisen suostumuksen (LIITE 12).
+Koehenkil&ouml;ill&auml; oli mahdollisuus esitt&auml;&auml; kysymyksi&auml; aineiston keruuseen liittyen. Kaikki
+tutkimukseen osallistumaan pyydetyt allekirjoittivat suostumuksen.
+</p>
+<p>
+Jokaisessa mittaustilanteessa oli l&auml;sn&auml; koehenkil&ouml;pari ja opinn&auml;ytety&ouml;ntekij&auml;. Tarkat
+mittausp&auml;iv&auml;m&auml;&auml;r&auml;t ja mittausten kesto esitet&auml;&auml;n taulukossa 2. Allekirjoitettuaan henkil&ouml;kohtaisen
+suostumuksen koehenkil&ouml;parille annettiin mittanauha avaamattomassa pakkauksessa,
+kaksi kyn&auml;&auml;, kaksi kappaletta omatoimiseen mittaamiseen suunniteltuja lomakkeita
+ja kaksi apulomaketta, sek&auml; nelj&auml; valkoista A4-paperia. Mittaustilaisuuksissa
+k&auml;ytettiin saatavilla olevaa henkil&ouml;vaakaa painon punnitsemiseen.
+</p>
+<center>
+<p>
+Taulukko 2. Mittausten ajankohta ja kesto
+</p>
+<p class="joo">
+<table border="1" cellpadding="3">
+	<tr>
+		<td><b>Koehenkil&ouml; numero</b></td>
+		<td><b>P&auml;iv&auml;m&auml;&auml;r&auml;</b></td>
+		<td><b>Mittauksen kesto</b></td>
+	</tr>
+	<tr>
+		<td>1 ja 2</td>
+		<td>6.5.2010</td>
+		<td>11.30- 12.30</td>
+	</tr>
+	<tr>
+		<td>3 ja 4</td>
+		<td>6.5.2010</td>
+		<td>12.30- 13.20</td>
+	</tr>
+	<tr>
+		<td>5 ja 6</td>
+		<td>27.5.2010</td>
+		<td>15.30- 16.45</td>
+	</tr>
+	<tr>
+		<td>7 ja 8</td>
+		<td>25.6.2010</td>
+		<td>15.00- 16.20</td>
+	</tr>
+	<tr>
+		<td>9 ja 10</td>
+		<td>16.8.2010</td>
+		<td>10.00- 10.45</td>
+	</tr>
+	<tr>
+		<td>11 ja 12</td>
+		<td>14.5.2010</td>
+		<td>18.00- 19.15</td>
+	</tr>
+	<tr>
+		<td>13 ja 14</td>
+		<td>15.5.2010</td>
+		<td>18.00- 19.00</td>
+	</tr>
+	<tr>
+		<td>15 ja 16</td>
+		<td>15.7.2010</td>
+		<td>18.00- 19.05</td>
+	</tr>
+	<tr>
+		<td>17 ja 18</td>
+		<td>18.7.2010</td>
+		<td>18.00- 19.10</td>
+	</tr>
+	<tr>
+		<td>31 ja 32</td>
+		<td>21.5.2010</td>
+		<td>17.00- 18.00</td>
+	</tr>
+	<tr>
+		<td>33 ja 34</td>
+		<td>22.5.2010</td>
+		<td>12.00- 13.00</td>
+	</tr>
+	<tr>
+		<td>35 ja 36</td>
+		<td>27.5.2010</td>
+		<td>18.00- 19.15</td>
+	</tr>
+	<tr>
+		<td>37</td>
+		<td>17.8.2010</td>
+		<td>17.00- 17.40</td>
+	</tr>
+	<tr>
+		<td>38 ja 39</td>
+		<td>19.8.2010</td>
+		<td>18.30- 19.45</td>
+	</tr>
+	<tr>
+		<td>41 ja 42</td>
+		<td>26.5.2010</td>
+		<td>18.00- 19.15</td>
+	</tr>
+	<tr>
+		<td>43 ja 44</td>
+		<td>31.8.2010</td>
+		<td>12.30- 13.15</td>
+	</tr>
+</table>
+</p>
+</center>
+<p>
+Koehenkil&ouml;t aloittivat mittaustilaisuuden lukemalla A-koodatun lomakkeen. Koehenkil&ouml;t
+saivat itse p&auml;&auml;tt&auml;&auml;, kumpi koehenkil&ouml;ist&auml; mitattiin ensin. Opinn&auml;ytety&ouml;ntekij&auml;t eiv&auml;t
+puuttuneet mittausten kulkuun. Koehenkil&ouml;iden suoritettua mittaukset toisistaan, opinn&auml;ytety&ouml;ntekij&auml;
+mittasi heid&auml;t ja merkitsi saamansa mittatulokset B-koodatulle lomakkeelle.
+</p>
+<p>
+Ensimm&auml;inen ja kolmas kohta olivat ainoat, joissa ei k&auml;ytetty mittanauhaa. Mittauskohdat
+kaksi ja nelj&auml;st&auml; viiteentoista mitattiin 0,1 senttimetrin tarkkuudella. Mittauskohdat
+nelj&auml;st&auml; kahdeksaan koskevat polven yl&auml;puolisia mittoja, mittauskohdat 9 - 15
+ovat polven alapuolelta teht&auml;vi&auml; mittauksia. Mittauskohdat 14 a ja b sek&auml; 15 a ja b mitataan
+paperille piirretyst&auml; jalkater&auml;n &auml;&auml;riviivapiirroksesta.
+</p>
+<p>
+Lomakkeeseen merkittiin ensimm&auml;isen&auml; esitiedot: mitattavan sukupuoli ja syntym&auml;vuosi.
+Varsinaiset mittaukset aloitettiin punnitsemalla koehenkil&ouml;n paino henkil&ouml;vaa`alla
+kilogramman tarkkuudella (KUVIO 2). Pituus mitattiin senttimetreiss&auml;, desimaalin
+tarkkuudella (KUVIO 3). Vy&ouml;t&auml;r&ouml;n ymp&auml;rys mitattiin vy&ouml;t&auml;r&ouml;n kapeimmasta kohdasta,
+kaksi sentti&auml; navan yl&auml;puolelta (KUVIO 4). Oikean jalan sivupituus mitattiin vy&ouml;t&auml;r&ouml;n
+kapeimmasta kohdasta lattiaan (KUVIO 5).
+</p>
+<center>
+<p>
+<table border="0" cellpadding="15">
+	<tr>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio2.jpg" width="180" height="240" alt="Kuvio 2"></td>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio3.jpg" width="170" height="240" alt="Kuvio 3"></td>
+	</tr>
+	<tr>
+		<td>KUVIO 2. Paino</td>
+		<td>KUVIO 3. Pituus</td>
+	</tr>
+	<tr>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio4.jpg" width="240" height="180" alt="Kuvio 4"></td>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio5.jpg" width="168" height="240" alt="Kuvio 5"></td>
+	</tr>
+	<tr>
+		<td>KUVIO 4. Vy&ouml;t&auml;r&ouml;n ymp&auml;rys</td>
+		<td>KUVIO 5. Oikean jalan sivupituus</td>
+	</tr>
+</table>
+</p>
+</center>
+<p>
+Alaraajojen sis&auml;pituus mitattiin kohtisuoraan haarasta lattiaan (KUVIO 6). Lantion ymp&auml;rys
+mitattiin lantion leveimm&auml;st&auml; kohdasta. Mittanauha asetettiin pakaran korkeimpaan
+kohtaan (KUVIO 7). Oikean reiden ymp&auml;rys mitattiin reiden paksuimmasta kohdasta
+(KUVIO 8). Oikean s&auml;&auml;ren pituus mitattiin polven takaa, polvitaipeesta maahan
+(KUVIO 9). Oikean pohkeen ymp&auml;rys mitattiin pohkeen paksuimmasta kohdasta
+(KUVIO 10). Oikean nilkan ymp&auml;rys mitattiin nilkan kapeimmasta kohdasta, kehr&auml;sluiden
+yl&auml;puolelta (KUVIO 11).
+</p>
+<center>
+<p>
+<table border="0" cellpadding="15">
+	<tr>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio6.jpg" width="177" height="240" alt="Kuvio 6"></td>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio7.jpg" width="180" height="240" alt="Kuvio 7"></td>
+	</tr>
+	<tr>
+		<td>KUVIO 6. Alaraajojen sis&auml;pituus</td>
+		<td>KUVIO 7. Lantion ymp&auml;rys</td>
+	</tr>
+	<tr>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio8.jpg" width="180" height="240" alt="Kuvio 8"></td>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio9.jpg" width="180" height="240" alt="Kuvio 9"></td>
+	</tr>
+	<tr>
+		<td>KUVIO 8. Reiden ymp&auml;rys</td>
+		<td>KUVIO 9. S&auml;&auml;ren pituus</td>
+	</tr>
+        	<tr>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio10.jpg" width="180" height="240" alt="Kuvio 10"></td>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio11.jpg" width="188" height="240" alt="Kuvio 11"></td>
+	</tr>
+	<tr>
+		<td>KUVIO 10. Pohkeen ymp&auml;rys</td>
+		<td>KUVIO 11. Nilkan ymp&auml;rys</td>
+	</tr>
+	<tr>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio12.jpg" width="240" height="180" alt="Kuvio 12"></td>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio13.jpg" width="240" height="180" alt="Kuvio 13"></td>
+	</tr>
+	<tr>
+		<td>KUVIO 12. Kantap&auml;&auml;n ymp&auml;rys</td>
+		<td>KUVIO 13. Jalkap&ouml;yd&auml;n ymp&auml;rys</td>
+	</tr>
+        	<tr>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio14.jpg" width="240" height="180" alt="Kuvio 14"></td>
+		<td><img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/kuvio15.jpg" width="240" height="180" alt="Kuvio 15"></td>
+	</tr>
+	<tr>
+		<td>KUVIO 14. P&auml;ki&auml;n leveys</td>
+		<td>KUVIO 15. Jalkater&auml;n pituus</td>
+	</tr>
+</table>
+</p>
+</center>
+<p>
+Jalkateriin kohdistuvat mitat mitattiin oikeasta ja vasemmasta jalkater&auml;st&auml;. Kantap&auml;&auml;n
+ymp&auml;rys mitattiin kantap&auml;&auml;n takaa, nilkan ymp&auml;ri (KUVIO 12). Jalkap&ouml;yd&auml;n ymp&auml;rys
+mitattiin jalkap&ouml;yd&auml;n ymp&auml;ri (KUVIO 13). P&auml;ki&auml;n leveys ja jalkater&auml;n pituus mitattiin
+jalkater&auml;n &auml;&auml;riviivapiirroksesta. P&auml;ki&auml;n leveys mitattiin kuvasta p&auml;ki&auml;n leveimm&auml;st&auml;
+kohdasta (KUVIO 14). Jalkater&auml;n pituus mitattiin pisimm&auml;st&auml; varpaasta kantap&auml;&auml;h&auml;n
+(KUVIO 15).
+</p>

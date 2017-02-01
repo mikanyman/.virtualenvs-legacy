@@ -1,0 +1,35 @@
+{% extends "portal/base_mylocation.html" %}
+{% load i18n %}
+{% load cms_tags menu_tags %}
+
+{% block description %}
+<span class="section_header">{% trans "My Location" %}</span><span class="section_aspect"> | {% trans "Home" %}</span>
+{% endblock %}
+
+{% block content %}
+<div class="padding_10">
+    <div>
+        <form action="{% url maisemapaikka.apps.geomaps.views.edit %}" method="post">
+            {% csrf_token %}
+			<input type="hidden" id="id_id" name="id" value="{{ waypoints.0.id }}" />
+			
+            <label for="id_name" class="required">Name:</label>
+            <input name="name" value="{{ waypoints.0.name }}" class="" maxlength="64" type="text" id="id_name" />
+            
+            <label for="id_location">Location:</label>
+            <input name="location" value="" class="location_picker" maxlength="1024" type="text" id="id_location" />
+            
+            <label for="id_lon" class="required">Lon:</label>
+            <input type="text" name="lon" value="{{ waypoints.0.geometry.x }}" id="id_lon" />
+            
+            <label for="id_lat" class="required">Lat:</label>
+            <input type="text" name="lat" value="{{ waypoints.0.geometry.y }}" id="id_lat" />
+			
+			<label for="id_description" class="required">Description:</label>
+            <input name="description" value="{{ waypoints.0.description }}" class="" type="text" id="id_description" />
+			
+            <input type="submit" value="Submit" />
+        </form>
+  </div>
+</div>
+{% endblock %}

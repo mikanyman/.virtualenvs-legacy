@@ -1,0 +1,74 @@
+<HTML>
+
+<head>
+<title>yhteystiedot.eng</title>
+<style type="text/css">
+body {
+ FONT-SIZE : 12pt;
+ BACKGROUND-COLOR: #304594;
+ COLOR : #FFFFFF;
+ FONT-FAMILY : 'arial', 'helvetica';
+ background-color: #324796;
+ background-image: url(/media/wrk/specs/img/mpoli/tausta.jpg);
+ background-repeat: repeat-y;
+}
+A:hover {
+  FONT-SIZE:12pt;
+  color : #CCCCCC;
+  FONT-FAMILY : 'arial', 'helvetica';
+  TEXT-DECORATION : underline;
+}
+A {
+  FONT-SIZE:12pt;
+  color : #FFFFFF;
+  FONT-FAMILY : 'arial', 'helvetica';
+  TEXT-DECORATION : underline;
+}
+</style>
+
+</head>
+<BODY>
+<BR>
+<BR>
+<FONT color="#7ACF7E" face="Arial">
+<P align="center"><FONT face="Arial" color="white">C<FONT size=+1>O</FONT><FONT size=+2>N</FONT>
+<FONT size=+3>T</FONT><FONT size=+2>A</FONT>
+
+<FONT size=+1>C</FONT><FONT size=+2>T I</FONT><FONT size=+1>N</FONT>
+<FONT size=+3>F</FONT><FONT size=+2>O</FONT><FONT size=+4>R</FONT>
+<FONT size=+3>M</FONT><FONT size=+1>A</FONT>T
+<FONT size=+1>I</FONT><FONT size=+2>O</FONT><FONT size=+3>N</FONT>
+</P></FONT>
+<HR width="50%" align=center size="5">
+
+<FONT face="times new roman" size=+1><P align="center">Contact us !<BR><BR>
+    International contacts</P></FONT>
+<P align="center">e-mail: <A HREF="office@tallsmall.fi">office(at)tallsmall.fi</A> 
+<BR>
+<BR>
+<FONT face="times new roman" size=+1><P align="center">
+    Contacts from Finland, advertisements, new members</P></FONT>
+<P align="center">Tall & Small Association, Finland<BR>
+
+<BR> P.O.Box 186
+<BR> FIN-00931 Helsinki
+<BR> Finland<BR>
+
+<BR> Arja Partanen
+<BR> phone +358 3 2535988 at 10 - 18 (Finnish time)
+<BR> mobile +358 40 7403544<BR>
+    </P>
+
+<BR>
+<FONT face="times new roman" size=+1><P align="center">
+    Maintenance of web-pages e.g. <BR>
+    updates to flea market and advertisements</P></FONT>
+<P align="center">email: <A HREF="office@tallsmall.fi">office(at)tallsmall.fi</A></P>
+<BR>
+<P align="center">Web-page implementation<BR>
+    Sanna Leppänen<BR>
+
+    <A HREF="mailto:sanna.leppanen@cs.tpu.fi">
+    sanna.leppanen(at)cs.tpu.fi</A></P>
+</body>
+</HTML>

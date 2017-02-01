@@ -1,0 +1,87 @@
+<style type="text/css">
+p {
+	margin-top: 25px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	}
+div.wrap {
+	width:auto;
+	height: 24px;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding: 0
+        }
+div.left {
+	float: left;
+	}
+div.center {
+	float: left;
+	margin-left: 130px;
+	}
+div.right {
+	float: right;
+	}
+a.arrow {
+	text-decoration:none;
+	font-size: 12pt;
+	color: #e5a83e
+	}
+</style>
+<p>
+<img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/etusivu4.jpg">
+</p>
+
+<div class="wrap">
+  <div class="left"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/5_5.html">&larr; Edellinen sivu</a></div>
+  <div class="center"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/sisallysluettelo.html">Sis&auml;llysluettelo</a></div>
+  <div class="right"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/6_2.html">Seuraava sivu &rarr;</a></div>
+</div>
+
+<h2>6.1 T&auml;sm&auml;llist&auml; mittatietoa tuottava alaraajojen mittaamisen ohjeistus</h2>
+<p>
+Ensimm&auml;isen vaiheen aineistonkeruusta laaditun yhteenvedon perusteella tehtiin lomakkeeseen
+(LIITE 7) muutoksia. Lomakkeen mittausohje ja mittatieto- merkitsemissarakkeiden
+paikkoja vaihdettiin, niin ett&auml; mittausohjeet siirtyiv&auml;t vasempaan sarakkeeseen
+ja mittatiedot oikeaan sarakkeeseen. Muutokset tehtiin, koska ker&auml;tyn aineiston
+perusteella todettiin, etteiv&auml;t koehenkil&ouml;t lukeneet mittausohjeita, vaan aloittivat mittaamisen
+lukemalla vain mittatiedot sarakkeen.
+</p>
+<p>
+Sarakkeiden pohjav&auml;ri muutettiin niin, ett&auml; mittausohjeiden taustav&auml;ri on vihre&auml; ja mittaustulosten
+pohjav&auml;ri on vaaleanpunainen. Muutos tehtiin lomakkeen selkeyden ja sarakkeiden
+erottuvuuden lis&auml;&auml;miseksi. Mittausohjeen ja mittaustiedon 5. ja 7. paikkoja
+vaihdettiin, vaihto tehtiin my&ouml;s kuvalliseen ohjeeseen. Mittauspaikkojen j&auml;rjestyst&auml;
+vaihdettiin, jotta mittaus etenisi j&auml;rjestyksess&auml; ylh&auml;&auml;lt&auml; alasp&auml;in. Mittausohjeiden ja mittatietojen
+sanamuotoja tarkennettiin selke&auml;mmiksi, korostaen kuvallisen ohjeistuksen
+t&auml;rkeytt&auml; oikeiden mittauskohtien hahmottamisen kannalta. Mittausohjeisiin lis&auml;ttiin
+sanallinen muistutus kuvallisten ohjeiden katsomisesta.
+</p>
+<p>
+Osa ohjeistuksessa k&auml;ytetyist&auml; kuvista muutettiin valokuviksi, jotta oikeat mittauskohdat
+l&ouml;ytyisiv&auml;t helpommin. Mittauskohdan 6 kuvallisessa ohjeessa vaihdettiin punainen
+viiva vihre&auml;&auml;n, jotta se erottuisi paremmin kuvasta.
+</p>
+<p>
+T&auml;sm&auml;llisi&auml; mittatietoja alaraajan mitoista voidaan saada, kiinnitt&auml;m&auml;ll&auml; huomiota ohjeistuksen
+selkeyteen niin sanallisesti kuin visuaalisesti. Ohjeistuksen alussa kerrotaan,
+miten mittaukset suoritetaan ja mit&auml; tarvikkeita mittaaja tarvitsee. Mittaajaa pyydet&auml;&auml;n
+my&ouml;s toistamaan mittaukset kolme kertaa ja merkitsem&auml;&auml;n mittatietoihin mittausten
+keskimm&auml;isen arvon. Keskimm&auml;isest&auml; arvosta on hyv&auml; olla esimerkki.
+</p>
+<p>
+Visuaalisesti on t&auml;rke&auml;&auml; erottaa mittausohjeet ja mittatiedot toisistaan eriv&auml;risill&auml; sarakkeilla.
+Mittausohjeet tulee olla ennen mittatietoja. N&auml;in voidaan varmistaa, ett&auml; ohjeistus
+on luettu ennen kuin suoritetaan mitattavan kohdan mittaus. Mittausohjeet tulee selitt&auml;&auml;
+sanallisesti niin selke&auml;sti ja yksityiskohtaisesti kuin mahdollista. Kuvien avulla voidaan
+helpottaa mittauskohtien l&ouml;yt&auml;mist&auml;. Mittausohjeisiin on t&auml;rke&auml; lis&auml;t&auml; sanallinen muistutus
+kuvallisten ohjeiden katsomisesta. T&auml;sm&auml;llisell&auml; ohjeistuksella voidaan my&ouml;s varmistaa
+mittausten toistettavuuden luotettavuus.
+</p>
+<p>
+Mittausten tulee edet&auml; loogisessa j&auml;rjestyksess&auml; ylh&auml;&auml;lt&auml; alasp&auml;in, t&auml;m&auml; helpotta mittausten
+suorittamista. Vartalon mittauskohdat on helppo hahmottaa sellaisesta kuvasta, jossa
+luiset maamerkit ovat n&auml;kyviss&auml;. Jalkater&auml;n mittauskohdat n&auml;kyv&auml;t selke&auml;mmin valokuvasta.
+Piirroskuvasta, jossa jalkater&auml;n kaikki luut n&auml;kyv&auml;t, mittauskohtien hahmottaminen
+on vaikeampaa jalkater&auml;n monimutkaisen luisen rakenteen vuoksi.
+</p>

@@ -1,0 +1,11 @@
+{% extends "layouts/2col_sidebar_right.html" %}
+{% load i18n %}
+
+{% block main %}
+<div class="form-box">
+<fieldset>
+  <legend>{% trans "Message" %}</legend>
+  <ul><li>{% trans "Logged out" %}</li></ul>
+  </fieldset>
+</div>
+{% endblock %}

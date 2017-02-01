@@ -1,0 +1,36 @@
+from rdflib.Graph import Graph
+from rdflib.Literal import Literal
+from rdflib.Namespace import Namespace
+
+
+    # Declare namespaces to use.
+    ns_sn = Namespace("http://www.snee.com/ns/misc#")
+    ns_sd = Namespace("http://www.snee.com/docs/")
+    ns_dc = Namespace("http://purl.org/dc/elements/1.1/")
+    ns_pr = Namespace("http://prismstandard.org/1.0#")
+    
+    store = Graph()
+    
+    # Add triples to store.
+    store.add((ns_sd["d1001"], ns_dc["title"], Literal("Sample Acrobat document")))
+    store.add((ns_sd["d1001"], ns_dc["format"], Literal("PDF")))
+    store.add((ns_sd["d1001"], ns_dc["creator"], Literal("Billy Shears")))
+    store.add((ns_sd["d1001"], ns_pr["publicationTime"], Literal("2002-12-19")))
+
+    store.add((ns_sd["d1002"], ns_dc["title"], Literal("Sample RTF document")))
+    store.add((ns_sd["d1002"], ns_dc["format"], Literal("RTF")))
+    store.add((ns_sd["d1002"], ns_dc["creator"], Literal("Nanker Phelge")))
+    store.add((ns_sd["d1002"], ns_pr["publicationTime"], Literal("2002-12-15")))
+    
+    store.add((ns_sd["d1003"], ns_dc["title"], Literal("Sample LaTeX document")))
+    store.add((ns_sd["d1003"], ns_dc["format"], Literal("LaTeX")))
+    store.add((ns_sd["d1003"], ns_dc["creator"], Literal("Richard Mutt")))
+    store.add((ns_sd["d1003"], ns_pr["publicationTime"], Literal("2002-12-16")))
+    store.add((ns_sd["d1003"], ns_sn["quality"], Literal("pretty good")))
+    
+    rdf_subjects = store.subjects()
+    rdf_predicates = store.predicates()
+    rdf_objects = store.objects()
+    
+    select_predicate_by_subject = store.predicates(subject=ns_sd["d1001"])
+    select_object_by_predicate = store.objects(predicate=ns_dc["title"])

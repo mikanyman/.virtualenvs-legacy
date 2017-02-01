@@ -1,0 +1,60 @@
+{# extends "common/blog.html" #}
+{% extends "layouts/blog.html" %}
+{% load tagging_tags %}
+
+{% block main %}
+<!-- back to list page -->
+<div id="page_status_top">
+  <div class="page_status_left">
+
+    <a href="http://www.tallsmall.fi/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/?page=1"><span class="arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_or_beg.gif" border="0"> Palaa luettelosivulle</a> 
+  </div>
+</div>
+<!-- /back to list page -->
+
+<div class="form_content">
+  <div class="form-box">
+  	
+    <form method="post" action=".">
+      <fieldset>
+        <legend>Kirjoita oma viesti</legend>
+		<br />
+        <table width="650" class="header" cellpadding=0 cellspacing="4" border="0">
+        {{ entry_form.as_table|removetags:"br" }}
+        <tr>
+          <td></td>
+          <td><br /><input class="submit" type="submit" value="Tallenna viesti!"><br /></td>
+		</tr>
+        </table>
+		<br />
+	  </fieldset>
+    </form>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block blogbar_right %}
+<div class="blog_link_set">
+  T&auml;yt&auml; ainakin oma nimesi tai nimimerkkisi. 
+  Otathan huomioon, ettei l&auml;hett&auml;m&auml;si 
+  viesti ole loukkaava tai muutoin ep&auml;asiallinen.
+  Pieni- ja Isokenk&auml;iset ry pid&auml;tt&auml;&auml; 
+  itsell&auml;&auml;n oikeuden poistaa vieraskirjaan 
+  l&auml;hetetyt asiattomat viestit. Voit merkit&auml;
+  viestin jollakin alla olevista <strong>aiheista</strong> 
+  tai luoda oman aiheen. Ilmaise aihe yhdell&auml; sanalla. 
+  K&auml;yt&auml; monikkoa ja pieni&auml; kirjaimia.
+
+  <!-- tag list -->
+  <br /><br />
+  <h2 class="blue">Nykyiset aiheet:</h2>
+  {% tags_for_model tagforum.Entry as entry_tags with counts %}
+  {% for entry_tag in entry_tags %}
+  <div>
+    {{ entry_tag }}<br />
+  </div>
+  {% endfor %}
+  <!-- /tag list -->
+</div>
+{% endblock %}

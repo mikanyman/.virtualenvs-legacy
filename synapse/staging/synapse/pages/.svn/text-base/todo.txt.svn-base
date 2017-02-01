@@ -1,0 +1,22 @@
+CheckboxSelectMultiple
+http://ontehfritz.wordpress.com/2009/02/15/django-forms-choicefield-and-multiplechoicefield/
+
+- luo slug automaattisesti
+- ennenkuin kieltä on vaihdettu kerran sivusto ottaa selaimen oletuskielen (sv). 
+  Kielivalinnan valittuna kielenä näkyy kuitenkin englanti (en)
+
+- listbase application for lists (pages, etc.) cf. classbase
+- muuta sovelluksen nimeksi website tai webpages
+
+- custom widget: class="vLargeTextField" --> class="mceAdvanced" OK
+
+Multiple configs/inits
+http://tinymce.moxiecode.com/examples/example_04.php
+
+http://www.kryogenix.org/days/2008/03/28/overriding-a-single-field-in-the-django-admin-using-newforms-admin
+Overriding a single field in the Django admin, 
+
+
+// http://librehosting.net/2008/12/22/django-admin-and-tinymce-howto/
+// django admin tinymce multiple textareas
+// http://www.venividiscripsi.com/2010/06/21/tinymce-in-one-of-multiple-textarea-fields-in-admin/

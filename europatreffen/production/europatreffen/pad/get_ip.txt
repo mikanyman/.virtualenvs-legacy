@@ -1,0 +1,4 @@
+https://code.djangoproject.com/wiki/CookBookIPAccessMiddleware
+
+http://www.djangobook.com/en/2.0/chapter17/ alaluku "What’s Middleware?"
+http://www.pressthered.com/how_to_get_a_client_ip_address_in_django/

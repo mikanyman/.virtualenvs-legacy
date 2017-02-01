@@ -1,0 +1,652 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TallSmall\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-13 06:55-0600\n"
+"PO-Revision-Date: 2012-02-13 15:04+0200\n"
+"Last-Translator: Mika Nyman <mika.nyman@synapse-computing.com>\n"
+"Language-Team: Synapse Computing <mika.nyman@synapse-computing.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: FINLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: settings.py:27 templates/etreg/etreg.html:116
+#: templates/etreg/person_form_SVN.html:215
+msgid "Finnish"
+msgstr "Finnisch"
+
+#: settings.py:28 templates/etreg/etreg.html:115
+#: templates/etreg/person_form_SVN.html:214
+msgid "German"
+msgstr "Deutsch"
+
+#: settings.py:29 templates/etreg/etreg.html:114
+#: templates/etreg/person_form_SVN.html:213
+msgid "English"
+msgstr "Englisch"
+
+#: apps/etreg/models.py:78 templates/etreg/etreg.html:28
+msgid "Last name"
+msgstr "Nachname"
+
+#: apps/etreg/models.py:81 templates/etreg/etreg.html:32
+msgid "First name"
+msgstr "Vorname"
+
+#: apps/etreg/models.py:85 templates/etreg/etreg.html:188
+#: templates/etreg/person_form_SVN.html:287
+msgid "Gender"
+msgstr "Geschlecht"
+
+#: apps/etreg/models.py:90 templates/etreg/etreg.html:41
+msgid "Address"
+msgstr "Adresse"
+
+#: apps/etreg/models.py:95
+#, fuzzy
+msgid "Date of birth (dd.mm.yyyy)"
+msgstr "Geburtsdatum"
+
+#: apps/etreg/models.py:99 templates/etreg/etreg.html:47
+msgid "Height"
+msgstr "Körpergrösse"
+
+#: apps/etreg/models.py:112 templates/etreg/etreg.html:59
+msgid "Member of a Tall Club"
+msgstr "Mitglied eines Klubs der Langen"
+
+#: apps/etreg/models.py:116 templates/etreg/etreg.html:68
+msgid "Country"
+msgstr "Land"
+
+#: apps/etreg/models.py:120 templates/etreg/etreg.html:72
+msgid "Which Tall Club are you registered with?"
+msgstr "In welchem Klub bist Du Mitglied?"
+
+#: apps/etreg/models.py:126 templates/etreg/etreg.html:78
+msgid "Email"
+msgstr "E-Mail Adresse"
+
+#: apps/etreg/models.py:129 templates/etreg/etreg.html:82
+msgid "Membership number"
+msgstr "Mitgliedsnummer"
+
+#: apps/etreg/models.py:134 templates/etreg/etreg.html:108
+#: templates/etreg/person_form_SVN.html:207
+msgid "Mobile phone number with country code"
+msgstr "Handynummer mit Ländervorwahl"
+
+#: apps/etreg/models.py:138 templates/etreg/etreg.html:109
+#: templates/etreg/person_form_SVN.html:208
+msgid "Home phone number with country code"
+msgstr "Haustelefon mit Ländervorwahl"
+
+#: apps/etreg/models.py:142 templates/etreg/etreg.html:110
+#: templates/etreg/person_form_SVN.html:209
+msgid "Fax number with country code"
+msgstr "Fax Nummer mit Ländervorwahl"
+
+#: apps/etreg/models.py:146
+#, fuzzy
+msgid "Which language(s) do you speak?"
+msgstr "Welche Sprache/n sprichst Du?"
+
+#: templates/etreg/base.html:27
+msgid "Home"
+msgstr "Startseite"
+
+#: templates/etreg/base.html:28
+msgid "Welcome!"
+msgstr "Willkommen!"
+
+#: templates/etreg/base.html:30
+msgid "Moro!"
+msgstr "Moro!"
+
+#: templates/etreg/base.html:33
+msgid "Program"
+msgstr "Programm"
+
+#: templates/etreg/base.html:35
+msgid "Sunday, June 10th 2012"
+msgstr "Sonntag, 10. Juni 2012"
+
+#: templates/etreg/base.html:36
+msgid "Monday, June 11th 2012"
+msgstr "Montag, 11. Juni 2012"
+
+#: templates/etreg/base.html:39
+msgid "Young &#038; Tall"
+msgstr "Jung &#038; Lang"
+
+#: templates/etreg/base.html:40
+msgid "Accommodation"
+msgstr "Unterkunft"
+
+#: templates/etreg/base.html:41
+msgid "Travel info"
+msgstr "Reiseinfo"
+
+#: templates/etreg/base.html:42
+msgid "Contact us"
+msgstr "Kontakt"
+
+#: templates/etreg/base.html:44
+msgid "Contact info"
+msgstr "Kontakt-Info"
+
+#: templates/etreg/base.html:45
+msgid "Organisation Team"
+msgstr "Organisationskomitee"
+
+#: templates/etreg/base.html:48
+msgid "More&#8230;"
+msgstr "Mehr&#8230;"
+
+#: templates/etreg/base.html:50
+msgid "Photo gallery"
+msgstr "Fotogalerie"
+
+#: templates/etreg/base.html:51
+msgid "Media"
+msgstr "Media"
+
+#: templates/etreg/etreg.html:11 templates/etreg/person_form.html:17
+#: templates/etreg/person_form_SVN.html:31 templates/etreg/person_list.html:16
+msgid "45th European Convention 2012 Finland"
+msgstr "45. Europatreffen 2012 Finnland"
+
+#: templates/etreg/etreg.html:12 templates/etreg/person_form.html:18
+#: templates/etreg/person_form_SVN.html:32 templates/etreg/person_list.html:17
+msgid "10th June &ndash; 17th June 2012"
+msgstr "10. &ndash; 17. Juni 2012"
+
+#: templates/etreg/etreg.html:22 templates/etreg/person_form.html:26
+#: templates/etreg/person_form_SVN.html:40 templates/etreg/person_list.html:25
+msgid "Registration form"
+msgstr "Anmeldeformular"
+
+#: templates/etreg/etreg.html:23 templates/etreg/person_form_SVN.html:41
+#: templates/etreg/person_list.html:26
+msgid "One registration form per person"
+msgstr "Eine Anmeldung pro Person"
+
+#: templates/etreg/etreg.html:34
+msgid "Ms."
+msgstr "Frl."
+
+#: templates/etreg/etreg.html:35
+msgid "Mrs."
+msgstr "Frau"
+
+#: templates/etreg/etreg.html:36
+msgid "Mr."
+msgstr "Herr"
+
+#: templates/etreg/etreg.html:45
+msgid "Date of birth (dd-mm-yyyy)"
+msgstr "Geburtsdatum"
+
+#: templates/etreg/etreg.html:53
+msgid "Postcode"
+msgstr "Postleitzahl"
+
+#: templates/etreg/etreg.html:57
+msgid "City"
+msgstr " Ort"
+
+#: templates/etreg/etreg.html:60 templates/etreg/etreg.html.py:128
+#: templates/etreg/person_form_SVN.html:227
+msgid "Yes"
+msgstr "Ja"
+
+#: templates/etreg/etreg.html:62 templates/etreg/etreg.html.py:129
+#: templates/etreg/person_form_SVN.html:228
+msgid "No"
+msgstr "Nein"
+
+#: templates/etreg/etreg.html:95
+msgid "Program choices"
+msgstr "Programmwahl"
+
+#: templates/etreg/etreg.html:111 templates/etreg/person_form_SVN.html:210
+msgid "Language"
+msgstr "Sprache"
+
+#: templates/etreg/etreg.html:112 templates/etreg/person_form_SVN.html:211
+msgid "for welcome packets and guided tours"
+msgstr "für die Willkommenspäckchen und geführten Touren"
+
+#: templates/etreg/etreg.html:113 templates/etreg/person_form_SVN.html:212
+msgid "Which language/-s do you speak?"
+msgstr "Welche Sprache/n sprichst Du?"
+
+#: templates/etreg/etreg.html:117 templates/etreg/person_form_SVN.html:216
+msgid "Date and estimated time of arrival to Helsinki*/Tampere"
+msgstr "Datum und ungefähre Ankunftszeit in Helsinki*/Tampere"
+
+#: templates/etreg/etreg.html:118 templates/etreg/person_form_SVN.html:217
+msgid "Date and estimated departure time from Tampere/Helsinki*"
+msgstr "Datum und ungefähre Abreisezeit von Tampere/Helsinki*"
+
+#: templates/etreg/etreg.html:119 templates/etreg/person_form_SVN.html:218
+msgid ""
+"We will inform the bus company ExpressBus about capacity needs for the route "
+"Helsinki-Vantaa Airport &ndash; Tampere City / Tampere City &ndash; Helsinki-"
+"Vantaa Airport (approx. 26€/one way)"
+msgstr ""
+"Wir werden die Busgesellschaft ExpressBus über die benötigten Plätze für die "
+"Strecke Helsinki-Vantaa Flughafen &ndash; Tampere Stadt / Tampere Stadt "
+"&ndash; Helsinki-Vantaa Flughafen informieren (ca. 26Euro für eine Strecke)"
+
+#: templates/etreg/etreg.html:120 templates/etreg/person_form_SVN.html:219
+msgid "In which hotel/hostel you are staying?"
+msgstr "In welchem Hotel ist Dein Aufenthalt?"
+
+#: templates/etreg/etreg.html:121 templates/etreg/person_form_SVN.html:220
+msgid "Arr. /Date."
+msgstr "Ankunftstag"
+
+#: templates/etreg/etreg.html:122 templates/etreg/person_form_SVN.html:221
+msgid "Dep. /Date ."
+msgstr "Abreisetag"
+
+#: templates/etreg/etreg.html:123 templates/etreg/person_form_SVN.html:222
+msgid "Other, where"
+msgstr "Anderes, welches?"
+
+#: templates/etreg/etreg.html:124 templates/etreg/person_form_SVN.html:223
+msgid "Only information for the organization team, not a booking!"
+msgstr "Nur zur Information für das Orgateam, keine Buchung!"
+
+#: templates/etreg/etreg.html:125 templates/etreg/person_form_SVN.html:224
+msgid "Young & Tall"
+msgstr "Jung &Lang"
+
+#: templates/etreg/etreg.html:126 templates/etreg/person_form_SVN.html:225
+msgid "For participants 13&ndash;20 years old, only"
+msgstr "Nur für Teilnehmer von 13&ndash;20 Jahren"
+
+#: templates/etreg/etreg.html:127 templates/etreg/person_form_SVN.html:226
+msgid "Are you travelling with your parents?"
+msgstr "Reist Du mit Deinen Eltern?"
+
+#: templates/etreg/etreg.html:130 templates/etreg/person_form_SVN.html:229
+msgid "If no, parents name and mobile phone nr."
+msgstr "Falls Nein, Handynummer der Eltern"
+
+#: templates/etreg/etreg.html:131 templates/etreg/person_form_SVN.html:230
+msgid "Guardian’s name and mobile phone nr."
+msgstr "Name des Vormunds/Begleiters und Handynummer"
+
+#: templates/etreg/etreg.html:132 templates/etreg/person_form_SVN.html:231
+msgid "Parents signature"
+msgstr "Unterschrift d. Eltern"
+
+#: templates/etreg/etreg.html:133 templates/etreg/person_form_SVN.html:232
+msgid "Participant under 18 needs to have an adult as guardian"
+msgstr "Teilnehmer unter 18 Jahren benötigen einen Vormund/Begleiter"
+
+#: templates/etreg/etreg.html:134 templates/etreg/person_form_SVN.html:233
+msgid "Diet"
+msgstr "Diätkost"
+
+#: templates/etreg/etreg.html:135 templates/etreg/person_form_SVN.html:234
+msgid "Vegetarian"
+msgstr "Vegetarisch"
+
+#: templates/etreg/etreg.html:136 templates/etreg/person_form_SVN.html:235
+msgid "Gluten-free"
+msgstr "Glutenfrei"
+
+#: templates/etreg/etreg.html:137 templates/etreg/person_form_SVN.html:236
+msgid "Diabetic"
+msgstr "Diabetisch"
+
+#: templates/etreg/etreg.html:138 templates/etreg/person_form_SVN.html:237
+msgid "Low lactose"
+msgstr "Laktosefrei"
+
+#: templates/etreg/etreg.html:139 templates/etreg/person_form_SVN.html:238
+msgid "Special needs/assistance"
+msgstr "Spezielle Bedürfnisse/ Hilfe"
+
+#: templates/etreg/etreg.html:140 templates/etreg/person_form_SVN.html:239
+msgid "Do you need any personal assistance (if available) during the events?"
+msgstr ""
+"Brauchst Du persönliche Hilfe (falls verfügbar) bei den Veranstaltungen?"
+
+#: templates/etreg/etreg.html:141 templates/etreg/person_form_SVN.html:240
+msgid ""
+"Other special needs or health risk factors the Organisation team should "
+"know? (please specify)"
+msgstr ""
+"Andere spezielle Bedürfnisse oder gesundheitliche Risikofaktoren die das "
+"Orgateam wissen sollte?Andere spezielle Bedürfnisse oder gesundheitliche "
+"Risikofaktoren die das Orgateam wissen sollte? (Bitte genau angeben)"
+
+#: templates/etreg/etreg.html:142 templates/etreg/person_form_SVN.html:241
+msgid ""
+"Please contact the ET2012FI-Orgateam for organising a practical nurse "
+"student to help you! Please note with your payment! The additional price for "
+"an assistant is the same price as for each event per person. Only for day's/"
+"evening's program."
+msgstr ""
+"Bitte kontaktiert das Orgateam zur Bereitstellung eines/r medizinischen "
+"Praktikanten zur Hilfe! Bitte mit der Zahlung vermerken! Der zusätzliche "
+"Preis für einen Praktikanten ist der selbe wie für eine Person pro "
+"Veranstaltung. Nur für das Tages/Abendprogramm."
+
+#: templates/etreg/etreg.html:143 templates/etreg/person_form_SVN.html:242
+msgid ""
+"Please send your registration form and program choices by email to "
+"reg@europatreffen.com or by fax to number +358x-xxxxxxx or by mail Tall and "
+"Small Association Finland/ET2012FI, Po Box 186, FI-00931 Helsinki, Finland."
+msgstr ""
+"Bitte schickt Eure Anmeldung per Email an reg@europatreffen.com oder mit FAX "
+"an 358….. oder per Post anBitte schickt Eure Anmeldung per Email an "
+"reg@europatreffen.com oder mit FAX an 358….. oder per Post an Tall and Small "
+"Association Finland/ET2012FI, Po Box 186, FI-00931 Helsinki, Finnland."
+
+#: templates/etreg/etreg.html:144 templates/etreg/person_form_SVN.html:243
+msgid ""
+"Please note that your registration is not complete until payment has been "
+"received."
+msgstr ""
+"Bitte bedenken dass die Anmeldung nicht gültig ist bevor die Zahlung "
+"erhalten wurde.Bitte bedenken dass die Anmeldung nicht gültig ist bevor die "
+"Zahlung erhalten wurde."
+
+#: templates/etreg/etreg.html:145 templates/etreg/person_form_SVN.html:244
+msgid "Last day for registration and payment April 10th 2012"
+msgstr "Letzter Tag der Anmeldung und Zahlung ist der 10. April 2012"
+
+#: templates/etreg/etreg.html:147 templates/etreg/person_form_SVN.html:246
+msgid "Sunday June 10th &ndash; Welcome! &ndash; Tervetuloa!"
+msgstr "Sonntag 10. Juni &ndash; Willkommen &ndash; Tervetuloa"
+
+#: templates/etreg/etreg.html:148 templates/etreg/person_form_SVN.html:247
+msgid "Arrival in Tampere &ndash; Welcome and Info packets"
+msgstr "Ankunft in Tampere &ndash; Willkommens und Infopäckchen"
+
+#: templates/etreg/etreg.html:149 templates/etreg/person_form_SVN.html:248
+msgid "Viking Evening and 1st Big Welcome Evening"
+msgstr "Wikinger Abend und 1. Großer Begrüßungsabend"
+
+#: templates/etreg/etreg.html:150 templates/etreg/person_form_SVN.html:249
+msgid "Choose your wish for setting time"
+msgstr "Bitte Wunsch für Gruppe ankreuzen"
+
+#: templates/etreg/etreg.html:151 templates/etreg/person_form_SVN.html:250
+msgid "First setting* at 6pm"
+msgstr "Erste Gruppe* 18Uhr"
+
+#: templates/etreg/etreg.html:152 templates/etreg/person_form_SVN.html:251
+msgid "Second setting* at 9pm"
+msgstr "Zweite Gruppe* 21Uhr"
+
+#: templates/etreg/etreg.html:153 templates/etreg/person_form_SVN.html:252
+msgid "If one session is filled we may have to schedule you in the other one!"
+msgstr ""
+"Falls eine Gruppe voll ist, müssen wir Dich vielleicht in die andere "
+"verlegen!"
+
+#: templates/etreg/etreg.html:154 templates/etreg/person_form_SVN.html:253
+msgid "Monday June 11th &ndash; Nokia &ndash; Connecting Tall People"
+msgstr "Montag 11. Juni &ndash; NOKIA Verbindung von langen Leuten"
+
+#: templates/etreg/etreg.html:155 templates/etreg/person_form_SVN.html:254
+msgid "Trip to the town of Nokia & Tampere sightseeing tour by bus"
+msgstr "Tour in die Stadt Nokia und Tampere Rundfahrt"
+
+#: templates/etreg/etreg.html:156 templates/etreg/person_form_SVN.html:255
+msgid "Young&Tall &ndash; guided sightseeing tours in Tampere and a lot of fun"
+msgstr ""
+"Jung & Lang &ndash; geführte Besichtigungstour in Tampere mit viel Spaß?"
+
+#: templates/etreg/etreg.html:157 templates/etreg/person_form_SVN.html:256
+msgid ""
+"2nd Big Welcome Evening with infotainment, professional shows and live music"
+msgstr ""
+"2. Großer Begrüßungsabend mit Infotainment, professionellen Shows und Live "
+"Musik"
+
+#: templates/etreg/etreg.html:158 templates/etreg/person_form_SVN.html:257
+msgid "Tuesday June 12th &ndash; Finnish nature, fun and entertainment"
+msgstr "Dienstag 12. Juni &ndash; Finnische Natur, Spaß und Unterhaltung"
+
+#: templates/etreg/etreg.html:159 templates/etreg/person_form_SVN.html:258
+msgid "Public meeting of the representatives of the European Council/Board"
+msgstr "Öffentliche Sitzung der Vertreter des Europarats"
+
+#: templates/etreg/etreg.html:160 templates/etreg/person_form_SVN.html:259
+msgid "A possibility also for lunch exists, at additional cost"
+msgstr "Möglichkeit für ein Mittagessen besteht, koste extra"
+
+#: templates/etreg/etreg.html:161 templates/etreg/person_form_SVN.html:260
+#, fuzzy
+msgid ""
+"Young&Tall &ndash; trip to the Särkänniemi Adventure park. Approx. 35 euro/"
+"person*"
+msgstr ""
+"Jung & Lang &ndash; Ausflug zum Särkänniemi Vergnügungspark, ca. 35.oo Euro "
+"p. Person."
+
+#: templates/etreg/etreg.html:162 templates/etreg/person_form_SVN.html:261
+msgid "Payment at the entrance (opens at 11am)."
+msgstr "Bezahlung am Eingang (öffnet um 11:00 Uhr)"
+
+#: templates/etreg/etreg.html:163 templates/etreg/person_form_SVN.html:262
+msgid "Boat trip on Lake Pyhäjärvi & an outdoor evening on Viikinsaari Island."
+msgstr ""
+"Schiffsfahrt auf dem See Pyhäjärvi und eine Abend im Freien auf der Insel "
+"Viikinsaari"
+
+#: templates/etreg/etreg.html:164 templates/etreg/person_form_SVN.html:263
+msgid "Wednesday June 13th &ndash; Helsinki, the daughter of the Baltic Sea"
+msgstr "Mittwoch 13. Juni &ndash; Helsinki, die Tochter der Ostsee"
+
+#: templates/etreg/etreg.html:165 templates/etreg/person_form_SVN.html:264
+msgid "Full day trip to the capital of Finland, and&#133; (check one below)"
+msgstr ""
+"Ganztagesausflug in Finnlands Hauptstadt, und&#133; (bitte eins ankreuzen)"
+
+#: templates/etreg/etreg.html:166 templates/etreg/person_form_SVN.html:265
+msgid ""
+"Boat trip to Suomenlinna incl. a historical video presentation. (Max 240 "
+"guests)"
+msgstr ""
+"Schiffsfahrt nach Suomenlinna inkl. Einer historischen Videopräsentation "
+"(max. 240 Gäste)"
+
+#: templates/etreg/etreg.html:167 templates/etreg/person_form_SVN.html:266
+msgid "Or free time in Helsinki (approx. 4 hrs)"
+msgstr "Oder freie Zeit in Helsinki (ca. 4 Stunden)"
+
+#: templates/etreg/etreg.html:168 templates/etreg/person_form_SVN.html:267
+msgid "Thursday June 14th &ndash; Magic of Midsummer"
+msgstr "Donnerstag 14. Juni Magie des Mittsommers"
+
+#: templates/etreg/etreg.html:169 templates/etreg/person_form_SVN.html:268
+msgid ""
+"The biggest summer celebration in Finland called &quot;Juhannus&quot;. A "
+"long day in the beautiful, authentic countryside atmosphere."
+msgstr ""
+"Das größte Sommerfest in Finnland, genannt “Juhannus”. Ein langer Tag in der "
+"ursprünglichen Atmosphäre der Landschaft."
+
+#: templates/etreg/etreg.html:170 templates/etreg/person_form_SVN.html:269
+msgid "Friday June 15th &ndash; Sauna Day"
+msgstr "Freitag 15. Juni &ndash; Sauna Tag"
+
+#: templates/etreg/etreg.html:171 templates/etreg/person_form_SVN.html:270
+msgid ""
+"Pispala & Pyynikki &ndash; The Pearls of Tampere. Guided walking & bus tour "
+"to the most essential part of the Finnish daily life and sauna traditions. "
+"Feel the heat&#133;"
+msgstr ""
+"Pispala & Pyynikki – Die Perlen von Tampere. Geführte Wanderung & Busfahrt "
+"zu dem wichtigsten Teil des Finnischen Alltags und Sauna Traditionen. Spürt "
+"die Hitze&#133;"
+
+#: templates/etreg/etreg.html:172 templates/etreg/person_form_SVN.html:271
+msgid "Optional Sauna at hotel Scandic Rosendahl / Cumulus Hämeenpuisto"
+msgstr "Optionale Sauna im Hotel Rosendahl / Cumulus Hämeenpuisto"
+
+#: templates/etreg/etreg.html:173 templates/etreg/person_form_SVN.html:272
+msgid "Saturday June 16th &ndash; Gala Evening"
+msgstr "Samstag 16. Juni &ndash; Gala Abend"
+
+#: templates/etreg/etreg.html:174 templates/etreg/person_form_SVN.html:273
+msgid "Dancing and Entertainment in Scandic Rosendahl until the morning&#133;"
+msgstr "Tanzen und Unterhaltung bis in den Morgen&#133;"
+
+#: templates/etreg/etreg.html:175 templates/etreg/person_form_SVN.html:274
+msgid ""
+"Sunday June 17th &ndash; Kiitos ja näkemiin! &ndash; Thank you and goodbye!"
+msgstr ""
+"Sonntag 17. Juni &ndash; Kiitos ja näkemin! &ndash; Danke und Auf "
+"Wiedersehen!"
+
+#: templates/etreg/etreg.html:176 templates/etreg/person_form_SVN.html:275
+msgid "We will see you again in Hamburg 2013!"
+msgstr "Wir sehen uns wieder in Hamburg 2013!"
+
+#: templates/etreg/etreg.html:177 templates/etreg/person_form_SVN.html:276
+msgid "Additional fees"
+msgstr "Zusätzliche Gebühren"
+
+#: templates/etreg/etreg.html:178 templates/etreg/person_form_SVN.html:277
+msgid "Additional yearly fee for the voluntary work on the European level"
+msgstr ""
+"Zusätzliche jährliche Gebühr für die freiwillige Arbeit auf europäischer "
+"Ebene"
+
+#: templates/etreg/etreg.html:179 templates/etreg/person_form_SVN.html:278
+msgid "Additional fee for Non-Tall Club members"
+msgstr "Zusätzliche Gebühr für Nichtmitglieder eines Klubs der Langen"
+
+#: templates/etreg/etreg.html:180 templates/etreg/person_form_SVN.html:279
+msgid "Payments only by Bank Transfer to:"
+msgstr "Zahlungen nur per Überweisung an:"
+
+#: templates/etreg/etreg.html:181 templates/etreg/person_form_SVN.html:280
+msgid "Beneficiary's name and address:"
+msgstr "Begünstigter und Adresse:"
+
+#: templates/etreg/etreg.html:182 templates/etreg/person_form_SVN.html:281
+msgid "Po Box 186"
+msgstr "Po Box 186"
+
+#: templates/etreg/etreg.html:183 templates/etreg/person_form_SVN.html:282
+msgid "Beneficiary bank account / bank details:"
+msgstr "Kontonummer des Begünstigten / Bank Details:"
+
+#: templates/etreg/etreg.html:184 templates/etreg/person_form_SVN.html:283
+msgid "Nordea Bank Finland Plc,"
+msgstr "Nordea Bank Finland Plc,"
+
+#: templates/etreg/etreg.html:185 templates/etreg/person_form_SVN.html:284
+msgid "Total amount EUR"
+msgstr "Gesamtsumme EURO"
+
+#: templates/etreg/etreg.html:186 templates/etreg/person_form_SVN.html:285
+msgid ""
+"All bank charges are at the responsibility of the participants. For payments "
+"outside Europe, add 7 EUR to the total amount to cover receiving bank’s fee "
+"of incoming payment! Message for payment: ET2012FI/participant’s name/-s."
+msgstr ""
+"Alle Bankgebühren obliegen der Verantwortung der Teilnehmer. Für Zahlungen "
+"von ausserhalb Europas, bitte 7.00 Euro zusätzlich für die Gebühr des "
+"Empfangs der erhaltenden Bank! Kommentar für die Zahlung: ET2012 FI / Name "
+"des/r Teilnehmer/s."
+
+#: templates/etreg/person_form.html:34
+#, fuzzy
+msgid "Electronic registration will open here"
+msgstr "Elektronische Anmeldung werden in Kürze hier zu öffnen."
+
+#: templates/etreg/person_form.html:35
+#, fuzzy
+msgid "Please be patient"
+msgstr "Bitte haben Sie Geduld!"
+
+#: templates/etreg/person_form_SVN.html:17
+#: templates/etreg/person_form_SVN.html:24
+#, fuzzy
+msgid "Add registration"
+msgstr "Anmeldeformular"
+
+#: templates/etreg/person_form_SVN.html:18
+#, fuzzy
+msgid "Update registration information"
+msgstr "Anmeldeformular"
+
+#: templates/etreg/person_form_SVN.html:19
+#: templates/etreg/person_form_SVN.html:26
+msgid "View all registrations"
+msgstr ""
+
+#: templates/etreg/person_form_SVN.html:25
+#, fuzzy
+msgid "View registration information"
+msgstr "Anmeldeformular"
+
+#: templates/etreg/person_form_SVN.html:290
+msgid "Electronic registration will open here."
+msgstr "Online Anmeldung entsteht hier in Kürze."
+
+#: templates/etreg/person_form_SVN.html:291
+msgid "Please be patient!"
+msgstr "Bitte haben Sie Geduld!"
+
+#: templates/profiles/create_profile.html:11
+msgid "Create Profile"
+msgstr ""
+
+#: templates/profiles/create_profile.html:14
+msgid "My Profile"
+msgstr ""
+
+#: templates/profiles/create_profile.html:14
+#: templates/profiles/create_profile.html:25
+msgid "Create"
+msgstr ""
+
+#: templates/profiles/create_profile.html:18
+msgid "Create profile"
+msgstr ""
+
+#~ msgid "Scandic Rosendahl"
+#~ msgstr "Scandic Rosendahl"
+
+#~ msgid "Cumulus Hämeenpuisto"
+#~ msgstr "Cumulus Hämeenpuisto"
+
+#~ msgid "Scandic City Tampere"
+#~ msgstr "Scandic City Tampere"
+
+#~ msgid "Hostel Sofia"
+#~ msgstr "Hostel Sofia"
+
+#~ msgid "Omena Hotel Tampere 1"
+#~ msgstr "Omena Hotel Tampere 1"
+
+#~ msgid "Omena Hotel Tampere 2"
+#~ msgstr "Omena Hotel Tampere 2"
+
+#~ msgid "Pieni- ja Isokenkäiset ry/ET2012FI"
+#~ msgstr "Pieni- ja Isokenkäiset ry/ET2012FI"
+
+#~ msgid "00931 Helsinki, Finland"
+#~ msgstr "00931 Helsinki, Finnland"

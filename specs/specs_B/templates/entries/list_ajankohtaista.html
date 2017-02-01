@@ -1,0 +1,10 @@
+{% block content %}
+  {% for entry in entries %}
+    <h2 class="orange">{{ entry.label|safe }}</h2>
+	{{ entry.abstract|safe }}
+    {% if entry.show_more %}
+      <br />
+	  <a href="{{ entry.get_absolute_url }}">Lue lis&auml;&auml;</a>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

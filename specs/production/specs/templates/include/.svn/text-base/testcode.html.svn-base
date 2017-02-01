@@ -1,0 +1,12 @@
+{% extends "boxes/code_output_auto.html" %}
+
+{% block content %}
+<strong>Testaustietoja:</strong><br />
+K&auml;ytt&auml;j&auml; (user): {{ user }}<br />
+K&auml;ytt&auml;j&auml; (user.first_name, user.last_name): {{ user.first_name }} {{ user.last_name }}<br />
+Cookie: {{ cookie }}<br />
+Session: {{ session }}
+<p>
+  Debug: {{ test }}
+</p>
+{% endblock %}

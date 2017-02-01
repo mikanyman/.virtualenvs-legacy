@@ -1,0 +1,98 @@
+/* ---------- Fading corners ---------- */
+.fading_corner_1 {
+	background-image: url(/img/corners/fading_corner_1.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: verdana;
+	padding: 10px 10px 0 10px;
+	margin-bottom: 16px;
+}
+/*
+.fading_corner_1 p {
+	margin: 0;
+	padding: 0;
+	}
+*/
+.fadcorner1_308_lmarg10-auto {
+	background-image: url(/img/corners/fading_corner_1.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin: 0px 10px 16px 10px;
+}
+
+.fading_corner_1_C5DAEA { /* light blue */
+	background-image: url(/img/corners/fading_corner_1_C5DAEA.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_1_CEEAC5 { /* light green */
+	background-image: url(/img/corners/fading_corner_1_CEEAC5.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+
+.fading_corner_2 {
+	background-image: url(/img/corners/fading_corner_2.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_3 {
+	background-image: url(/img/corners/fading_corner_3.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_4 {
+	background-image: url(/img/corners/fading_corner_4.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_5 {
+	background-image: url(/img/corners/fading_corner_5.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_6 {
+	background-image: url(/img/corners/fading_corner_6.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_7 {
+	background-image: url(/img/corners/fading_corner_7.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_8 {
+	background-image: url(/img/corners/fading_corner_8.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}

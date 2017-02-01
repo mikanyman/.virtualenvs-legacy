@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 52
+*.mo
+*.pyc
+django.wsgi
+manage.py
+pad.txt
+sitestatic
+
+END

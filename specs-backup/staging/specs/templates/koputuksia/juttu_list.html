@@ -1,0 +1,30 @@
+{% extends "base_1n.html" %}
+
+{% block content %}
+{% load comments %}
+<div class="h1_oneline">Luettelo:</div>
+{% if object_list %}
+    <table border="0" width="100%" cellspacing="0" cellpadding="4">
+    <tr>
+      <td width="15"><a class="img_link" href="/sites/specs/koputuksia/add/"><img src="/icon/bitcons/snow.gif"></a></td>
+      <td colspan="3"><a href="/sites/specs/koputuksia/add/">Lis&auml;&auml; juttu</a></td>
+    </tr>
+    {% for object in object_list %}
+    {% get_free_comment_count for koputuksia.juttu object.id as comment_count %}
+    <tr {% cycle bgcolor="#ECECEC",bgcolor="#FFFFFF" %}>
+      <td width="15"><a class="img_link" href="/sites/specs/koputuksia/{{ issue_num }}/{{ object.id }}/"><img src="/icon/bitcons/arrow1_se.gif"></a></td>
+      <td><a href="/sites/specs/koputuksia/{{ issue_num }}/{{ object.id }}/">{{ object.headline }}</a></td><!--
+      <td width="100" class="comment_count"><{{ comment_count }} kommenttia</td>-->
+      <td width="15"><a class="img_link" href="/sites/specs/koputuksia/{{ issue_num }}/edit/{{ object.id }}"><img src="/icon/bitcons/edit.gif" border="0"></a></td>
+      <td width="15"><a class="img_link" href="/sites/specs/koputuksia/{{ issue_num }}/delete/{{ object.id }}"><img src="/icon/bitcons/trash.gif"></a></td>
+    </tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+{% endblock %}
+
+{% block sidebar %}
+{% include "/var/django/specs/templates/koputuksia/sidebar.inc" %}
+{% endblock%}

@@ -1,0 +1,30 @@
+Joonaksen muutokset 3.3.
+apps/geomaps/views.py
+jquery.location_picker.js
+mylocation_frontpg.html
+
+<table>
+  <tr>
+    <td style="text-align:right">
+      <label for="id_identification">E-post eller användarnamn</label>
+    </td>
+    <td>
+      <input id="id_identification" type="text" class="required" name="identification" maxlength="75" />
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:right">
+      <label for="id_password">Lösenord</label>
+    </td>
+    <td>
+      <input id="id_password" type="password" class="required" name="password" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <p class="checkbox">
+        <label for="id_remember_me"><input id="id_remember_me" type="checkbox" class="required" name="remember_me" /> Remember me for a month</label>
+      </p>
+    </td>
+  </tr>
+</table>

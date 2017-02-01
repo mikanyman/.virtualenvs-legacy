@@ -1,0 +1,16 @@
+{% comment %}
+<ul>
+{% for item in menu_items %}
+  <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/{{ item.application }}/{{ item.page }}/" id="{{ item.page }}Link"><span>{{ item.item }}</span></a></li>
+{% endfor %}
+</ul>
+{% endcomment %}
+<div id="{{ app }}" class="vmenu_sidebar">
+  <div class="vmenu_sidebar_hea"><span>Tietojen yll&auml;pito</span></div>
+  <div class="vmenu_sidebar_content">
+    <ul>
+      {{ test }}
+      {% comment %}<li class="first"><a href="/{{ lang }}/{{ profile }}/{{ event }}/{{ item.application }}/{{ item.page }}/" id="{{ item.application }}Link"><span class="inner">{{ item.item }}</span></a></li>{% endcomment %}
+    </ul>
+  </div>
+</div>

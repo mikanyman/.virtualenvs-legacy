@@ -1,0 +1,48 @@
+{% extends layout %}
+
+{% block sidebar_left %}
+  <div class="rbox">
+    <div class="rbox_hea">Otsikko</div>
+    <div class="rbox_content">
+      {% include "include/lipsum_1p.html" %}
+    </div>
+  </div>
+  <div class="rbox">
+    <div class="rbox_hea">Otsikko</div>
+    <div class="rbox_content">
+	  {% include "include/lipsum_1p.html" %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block main %}
+    <div class="fading_corner_1">
+      <div class="hea_midbox_blue">Lorem ipsum dolor sit amet</div>
+	  {% include "include/lipsum_1p.html" %}
+    </div>
+
+    <div class="fading_corner_1">
+      <div class="hea_midbox_green">Lorem ipsum dolor sit amet</div>
+	  {% include "include/lipsum_1p.html" %}
+    </div>
+	
+    <div class="fading_corner_1">
+      <div class="hea_midbox_orange">Lorem ipsum dolor sit amet</div>
+	  {% include "include/lipsum_1p.html" %}
+    </div>
+{% endblock %}
+
+{% block sidebar_right %}
+    <div class="rbox">
+      <div class="rbox_hea">Otsikko</div>
+      <div class="rbox_content">
+		{% include "include/lipsum_1p.html" %}
+      </div>
+    </div>
+    <div class="rbox">
+      <div class="rbox_hea">Otsikko</div>
+      <div class="rbox_content">
+		{% include "include/lipsum_1p.html" %}
+      </div>
+    </div>
+{% endblock %}

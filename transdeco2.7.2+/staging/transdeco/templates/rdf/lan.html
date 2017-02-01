@@ -1,0 +1,38 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>GeoMaster</title>
+<style type="text/css">
+#wrap {
+	width: 800px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+a {
+	color:#105CB6;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+<p><< <a href="/rdf/geomaster/">&Aring;terv&auml;nd till f&ouml;rsta sidan</a></p>
+<p>Data l&auml;ses in i RDF-format fr&aring;n <a href="http://kulturarvsdata.se/resurser/aukt/geo/county/county.rdf">http://kulturarvsdata.se/resurser/aukt/geo/county/county.rdf</a> d&aring; sidan laddas. 
+Data &auml;r allts&aring; inte lagrat lokalt utan h&auml;mtas fr&aring;n en auktoritetslista p&aring; webben. 
+Det inh&auml;mtade datat parsas med modulen <a href="http://www.rdflib.net/">RDFLib</a>. D&auml;refter g&ouml;rs 
+en s&ouml;kning g&ouml;rs med hj&auml;lp av <a href="http://www.w3.org/TR/rdf-sparql-query/">SPARQL</a>-spr&aring;ket. 
+Allt detta sker inom ramen f&ouml;r <a href="http://www.djangoproject.com">Django</a> som ocks&aring; visar s&ouml;kresultatet.</p>
+<p>
+<hr>
+<h3>Sveriges l&auml;n:</h3>
+{% for element in graph_as_list %}
+  {{ element }}<br />
+{% endfor %}
+</p>
+<hr>
+
+<p>
+  <small><a href="email:mika.nyman@inbox.com">mika.nyman@inbox.com</a></small>
+</p>
+</div>
+</body>
+</html>

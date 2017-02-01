@@ -1,0 +1,140 @@
+{% extends "index.html" %}
+
+{% block show_item %}
+{% if results %}
+<div class="link">
+  <a href="/rock-art/show-all/">Takaisin listaukseen</a>
+</div>
+
+<div class="map_others">
+
+  <ul id="tablist">
+    <li><a href="#sc1" class="current" onClick="return expandcontent('sc1', this)">Google Maps</a></li>
+    <li><a href="#sc2" onClick="return expandcontent('sc2', this)">Bing Maps</a></li>
+    <li><a href="#sc3" onClick="return expandcontent('sc3', this)">MapQuest</a></li>
+  </ul>
+  
+  <div id="tabcontentcontainer">
+    
+    <!--<div id="sc1" class="tabcontent">-->
+      <div id="mapCanvas" class="mapCanvas">
+
+	<div id={{results.id}} class='waypoint linkOFF'>
+	  {{results.name}} ({{results.geometry.y}}, {{results.geometry.x}}, {{results.place}}, {{results.description}})
+	</div>
+	
+      </div>
+      <div id="infoPanel" class="infoPanel">
+	<!-- <b>Marker status:</b> -->
+	<div id="markerStatus"></div>
+	<b>Sijainti:</b>
+	<div id="info">{{ results.geometry.y }}, {{ results.geometry.x }}</div>
+	<b>Lähin osoite:</b>
+	<div id="address">{{ results.nearest_address }}</div>
+      </div>
+    <!--</div>-->
+
+    <div id="sc2" class="tabcontent">
+      <div id="myMap" class="mapCanvas"></div>
+    </div>
+
+    <div id="sc3" class="tabcontent">
+      <div id="map" style="width:520px; height:420px;"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="list">
+  <table>
+    <tr>
+      <td class="title"> Kohteen nimi: </td>
+      <td class="text" id="nimi">{{ results.name }}</td>
+    </tr>
+
+    <tr>
+      <td class="title">Paikkakunta: </td>
+      <td class="text" id="paikkakunta" name="paikkakunta">{{ results.place }}</td>
+    </tr>
+    
+    <tr>
+      <td class="title">Kuvaus: </td>
+      <td class="text" id="kuvaus">{{ results.description }}</td>
+    </tr>
+
+    <tr>
+      <td class="title">Peruskartta:</td>
+      <td class="text">{{ results.base_map }}</td>
+    </tr>
+	
+    <tr>
+      <td class="title">Karttanimi:</td>
+      <td class="text">{{ results.map_name }}</td>
+    </tr>
+    
+    <tr>
+      <td class="title">N:</td>
+      <td class="text">{{ results.n }}</td>
+    </tr>
+
+    <tr>
+      <td class="title">E:</td>
+      <td class="text">{{ results.e }}</td>
+    </tr>
+    
+    <tr>
+      <td class="title">x:</td>
+      <td class="text">{{ results.x }}</td>
+    </tr>
+
+    <tr>
+      <td class="title">y:</td>
+      <td class="text">{{ results.y }}</td>
+    </tr>
+
+    <tr>
+      <td class="title">p:</td>
+      <td class="text">{{ results.p }}</td>
+    </tr>
+
+    <tr>
+      <td class="title">i:</td>
+      <td class="text">{{ results.i }}</td>
+    </tr>
+
+    <tr>
+      <td class="title">Päävesistöalue:</td>
+      <td class="text">{{ results.area }}</td>
+    </tr>
+
+  </table>
+</div>
+
+<div>
+  <table>
+    <tr>
+      <td class="link">&nbsp;</td>
+      <td><a href="http://kansalaisen.karttapaikka.fi/koordinaatit/koordinaatit.html?y={{ results.n }}&x={{ results.e }}&srsName=EPSG%3A3067&show=N%C3%A4yt%C3%A4+kartalla&lang=fi&e={{ results.e }}&n={{ results.n }}&scale=16000&tool=siirra&styles=normal&lang=fi" target="_blank">Sijainti Kansalaisen Karttapaikalla</a></td>
+    </tr>
+  </table>
+</div>
+
+<div class="thumbnails_top"></div>
+<div class ="thumbnails">
+  <table>
+    <tr>
+
+      {% for image in results.image_of_waypoint.all %}
+      <td>
+	<a href="{{ STATIC_URL }}pics/{{ image.name }}.jpg" rel="lightbox[kuvat]" title="{{ image.description }}. <br/> Kuvaaja: {{ image.photographer }}"><img class="thumb" src="{{ STATIC_URL }}pics/{{ image.name }}_thumb.jpg" /></a><br/>
+      </td>
+      {% endfor %}
+
+    </tr>
+  </table>
+</div>
+<div class="thumbnails_bottom"></div>
+
+{% endif %}
+{% endblock %}

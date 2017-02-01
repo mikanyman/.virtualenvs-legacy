@@ -1,0 +1,258 @@
+body {
+	background: #ccc;
+	}
+body#aloitus a#aloitusLink,
+body#taiteilijat a#taiteilijatLink,
+body#teos a#taiteilijatLink,
+body#yhteys a#yhteysLink,
+body#tilaus a#tilausLink {
+	background-color: #AD1216;
+	}
+a {
+	color: #000;
+	}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	font-weight: normal;
+	margin: 8px 50px;
+	}
+#wrap {
+	background: #fff;
+	width: 980px;
+	margin: 0 auto;
+	}
+#topbanner {
+	/*background: #000 url(http://a29.myrootshell.com:8080/transdeco/img/transdeco_logo.jpg) center no-repeat;*/
+    background-color: #000000;
+    text-align: center;
+	width: auto;
+	/* height: 99px; */
+	padding: 8px 0px 4px 0px;
+	margin-bottom: 2px;
+	}
+
+/* ---------- topnavi ----------*/
+#topnavi {
+	width: auto;
+	height: 30px;
+	background-color: #444;
+	}
+#topnavi_left {
+	float: left;
+	width: 90px;
+	height: 30px;
+	border-right: 2px solid #fff;
+	}
+#topnavi ul {
+	margin: 0;
+	padding: 0;
+	}
+#topnavi li {
+	width: 200px;
+	float: left;
+	list-style: none;
+	border-right: 2px solid #fff;
+	}
+#topnavi a {
+	float: left;
+	display: block;
+	width: 168px;
+	height: 20px;
+	text-align: center;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-decoration: none;
+	padding: 6px 16px 4px 16px;
+	}
+#topnavi a:hover {
+	background-color: #036;
+	}
+#topnavi a:active {
+	background-color: #036;
+	}
+
+
+/* ---------- headline & abstract ----------*/
+#headline {
+	width: auto;
+	}
+
+#abstract {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13.2px;
+	margin: 0 0 0 50px;
+	}
+
+/* ---------- content ----------*/
+#content {
+	width: auto;
+	min-height: 420px;
+	margin: 0 auto;
+	}
+#frontpg_images_table {
+	padding: 0;
+	border: 0;
+	margin: 8px 0 0 40px;
+	}
+
+/* ---------- work list ---------- */
+#work_list {
+	background-color: #ccc;
+	width: auto;
+	min-height: 300px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 8px 8px 8px 8px;
+	padding-top: 8px;
+	padding-left: 48px;
+}
+.works_table {
+	margin: 0 auto;
+	border-collapse: collapse; 
+	border-width: 0;
+	padding-left: 0;
+	border: 0; /* REQUIRED 0 */
+	}
+.works_table td {
+	width: 280px;
+	height: 256px;
+	text-align: left;
+	vertical-align: bottom;
+	padding: 8px 8px 8px 20px;
+	}
+.text_field {
+	padding-top: 20px;
+	padding-left: 20px;
+	text-align: left;
+	}
+.enlarge_field {
+	float: right;
+	padding-top: 20px;
+	padding-right: 20px;
+	}
+.enlarge_field img {
+	border: 0;
+	}
+/* ---------- square pict ---------- */
+.pict_link img {
+	border: none;
+	width: 100px;
+	margin: 2px 4px 2px 4px;
+	}
+
+/* ---------- order info ---------- */
+#order_info {
+	margin-left: -40px;
+	padding: 0 0 8px 0;
+	}
+
+
+/* ---------- footer ----------*/
+#footer {
+	color: #fff;
+	background-color: #000;
+	width: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-left: solid #AD1216 20px;
+	}
+#artist_img {
+	float: left;
+	margin-right: 16px;
+	}
+#footer_text {
+	clear: right;
+	padding: 8px 16px;
+	}
+	
+/* ---------- artist footer ----------*/
+#artist_footer {
+	width: auto;
+	height: 105px;
+	color: #fff;
+	background-color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-left: solid #AD1216 20px;
+	}
+#artist_footer_text {
+	width: auto;
+	clear: right;
+	padding-top: 16px;
+	margin-right: 20px;
+	}
+
+/* ---------- artist names ---------- */
+
+/* div */
+#artists {
+	width: auto;
+	border: solid 1px #ccc;
+	margin: 0;
+	padding: 0;
+	background: #ccc;
+	}
+	
+/* table */
+#artist_names {
+	width: 920px;
+	padding: 0;
+	margin: 4px 0px 12px 36px;
+	}
+#artist_names td {
+	padding: 0 10px 0 10px;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	}
+#artist_names td a {
+	text-decoration: none;
+	}
+#artist_names td a:hover {
+	color: #AD1216;
+	}
+#artist_names td a:active {
+	color: #AD1216;
+	}
+	
+/* ---------- work names ---------- */
+
+.uutta {
+	position: relative;
+	top: -2px;
+	color: #fff;
+	background-color: #ad1216;
+	width: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	padding: 1px 4px 1px 4px;
+	margin-left: 6px;
+}
+.uusi {
+	color: #fff;
+	background-color: #ad1216;
+	width: 28px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 1px 4px 2px 4px;
+}
+.uusi_enlarge {
+	position: relative;
+	top: -3px;
+	color: #fff;
+	background-color: #ad1216;
+	width: 28px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 1px 4px 2px 4px;
+	margin-left: 8px;
+}
+.message {
+	color: #AD1216;
+	font-weight: bold;
+}

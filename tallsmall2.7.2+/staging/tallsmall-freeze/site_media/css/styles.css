@@ -1,0 +1,1801 @@
+/* speci */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+} 
+
+body {
+	background-color: #324796;
+	/*
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/backgrounds/fading_background_8.png);
+	background-repeat: repeat-x;
+	*/
+	background: transparent url(http://www.tallsmall.fi:8080/site_media/img/background/bg_diag_dgrey.gif) repeat scroll 0% 0%
+	}
+/*
+p a {
+	color: #000;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+*/
+a { color: #105cb6; }
+a:hover { color: #E54A14; }
+a:active { color: #f33; }
+
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+/* ---------- heading styles ---------- */
+h1 {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 4px;
+}
+h2 {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 4px;
+}
+h3 {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 4px;
+	}
+h4 {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 4px;
+	}
+	
+/* coloring BEG */
+h1 .blue, h2 .blue, h3 .blue, h4 .blue {
+	margin: 1px 0 4px 0;
+	color: #0077d4; /* MidBlue */
+	border-bottom: 1px solid #0077d4; /* MidBlue */	
+	}
+h1.blue, h2.blue, h3.blue, h4.blue {
+	margin: 1px 0 4px 0;
+	color: #0077d4; /* MidBlue */
+	}
+h1 .dblue, h2 .dblue, h3 .dblue, h4 .dblue {
+	margin: 1px 0 4px 0;
+	color: #105CB6; /* DarkBlue */
+	border-bottom: 1px solid #0077d4; /* MidBlue */	
+	}
+h1.dblue, h2.dblue, h3.dblue, h4.dblue {
+	margin: 1px 0 4px 0;
+	color: #105CB6; /* DarkBlue */
+	}
+h1 .green, h2 .green, h3 .green, h4 .green {
+	margin: 1px 0 4px 0;
+	color: #3CB371; /* MediumSeaGreen */
+	border-bottom: 1px solid #3CB371; /* MediumSeaGreen */
+	}
+h1.green, h2.green, h3.green, h4.green {
+	margin: 1px 0 4px 0;
+	color: #3CB371; /* MediumSeaGreen */
+	}
+h1 .orange, h2 .orange, h3 .orange, h4 .orange {
+	margin: 1px 0 4px 0;
+	color: #E54A14;
+	border-bottom: 1px solid #f60;
+	}
+h1.orange, h2.orange, h3.orange, h4.orange {
+	margin: 1px 0 4px 0;
+	color: #E54A14;
+	}
+h1 .grey, h2 .grey, h3 .grey, h4 .grey {
+	margin: 1px 0 4px 0;
+	color: #666;
+	border-bottom: 1px solid #f60;
+	}
+h1.grey, h2.grey, h3.grey, h4.grey {
+	margin: 1px 0 4px 0;
+	color: #666;
+	}
+/* coloring END */
+
+
+/* ---------- Muradora topnavi ---------- */
+#topnavi {
+	float: left;
+	width: 100%;
+	/* background: #2AA8C3 ... #004C7E=tummansininen ... url(http://www.tallsmall.fi:8080/site_media/img/muradora/bluepix.gif) repeat-x bottom left; */ /* topnavi-color */
+	background: url(http://www.tallsmall.fi:8080/site_media/img/specs/tab_background.gif) no-repeat left top;
+}
+#topnavi ul {
+	margin: 0;
+	padding: 0 10px 0 20px;
+	list-style: none;
+	}
+#topnavi li {
+	display: inline;
+	margin-bottom: 0;
+	padding: 0;
+}
+#topnavi a {
+	float: left;
+	background: url("http://www.tallsmall.fi:8080/site_media/img/muradora/tableft.gif") no-repeat left top;
+	margin: 0 2px 0 0; /* alkujaan vain nolla */
+	padding: 0 0 0 4px;
+	text-decoration: none;
+	border-bottom: solid 1px #2AA8C3 /* #004C7E topnavi-color */
+}
+#topnavi a span {
+	float: left;
+	background: url("http://www.tallsmall.fi:8080/site_media/img/muradora/tabright.gif") no-repeat right top;
+	display: block;
+	padding: 4px 15px 4px 6px;
+	color: #002440; /* #666 */
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: normal;
+	}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+/*
+#topnavi a span {
+	float: none;
+	}
+*/
+/* End IE5-Mac hack */
+
+#topnavi a:hover {
+	background-position: 0% -42px;
+	border-bottom: solid 1px #fff;
+}
+
+#topnavi a:hover span {
+	color: #E54A14; /* orange */
+	background-position: 100% -42px;
+	}
+
+#topnavi a:active {
+	background-position: 0% -42px;
+}
+
+#topnavi a:active span {
+	background-position: 100% -42px;
+	}
+
+body#etusivu a#etusivuLink,
+body#verkkolehti a#verkkolehtiLink,
+body#kuvagalleria a#kuvagalleriaLink,
+body#tagforum_list a#tagforum_listLink,
+body#vaikuta a#vaikutaLink,
+body#apua_ongelmiin a#apua_ongelmiinLink,
+body#tuotteet a#tuotteetLink,
+body#yhdistys a#yhdistysLink {
+	background-position: 0% -42px;
+	border-bottom: solid 1px #fff;
+}
+
+body#etusivu a#etusivuLink span,
+body#verkkolehti a#verkkolehtiLink span,
+body#kuvagalleria a#kuvagalleriaLink span,
+body#tagforum_list a#tagforum_listLink span,
+body#vaikuta a#vaikutaLink span,
+body#apua_ongelmiin a#apua_ongelmiinLink span,
+body#tuotteet a#tuotteetLink span,
+body#yhdistys a#yhdistysLink span {
+	background-position: 100% -42px;
+	color: #E54A14 /* selected tab orange */
+	}
+	
+/* ---------- /Muradora topnavi ---------- */
+
+/* navi arrows */
+.back_to_index {
+	margin-bottom: 10px;
+	}
+.back_to_index a {
+	color: #E96701; /* orange */
+	text-decoration: none;
+	}
+.back_to_index a:hover {
+	color: #696; /* green */
+	}
+
+
+.hea_midbox_blue {
+	color: #0077d4; /* MidBlue */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.hea_midbox_green {
+	color: #3CB371; /* MediumSeaGreen */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.hea_midbox_orange {
+	color: #E54A14;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.heablock_digg_blue {
+	width: 261px;
+	height: 35px;
+	background-color: #356AA0; /* Digg Blue */
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.heablock_digg_blue span {
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+.heablock_basecamp_green {
+	width: 261px;
+	height: 35px;
+	background-color: #6BBA70; /* Basecamp Green */
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.heablock_basecamp_green span {
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+.heablock_lastfm_red {
+	width: 261px;
+	height: 35px;
+	background-color: #D01F3C; /* Last.FM Red */
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.heablock_lastfm_red span {
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+.heablock_rss_orange {
+	width: 261px;
+	height: 35px;
+	background-color: #FF7400; /* RSS Orange */
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.heablock_rss_orange span {
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+.heablock_black {
+	width: 261px;
+	height: 35px;
+	background-color: #000; /* Black */
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.heablock_black span {
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+.heablock_gmail_blue {
+	width: 261px;
+	height: 35px;
+	background-color: #C3D9FF; /* Gmail Blue */
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #105cb6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.heablock_gmail_blue span {
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+.heablock_qoop_mint {
+	width: 261px;
+	height: 35px;
+	background-color: #CDEB8B; /* Qoop Mint */
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #105cb6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.heablock_qoop_mint span {
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+.heablock_interactiveaction_yellow {
+	width: 261px;
+	height: 35px;
+	background-color: #FFFF88; /* Interactive Action Yellow */
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #105cb6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.heablock_interactiveaction_yellow span {
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+/* ---------- textclasses ---------- */
+.textbody {
+	margin: 16px 16px 16px 80px;
+	line-height: 16px;
+}
+.help_text {
+	color: #2e8b57; /* SeaGreen */
+}
+.text_666 {
+	color: #2e8b57; /* SeaGreen */
+	font-weight: normal;
+}
+.text_333 {
+	color: #333;
+}
+.speech {
+	position: relative;
+	top: 2px;
+}
+.dark_blue_txt {
+	color: #347CC0;
+}
+
+/* page status */
+#page_status_top {
+	width: 660px;
+	height: 20px;
+	padding-left: 20px;
+}
+#page_status_bottom {
+	width: 660px;
+	height: 20px;
+	padding-left: 20px;
+}
+.page_status_left {
+	float: left;
+	/* width: 250px; */
+	height: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #848484; /* dark-grey */
+}
+.page_status_right {
+	float: right;
+	text-align: right;
+	/* width: 350px; */
+	height: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #848484; /* dark-grey */
+}
+.page_status_left a, .page_status_right a {
+	color: #E96701; /* orange */
+	text-decoration: none;
+}
+.page_status_left a:hover, .page_status_right a:hover {
+	color: #696; /* green */
+}
+.page_status_left .arrow, .page_status_right .arrow {
+	position: relative;
+	top: 1px;
+}
+.page_status_left .prev_arrow, .page_status_right .prev_arrow {
+	position: relative;
+	top: 1px;
+	padding-left: 0px; /* 8px xxx */
+}.page_status_left .next_arrow, .page_status_right .next_arrow {
+	position: relative;
+	top: 1px;
+	padding-right: 0px; /* 8px xxx */
+}
+.page_status_left .mid_space, .page_status_right .mid_space {
+	padding-left: 46px;
+	padding-right: 46px;
+}
+
+/* ---------- wrap ---------- */
+#wrap {
+	width: 980px;
+	margin: 0 auto;
+	border: solid 1px #666; /* #004C7E topnavi-color */
+	background-color: #fff;
+	}
+	
+/* ---------- header, footer, welcome ---------- */
+#header {
+	height: 26px;
+	background-color: #00457B; /* #2971AD */
+	border-bottom: solid 1px #FFC300;
+	color: #fff;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+#footer {
+	clear: both;
+	height: 26px;
+	background-color: #00457B;
+	color: #fff;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#header a, #footer a {
+	color: #fff;
+	text-align: center;
+	padding-top: 4px;
+}
+#footer span {
+	position: relative;
+	top: 5px;
+	padding-left: 260px;
+	color: #FFC300;
+}
+.welcome {
+	color: #fc3;
+	margin-left: 10px;
+}
+
+/* ---------- headerlinks ---------- */
+#log_in_out_img {
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	}
+#log_in_out_txt {
+	float: left;
+	margin-top: 4px;
+    margin-left: 6px;
+	}
+#event {
+	float: right;
+	margin-top: 4px;
+	margin-right: 16px;
+	}
+#profile {
+	float: right;
+	margin-top: 4px;
+	margin-right: 16px;
+	}
+#lang {
+    float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	}
+
+/* ---------- topbanner ---------- */
+#topbanner {
+	width: auto;
+	height: 105px;
+	}
+#banner {
+	width: auto;
+	height: 80px;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/specs/oikean_kokoinen_80_slogan.gif) no-repeat top left;
+}
+#logo_img {
+	position: relative;
+	top: 2px;
+	float: left;
+	/*
+	background-color: #fcc;
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/specs/mitta_y.gif);
+	background-repeat: no-repeat;
+	*/
+}
+#logotext {
+	position: relative;
+	top: 22px;
+	left: 290px;
+	color: #efefef;
+	font-family: Garamond, Arial, Helvetica, sans-serif;;
+	font-size: 18px;
+	line-height: 18px;
+	}
+#logo_slogan {
+	float: right;
+}
+
+/* content */
+.content {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	min-height: 500px;
+	clear: both;
+}
+
+/* ---------- statusbar ---------- */
+#statusbar {
+	width: auto;
+	padding-top: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#statusbar_frame {
+	width: auto;
+	height: 24px;
+	padding-left: 8px;
+	background-color: #efefef;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/backgrounds/barslide_blue2.gif) repeat-x top left;
+
+	border: solid 1px #bbb; /* 75abea Light Blue */
+	-moz-border-radius-bottomleft:4px;
+	-moz-border-radius-bottomright:4px;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+	overflow:hidden;
+
+}
+.page_name {
+	float: left;
+	margin-top: 1px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: normal;
+	padding-left: 2px;
+	color: #58a; /* Grey 555555 *//* #0077d4 MidBlue *//* #2E8B57 SeaGree *//* #FF6600 Blogger Orange *//* #105cb6 BrightBlue */
+}
+.crumb_path {
+	float: right;
+	margin-top: 5px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	padding-right: 16px;
+	color: #58a; /* Grey 555555 *//* #0077d4 MidBlue *//* #2E8B57 SeaGree *//* #FF6600 Blogger Orange *//* #105cb6 BrightBlue */
+}
+.crumb_path a:link { color: #58a }
+.crumb_path a:visited { color: #58a }
+.crumb_path a:hover { color: #e54a14 }
+
+/* ---------- BOXES ---------- */
+
+/* Fading corners */
+.fading_corner_1
+	{
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_1.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: verdana;
+	padding: 10px 10px 0 10px;
+	margin-bottom: 16px;
+	}
+/*
+.fading_corner_1 p {
+	margin: 0;
+	padding: 0;
+	}
+*/
+.fadcorner1_308_lmarg10-auto
+	{
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_1.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin: 0px 10px 16px 10px;
+	min-height: 150px;
+	}
+.fading_corner_1_C5DAEA
+	{
+	/* light blue */
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_1_C5DAEA.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+	}
+.fading_corner_1_CEEAC5 { /* light green */
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_1_CEEAC5.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+
+.fading_corner_2 {
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_2.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_3 {
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_3.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_4 {
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_4.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_5 {
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_5.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_6 {
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_6.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_7 {
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_7.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_8 {
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_8.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+
+/* /Fading corners */
+
+.box_borderfade_yellow_180 {
+	width: auto;
+	padding: 10px 10px 0 10px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #444;
+	background: #fff url(http://www.tallsmall.fi:8080/site_media/img/backgrounds/barslide_namesday.gif) repeat-x top left;
+	margin-bottom: 10px;
+
+	-moz-border-radius-bottomleft:4px;
+	-moz-border-radius-bottomright:4px;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+	border:1px solid #bbb;
+	overflow:hidden;
+}
+.box_borderfade_yellow_180 ul { margin-left: 20px; }
+.box_borderfade_yellow_180 li { list-style: url(http://www.tallsmall.fi:8080/site_media/img/arrows/orange_boxarrow.gif); margin-bottom: 4px }
+.box_borderfade_yellow_180 a { color: #0077D4; }
+.box_borderfade_yellow_180 a:hover { color: #E54A14; }
+.box_borderfade_yellow_180 a:active { color: #f33; }
+.box_borderfade_yellow_180 a:visited { color: #0077D4; }
+
+.box_borderfade_yellow_185 {
+	width: auto;
+	padding: 10px 10px 0 10px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #444;
+	background: #fff url(http://www.tallsmall.fi:8080/site_media/img/backgrounds/barslide_namesday.gif) repeat-x top left;
+	margin-bottom: 10px;
+	margin-left: -10px;
+
+	-moz-border-radius-bottomleft:4px;
+	-moz-border-radius-bottomright:4px;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+	border:1px solid #bbb;
+	overflow:hidden;
+}
+.box_borderfade_yellow_185 ul { margin-left: 20px; }
+.box_borderfade_yellow_185 li { list-style: url(http://www.tallsmall.fi:8080/site_media/img/arrows/orange_boxarrow.gif); margin-bottom: 4px }
+.box_borderfade_yellow_185 a { color: #0077D4; }
+.box_borderfade_yellow_185 a:hover { color: #E54A14; }
+.box_borderfade_yellow_185 a:active { color: #f33; }
+.box_borderfade_yellow_185 a:visited { color: #0077D4; }
+
+/* ---------- NAMESDAY COMPONENT ---------- */
+
+#names_day .calendar {
+  float: left;
+  margin-right: 12px;
+  width: 42px;
+  height: 42px;
+}
+#names_day .calendar-icon-01 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/01.gif') }
+#names_day .calendar-icon-02 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/02.gif') }
+#names_day .calendar-icon-03 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/03.gif') }
+#names_day .calendar-icon-04 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/04.gif') }
+#names_day .calendar-icon-05 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/05.gif') }
+#names_day .calendar-icon-06 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/06.gif') }
+#names_day .calendar-icon-07 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/07.gif') }
+#names_day .calendar-icon-08 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/08.gif') }
+#names_day .calendar-icon-09 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/09.gif') }
+#names_day .calendar-icon-10 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/10.gif') }
+#names_day .calendar-icon-11 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/11.gif') }
+#names_day .calendar-icon-12 { background: url('http://www.tallsmall.fi:8080/site_media/img/calendar-icons/12.gif') }
+
+#names_day .calendar-day {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #666;
+  width: 42px;
+  text-align:center;
+  padding-top: 17px;
+}
+/* ---------- COLUMNS ---------- */
+/* mm. etusivu, kuvagalleria */
+#content {
+	width: auto;
+	min-height: 500px;
+}
+.content_padding_10 {
+	width: auto;
+	min-height: 500px;
+	padding: 10px;
+}
+#col_1_full {
+    width: auto;
+	height: 500px;
+}
+#col1_col2_left {
+	float: left;
+	width: 780px;
+	}
+#col2_col3_right {
+	float:right;
+	width:780px;
+	}
+
+/* yksittaiset palstat */
+#col2 {
+	float:right;
+	width: 560px;
+	padding: 10px;
+	}
+#col1 {
+	float:left;
+	width:180px;
+	padding: 10px;
+	}
+#col3 {
+	float:right;
+	width:180px;
+	padding: 10px;
+}
+
+/* blogisivun rakenneosat */
+
+#blog_wrap { /* liukuva tausta http://www.tallsmall.fi:8080/site_media/img/backgrounds/blogback_CEEAC5.gif */
+	width: auto;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/backgrounds/blogback_grey.gif) top right repeat-y;
+	}
+#blog_header {
+	background: #fff;
+	width: auto;
+	height: 7px;
+}
+#blog_footer {
+	clear: left; /* necessary for background to show */
+	width: auto;
+	height: 20px;
+}
+#blog_content {
+	width: auto;
+}
+#blog_main_left {
+	float: left;
+	width: 699px;
+	border-right: dashed 1px #2971AD;
+	min-height: 500px;
+}
+#blog_sidebar_right {
+	float: right;
+	width: 259px;
+	margin-right: 10px;
+	padding-top: 12px;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/backgrounds/blogback_grey.gif) no-repeat top right;
+}
+.kirjoita {
+	width: auto;
+	height: 28px;
+	/*
+	margin-bottom: 16px;
+	background-image: url(http://www.tallsmall.fi:8080/site_media/img/buttons/ebbtcbindex1_0.gif);
+    background-repeat: no-repeat;
+    */
+	}
+.blog_link_set {
+	width: 229px;
+	margin: 0 0 24px 0;
+	padding: 16px 8px;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/corners/fading_corner_8_green.gif) no-repeat top left;
+	color: #333;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+.blog_link_set h2 {
+	margin: 0;
+	color: #3CB371; /* graan: 3CB371, blue: 105cb6 */
+	font-family: Arial, Helvetica, sans-serif;;
+	font-size: 16px;
+	font-weight: bold;
+}
+.blog_link_set ul { /* koioitu blog_list:sta */
+	list-style: none;
+	list-style-image: url(http://www.tallsmall.fi:8080/site_media/img/arrows/orange_boxarrow.gif);
+	list-style-position: outside;
+	}
+.blog_link_set li {
+	margin-left: 20px;
+	}
+.blog_link_set a {
+	color: #105cb6;
+	}
+
+/* blog_list */
+.blog_list {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #105cb6;
+	}
+.blog_list a { color: #105cb6; }
+.blog_list a:hover { color: #E54A14; }
+.blog_list a:active { color: #f33; }
+
+.blog_list ul {
+	list-style-type: none;
+	list-style-image: url(http://www.tallsmall.fi:8080/site_media/img/arrows/orange_boxarrow.gif);
+	list-style-position: outside;
+	margin-left: 20px;
+	}
+.blog_list li {
+	margin-bottom: 4px
+	}
+
+/* ---------- forms ---------- */
+.form-box {
+	width: auto;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	margin: 10px;
+	}
+.form-box fieldset {
+	width: auto;
+	padding: 10px;
+
+	border: solid 1px #75abea;
+	-moz-border-radius-bottomleft:4px;
+	-moz-border-radius-bottomright:4px;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+	overflow:hidden;
+	}
+.form-box legend {
+	color: #0077d4;
+	}
+.form-box label {
+	color: #333;
+	}
+
+/* links */
+.form-box a {
+	font-size: 12px;
+	}
+.form-box a {
+	color: #105CB6;
+	}
+.form-box a:hover {
+	color: #E54A14;
+	}
+.form-box a:active {
+	color: #105CB6;
+	}
+
+/* table */
+.form-box th {
+	text-align: right;
+	vertical-align: top;
+	padding-top: 2px;
+	padding-right: 4px;
+	font-weight: normal;
+	color: #002440;
+	}
+	
+/* form elements */
+.form-box input {
+	color: #002440; /* topnavi text color */
+	background: #e8eff7;
+	border: 1px solid #75abea;
+	font-family: Lucida, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	}
+.form-box textarea {
+	color: #002440; /* topnavi text color */
+	background: #e8eff7;
+	border: 1px solid #75abea;
+	font-family: Lucida, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	}
+/* .form-box .submit input */
+.form-box .submit {
+	color: #002440;
+	background: #ffdb6b; /* topnavi tab color */
+	border: 3px double #75abea;
+	margin-top: 20px;
+	}
+.form-box li {
+	list-style: url(http://www.tallsmall.fi:8080/site_media/img/arrows/orange_boxarrow.gif);
+	margin-left: 20px;
+	margin-bottom: 4px
+	}
+.form-box h1 {
+	color: #3CB371;
+	margin-bottom: 6px;
+	}
+.message {
+        color: #900;
+        margin-bottom: 10px;
+}
+
+
+/* ---------- Content boxes ---------- */
+.nobox {
+	width: auto;
+	margin-bottom: 16px;
+	color: #000;
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.code_output {
+	width: auto;
+	padding: 8px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 20px;
+	
+	-moz-border-radius-bottomleft:4px;
+	-moz-border-radius-bottomright:4px;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+	border:1px solid #bbb;
+	overflow:hidden;
+}
+
+.rbox1_180 { width: auto; background-color: #C5DAEA; margin-bottom: 10px; }
+.rbox1_180 .top { height: 21px; background: url(http://www.tallsmall.fi:8080/site_media/img/corners/set_a/rcorner_tl_C5DAEA.gif) no-repeat top left; }
+.rbox1_180 .body { background: url(http://www.tallsmall.fi:8080/site_media/img/corners/set_a/rcorner_br_C5DAEA.gif) no-repeat bottom right; padding: 0 10px 10px 10px }
+.rbox1_180 .body span { position: relative; top: -4px; width: auto; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px; color: #333; line-height: 16px; }
+.rbox1_180 .body span h1.orange { color: #E54A14; }
+.rbox1_180 .body span p { margin: 0; padding: 0; }
+
+.rbox2_180 { width: auto; background-color: #CEEAC5; margin-bottom: 10px; }
+.rbox2_180 .top { height: 21px; background: url(http://www.tallsmall.fi:8080/site_media/img/corners/set_a/rcorner_tl_CEEAC5.gif) no-repeat top left; }
+.rbox2_180 .body { background: url(http://www.tallsmall.fi:8080/site_media/img/corners/set_a/rcorner_br_CEEAC5.gif) no-repeat bottom right; padding: 0 10px 10px 10px }
+.rbox2_180 .body span { position: relative; top: -4px; width: auto; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px; color: #333; line-height: 16px; }
+.rbox2_180 .body span p { margin: 0; padding: 0; }
+
+.rbox3_180 { width: auto; background-color: #EAC5CD; margin-bottom: 10px; }
+.rbox3_180 .top { height: 21px; background: url(http://www.tallsmall.fi:8080/site_media/img/corners/set_a/rcorner_tl_EAC5CD.gif) no-repeat top left; }
+.rbox3_180 .body { background: url(http://www.tallsmall.fi:8080/site_media/img/corners/set_a/rcorner_br_EAC5CD.gif) no-repeat bottom right; padding: 0 10px 10px 10px }
+.rbox3_180 .body span { position: relative; top: -4px; width: auto; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px; color: #333; line-height: 16px; }
+.rbox3_180 .body span p { margin: 0; padding: 0; }
+
+.rbox4_180 { width: auto; background-color: #EAE8C5; margin-bottom: 10px; }
+.rbox4_180 .top { height: 21px; background: url(http://www.tallsmall.fi:8080/site_media/img/corners/set_a/rcorner_tl_EAE8C5.gif) no-repeat top left; }
+.rbox4_180 .body { background: url(http://www.tallsmall.fi:8080/site_media/img/corners/set_a/rcorner_br_EAE8C5.gif) no-repeat bottom right; padding: 0 10px 10px 10px }
+.rbox4_180 .body span { position: relative; top: -4px; width: auto; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px; color: #333; line-height: 16px; }
+.rbox4_180 .body span p { margin: 0; padding: 0; }
+
+.fadebox_blue_180 { width: 164px; color: #333; font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; padding: 16px 8px 16px 8px; background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/fadebox_blue_180.gif) no-repeat top left; }
+.fadebox_blue_180 p { margin: 0; padding: 0; }
+.fadebox_green_180 { width: 164px; color: #333; font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; padding: 16px 8px 16px 8px; background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/fadebox_green_180.gif) no-repeat top left; }
+.fadebox_green_180 p { margin: 0; padding: 0; }
+.fadebox_red_180 { width: 164px; color: #333; font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; padding: 16px 8px 16px 8px; background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/fadebox_red_180.gif) no-repeat top left; }
+.fadebox_red_180 p { margin: 0; padding: 0; }
+.fadebox_yellow_180 { width: 164px; color: #333; font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; padding: 16px 8px 16px 8px; background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/fadebox_yellow_180.gif) no-repeat top left; }
+.fadebox_yellow_180 p { margin: 0; padding: 0; }
+ 
+/* rbox */
+.rbox {
+	width: auto;
+	background-color: #efefef;
+	margin-bottom: 16px;
+	color: #000;
+	font-size: 11px;
+	font-family: verdana;
+}
+.rbox_hea {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	width: auto;
+	/* border-bottom: 1px solid #000; */
+	/* background-image: url(http://www.tallsmall.fi:8080/site_media/img/liuku.gif); */
+	background-color: #99BBA8; /* #BED8B6 tummenettu -8 */
+	/* background-color: #96BEC8; */
+	/* background-color: #A0C382; */
+	/* background-color: #2882BE; */
+	padding: 4px;
+}
+.rbox_content {
+	width: auto;
+	padding: 8px;
+	border-right: 1px solid #abd;
+	border-bottom: 1px solid #abd;
+	border-left: 1px solid #abd;
+}
+
+/* midbox */
+.midbox {
+	width: auto;
+	border: 1px solid #aabbdd;
+	background-color:#efefef;
+	color: #000;
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+
+/* roundbox 180 */
+.roundbox_180 {
+	width: 180px;
+}
+.roundbox_180_top {
+	width: 178px;
+	height: 20px;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/roundbox_180_top.gif) no-repeat bottom left;
+}
+.roundbox_180_mid {
+	width: 160px;
+	height: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/roundbox_180_mid.gif) repeat-y top left;
+}
+.roundbox_180_bottom {
+	width: 180px;
+	height: 20px;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/roundbox_180_bottom.gif) no-repeat top left;
+}
+
+/* roundbox 660 */
+.roundbox_660 {
+	padding-left: 20px;
+	margin-top: -10px;
+}
+.roundbox_660_top {
+	width: 660px;
+	height: 20px;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/roundbox_660_top_blue_wbg.png) no-repeat bottom left;
+}
+.roundbox_660_mid {
+	width: 658px;
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-left: 1px solid #A7C8D8;
+	border-right: 1px solid #A7C8D8;
+    background: transparent url(http://www.tallsmall.fi:8080/site_media/img/boxes/bg_slide_blue.png) repeat-x scroll left bottom;
+}
+.post_text h1 {
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+.post_text h2 {
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+.post_text p {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 0;
+	margin-bottom: 12px;
+}
+.post_info {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 12px;
+}
+.roundbox_660_bottom {
+	width: 660px;
+	height: 20px;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/roundbox_660_bottom_blue.png) no-repeat top left;
+}
+
+/* IE roundbox 180 midblue */
+.roundbox_midblue_180 {
+	position: relative;
+	top: -10px;
+	width: 180px;
+}
+.roundbox_midblue_180_top {
+	width: auto;
+	height: 20px;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/roundbox_180_2_top_midblue.gif) no-repeat bottom left;
+}
+.roundbox_midblue_180_mid {
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/roundbox_180_2_mid_midblue.gif) repeat-y top left;
+}
+.roundbox_midblue_180_bottom {
+	width: auto;
+	height: 20px;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/boxes/roundbox_180_2_bottom_midblue.gif) no-repeat top left;
+}
+
+/* box ajankohtaista */
+.box_ajankohtaista {
+    -moz-border-radius-bottomleft:4px;
+    -moz-border-radius-bottomright:4px;
+    -moz-border-radius-topleft:4px;
+    -moz-border-radius-topright:4px;
+    background:#fff url(http://www.tallsmall.fi:8080/site_media/img/backgrounds/barslide_namesday.gif) repeat-x scroll left top;
+    border:1px solid #bbb;
+    padding: 4px 4px 16px 4px;
+    margin-bottom:10px;
+    overflow:hidden;
+    width:auto;
+    color:#444;
+    font-family:Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size:12px;
+}
+.ajankohtaista_hea {
+    -moz-border-radius-bottomleft:2px;
+    -moz-border-radius-bottomright:2px;
+    -moz-border-radius-topleft:2px;
+    -moz-border-radius-topright:2px;
+    background: #5195CE;
+    color: #fff;
+    width: auto;
+    padding: 2px 0px 2px 0px;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.ajankohtaista_txt {
+    padding: 0px 4px 0px 4px;
+}
+.ajankohtaista_txt h2 {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+	line-height: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #E54A14;
+    margin-top: 12px;
+    margin-bottom: -8px;
+}
+.ajankohtaista_txt p {
+    margin-bottom: -4px;
+}
+/* tapahtumakalenteri */
+.tapahtumakalenteri_txt p {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 12pt;
+	}
+
+/* hinted box */
+/*
+.hinted {
+	width: auto;
+	background-color: #CAD8E3;
+	margin-bottom: 10px;
+	}
+.hinted .top {
+	height: 21px;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/corners/roundcorner_top_left_CAD8E3.gif) no-repeat top left;
+	}
+.hinted .body {
+	background: url(http://www.tallsmall.fi:8080/site_media/img/corners/roundcorner_bottom_right_CAD8E3.gif) no-repeat bottom right;
+	padding: 0 10px 14px 10px
+	}
+.hinted .body span {
+	position: relative;
+	top: -4px;
+	width: auto;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+.hinted .body span p {
+	margin: 0;
+	padding: 0;
+}
+*/
+
+/* ---------- gallery ---------- */
+
+#gallery_ots {
+	width: 656px;
+	background-color: #efefef;
+	border: 1px solid #333;
+	color: #333;
+	margin-left:8px;
+	padding-left: 8px;
+	font-size: 18px;
+}
+#gallery {
+	color: #333;
+}
+.imgbox {
+	vertical-align: bottom;
+	text-align: center;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+.tblspace {
+	height: 10px;
+}
+
+/* ---------- Leftnavi ---------- */
+#navigation {
+	border-top: 1px solid #efefef;
+	border-right: 1px solid #efefef;
+	border-left: 1px solid #efefef;
+}
+#navigation a:active {
+	background-color: #666;
+}
+#navigation a:hover {
+	background: #abd;
+	color: #930;
+        background-image: url(http://www.tallsmall.fi:8080/site_media/img/navar.gif);
+        background-repeat: no-repeat;
+}
+#navigation td {
+        width: 100%;
+	text-align: left;
+	border-bottom: 1px solid #efefef;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+#navigation a {
+	display: block;
+	background: #aabbdd;
+	font: 12px Verdana;
+	color: #FFFFFF;
+	line-height: 12px;
+	letter-spacing: normal;
+	text-decoration: none;
+	padding: 8px 8px 8px 24px;
+        background-image: url(http://www.tallsmall.fi:8080/site_media/img/navar.gif);
+	background-repeat: no-repeat;
+}
+
+/* ---------- vmenu ---------- */
+
+.vmenu_sidebar {
+	width: 180px;
+	margin-bottom: 16px;
+	}
+
+/*
+.vmenu_sidebar#members a#membersLink,
+.vmenu_sidebar#wiki a#wikiLink,
+.vmenu_sidebar#members_person a#members_personLink,
+.vmenu_sidebar#members_corp a#members_corpLink,
+.vmenu_sidebar#members_hon a#members_honLink,
+.vmenu_sidebar#members_all a#members_allLink,
+.vmenu_sidebar#members_mail a#members_mailLink {
+	color: #e54a14;
+	background-color: #efefef;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	}
+*/
+/*
+.vmenu_sidebar#members a:hover#membersLink,
+.vmenu_sidebar#wiki a:hover#wikiLink,
+.vmenu_sidebar#members_person a:hover#members_personLink, 
+.vmenu_sidebar#members_corp a:hover#members_corpLink,
+.vmenu_sidebar#members_hon a:hover#members_honLink,
+.vmenu_sidebar#members_all a:hover#members_allLink,
+.vmenu_sidebar#members_mail a:hover#members_mailLink {
+	background-color: #dedede
+	}
+*/
+/*
+.vmenu_sidebar#members a:hover#membersLink .inner,
+.vmenu_sidebar#wiki a:hover#wikiLink .inner,
+.vmenu_sidebar#members_person a:hover#members_personLink .inner, 
+.vmenu_sidebar#members_corp a:hover#members_corpLink .inner,
+.vmenu_sidebar#members_hon a:hover#members_honLink .inner,
+.vmenu_sidebar#members_all a:hover#members_allLink .inner,
+.vmenu_sidebar#members_mail a:hover#members_mailLink .inner {
+	margin-left: 1px;
+	}	
+*/
+
+.vmenu_sidebar_hea {
+	float: left;
+	height: 23px;
+	padding: 0;
+	background: url("http://www.tallsmall.fi:8080/site_media/img/menus/menutab_left.gif") no-repeat left top;
+	}
+	
+.vmenu_sidebar_hea span {
+	float: left;
+	margin-left: 4px;
+	padding: 4px 8px 4px 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	background: url("http://www.tallsmall.fi:8080/site_media/img/menus/menutab_right.gif") no-repeat right top;
+	color: #fff;
+	}
+	
+.vmenu_sidebar_content {
+	width: auto;
+	clear: left;
+	border: solid 1px #7F9FBF;
+	padding: 0 8px 8px 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: bold;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/backgrounds/barslide_namesday.gif) repeat-x top left;
+	}
+	
+.vmenu_sidebar_content ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+.vmenu_sidebar_content .first {
+	margin-top: 8px;
+	padding: 0;
+	border-top: solid 1px #ccc;
+	}
+	
+.vmenu_sidebar_content li a {
+	margin: 0;
+	padding: 0;
+	height: 24px;
+	color: #555;
+	text-decoration: none;
+	width: auto;
+	display: block;
+	border-bottom: solid 1px #ccc;
+	}
+	
+.vmenu_sidebar_content li a .inner {
+	position: relative;
+	top: 5px;
+	left: 8px;
+	}
+	
+.vmenu_sidebar_content li a:link, .vmenu_sidebar_content li a:visited {
+	width: auto;
+	display: block;
+	color: #555;
+	text-decoration: none;
+	border-bottom: solid 1px #ccc;
+	}
+
+.vmenu_sidebar_content li a:hover {
+	color: #e54a14;
+	background-color: #fff; /* #dedede */
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	}
+	
+.vmenu_sidebar_content li a:hover .inner {
+	position: relative;
+	top: 5px;
+	left: 7px;
+	}
+
+
+/* ---------- CLVUDS ---------- */
+.clvuds {
+	width: 748px;	
+}
+
+/* content */
+
+.clvuds .content {
+	width: inherit;
+	float: left;
+	padding: 10px;
+	margin: 0 10px 10px 10px;
+	border: solid 1px #75abea;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+.clvuds .content table {
+	border: 0;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.clvuds .content table tr.blue {background-color: #e8eff7}
+.clvuds .content table tr.white {background-color: #fff}
+
+.clvuds .content td {padding: 4px}
+.clvuds .content td.counter {width: 30px}
+.clvuds .content td.jasennumero {width: 70px}
+.clvuds .content td.postiosoite {width: 240px}
+.clvuds .content td.yritys {width: 160px}
+.clvuds .content td.nimi {width: 200px}
+.clvuds .content td.last {width: auto}
+.clvuds .content td.pass {width: 120px; text-align: right}
+
+/* clvuds_topnavi */
+
+.clvuds .topnavi {
+	width: inherit;
+	margin: 10px 10px 0 10px;
+	font-family: Verdana;
+	font-size: 13px;
+	line-height: normal;
+	background: #fff /* menun sivuille jaava tausta */
+}
+.clvuds .topnavi ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.clvuds .topnavi li {
+	display: inline;
+	margin-bottom: 0;
+	padding: 0;
+}
+.clvuds .topnavi a {
+	float: left;
+	background: url("http://www.tallsmall.fi:8080/site_media/img/muradora/tableft_gblue.gif") no-repeat left top;
+	margin: 0 2px 0 0; /* alkujaan vain nolla */
+	padding: 0 0 0 4px;
+	text-decoration: none;
+	border-bottom: 0;
+	/* border-bottom: solid 1px #e7f1f8 muradoratab vaalsininen */
+}
+.clvuds .topnavi a span {
+	width: 70px;
+	float: left;
+	color: #002440; /* #002440 #666 */
+	background: url("http://www.tallsmall.fi:8080/site_media/img/muradora/tabright_gblue.gif") no-repeat right top;
+	display: block;
+	padding: 4px 15px 4px 6px;
+	}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+/*
+.clvuds .topnavi a span {
+	float: none;
+	}
+*/
+/* End IE5-Mac hack */
+
+.clvuds .topnavi a:hover {
+	background-position: 0% -42px;
+	border-bottom: 0;
+	/* border-bottom: solid 1px #fff; */
+}
+
+.clvuds .topnavi a:hover span {
+	color: #fff; /* #E54A14 orange */
+	background-position: 100% -42px;
+	}
+
+.clvuds .topnavi a:active {
+	background-position: 0% -42px;
+}
+
+.clvuds .topnavi a:active span {
+	background-position: 100% -42px;
+	}
+
+.clvuds#create a#createLink,
+.clvuds#list a#listLink,
+.clvuds#view a#viewLink,
+.clvuds#update a#updateLink,
+.clvuds#delete a#deleteLink,
+.clvuds#event a#eventLink,
+.clvuds#search a#searchLink {
+	background-position: 0% -42px;
+	border-bottom: 0;
+	/* border-bottom: solid 1px #fff; */
+}
+
+.clvuds#create a#createLink span,
+.clvuds#list a#listLink span,
+.clvuds#view a#viewLink span,
+.clvuds#update a#updateLink span,
+.clvuds#delete a#deleteLink span,
+.clvuds#event a#eventLink span,
+.clvuds#search a#searchLink span {
+	background-position: 100% -42px;
+	color: #fff /* selected tab */
+	}
+
+/* form */
+
+.clvuds fieldset {
+	width: auto;
+	padding: 10px;
+	margin: 0 10px 10px 10px;
+	border: solid 1px #ccc; /* #75abea */
+}
+.clvuds legend {
+	color: #0077d4;
+}
+.clvuds legend a {
+	color: #0077d4;
+}
+.clvuds a:hover {
+	color: #e54a14;
+}
+.clvuds .content table {
+	border: 0;
+}
+.clvuds .content th {
+	width: 150px;
+	text-align: right;
+	font-weight: normal;
+	color: #002440;
+}
+.clvuds input {
+	color: #002440; /* topnavi text color */
+	background: #e8eff7;
+	border: 1px solid #75abea
+}
+.clvuds .submit input {
+	color: #002440;
+	background: #e7f1f8; /* topnavi tab color */
+	border: 2px outset #d7b9c9
+}
+.clvuds ul.errorlist {
+	margin: 0;
+	list-style: none;
+	color: #c00;
+}
+
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv_e{
+position:absolute;
+top: 0;
+border: 1px solid #657f27; /*THEME CHANGE HERE*/
+border-width: 0 1px;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+background-color: #eff8d2;
+width: 200px;
+visibility: hidden;
+}
+
+
+.dropmenudiv_e a{
+width: auto;
+display: block;
+text-indent: 5px;
+border: 0 solid #657f27; /*THEME CHANGE HERE*/
+border-bottom-width: 1px;
+padding: 2px 0;
+text-decoration: none;
+color: black;
+}
+
+* html .dropmenudiv_e a{ /*IE only hack*/
+width: 100%;
+}
+
+.dropmenudiv_e a:hover{ /*THEME CHANGE HERE*/
+background-color: #c8e181;
+}
+
+/* TinyMCE table */
+
+.tapaamiset {
+	color: #333;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 4px;
+}
+
+table.tapaamiskalenteri {
+	border-collapse: collapse;
+	width: auto;
+	border:1px solid #bbb;
+	margin-top: 8px;
+	margin-bottom: 12px;
+	color:#002440;
+	font-family:Lucida,Arial,Helvetica,sans-serif;
+	font-size:13px;
+	}
+	
+table.tapaamiskalenteri th {
+	width: 80px;
+	font-weight: bold;
+	text-align: left;
+	background-color: #C5DAEA;
+	padding: 4px 4px 4px 12px;
+	}
+table.tapaamiskalenteri tr.white {
+	text-align: left;
+	background-color: #fafad0;
+	border-bottom:1px solid #75abea;
+	}
+table.tapaamiskalenteri tr.lblue {
+	text-align: left;
+	background-color: #fafad0;
+	border-bottom:1px solid #75abea;
+	}
+table.tapaamiskalenteri td {
+	width: 50px;
+	text-align: center;
+	padding: 2px;
+	}
+table.tapaamiskalenteri td.auto {
+	width: auto;
+	text-align: left;
+	padding: 2px;
+	}
+	
+/* kuvagalleriat */
+
+#kuvagalleriat {
+	width: auto;
+	padding: 10px;
+	margin: 10px;
+	min-height: 500px;
+	background: url(http://www.tallsmall.fi:8080/site_media/img/backgrounds/gradientbox_760.gif) no-repeat left top;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#kuvagalleriat a {
+	color: #0077d4;
+}
+#kuvagalleriat a:hover {
+	color: #E54A14;
+	}
+
+/* ---------- Ilmoitukset ---------- */
+.ad_wrap {
+	width: 558px;
+	background-color: #efffef;
+	border: solid 1px #ccc;
+	margin-bottom: 10px;
+	padding: 0;
+	}
+.ad_wrap_padded {
+	width: 540px;
+	background-color: #fff;
+	margin-bottom: 10px;
+	padding: 8px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	}
+.ad_txt {
+	width: inherit;
+	padding: 8px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	margin-top: 8px;
+	}
+.grey_date {
+	font-weight: bold;
+	color: #363;
+	}
+/* tagcloud */
+.tagcloud {
+	margin-top: 10px;
+	}
+.tagcloud a {
+	text-decoration: none;
+	}
+.taglink {
+	color: #333;
+	margin-bottom: 12px;
+	}
+.all_subjects_link {
+	margin-top: 14px;
+	margin-bottom: 12px;
+	}
+.tag1 {
+	font-size: 10pt;
+	}
+.tag2 {
+	font-size: 11pt;
+	}
+.tag3 {
+	font-size: 12pt;
+	}
+.tag4 {
+	font-size: 13pt;
+	}
+.tag5 {
+	font-size: 14pt;
+	}
+.tag6 {
+	font-size: 15pt;
+	}
+.tag7 {
+	font-size: 16pt;
+	}
+.tag8 {
+	font-size: 17pt;
+	}
+.tag9 {
+	font-size: 18pt;
+	}
+.tag10 {
+	font-size: 19pt;
+	}
+.tag {
+	font-size: 20pt;
+	}

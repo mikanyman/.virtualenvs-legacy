@@ -1,0 +1,43 @@
+﻿{% load i18n %}
+<div id="thumbs" class="navigation">
+    
+  <div class="top pagination">
+  <span class="current">1</span>
+  <a title="2" href="#16" rel="history">2</a>
+  <a title="Next ›" href="#16" rel="history">Next ›</a>
+  </div>
+  
+  <ul class="thumbs noscript">
+    
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/rakennukset/pihlajavesi_1/akj_06062011_pihlajavesi_1.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/rakennukset/pihlajavesi_1/akj_06062011_pihlajavesi_1_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/rakennukset/pihlajavesi_1/akj_06062011_pihlajavesi_1_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+    
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/rakennukset/pihlajavesi_2/akj_06062011_pihlajavesi_2.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/rakennukset/pihlajavesi_2/akj_06062011_pihlajavesi_2_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/rakennukset/pihlajavesi_2/akj_06062011_pihlajavesi_2_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+    
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/rakennukset/pihlajavesi_3/akj_06062011_pihlajavesi_3.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/rakennukset/pihlajavesi_3/akj_06062011_pihlajavesi_3_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/rakennukset/pihlajavesi_3/akj_06062011_pihlajavesi_3_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+
+  </ul>
+</div>

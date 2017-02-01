@@ -1,0 +1,904 @@
+{% extends "etreg/base.html" %}
+{% load i18n %}
+{% load cms_tags %}
+
+{% block content %}
+
+{% ifequal gen_view "create" %}<form action="." method="POST" id="etregform">{% csrf_token %}{% endifequal %}
+{% ifequal gen_view "update" %}<form action="." method="POST" id="etregform">{% csrf_token %}{% endifequal %}
+{% ifequal gen_view "detail" %}{% endifequal %}
+
+<table class="ereg_hea">
+<tbody>
+<tr>
+  <td>
+
+  </td>
+  <td class="rcol">
+    <div class="header">{% trans "45th European Convention 2012 Finland" %}</div>
+    <div class="date">{% trans "10th June &ndash; 17th June 2012" %}</div>
+  </td>
+</tr>
+</tbody>
+</table>
+
+<table class="ereg_intro">
+<tr class="hea">
+  <td class="hea_bold" style="width:350px"><div style="margin-bottom:3px; margin-left:4px">{% trans "Registration" %}</div></td>
+  <td class="hea"></td>
+</tr>
+<tr>
+  <td colspan="2">
+    
+    <div style="margin:8px 0px 4px 0px">
+    {% ifequal lang "en" %}
+    <span class="hea_bold">Registration options</span>
+    <ul class="reg_options">
+      <li>Please register <span style="font-weight:bold; color:#114D8C">online</span> OR send your
+          registration form and program choices by <span style="font-weight:bold; color:#114D8C">email</span>
+          to reg@europatreffen.com OR by <span style="font-weight:bold; color:#114D8C">fax</span> to
+          number +358 50 8520 1005 OR by <span style="font-weight:bold; color:#114D8C">mail</span> Tall
+          and Small Association Finland/ET2012FI, Po Box 186, FI-00931 Helsinki, Finland.</li>
+      <li>{% trans "Please note that your registration is not complete until payment has been received." %}</li>
+      <li>Last day for registration and payment April 10th 2012.</li>
+    </ul>
+    {% endifequal%}
+
+    {% ifequal lang "fi" %}
+    <span class="hea_bold">Rekisteröitymistavat</span>
+    <ul class="reg_options">
+      <li>Rekisteröidy <span style="font-weight:bold; color:#114D8C">verkossa</span> TAI lähetä
+      rekisteröitymislomake ja ohjelmavalinnat <span style="font-weight:bold; color:#114D8C">sähköpostitse</span>
+      osoitteeseen reg@europatreffen.com TAI <span style="font-weight:bold; color:#114D8C">faksitse</span>
+      numeroon +358 50 8520 1005 TAI <span style="font-weight:bold; color:#114D8C">postitse</span>
+      osoitteeseen Pieni- ja Isokenkäiset ry/ET2012FI, PL 186, 00931 Helsinki</li>
+      <li>Huomioithan, että rekisteröitymisesi on vasta lopullinen kun olemme vastaanottaneet maksusi.</li>
+      <li>Viimeinen rekisteröinti- ja maksupäivä on 10.4.2012.</li>
+    </ul>
+    {% endifequal%}
+
+    {% ifequal lang "de" %}
+    <span class="hea_bold">Anmeldungsweise</span>
+    <ul class="reg_options">
+      <li>Bitte registrieren Sie sich <span style="font-weight:bold; color:#114D8C">online</span> ODER
+          Bitte schickt Eure Anmeldung per <span style="font-weight:bold; color:#114D8C">Email</span>
+          an reg@europatreffen.com ODER mit <span style="font-weight:bold; color:#114D8C">Fax</span> an
+          +358 50 8520 1005 ODER per <span style="font-weight:bold; color:#114D8C">Post</span> an
+          Tall and Small Association Finland/ET2012FI, Po Box 186, FI-00931 Helsinki, Finnland.</li>  
+      <li>Bitte bedenken dass die Anmeldung nicht gültig ist bevor die Zahlung erhalten wurde.</li>
+      <li>Letzter Tag der Anmeldung und Zahlung ist der 10. April 2012.</li>
+    </ul>
+    {% endifequal%}
+    </div>
+
+  </td>
+</tr>
+<tr>
+  <td colspan ="2">
+    {% ifequal lang "en" %}
+    <div style="margin-left:10px; vertical-align: middle">
+      <span style="font-weight:bold; color:#114D8C">Download</span> printable registration form | English&nbsp;&nbsp;
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_PDF_in_English.pdf">PDF</a>
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_PDF_in_English.pdf"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/pdficon_small.png"></a>&nbsp;&nbsp;
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_DOCX_in_English.docx">Word</a>
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_DOCX_in_English.docx"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/wordicon_16.png"></a>       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-weight:bold; color:#114D8C">View</span> registration form | English&nbsp;&nbsp;
+      <a href="{{ MEDIA_URL }}download/ET2012FI_Registration_form_PDF_in_English.pdf">PDF</a>
+      <a href="{{ MEDIA_URL }}download/ET2012FI_Registration_form_PDF_in_English.pdf"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/pdficon_small.png"></a>
+    </div>
+    {% comment %}
+    <div style="margin-left:10px; margin-top:10px">
+      {% trans "Important! Read before sending registration: Terms and Conditions" %} | English&nbsp;&nbsp;<a href="/etreg/xsendfile/ET2012FI_Terms_and_conditions_ENG_v1.pdf">PDF</a>
+      <a href="/etreg/xsendfile/ET2012FI_Terms_and_conditions_ENG_v1.pdf"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/pdficon_small.png"></a>
+    </div>
+    {% endcomment %}
+    {% endifequal%}
+
+
+    {% ifequal lang "fi" %}
+    <div style="margin-left:10px; vertical-align: middle">
+      <span style="font-weight:bold; color:#114D8C">Lataa</span> tulostettava lomake | Suomi&nbsp;&nbsp;
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_PDF_suomeksi.pdf">PDF</a>
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_PDF_suomeksi.pdf"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/pdficon_small.png"></a>&nbsp;&nbsp;
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_DOCX_suomeksi.docx">Word</a>
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_DOCX_suomeksi.docx"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/wordicon_16.png"></a>       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-weight:bold; color:#114D8C">Avaa</span> lomake | Suomi&nbsp;&nbsp;
+      <a href="{{ MEDIA_URL }}download/ET2012FI_Registration_form_PDF_suomeksi.pdf">PDF</a>
+      <a href="{{ MEDIA_URL }}download/ET2012FI_Registration_form_PDF_suomeksi.pdf"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/pdficon_small.png"></a>
+    </div>
+    {% comment %}
+    <div style="margin-left:10px; margin-top:10px">
+      {% trans "Important! Read before sending registration: Terms and Conditions" %} | Suomi&nbsp;&nbsp;<a href="/etreg/xsendfile/ET2012FI_Terms_and_conditions_FIN_v1.pdf">PDF</a>
+      <a href="/etreg/xsendfile/ET2012FI_Terms_and_conditions_FIN_v1.pdf"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/pdficon_small.png"></a>
+    </div>
+    {% endcomment %}
+    {% endifequal%}
+
+    {% ifequal lang "de" %}
+    <div style="margin-left:10px; vertical-align: middle">
+      <span style="font-weight:bold; color:#114D8C">Download</span> Anmeldeformular zum Ausdrucken | Deutsch&nbsp;&nbsp;
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_PDF_auf_Deutsch.pdf">PDF</a>
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_PDF_auf_Deutsch.pdf"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/pdficon_small.png"></a>&nbsp;&nbsp;
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_DOCX_auf_Deutsch.docx">Word</a>
+      <a href="/etreg/xsendfile/ET2012FI_Registration_form_DOCX_auf_Deutsch.docx"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/wordicon_16.png"></a>       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-weight:bold; color:#114D8C">Öffnen</span> Anmeldeformular | Deutsch&nbsp;&nbsp;
+      <a href="{{ MEDIA_URL }}download/ET2012FI_Registration_form_PDF_auf_Deutsch.pdf">PDF</a>
+      <a href="{{ MEDIA_URL }}download/ET2012FI_Registration_form_PDF_auf_Deutsch.pdf"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/pdficon_small.png"></a>
+    </div>
+    {% comment %}
+    <div style="margin-left:10px; margin-top:10px">
+      {% trans "Important! Read before sending registration: Terms and Conditions" %} | English&nbsp;&nbsp;<a href="/etreg/xsendfile/ET2012FI_Terms_and_conditions_ENG_v1.pdf">PDF</a>
+      <a href="/etreg/xsendfile/ET2012FI_Terms_and_conditions_ENG_v1.pdf"><img style="position:relative; top:3px; margin-left:4px" src="{{ STATIC_URL }}img/pdficon_small.png"></a>
+    </div>
+    {% endcomment %}
+    {% endifequal%}
+    
+  </td> 
+</tr>
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+</table>
+
+<table class="ereg_1">
+<tr class="hea">
+  <td class="hea_bold" style="width:350px">
+    <div style="margin-bottom:3px; margin-left:4px">{% trans "Online Registration" %}</div>
+  </td>
+  <td class="hea"></td>
+</tr>
+<tr style="height: 10px;"><td colspan="2"></td></tr>
+<!-- ---------- r 1:1 ---------- -->
+<tr>
+  <td class="error" colspan="2">
+    {% if form.lastname.errors %}
+      <div><strong>{{ form.lastname.label  }}:</strong> {% for error in form.lastname.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}    
+    {% if form.firstname.errors %}
+      <div><strong>{{ form.firstname.label  }}:</strong> {% for error in form.firstname.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.gender.errors %}
+      <div><strong>{{ form.gender.label  }}:</strong> {% for error in form.gender.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+<tr>
+  <td>
+    {{ form.lastname.label_tag  }} {{ form.lastname }} 
+  </td> 
+  <td>
+    <div style="float: left; text-align: left;">
+      {{ form.firstname.label_tag  }} {{ form.firstname }} 
+    </div>
+    <div class="radio_horiz">
+      {{ form.gender }} 
+    </div>
+  </td>
+</tr>
+
+<!-- ---------- r 1:2 ---------- -->
+{% if form.address.errors or form.dateofbirth.errors or form.height.errors %}
+<tr>
+  <td class="error" colspan="2">
+    {% if form.address.errors %}
+      <div><strong>{{ form.address.label  }}:</strong> {% for error in form.address.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.dateofbirth.errors %}
+      <div><strong>{{ form.dateofbirth.label  }}:</strong> {% for error in form.dateofbirth.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.height.errors %}
+      <div><strong>{{ form.height.label  }}:</strong> {% for error in form.height.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+<tr>
+  <td>
+    {{ form.address.label_tag  }} {{ form.address }}
+  </td>
+  <td>    
+    {{ form.dateofbirth.label_tag  }} {{ form.dateofbirth }} 
+    {{ form.height.label_tag  }} {{ form.height }}
+  </td>
+</tr>
+
+<!-- ---------- r 1:3 ---------- -->
+{% if form.postalcode.errors or form.city.errors or form.clubmember.errors %}
+<tr>
+  <td class="error" colspan="2">
+    {% if form.postalcode.errors %}
+      <div><strong>{{ form.postalcode.label  }}:</strong> {% for error in form.postalcode.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.city.errors %}
+      <div><strong>{{ form.city.label  }}:</strong> {% for error in form.city.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.clubmember.errors %}
+      <div><strong>{{ form.clubmember.label  }}:</strong> {% for error in form.clubmember.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+<tr>
+  <td>
+    {{ form.postalcode.label_tag  }} {{ form.postalcode }}
+  </td>
+  <td>
+    <div class="radio_horiz">{{ form.clubmember }}</div>
+    <div class="radio_horiz_label">{{ form.clubmember.label_tag  }}</div>
+  </td>
+</tr>
+<tr>
+  <td>
+    {{ form.city.label_tag  }} {{ form.city }} 
+  </td>
+  <td>
+    {{ form.whichclub.label_tag  }} {{ form.whichclub }}
+  </td>
+</tr>
+
+<!-- ---------- r 1:4 ---------- -->
+{% if form.country.errors or form.whichclub.errors %}
+<tr>
+  <td class="error" colspan="2">
+    {% if form.country.errors %}
+      <div><strong>{{ form.country.label  }}:</strong> {% for error in form.country.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.whichclub.errors %}
+      <div><strong>{{ form.whichclub.label  }}:</strong> {% for error in form.whichclub.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+<tr>
+  <td>{{ form.country.label_tag  }} {{ form.country }}</td>
+  <td>{{ form.membnumb.label_tag  }} {{ form.membnumb }}</td>
+</tr>
+
+<!-- ---------- r 1:5 ---------- -->
+{% if form.email.errors or form.membnumb.errors %}
+<tr>
+  <td class="error" colspan="2">
+    {% if form.email.errors %}
+      <div><strong>{{ form.email.label  }}:</strong> {% for error in form.email.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.membnumb.errors %}
+      <div><strong>{{ form.membnumb.label  }}:</strong> {% for error in form.membnumb.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+<tr>
+  <td>{{ form.email.label_tag  }} {{ form.email }}</td>
+  <td>{{ form.mobilephone.label_tag  }} {{ form.mobilephone }}</td>
+</tr>
+
+<!-- ---------- r 1:6 ---------- -->
+{% if form.mobilephone.errors or form.homephone.errors or form.fax.errors or form.language.errors %}
+<tr>
+  <td class="error" colspan="2">
+    {% if form.mobilephone.errors %}
+      <div><strong>{{ form.mobilephone.label  }}:</strong> {% for error in form.mobilephone.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.homephone.errors %}
+      <div><strong>{{ form.homephone.label  }}:</strong> {% for error in form.homephone.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.fax.errors %}
+      <div><strong>{{ form.fax.label  }}:</strong> {% for error in form.fax.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.language.errors %}
+      <div><strong>{{ form.language.label }}:</strong> {% for error in form.language.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+<tr>
+  <td>    
+    <div style="padding:8px 4px 0px 4px">{{ form.language.label_tag }}</div>
+  </td>
+  <td>
+    <div style="margin-bottom:0px;">{{ form.homephone.label_tag  }} {{ form.homephone }}</div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div class="radio_horiz" style="margin-bottom:3px">{{ form.language }}</div>
+  </td>
+  <td>
+    <div style="margin-bottom: 4px;">{{ form.fax.label_tag  }} {{ form.fax }}</div>
+  </td>
+</tr>
+<tr style="height: 10px;"><td colspan="2"></td></tr>
+</table>
+
+
+<table class="ereg_1">
+<!-- ---------- pad ---------- -->
+<tr style="height: 10px;"><td colspan="2"></td></tr>
+<!-- ---------- r 1:7 ---------- -->
+{% if form.flightarrdate.errors or form.flightarrtime.errors or form.flightarrlocation.errors or form.flightdepdate.errors or form.flightdeptime.errors or form.flightdeplocation.errors %}
+<tr>
+  <td class="error" colspan="2">
+    {% if form.flightarrdate.errors %}
+      <div><strong>{{ form.flightarrdate.label  }}:</strong> {% for error in form.flightarrdate.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.flightarrtime.errors %}
+      <div><strong>{{ form.flightarrtime.label  }}:</strong> {% for error in form.flightarrtime.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.flightarrlocation.errors %}
+      <div><strong>{{ form.flightarrlocation.label  }}:</strong> {% for error in form.flightarrlocation.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.flightdepdate.errors %}
+      <div><strong>{{ form.flightdepdate.label  }}:</strong> {% for error in form.flightdepdate.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.flightdeptime.errors %}
+      <div><strong>{{ form.flightdeptime.label  }}:</strong> {% for error in form.flightdeptime.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.flightdeplocation.errors %}
+      <div><strong>{{ form.flightdeplocation.label  }}:</strong> {% for error in form.flightdeplocation.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+<tr>
+  <td colspan="2">
+    
+    <div style="float:right; padding-right:4px">{{ form.flightarrtime }}</div>
+    <div style="float:right; padding:4px; position:relative; top:3px">{{ form.flightarrtime.label }}</div>
+    <div style="float:right; padding-right:4px">{{ form.flightarrdate }}</div>
+    <div style="float:right; padding:4px">{% trans "Date (yyyy-mm-dd)" %}</div>
+    <div class="radio_horiz" style="padding-right:20px">{{ form.flightarrlocation }}</div>   
+    <div style="float:right; padding:4px">{{ form.flightarrlocation.label }}</div>
+
+    <div class="clearer"></div>
+    
+    <div style="float:right; padding-right:4px">{{ form.flightdeptime }}</div>
+    <div style="float:right; padding:4px">{{ form.flightdeptime.label }}</div>
+    <div style="float:right; padding-right:4px">{{ form.flightdepdate }}</div>
+    <div style="float:right; padding:4px">{% trans "Date (yyyy-mm-dd)" %}</div>
+    <div class="radio_horiz" style="padding-right:20px">{{ form.flightdeplocation }}</div>
+    <div style="float:right; padding:4px">{{ form.flightdeplocation.label }}</div>
+    
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <div style="width:800px; float:right; margin-right:8px">
+     * <em>{% trans "We will inform the bus company ExpressBus about capacity needs for the route Helsinki-Vantaa Airport &ndash; Tampere City / Tampere City &ndash; Helsinki-Vantaa Airport (approx. 26 €/one way)" %}</em>
+    </div>
+  </td>
+</tr>
+
+<!-- ---------- r 1:8 ---------- -->
+{% if form.hotel.errors or form.hotelother.errors or form.hotelarrdate.errors or form.hoteldepdate.errors%}
+<tr>
+  <td class="error" colspan="2">
+    {% if form.hotel.errors %}
+      <div><strong>{{ form.hotel.label  }}:</strong> {% for error in form.hotel.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.hotelother.errors %}
+      <div><strong>{{ form.hotelother.label  }}:</strong> {% for error in form.hotelother.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.hotelarrdate.errors %}
+      <div><strong>{{ form.hotelarrdate.label  }}:</strong> {% for error in form.hotelarrdate.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.hoteldepdate.errors %}
+      <div><strong>{{ form.hoteldepdate.label  }}:</strong> {% for error in form.hoteldepdate.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+<tr>
+  <td colspan="2">
+    
+    <table id="hotels">
+    <tr>
+      <td colspan="4" style="height:30px">
+        <div style="float:left; margin-left:4px; padding-bottom:10px">
+          {% trans "In which hotel/hostel you are staying?" %} <span style="color:#CC0000">{% trans "Only information for the organization team, not a booking!" %}</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"; height:24px><label for="id_hotel_0"><input {% ifequal form.hotel.value "1" %}checked="checked"{% endifequal %} type="radio" id="id_hotel_0" value="1" name="hotel" /> Scandic Rosendahl</label></td>
+      <td style="text-align: left"><label for="id_hotel_1"><input {% ifequal form.hotel.value "2" %}checked="checked"{% endifequal %} type="radio" id="id_hotel_1" value="2" name="hotel" /> Scandic City Tampere</label></td>
+      <td style="text-align: left"><label for="id_hotel_2"><input {% ifequal form.hotel.value "3" %}checked="checked"{% endifequal %} type="radio" id="id_hotel_2" value="3" name="hotel" /> Cumulus Hämeenpuisto</label></td>
+      <td style="text-align: left"><label for="id_hotel_3"><input {% ifequal form.hotel.value "4" %}checked="checked"{% endifequal %} type="radio" id="id_hotel_3" value="4" name="hotel" /> Omena Hotel Tampere 1</label></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; height:24px"><label for="id_hotel_4"><input {% ifequal form.hotel.value "5" %}checked="checked"{% endifequal %} type="radio" id="id_hotel_4" value="5" name="hotel" /> Omena Hotel Tampere 2</label></td>
+      <td style="text-align: left"><label for="id_hotel_5"><input {% ifequal form.hotel.value "6" %}checked="checked"{% endifequal %} type="radio" id="id_hotel_5" value="6" name="hotel" /> Hostel Sofia</label></td>
+      <td style="text-align: left"><label for="id_hotel_6"><input {% ifequal form.hotel.value "7" %}checked="checked"{% endifequal %} type="radio" id="id_hotel_6" value="7" name="hotel" /> {% trans "Other, Where?" %}</label></td>
+      <td style="text-align: left">{{ form.hotelother }}</td>
+    </tr>
+    <tr><td colspan="4" style="height:10px"></td></tr>
+    <tr>
+      <td colspan="4">
+        <div style="float:left; padding:4px">{{ form.hotelarrdate.label }}</div>
+        <div style="float:left;">{{ form.hotelarrdate }}</div>
+        <div style="float:left; padding:4px; margin-left:20px">{{ form.hoteldepdate.label }}</div>
+        <div style="float:left">{{ form.hoteldepdate }}</div>
+      </td>
+    </tr>
+    </table>
+    
+  </td>
+</tr>
+<tr style="height: 10px;"><td colspan="2"></td></tr>
+</table>
+
+<table class="ereg_1">
+<!-- ---------- pad ---------- -->
+<tr style="height: 10px;"><td colspan="2"></td></tr>
+<!-- ---------- r 1:9 ---------- -->
+{# ifnotequal form.youngtall.value 0 #}
+{% if form.youngtall.errors or form.withparents.errors or form.parentsname.errors or form.parentsmobile.errors or form.guardiansname.errors or form.guardiansmobile.errors %}
+<tr>
+  <td class="error" colspan="2">
+    {% if form.youngtall.errors %}
+      <div><strong>{{ form.youngtall.label  }}:</strong> {% for error in form.youngtall.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.withparents.errors %}
+      <div><strong>{{ form.withparents.label  }}:</strong> {% for error in form.withparents.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.parentsname.errors %}
+      <div><strong>{{ form.parentsname.label  }}:</strong> {% for error in form.parentsname.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.parentsmobile.errors %}
+      <div><strong>{{ form.parentsmobile.label  }}:</strong> {% for error in form.parentsmobile.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.guardiansname.errors %}
+      <div><strong>{{ form.guardiansname.label  }}:</strong> {% for error in form.guardiansname.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.guardiansmobile.errors %}
+      <div><strong>{{ form.guardiansmobile.label  }}:</strong> {% for error in form.guardiansmobile.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+{# endifnotequal #}
+
+<tr>
+  <td colspan="2">
+    <div style="float:left; margin:0px 4px 7px 4px">{{ form.youngtall }}</div>
+    <div style="float:left; position:relative; top:3px;">{{ form.youngtall.label_tag }}</div>
+    <div style="float:left; margin-left:20px">{% trans "For participants 13&ndash;20 years old, only" %}</div>
+    <div style="width:100%; height:1px"></div>
+  </td>
+</tr>
+<tr>
+  <td style="width:415px">
+    <div class="radio_horiz" style="float:right">{{ form.withparents }}</div>
+    <div class="radio_horiz_label" style="float:right">{{ form.withparents.label_tag }}</div>
+  </td>
+  <td>
+    {{ form.parentsname.label_tag }} {{ form.parentsname }}
+  </td>
+</tr>
+<tr>
+  <td>
+    <div style="padding:4px">{% trans "If no, parents name and mobile phone nr." %}</div>
+  </td>
+  <td>
+    {{ form.parentsmobile.label_tag }} {{ form.parentsmobile }}
+  </td>
+</tr>
+<tr>
+  <td>
+    &nbsp;
+  </td>
+  <td>
+    {{ form.guardiansname.label_tag }} {{ form.guardiansname }}
+  </td>
+</tr>
+<tr>
+  <td>
+    <div style="padding:4px">{% trans "Participant under 18 needs to have an adult as guardian" %}</div>
+  </td>
+  <td>
+    {{ form.guardiansmobile.label_tag }} {{ form.guardiansmobile }}
+  </td>
+</tr>
+<tr style="height: 10px;"><td colspan="2"></td></tr>
+</table>
+
+<table class="ereg_1">
+<!-- ---------- pad ---------- -->
+<tr style="height: 10px;"><td colspan="2"></td></tr>
+<!-- ---------- r 1:10 ---------- -->
+{% if form.diet.errors %}
+<tr>
+  <td class="error" colspan="2">
+    {% if form.diet.errors %}
+      <div><strong>{{ form.diet.label  }}:</strong> {% for error in form.diet.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+<tr>
+  <td colspan="2">
+    <div style="float:left; margin-left:8px; margin-right:20px; margin-top:-1px">{% trans "Diet" %}</div>
+    
+    <div style="float:left; margin-right:4px">{{ form.dietvegetarian }}</div>
+    <div style="float:left; margin-right:8px; margin-top:3px">{{ form.dietvegetarian.label_tag }}</div>
+    
+    <div style="float:left; margin-right:4px">{{ form.dietglutenfree }}</div>
+    <div style="float:left; margin-right:8px; margin-top:3px">{{ form.dietglutenfree.label_tag }}</div>
+    
+    <div style="float:left; margin-right:4px">{{ form.dietdiabetic }}</div>
+    <div style="float:left; margin-right:8px; margin-top:3px">{{ form.dietdiabetic.label_tag }}</div>
+    
+    <div style="float:left; margin-right:4px">{{ form.dietlowlactose }}</div>
+    <div style="float:left; margin-right:8px; margin-top:3px">{{ form.dietlowlactose.label_tag }}</div>
+  </td>
+</tr>
+
+<!-- ---------- pad ---------- -->
+<tr style="height: 20px;"><td colspan="2"></td></tr>
+<!-- ---------- r 1:11 ---------- -->
+{% if form.assistance.errors or form.assistancespecify.errors or form.specialneeds.errors or form.specialneedsspecify.errors %}
+<tr>
+  <td class="error" colspan="2">
+    {% if form.assistance.errors %}
+      <div><strong>{{ form.assistance.label  }}:</strong> {% for error in form.assistance.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.assistancespecify.errors %}
+      <div><strong>{{ form.assistancespecify.label  }}:</strong> {% for error in form.assistancespecify.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.specialneeds.errors %}
+      <div><strong>{{ form.specialneeds.label  }}:</strong> {% for error in form.specialneeds.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+    {% if form.specialneedsspecify.errors %}
+      <div><strong>{{ form.specialneedsspecify.label  }}:</strong> {% for error in form.specialneedsspecify.errors %}{{ error|escape }} {% endfor %}</div>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+<tr>
+  <td colspan="2">
+    
+    <div style="float:left; margin-left:10px; margin-bottom:14px">{% trans "Special needs/assistance" %}</div>
+    <div class="clearer"></div>
+    
+    <div style="float:left; text-align:left; margin-left:8px; width:400px">
+      <div style="width:100%; margin-bottom:8px">
+        <div style="float:left; width:30px">{{ form.assistance }}</div>
+        <div style="float:left; width:350px">{{ form.assistance.label_tag }}</div>
+        <div class="clearer"></div>
+      </div>
+      <div style="width:100%; margin-left:4px">
+        {{ form.assistancespecify.label_tag }} {{ form.assistancespecify }}
+      </div>
+    </div>
+    
+    <div style="float:right; text-align:left; margin-right:8px; width:400px">
+      <div style="width:100%; margin-bottom:8px">
+        <div style="float:left; width: 30px">{{ form.specialneeds }}</div>
+        <div style="float:left; width: 350px">{{ form.specialneeds.label_tag }}</div>
+        <div class="clearer"></div>
+      </div>
+      <div style="width:100%; margin-right:4px">
+        {{ form.specialneedsspecify.label_tag }} {{ form.specialneedsspecify }}
+      </div>
+    </div>
+    <div class="clearer"></div>
+    
+    <div style="text-align:left; margin:14px 60px 0px 8px;">
+      {% trans "Please contact the ET2012FI-Orgateam for organising a practical nurse student to help you! Please note with your payment! The additional price for an assistant is the same price as for each event per person. Only for day's/evening's program." %}
+    </div>
+    
+  </td>
+</tr>
+<!-- ---------- pad ---------- -->
+<tr style="height: 10px;"><td colspan="2"></td></tr>
+</table>
+
+<table class="ereg_2">
+<tr class="hea">
+  <td class="hea_bold"><div style="margin-bottom:3px; margin-left:4px">{% trans "Program Choices" %}</div></td>
+  <td class="hea" style="width:100px"><div style="margin-bottom:3px; margin-right:4px">ET2012FI</div></td>
+</tr>
+<tr style="height: 16px;"><td colspan="2"></td></tr>
+
+
+<!-- ---------- SUNDAY ---------- -->
+<tr>
+  <td colspan="2">
+    <div style="padding:4px; border:solid 1px #5C89B3"><h4>{% trans "Sunday June 10th &ndash; Welcome! &ndash; Tervetuloa!" %}</h4></div>
+  </td>
+</tr>
+<tr>
+  <td style="width:400px; padding-left:100px">
+    <div style="padding:4px">{% trans "Arrival in Tampere &ndash; Welcome and Info packets" %}</div>
+    <div style="padding:4px 4px 0px 4px">{% trans "Viking Evening and 1st Big Welcome Evening" %}</div>
+    <div style="padding:12px 4px 0px 0px; text-align: right">
+
+      <table style="width:650px; border-collapse:collapse">
+      <tr>
+        <td style="width:250px">{{ form.prsusetting.label_tag }}</td>
+        <td style="width:400px" class="radio_horiz">{{ form.prsusetting }}</span></td>
+      <tr>
+      </table>
+
+    </div>
+    <div style="padding:0px 4px 4px 4px">
+      <span style="float:left; clear:left; width: 600px; padding:4px"><em>{% trans "* If one session is filled we may have to schedule you in the other one!" %}</em></span>
+    </div>
+  </td>
+  <td>
+    <div style="padding:4px">
+      <span  style="position:relative; top:3px">{{ form.prsuarrival }}</span>
+    </div>
+    <div style="padding:4px">
+      <span>{{ form.prsu1welcome }}</span>
+      <span style="position:relative; top:3px">{{ form.prsu1welcome.label_tag }}</span>
+    </div>
+    <div style="height:50px"></div>
+  </td>
+</tr>
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+
+<!-- ---------- MONDAY ---------- -->
+<tr>
+  <td colspan="2">
+    <div style="padding:4px; border:solid 1px #5C89B3"><h4>{% trans "Monday June 11th &ndash; Nokia &ndash; Connecting Tall People" %}</h4></div>
+  </td>
+</tr>
+<tr>
+  <td style="padding-left:100px">
+    <div style="padding:4px">{% trans "Trip to the town of Nokia & Tampere sightseeing tour by bus" %}</div>
+    <div style="padding:4px">{% trans "Young&Tall &ndash; guided sightseeing tours in Tampere and a lot of fun" %}</div>
+    <div style="padding:4px">{% trans "2nd Big Welcome Evening with infotainment, professional shows and live music" %}</div>
+  </td>
+  <td>
+    <div style="width:100%; padding:4px">
+      <span>{{ form.prmonokia }}</span>
+      <span style="position:relative; top:3px">{{ form.prmonokia.label_tag }}</span>
+    </div>
+    <div style="width:100%; padding:4px"">
+      <span>{{ form.prmotampere }}</span>
+      <span style="position:relative; top:3px">{{ form.prmotampere.label_tag }}</span>
+    </div>
+    <div style="width:100%; padding:4px"">
+      <span>{{ form.prmo2welcome }}</span>
+      <span style="position:relative; top:3px">{{ form.prmo2welcome.label_tag }}</span>
+    </div>
+  </td>
+</tr>
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+
+<!-- ---------- TUESDAY ---------- -->
+<tr>
+  <td colspan="2">
+    <div style="padding:4px; border:solid 1px #5C89B3"><h4>{% trans "Tuesday June 12th &ndash; Finnish nature, fun and entertainment" %}</h4></div>
+  </td>
+</tr>
+<tr>
+  <td style="padding-left:100px">
+    <div style="padding:4px">{% trans "Public meeting of the representatives of the European Council/Board" %}</div>
+    <div style="padding:4px">{% trans "A possibility also for lunch exists, at additional cost" %}</div>
+    <div style="padding:4px">{% trans "Young&Tall &ndash; trip to the Särkänniemi Adventure park. Approx. 35 euro/person*" %}</div>
+    <div style="padding:4px"><em>{% trans "* Payment at the entrance (opens at 11am)." %}</em></div>
+    <div style="padding:4px">{% trans "Boat trip on Lake Pyhäjärvi & an outdoor evening on Viikinsaari Island." %}</div>
+  </td>
+  <td>
+    <div style="width:100%; padding:4px">
+      <span style="position:relative; top:3px">{{ form.prtuboard }}</span>
+    </div>
+    <div style="width:100%; padding:4px">
+      <span>{{ form.prtulunch }}</span>
+      <span style="position:relative; top:3px">{{ form.prtulunch.label_tag }}</span>
+    </div>
+    <div style="width:100%; padding:4px">
+      <span style="position:relative; top:3px">{{ form.prtuadvpark }}</span>
+    </div>
+    <div style="width:100%; padding:4px; margin-top:18px">
+      <span>{{ form.prtuboat }}</span>
+      <span style="position:relative; top:3px">{{ form.prtuboat.label_tag }}</span>
+    </div>
+  </td>
+</tr>
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+
+<!-- ---------- WEDNESDAY ---------- -->
+<tr>
+  <td colspan="2">
+    <div style="padding:4px; border:solid 1px #5C89B3"><h4>{% trans "Wednesday June 13th &ndash; Helsinki, the daughter of the Baltic Sea" %}</h4></div>
+  </td>
+</tr>
+<tr>
+  <td style="padding-left:100px">
+    <div style="padding:4px">{% trans "Full day trip to the capital of Finland, and&#133; (check one below)" %}</div>
+    <div style="padding:4px">{% trans "Boat trip to Suomenlinna incl. a historical video presentation. (Max 240 guests)" %}</div>
+    <div style="padding:4px">{% trans "OR free time in Helsinki (approx. 4 hrs)" %}</div>
+  </td>
+  <td>
+    <div style="width:100%; padding:4px">
+      <span>{{ form.prwehelsinki }}</span>
+      <span style="position:relative; top:3px">{{ form.prwehelsinki.label_tag }}</span>
+    </div>
+    <div style="width:100%; padding:4px">
+      <span>{{ form.prwesuomenlinna }}</span>
+      <span style="position:relative; top:3px">{{ form.prwesuomenlinna.label_tag }}</span>
+    </div>
+    <div style="width:100%; padding:4px">
+      <span>{{ form.prwefree }}</span>
+    </div>
+  </td>
+</tr>
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+
+<!-- ---------- THURSDAY ---------- -->
+<tr>
+  <td colspan="2">
+    <div style="padding:4px; border:solid 1px #5C89B3"><h4>{% trans "Thursday June 14th &ndash; Magic of Midsummer" %}</h4></div>
+  </td>
+</tr>
+<tr>
+  <td style="padding-left:100px">
+    <div style="padding:4px">{% trans "The biggest summer celebration in Finland called &quot;Juhannus&quot;. A long day in the beautiful, authentic countryside atmosphere." %}</div>
+  </td>
+  <td>
+    <div style="width:100%; padding:4px">
+      <span>{{ form.prthujuhannus }}</span>
+      <span style="position:relative; top:3px">{{ form.prthujuhannus.label_tag }}</span>
+    </div>
+  </td>
+</tr>
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+
+<!-- ---------- FRIDAY ---------- -->
+<tr>
+  <td colspan="2">
+    <div style="padding:4px; border:solid 1px #5C89B3"><h4>{% trans "Friday June 15th &ndash; Sauna Day" %}</h4></div>
+  </td>
+</tr>
+<tr>
+  <td style="padding-left:100px">
+    <div style="padding:4px">{% trans "Pispala & Pyynikki &ndash; The Pearls of Tampere. Guided walking & bus tour to the most essential part of the Finnish daily life and sauna traditions. Feel the heat&#133;" %}</div>
+    <div style="padding:4px">{% trans "Optional Sauna at hotel Scandic Rosendahl / Cumulus Hämeenpuisto" %}</div>
+  </td>
+  <td>
+    <div style="width:100%; padding:4px">
+      <span>{{ form.prfrisaunapis }}</span>
+      <span style="position:relative; top:3px">{{ form.prfrisaunapis.label_tag }}</span>
+    </div>
+    <div style="width:100%; padding:4px; margin-top:16px">
+      <span>{{ form.prfrisaunaros }}</span>
+    </div>
+  </td>
+</tr>
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+
+<!-- ---------- SATURDAY ---------- -->
+<tr>
+  <td colspan="2">
+    <div style="padding:4px; border:solid 1px #5C89B3"><h4>{% trans "Saturday June 16th &ndash; Gala Evening" %}</h4></div>
+  </td>
+</tr>
+<tr>
+  <td style="padding-left:100px">
+    <div style="padding:4px">{% trans "Dancing and Entertainment in Scandic Rosendahl until the morning&#133;" %}</div>
+  </td>
+  <td>
+    <div style="width:100%; padding:4px">
+      <span>{{ form.prsatgala }}</span>
+      <span style="position:relative; top:3px">{{ form.prsatgala.label_tag }}</span>
+    </div>
+  </td>
+</tr>
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+
+<!-- ---------- SUNDAY ---------- -->
+<tr>
+  <td colspan="2">
+    <div style="padding:4px; border:solid 1px #5C89B3"><h4>{% trans "Sunday June 17th &ndash; Kiitos ja näkemiin! &ndash; Thank you and goodbye!" %}</h4></div>
+  </td>
+</tr>
+<tr>
+  <td style="padding-left:100px">
+    <div style="padding:4px">{% trans "We will see you again in Hamburg 2013!" %}</div>
+  </td>
+  <td>
+    <div style="width:100%; padding:4px">
+      <span>{{ form.prsugoodbye }}</span>
+    </td>
+  </td>
+</tr>
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+
+<!-- ---------- ADDITIONAL FEES ---------- -->
+<tr>
+  <td colspan="2">
+    <div style="padding:4px; border:solid 1px #5C89B3"><h4>{% trans "Additional fees" %}</h4></div>
+  </td>
+</tr>
+<tr>
+  <td style="padding-left:100px">
+    <div style="padding:4px; color:#CC0000">{% trans "Additional yearly fee for the voluntary work on the European level" %}</div>
+    <div style="padding:4px">{% trans "Additional fee for Non-Tall Club members" %}</div>
+  </td>
+  <td>
+    <div style="width:100%; padding:4px">
+      <span style="color:#CC0000; position:relative; top:3px; padding-left:32px">{{ form.yearlyfee.label_tag }}</span>
+    </div>
+    <div style="width:100%; padding:4px">
+      <span>{{ form.nontallclub }}</span>
+      <span style="position:relative; top:3px">{{ form.nontallclub.label_tag }}</span>
+    </div>
+  </td>
+</tr>
+
+<!-- ---------- pad ---------- -->
+<tr style="height: 20px;"><td colspan="2"></td></tr>
+<!-- ---------- TOTAL ---------- -->
+<tr>
+  <td>
+    <div style="float:right; text-align:right"><h4>{% trans "Total amount EUR" %}</h4></div>
+  </td>
+  <td>
+    <span id="totalPrice"  style="float:left; color:#CC0000; font-size:14pt; font-weight:bold; margin-left: 8px; margin-right:4px"></span>
+    <span style="float:left; color:#CC0000; font-size:14pt; font-weight:bold"> €</span>
+  </td>
+</tr>
+
+
+<!-- ---------- pad ---------- -->
+<tr style="height: 20px;"><td colspan="2"></td></tr>
+<!-- ---------- BENEFICIARY ---------- -->
+<tr>
+  <td colspan="2">
+    <div style="text-align:left; padding-left:4px""><h4>{% trans "Payments only by Bank Transfer to:" %}</h4></div>
+  </td>
+</tr>
+<tr>
+  <td colspan="2" style="padding-left:100px">
+    <div style="float:left">
+      {% trans "Beneficiary's name and address:" %}<br/>
+      Pieni- ja Isokenkäiset ry / ET2012FI<br/>
+      {% trans "Po Box 186" %}<br/>
+      00931 Helsinki, Finland<br/>
+    </div>
+    <div style="float: right; padding-right:100px">
+      {% trans "Beneficiary bank account / bank details:" %}<br/>
+      IBAN: FI17 1153 3000 2126 69 BIC: NDEAFIHH<br/>
+      {% trans "Nordea Bank Finland Plc," %}<br/>
+      Aleksanterinkatu 36, 00100 Helsinki<br/>
+    </div>
+  </td>
+</tr>
+<!-- ---------- pad ---------- -->
+<tr style="height: 20px;"><td colspan="2"></td></tr>
+<tr>
+  <td colspan="2" style="padding-left:100px; padding-right: 100px">
+    <div>
+      {% trans "All bank charges are at the responsibility of the participants. For payments outside Europe, add 7 EUR to the total amount to cover receiving bank’s fee of incoming payment! Message for payment: ET2012FI/participant’s name/-s." %}
+    </div>
+  </td>
+</tr>
+<tr style="height: 20px;"><td colspan="2"></td></tr>
+<tr>
+  <td colspan="2">
+    
+    <!-- Buttons -->
+    {% ifequal gen_view "create" %}<input class="submit" type="submit" value="{% trans 'SEND' %}" />{% endifequal %}
+    {% ifequal gen_view "update" %}<input class="submit" type="submit" value="{% trans 'Update' %}" />{% endifequal %}
+    {% ifequal gen_view "detail" %}{% endifequal %}
+    <!-- !Buttons -->
+    
+  </td>
+</tr>
+<tr style="height: 20px;"><td colspan="2"></td></tr>
+</table>
+
+</form>
+
+<!--
+{% trans "Gender" %}
+{% trans "Electronic registration will open here." %}
+{% trans "Please be patient!" %}
+-->
+
+
+{% endblock content %}

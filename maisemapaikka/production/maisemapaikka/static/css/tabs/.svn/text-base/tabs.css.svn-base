@@ -1,0 +1,73 @@
+body#home a#homeLink,
+body#landscapes a#landscapesLink,
+body#churches a#churchesLink,
+body#rockart a#rockartLink,
+body#mylocation a#mylocationLink,
+body#accounts a#accountsLink,
+body#admin a#adminLink {
+    background-position: 0 -42px;
+    border-bottom: 1px solid #FFFFFF;
+    }
+
+body#home a#homeLink span,
+body#landscapes a#landscapesLink span,
+body#churches a#churchesLink span,
+body#rockart a#rockartLink span,
+body#mylocation a#mylocationLink span,
+body#accounts a#accountsLink span,
+body#admin a#adminLink span {
+    background-position: 100% -42px;
+    color: #003366; /* #E54A14 */
+    }
+
+#topnavi {
+    width: auto;
+    height: 26px;
+    /* background: url("http://www.tallsmall.fi:8080/site_media/img/backgrounds/barslide_blue2.gif") repeat-x scroll left top transparent; */
+    background-color: #031E49; /* #0A3270 */
+    border-top: solid 6px #031E49; /* #0A3270 */
+    }
+#topnavi ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 10px 0 20px;
+    }
+#topnavi li {
+    display: inline;
+    margin-bottom: 0;
+    padding: 0;
+    }
+#topnavi a {
+    background: url("images/tableft.gif") no-repeat scroll left top transparent;
+    border-bottom: 1px solid #003366;
+    float: left;
+    margin: 0 2px 0 0;
+    padding: 0 0 0 4px;
+    text-decoration: none;
+    color: #105CB6;
+    }
+#topnavi a span {
+    background: url("images/tabright.gif") no-repeat scroll right top transparent;
+    color: #002440;
+    display: block;
+    float: left;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    padding: 4px 15px 4px 6px;
+    }
+#topnavi a:hover {
+    background-position: 0 -42px;
+    border-bottom: 1px solid #FFFFFF;
+    }
+#topnavi a:hover span {
+    background-position: 100% -42px;
+    color: #E54A14;
+    }
+#topnavi a:active {
+    background-position: 0 -42px;
+    color: #FF3333;
+    }
+#topnavi a:active span {
+    background-position: 100% -42px;
+    }

@@ -1,0 +1,31 @@
+Young & Tall
+============
+- Nuoret & Pitkät
+- Matkustatko vanhempiesi kanssa?    Kyllä Ei
+- Huoltajan nimi
+- Jos et, vanhempien nimi ja matkapuhelinnro
+- Huoltajan matkapuhelinnumero
+- Valvojan nimi
+- Valvojan matkapuhelinnro
+
+youngtall = models.BooleanField()
+withparents = models.CharField(max_length=10, blank=True, null=True, choices=YESNO_CHOICES)
+parentsname = models.CharField(max_length=30, blank=True, null=True)
+parentsmobile = models.CharField(max_length=30, blank=True, null=True)
+guardiansname = models.CharField(max_length=30, blank=True, null=True)
+gurardiansmobile = models.CharField(max_length=30, blank=True, null=True)
+
+
+XXXXXXXXXXXXX 
+{% for p in ip_test %}{{ p.ip_address }}{% endfor %}
+XXXXXXXXXX
+{% if object.id in ip_test.id %}ALLOWED{% else %}NOT ALLOWED{% endif %}
+XXXXXXXX 
+{% if ip_test %}ON IP{% else %}EI OLE IP{% endif %} 
+XXXXXXXXXXXX 
+{% if user.is_authenticated %}IS AUTHENTICATED{% else %}IS NOT AUTHENTICATED{% endif %} 
+xxxxxxxxxxxxxx 
+ID: {{ object.id }} 
+XXXXXXXXXX
+client_ip: {{ client_ip }} 
+xxxxxxx

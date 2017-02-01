@@ -1,0 +1,40 @@
+{% load i18n %}
+
+<!-- My Location -->
+<ul class="navlist">
+  {% ifnotequal aspect "frontpg" %}
+  <li><a href="/mylocation/frontpg/">{% trans "Home" %}</a></li>
+  {% else %}
+   <li><span class="selected">{% trans "Home" %}</span></li>
+  {% endifnotequal %}
+  
+  {% ifnotequal aspect "time" %}
+  <li><a href="/mylocation/time/">{% trans "Travel in Time" %}</a></li>
+  {% else %}
+  <li><span class="selected">{% trans "Travel in Time" %}</span></li>
+  {% endifnotequal %}
+
+  {% ifnotequal aspect "photo" %}
+  <li><a href="/mylocation/photo/">{% trans "Images" %}</a></li>
+  {% else %}
+  <li><span class="selected">{% trans "Images" %}</span></li>
+  {% endifnotequal %}
+
+  {% ifnotequal aspect "research" %}
+  <li><a href="/mylocation/research/">{% trans "Research" %}</a></li>
+  {% else %}
+  <li><span class="selected">{% trans "Research" %}</span></li>
+  {% endifnotequal %}
+
+  {% ifnotequal aspect "map" %}
+  <li><a href="/mylocation/map/?map=4">{% trans "Map" %}</a></li>
+  {% else %}
+  <li><span class="selected">{% trans "Map" %}</span></li>
+  {% endifnotequal %}
+
+  {% ifnotequal aspect "story" %}
+  <li><a href="/mylocation/story/">{% trans "Stories" %}</a></li>
+  {% else %}
+  <li><span class="selected">{% trans "Stories" %}</span></li>
+  {% endifnotequal %}
+</ul>

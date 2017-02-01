@@ -1,0 +1,3 @@
+<div class="fadebox_blue_180">
+  {% block content %}{% endblock %}
+</div>

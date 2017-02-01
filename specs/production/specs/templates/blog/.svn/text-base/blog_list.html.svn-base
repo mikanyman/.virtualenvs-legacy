@@ -1,0 +1,94 @@
+{% extends layout %}
+{% load markup %}
+
+{% block main %}
+<!-- Page status -->
+<div id="page_status_top">
+  <div class="page_status_left">
+    {% ifequal page 1 %}
+      <span class="arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_grey_beg.gif" border="0"></span> Alkuun  
+    {% else %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/?page=1"><span class="arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_or_beg.gif" border="0"></span> Alkuun</a> 
+    {% endifequal %}
+    {% ifequal has_previous 1 %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/?page={{ previous }}"><span class="prev_arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_or_prev.gif" border="0"></span> Edellinen&nbsp;sivu</a> <span class="mid_space"></span>
+    {% else %}
+      <span class="prev_arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_grey_prev.gif" border="0"></span> Edellinen&nbsp;sivu <span class="mid_space"></span>
+    {% endifequal %}
+  </div>
+  <div class="page_status_right">
+    {% ifequal has_next 1 %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/?page={{ next }}">Seuraava&nbsp;sivu <span class="next_arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_or_next.gif" border="0"></span></a> 
+    {% else %}
+      Seuraava&nbsp;sivu <span class="next_arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_grey_next.gif" border="0"></span>  
+    {% endifequal %}
+    {% ifequal page pages %}
+      Loppuun <span class="arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_grey_end.gif" border="0"></span> 
+    {% else %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/?page={{ pages }}">Loppuun <span class="arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_or_end.gif" border="0"></span></a>
+    {% endifequal %} 
+    <span class="text_666">&nbsp;&nbsp;&nbsp;{{ hits }} viesti&auml; (Sivu {{ page }}/{{ pages }})</span>
+  </div>
+</div>
+<!-- /Page status -->
+
+<!-- messages -->
+{% for entry in object_list %}
+<div class="roundbox_660">
+  <div class="roundbox_660_top"></div>
+  <div class="roundbox_660_mid">
+    <br />
+	<div class="post_text">
+	  <h1 class="orange">{{ entry.title|escape }}</h1>
+	  {{ entry.body|escape|markdown }}
+	</div><!-- entry.content|markdown|escape -->
+	<div class="post_info">
+      <span class="speech"><img src="http://www.tallsmall.fi:8080/site_media/img/icons/eb/speech2.png"></span>
+      <span class="text_333"><strong>{{ entry.creator|lower|capfirst }}</strong></span>
+	  <span class="text_666">{{ entry.created|date:"d.m.Y H:i" }}</span>
+	</div>
+    </div>
+  <div class="roundbox_660_bottom"></div>
+</div>
+{% endfor %}
+<!-- /messages -->
+
+<!-- Page status -->
+<div id="page_status_bottom">
+  <div class="page_status_left">
+    {% ifequal page 1 %}
+      <span class="arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_grey_beg.gif" border="0"></span> Alkuun  
+    {% else %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/?page=1"><span class="arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_or_beg.gif" border="0"></span> Alkuun</a> 
+    {% endifequal %}
+    {% ifequal has_previous 1 %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/?page={{ previous }}"><span class="prev_arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_or_prev.gif" border="0"></span> Edellinen&nbsp;sivu</a> <span class="mid_space"></span>
+    {% else %}
+      <span class="prev_arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_grey_prev.gif" border="0"></span> Edellinen&nbsp;sivu <span class="mid_space"></span>
+    {% endifequal %}
+  </div>
+  <div class="page_status_right">
+    {% ifequal has_next 1 %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/?page={{ next }}">Seuraava&nbsp;sivu <span class="next_arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_or_next.gif" border="0"></span></a> 
+    {% else %}
+      Seuraava&nbsp;sivu <span class="next_arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_grey_next.gif" border="0"></span>  
+    {% endifequal %}
+    {% ifequal page pages %}
+      Loppuun <span class="arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_grey_end.gif" border="0"></span> 
+    {% else %}
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/?page={{ pages }}">Loppuun <span class="arrow"><img src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_or_end.gif" border="0"></span></a>
+    {% endifequal %} 
+    <span class="text_666">&nbsp;&nbsp;&nbsp;{{ hits }} viesti&auml; (Sivu {{ page }}/{{ pages }})</span>
+  </div>
+</div>
+<!-- /Page status -->
+{% endblock %}
+
+{% block blogbar_right %}
+  {% if feed_3_1_dict %}{% include "cells/common/cell_3_1.html" %}{% endif %}
+  {% if feed_3_2_dict %}{% include "cells/common/cell_3_2.html" %}{% endif %}
+  {% if feed_3_3_dict %}{% include "cells/common/cell_3_3.html" %}{% endif %}
+  {% if feed_3_4_dict %}{% include "cells/common/cell_3_4.html" %}{% endif %}
+  {% if feed_3_5_dict %}{% include "cells/common/cell_3_5.html" %}{% endif %}
+{% endblock %}
+

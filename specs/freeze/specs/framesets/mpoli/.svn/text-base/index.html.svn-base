@@ -1,0 +1,14 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+   "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<title>Pieni- ja Isokenkäiset ry.</title>
+</head>
+<frameset cols="0,*" frameborder="0" BORDER="0" FRAMESPACING="0">
+  <frame name="top" src="/fi/all/e0/html/mpoli/top.html">
+  <frame name="main" src="/fi/all/e0/html/mpoli/index2.html" scrolling="auto">
+  <noframes>
+    Selaimesi ei tue kehyksiä. Päivitä selaimesi uudempaan versioon!
+  </noframes>
+</frameset>
+</html>

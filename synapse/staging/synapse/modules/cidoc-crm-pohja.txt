@@ -1,0 +1,8 @@
+class E(E):
+    ""
+
+    def __init__(self):
+        self.p = P()
+
+    def __str__(self):
+        return ""

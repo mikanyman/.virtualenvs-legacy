@@ -1,0 +1,90 @@
+{% extends "base_1.html" %}
+
+{% block admin_widgets %}
+{% include "/var/django/specs/templates/admin_widgets.inc" %}
+{% endblock %}
+
+{% block tinymce %}
+{% include "/var/django/specs/templates/tinymce_init.inc" %}
+{% endblock %}
+
+{% block content %}
+<hr />
+<form method="post" action="" />
+<table align="center" border="0">
+<tr>
+  <td colspan="2">
+  {% if object %}
+    <span class="h1_oneline">P&auml;ivit&auml; juttu</span>
+  {% else %}
+    <span class="h1_oneline">Lis&auml;&auml; juttu</span>
+  {% endif %}
+  {% if form.has_errors %}
+    <p>Et t&auml;ytt&auml;nyt kaikkia kentti&auml; tai kentiss&auml; oli virheellisi&auml; tietoja<br />
+    (esim. Julk.pvm tai Julk.kellonaika).</p>
+    <p>{{ form.error_dict }}</p>
+  {% endif  %}
+  </td>
+  <td colspan="2" align="right" valign="middle">
+    {% include "/var/django/specs/templates/admin_view_list.inc" %}
+  </td>
+</tr>
+<tr><td colspan="4"></td></tr>
+<tr>
+  <td><label for="id_byline">Esirivi:</label></td>
+  <td colspan="3" align="right">
+    <input type="text" size="84" name="byline" value="{{ object.byline|default_if_none:"foo"|cut:"foo" }}">
+  </td>
+</tr>
+<tr>
+  <td><label for="id_headline">Otsikko*:</label></td>
+  <td colspan="3" align="right">
+    <input type="text" size="84" name="headline" value="{{ object.headline }}">
+  </td>
+</tr>
+<tr>
+  <td colspan="4">
+    <label for="id_summary">Ingressi ja teksti:</label><br />
+    <textarea rows="3" cols="80" name="summary">{{ object.summary }}</textarea>
+  </td>
+</tr>
+<tr>
+  <td colspan="4">
+    <!--<label for="id_body">Teksti:</label><br />-->
+    <textarea id="textarea_body" class="mceEditor" rows="30" cols="80" name="body" style="width: 100%">{{ object.body }}</textarea>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><label for="id_slug">Jutun lyhenne*:</label></td>
+  <td>{{ form.slug }}</td>
+  <td><label for="id_issue">Lehden&nbsp;nro:</label></td>
+  <td align="right">{{ form.issue }}</td>
+</tr>
+<tr>
+  <td valign="top"><label for="id_pub_date_date">Julk.pvm*:</label></td>
+  <td>{{ form.pub_date_date }}</td>
+  <td valign="top"><label for="id_author">Kirjoittaja:</label></td>
+  <td align="right">{{ form.author }}</td>
+</tr>
+<tr>
+  <td valign="top"><label for="id_pub_date_time">Julk.kellonaika*:</label></td>
+  <td valign="top">{{ form.pub_date_time }}</td>
+  <td valign="top"><label for="id_section">Osasto*:</label></td>
+  <td align="right">{{ form.categorys }}</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr><td colspan="4"></td></tr>
+<tr>
+  <td><input type="submit" value="Tallenna juttu"></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+</form>
+{% endblock %}

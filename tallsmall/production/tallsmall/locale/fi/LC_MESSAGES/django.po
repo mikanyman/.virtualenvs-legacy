@@ -1,0 +1,1556 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TallSmall\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-05 19:17+0300\n"
+"PO-Revision-Date: 2012-04-05 19:21+0200\n"
+"Last-Translator: Mika Nyman <mika.nyman@synapse-computing.com>\n"
+"Language-Team: Synapse Computing <mika.nyman@synapse-computing.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: Finnish\n"
+"X-Poedit-Country: FINLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: .\settings.py:34
+#: .\apps\etreg\models.py:25
+#: .\templates\etreg\person_detail.html.py:189
+#: .\templates\etreg\person_email_html.html.py:133
+#: .\templates\etreg\person_email_text.html.py:101
+#: .\templates\etreg\Trash\test_email_text.html.py:68
+msgid "Finnish"
+msgstr "Suomi"
+
+#: .\settings.py:35
+#: .\apps\etreg\models.py:27
+#: .\templates\etreg\person_detail.html.py:191
+#: .\templates\etreg\person_email_html.html.py:135
+#: .\templates\etreg\person_email_text.html.py:103
+#: .\templates\etreg\Trash\test_email_text.html.py:70
+msgid "German"
+msgstr "Saksa"
+
+#: .\settings.py:36
+#: .\apps\etreg\models.py:26
+#: .\demo_project\settings.py:36
+#: .\templates\etreg\person_detail.html.py:190
+#: .\templates\etreg\person_email_html.html.py:134
+#: .\templates\etreg\person_email_text.html.py:102
+#: .\templates\etreg\Trash\test_email_text.html.py:69
+msgid "English"
+msgstr "Englanti"
+
+#: .\account\forms.py:13
+#: .\apps\etreg\models.py:224
+#: .\demo_project\profiles\forms.py:13
+#: .\templates\etreg\person_detail.html.py:161
+#: .\templates\etreg\person_email_html.html.py:105
+#: .\templates\etreg\person_email_text.html.py:85
+#: .\templates\etreg\Trash\test_email_text.html.py:40
+msgid "First name"
+msgstr "Etunimi"
+
+#: .\account\forms.py:17
+#: .\apps\etreg\models.py:221
+#: .\demo_project\profiles\forms.py:17
+#: .\templates\etreg\person_detail.html.py:162
+#: .\templates\etreg\person_email_html.html.py:106
+#: .\templates\etreg\person_email_text.html.py:86
+#: .\templates\etreg\Trash\test_email_text.html.py:41
+msgid "Last name"
+msgstr "Sukunimi"
+
+#: .\account\models.py:30
+#: .\demo_project\profiles\models.py:12
+msgid "Male"
+msgstr ""
+
+#: .\account\models.py:31
+#: .\demo_project\profiles\models.py:13
+msgid "Female"
+msgstr ""
+
+#: .\account\models.py:36
+#: .\demo_project\profiles\models.py:18
+msgid "user"
+msgstr ""
+
+#: .\account\models.py:39
+#: .\demo_project\profiles\models.py:21
+msgid "gender"
+msgstr "Kutsumatapa"
+
+#: .\account\models.py:43
+#: .\demo_project\profiles\models.py:25
+msgid "website"
+msgstr ""
+
+#: .\account\models.py:44
+#: .\demo_project\profiles\models.py:26
+msgid "location"
+msgstr ""
+
+#: .\account\models.py:45
+#: .\demo_project\profiles\models.py:27
+msgid "birth date"
+msgstr "Syntymäaika"
+
+#: .\account\models.py:46
+#: .\demo_project\profiles\models.py:28
+msgid "about me"
+msgstr ""
+
+#: .\apps\etreg\models.py:9
+msgid "Ms."
+msgstr "Neiti"
+
+#: .\apps\etreg\models.py:10
+msgid "Mrs."
+msgstr "Rouva"
+
+#: .\apps\etreg\models.py:11
+msgid "Mr."
+msgstr "Herra"
+
+#: .\apps\etreg\models.py:18
+#: .\templates\etreg\person_detail.html.py:171
+#: .\templates\etreg\person_detail.html.py:237
+#: .\templates\etreg\person_detail.html.py:239
+#: .\templates\etreg\person_detail.html.py:250
+#: .\templates\etreg\person_detail.html.py:251
+#: .\templates\etreg\person_detail.html.py:252
+#: .\templates\etreg\person_detail.html.py:253
+#: .\templates\etreg\person_detail.html.py:260
+#: .\templates\etreg\person_detail.html.py:262
+#: .\templates\etreg\person_detail.html.py:277
+#: .\templates\etreg\person_detail.html.py:304
+#: .\templates\etreg\person_detail.html.py:312
+#: .\templates\etreg\person_detail.html.py:328
+#: .\templates\etreg\person_detail.html.py:340
+#: .\templates\etreg\person_detail.html.py:348
+#: .\templates\etreg\person_email_html.html.py:115
+#: .\templates\etreg\person_email_html.html.py:181
+#: .\templates\etreg\person_email_html.html.py:183
+#: .\templates\etreg\person_email_html.html.py:194
+#: .\templates\etreg\person_email_html.html.py:195
+#: .\templates\etreg\person_email_html.html.py:196
+#: .\templates\etreg\person_email_html.html.py:197
+#: .\templates\etreg\person_email_html.html.py:204
+#: .\templates\etreg\person_email_html.html.py:206
+#: .\templates\etreg\person_email_html.html.py:221
+#: .\templates\etreg\person_email_html.html.py:248
+#: .\templates\etreg\person_email_html.html.py:256
+#: .\templates\etreg\person_email_html.html.py:272
+#: .\templates\etreg\person_email_html.html.py:284
+#: .\templates\etreg\person_email_html.html.py:292
+#: .\templates\etreg\person_email_text.html.py:93
+#: .\templates\etreg\person_email_text.html.py:120
+#: .\templates\etreg\person_email_text.html.py:122
+#: .\templates\etreg\person_email_text.html.py:128
+#: .\templates\etreg\person_email_text.html.py:129
+#: .\templates\etreg\person_email_text.html.py:130
+#: .\templates\etreg\person_email_text.html.py:131
+#: .\templates\etreg\person_email_text.html.py:132
+#: .\templates\etreg\person_email_text.html.py:134
+#: .\templates\etreg\person_email_text.html.py:140
+#: .\templates\etreg\person_email_text.html.py:153
+#: .\templates\etreg\person_email_text.html.py:157
+#: .\templates\etreg\person_email_text.html.py:165
+#: .\templates\etreg\person_email_text.html.py:171
+#: .\templates\etreg\person_email_text.html.py:175
+#: .\templates\etreg\Trash\test_email_text.html.py:50
+#: .\templates\etreg\Trash\test_email_text.html.py:116
+#: .\templates\etreg\Trash\test_email_text.html.py:118
+#: .\templates\etreg\Trash\test_email_text.html.py:129
+#: .\templates\etreg\Trash\test_email_text.html.py:130
+#: .\templates\etreg\Trash\test_email_text.html.py:131
+#: .\templates\etreg\Trash\test_email_text.html.py:132
+#: .\templates\etreg\Trash\test_email_text.html.py:139
+#: .\templates\etreg\Trash\test_email_text.html.py:141
+#: .\templates\etreg\Trash\test_email_text.html.py:156
+#: .\templates\etreg\Trash\test_email_text.html.py:183
+#: .\templates\etreg\Trash\test_email_text.html.py:191
+#: .\templates\etreg\Trash\test_email_text.html.py:207
+#: .\templates\etreg\Trash\test_email_text.html.py:219
+#: .\templates\etreg\Trash\test_email_text.html.py:227
+msgid "Yes"
+msgstr "Kyllä"
+
+#: .\apps\etreg\models.py:19
+#: .\templates\etreg\person_detail.html.py:240
+#: .\templates\etreg\person_detail.html.py:277
+#: .\templates\etreg\person_email_html.html.py:184
+#: .\templates\etreg\person_email_html.html.py:221
+#: .\templates\etreg\person_email_text.html.py:123
+#: .\templates\etreg\person_email_text.html.py:140
+#: .\templates\etreg\Trash\test_email_text.html.py:119
+#: .\templates\etreg\Trash\test_email_text.html.py:156
+msgid "No"
+msgstr "Ei"
+
+#: .\apps\etreg\models.py:34
+#: .\templates\etreg\person_detail.html.py:286
+#: .\templates\etreg\person_email_html.html.py:230
+#: .\templates\etreg\person_email_text.html.py:144
+#: .\templates\etreg\Trash\test_email_text.html.py:165
+msgid "First setting* at 6pm"
+msgstr "1. kattaus klo 18"
+
+#: .\apps\etreg\models.py:35
+#: .\templates\etreg\person_detail.html.py:287
+#: .\templates\etreg\person_email_html.html.py:231
+#: .\templates\etreg\person_email_text.html.py:145
+#: .\templates\etreg\Trash\test_email_text.html.py:166
+msgid "Second setting* at 9pm"
+msgstr "2. kattaus klo 21"
+
+#: .\apps\etreg\models.py:41
+msgid "to Helsinki *"
+msgstr "Helsinkiin *"
+
+#: .\apps\etreg\models.py:42
+msgid "to Tampere"
+msgstr "Tampereelle"
+
+#: .\apps\etreg\models.py:47
+#: .\templates\etreg\person_detail.html.py:206
+#: .\templates\etreg\person_email_html.html.py:150
+#: .\templates\etreg\person_email_text.html.py:104
+#: .\templates\etreg\Trash\test_email_text.html.py:85
+msgid "Arrival to Helsinki"
+msgstr "Saapuminen Helsinkiin"
+
+#: .\apps\etreg\models.py:48
+#: .\templates\etreg\person_detail.html.py:207
+#: .\templates\etreg\person_email_html.html.py:151
+#: .\templates\etreg\person_email_text.html.py:105
+#: .\templates\etreg\Trash\test_email_text.html.py:86
+msgid "Arrival to Tampere"
+msgstr "Saapuminen Tampereelle"
+
+#: .\apps\etreg\models.py:51
+msgid "from Tampere"
+msgstr "Tampereelta"
+
+#: .\apps\etreg\models.py:52
+msgid "from Helsinki *"
+msgstr "Helsingistä *"
+
+#: .\apps\etreg\models.py:57
+#: .\templates\etreg\person_detail.html.py:211
+#: .\templates\etreg\person_email_html.html.py:155
+#: .\templates\etreg\person_email_text.html.py:107
+#: .\templates\etreg\Trash\test_email_text.html.py:90
+msgid "Departure from Tampere"
+msgstr "Lähtö Tampereelta"
+
+#: .\apps\etreg\models.py:58
+#: .\templates\etreg\person_detail.html.py:212
+#: .\templates\etreg\person_email_html.html.py:156
+#: .\templates\etreg\person_email_text.html.py:108
+#: .\templates\etreg\Trash\test_email_text.html.py:91
+msgid "Departure from Helsinki"
+msgstr "Lähtö Helsingistä"
+
+#: .\apps\etreg\models.py:89
+#: .\templates\etreg\person_form.html.py:439
+msgid "Other, Where?"
+msgstr "Muu, missä?"
+
+#: .\apps\etreg\models.py:228
+#: .\templates\etreg\person_detail.html.py:160
+#: .\templates\etreg\person_email_html.html.py:104
+#: .\templates\etreg\person_email_text.html.py:84
+#: .\templates\etreg\person_form.html.py:929
+#: .\templates\etreg\Trash\test_email_text.html.py:39
+msgid "Gender"
+msgstr "Kutsumatapa"
+
+#: .\apps\etreg\models.py:234
+#: .\templates\etreg\person_detail.html.py:163
+#: .\templates\etreg\person_email_html.html.py:107
+#: .\templates\etreg\person_email_text.html.py:87
+#: .\templates\etreg\Trash\test_email_text.html.py:42
+msgid "Address"
+msgstr "Osoite"
+
+#: .\apps\etreg\models.py:239
+#: .\templates\etreg\person_detail.html.py:169
+#: .\templates\etreg\person_email_html.html.py:113
+#: .\templates\etreg\person_email_text.html.py:91
+#: .\templates\etreg\Trash\test_email_text.html.py:48
+msgid "Date of birth (yyyy-mm-dd)"
+msgstr "Syntymäpäivä (vvvv-kk-pp)"
+
+#: .\apps\etreg\models.py:243
+#: .\templates\etreg\person_detail.html.py:170
+#: .\templates\etreg\person_email_html.html.py:114
+#: .\templates\etreg\person_email_text.html.py:92
+#: .\templates\etreg\Trash\test_email_text.html.py:49
+msgid "Height"
+msgstr "Pituus"
+
+#: .\apps\etreg\models.py:249
+#: .\templates\etreg\person_detail.html.py:164
+#: .\templates\etreg\person_email_html.html.py:108
+#: .\templates\etreg\person_email_text.html.py:88
+#: .\templates\etreg\Trash\test_email_text.html.py:43
+msgid "Postcode"
+msgstr "Postinumero"
+
+#: .\apps\etreg\models.py:253
+#: .\templates\etreg\person_detail.html.py:165
+#: .\templates\etreg\person_email_html.html.py:109
+#: .\templates\etreg\person_email_text.html.py:89
+#: .\templates\etreg\Trash\test_email_text.html.py:44
+msgid "City"
+msgstr "Kaupunki"
+
+#: .\apps\etreg\models.py:257
+#: .\templates\etreg\person_detail.html.py:171
+#: .\templates\etreg\person_email_html.html.py:115
+#: .\templates\etreg\person_email_text.html.py:93
+#: .\templates\etreg\Trash\test_email_text.html.py:50
+msgid "Member of a Tall Club"
+msgstr "Pitkien yhdistyksen jäsen"
+
+#: .\apps\etreg\models.py:263
+#: .\templates\etreg\person_detail.html.py:166
+#: .\templates\etreg\person_email_html.html.py:110
+#: .\templates\etreg\person_email_text.html.py:90
+#: .\templates\etreg\Trash\test_email_text.html.py:45
+msgid "Country"
+msgstr "Maa"
+
+#: .\apps\etreg\models.py:268
+#: .\templates\etreg\person_detail.html.py:172
+#: .\templates\etreg\person_email_html.html.py:116
+#: .\templates\etreg\person_email_text.html.py:94
+#: .\templates\etreg\Trash\test_email_text.html.py:51
+msgid "Which Tall Club are you registered with?"
+msgstr "Minkä yhdistyksen jäsen olet?"
+
+#: .\apps\etreg\models.py:275
+#: .\templates\etreg\person_detail.html.py:179
+#: .\templates\etreg\person_email_html.html.py:123
+#: .\templates\etreg\person_email_text.html.py:96
+#: .\templates\etreg\Trash\test_email_text.html.py:58
+#: .\templates\userena\profile_detail.html.py:27
+msgid "Email"
+msgstr "Sähköposti"
+
+#: .\apps\etreg\models.py:280
+#: .\templates\etreg\person_detail.html.py:173
+#: .\templates\etreg\person_email_html.html.py:117
+#: .\templates\etreg\person_email_text.html.py:95
+#: .\templates\etreg\Trash\test_email_text.html.py:52
+msgid "Membership number"
+msgstr "Jäsennumero"
+
+#: .\apps\etreg\models.py:287
+#: .\templates\etreg\person_detail.html.py:180
+#: .\templates\etreg\person_email_html.html.py:124
+#: .\templates\etreg\person_email_text.html.py:97
+#: .\templates\etreg\Trash\test_email_text.html.py:59
+msgid "Mobile phone number with country code"
+msgstr "Matkapuhelinnumero"
+
+#: .\apps\etreg\models.py:292
+#: .\templates\etreg\person_detail.html.py:181
+#: .\templates\etreg\person_email_html.html.py:125
+#: .\templates\etreg\person_email_text.html.py:98
+#: .\templates\etreg\Trash\test_email_text.html.py:60
+msgid "Home phone number with country code"
+msgstr "Kotipuhelinnumero"
+
+#: .\apps\etreg\models.py:297
+#: .\templates\etreg\person_detail.html.py:182
+#: .\templates\etreg\person_email_html.html.py:126
+#: .\templates\etreg\person_email_text.html.py:99
+#: .\templates\etreg\Trash\test_email_text.html.py:61
+msgid "Fax number with country code"
+msgstr "Faksinumero"
+
+#: .\apps\etreg\models.py:301
+#: .\templates\etreg\person_detail.html.py:188
+#: .\templates\etreg\person_email_html.html.py:132
+#: .\templates\etreg\person_email_text.html.py:100
+#: .\templates\etreg\Trash\test_email_text.html.py:67
+msgid "Language for welcome packets and guided tours"
+msgstr "Kieli / tervetulopaketin ja opastettujen kierrosten kieli"
+
+#: .\apps\etreg\models.py:307
+msgid "Estimated arrival"
+msgstr "Arvioitu saapumisaika"
+
+#: .\apps\etreg\models.py:311
+msgid "Estimated departure"
+msgstr "Arvioitu lähtöaika"
+
+#: .\apps\etreg\models.py:315
+msgid "Estimated arrival to Helsinki*/Tampere Date (yyyy-mm-dd)"
+msgstr "Arvioitu saapumisaika Helsinkiin* / Tampereelle (pvä, klo)"
+
+#: .\apps\etreg\models.py:319
+#: .\apps\etreg\models.py:327
+#: .\templates\etreg\person_detail.html.py:208
+#: .\templates\etreg\person_detail.html.py:213
+#: .\templates\etreg\person_email_html.html.py:152
+#: .\templates\etreg\person_email_html.html.py:157
+#: .\templates\etreg\person_email_text.html.py:106
+#: .\templates\etreg\person_email_text.html.py:109
+#: .\templates\etreg\Trash\test_email_text.html.py:87
+#: .\templates\etreg\Trash\test_email_text.html.py:92
+msgid "Time"
+msgstr "Kellonaika"
+
+#: .\apps\etreg\models.py:323
+msgid "Estimated departure from Tampere/Helsinki* (yyyy-mm-dd)"
+msgstr "Arvioitu lähtöaika Tamperelta /Helsingistä* (pvä, klo)"
+
+#: .\apps\etreg\models.py:333
+#: .\templates\etreg\person_detail.html.py:219
+#: .\templates\etreg\person_email_html.html.py:163
+#: .\templates\etreg\person_email_text.html.py:110
+#: .\templates\etreg\person_form.html.py:426
+#: .\templates\etreg\Trash\test_email_text.html.py:98
+msgid "In which hotel/hostel you are staying?"
+msgstr "Missä hotellissa majoitut?"
+
+#: .\apps\etreg\models.py:341
+#: .\templates\etreg\person_detail.html.py:230
+#: .\templates\etreg\person_email_html.html.py:174
+#: .\templates\etreg\person_email_text.html.py:118
+#: .\templates\etreg\Trash\test_email_text.html.py:109
+msgid "Check-in date (yyyy-mm-dd)"
+msgstr "Saapumispäivämäärä (vvvv-kk-pp)"
+
+#: .\apps\etreg\models.py:345
+#: .\templates\etreg\person_detail.html.py:231
+#: .\templates\etreg\person_email_html.html.py:175
+#: .\templates\etreg\person_email_text.html.py:119
+#: .\templates\etreg\Trash\test_email_text.html.py:110
+msgid "Check-out date (yyyy-mm-dd)"
+msgstr "Lähtöpäivämäärä (vvvv-kk-pp)"
+
+#: .\apps\etreg\models.py:351
+#: .\templates\etreg\person_detail.html.py:237
+#: .\templates\etreg\person_email_html.html.py:181
+#: .\templates\etreg\person_email_text.html.py:120
+#: .\templates\etreg\Trash\test_email_text.html.py:116
+msgid "Young & Tall"
+msgstr "Nuoret & Pitkät"
+
+#: .\apps\etreg\models.py:356
+#: .\templates\etreg\person_detail.html.py:238
+#: .\templates\etreg\person_email_html.html.py:182
+#: .\templates\etreg\person_email_text.html.py:121
+#: .\templates\etreg\Trash\test_email_text.html.py:117
+msgid "Are you travelling with your parents?"
+msgstr "Matkustatko vanhempiesi kanssa?"
+
+#: .\apps\etreg\models.py:361
+#: .\templates\etreg\person_detail.html.py:241
+#: .\templates\etreg\person_email_html.html.py:185
+#: .\templates\etreg\person_email_text.html.py:124
+#: .\templates\etreg\Trash\test_email_text.html.py:120
+msgid "Parents name"
+msgstr "Huoltajan nimi"
+
+#: .\apps\etreg\models.py:366
+#: .\templates\etreg\person_detail.html.py:242
+#: .\templates\etreg\person_email_html.html.py:186
+#: .\templates\etreg\person_email_text.html.py:125
+#: .\templates\etreg\Trash\test_email_text.html.py:121
+msgid "Parents mobile phone number"
+msgstr "Huoltajan matkapuhelinnumero"
+
+#: .\apps\etreg\models.py:371
+#: .\templates\etreg\person_detail.html.py:243
+#: .\templates\etreg\person_email_html.html.py:187
+#: .\templates\etreg\person_email_text.html.py:126
+#: .\templates\etreg\Trash\test_email_text.html.py:122
+msgid "Guardians name"
+msgstr "Valvojan nimi"
+
+#: .\apps\etreg\models.py:376
+#: .\templates\etreg\person_detail.html.py:244
+#: .\templates\etreg\person_email_html.html.py:188
+#: .\templates\etreg\person_email_text.html.py:127
+#: .\templates\etreg\Trash\test_email_text.html.py:123
+msgid "Guardians mobile phone number"
+msgstr "Valvojan matkapuhelinnro"
+
+#: .\apps\etreg\models.py:382
+#: .\templates\etreg\person_detail.html.py:250
+#: .\templates\etreg\person_email_html.html.py:194
+#: .\templates\etreg\person_email_text.html.py:128
+#: .\templates\etreg\Trash\test_email_text.html.py:129
+msgid "Vegetarian"
+msgstr "Kasvis"
+
+#: .\apps\etreg\models.py:387
+#: .\templates\etreg\person_detail.html.py:251
+#: .\templates\etreg\person_email_html.html.py:195
+#: .\templates\etreg\person_email_text.html.py:129
+#: .\templates\etreg\Trash\test_email_text.html.py:130
+msgid "Gluten-free"
+msgstr "Gluteeniton"
+
+#: .\apps\etreg\models.py:392
+#: .\templates\etreg\person_detail.html.py:252
+#: .\templates\etreg\person_email_html.html.py:196
+#: .\templates\etreg\person_email_text.html.py:130
+#: .\templates\etreg\Trash\test_email_text.html.py:131
+msgid "Diabetic"
+msgstr "Diabeetikko"
+
+#: .\apps\etreg\models.py:397
+#: .\templates\etreg\person_detail.html.py:253
+#: .\templates\etreg\person_email_html.html.py:197
+#: .\templates\etreg\person_email_text.html.py:131
+#: .\templates\etreg\Trash\test_email_text.html.py:132
+msgid "Low lactose"
+msgstr "Laktoositon"
+
+#: .\apps\etreg\models.py:404
+#: .\templates\etreg\person_detail.html.py:260
+#: .\templates\etreg\person_email_html.html.py:204
+#: .\templates\etreg\person_email_text.html.py:132
+#: .\templates\etreg\Trash\test_email_text.html.py:139
+msgid "Do you need any personal assistance (if available) during the events?"
+msgstr "Tarvitsetko henkilökohtaisen avustajan (mikäli tarjottavissa) ohjelmien ajaksi?"
+
+#: .\apps\etreg\models.py:409
+#: .\apps\etreg\models.py:419
+#: .\templates\etreg\person_detail.html.py:261
+#: .\templates\etreg\person_detail.html.py:263
+#: .\templates\etreg\person_email_html.html.py:205
+#: .\templates\etreg\person_email_html.html.py:207
+#: .\templates\etreg\person_email_text.html.py:133
+#: .\templates\etreg\person_email_text.html.py:135
+#: .\templates\etreg\Trash\test_email_text.html.py:140
+#: .\templates\etreg\Trash\test_email_text.html.py:142
+msgid "Please specify"
+msgstr "Tarkenna"
+
+#: .\apps\etreg\models.py:414
+#: .\templates\etreg\person_detail.html.py:262
+#: .\templates\etreg\person_email_html.html.py:206
+#: .\templates\etreg\person_email_text.html.py:134
+#: .\templates\etreg\Trash\test_email_text.html.py:141
+msgid "Other special needs or health risk factors the Organisation team should know?"
+msgstr "Muut erityistarpeet tai terveysriskit jotka organisaatiotiimin tulisi tietää? (erittele)"
+
+#: .\apps\etreg\models.py:435
+#: .\templates\etreg\person_detail.html.py:284
+#: .\templates\etreg\person_email_html.html.py:228
+#: .\templates\etreg\person_email_text.html.py:143
+#: .\templates\etreg\Trash\test_email_text.html.py:163
+msgid "Choose your wish for setting time*"
+msgstr "Valitse toivekattausaika*"
+
+#: .\apps\etreg\models.py:571
+msgid "This field is required."
+msgstr ""
+
+#: .\apps\etreg\views.py:117
+msgid "Europatreffen Registration"
+msgstr "Rekisteröintilomake"
+
+#: .\apps\ipaccess\models.py:6
+msgid "ip"
+msgstr ""
+
+#: .\apps\ipaccess\models.py:7
+msgid "user that authenticates"
+msgstr ""
+
+#: .\apps\ipaccess\models.py:13
+msgid "IP Access"
+msgstr ""
+
+#: .\apps\ipaccess\models.py:14
+msgid "IP Accesses"
+msgstr ""
+
+#: .\demo_project\settings.py:37
+msgid "Dutch"
+msgstr ""
+
+#: .\demo_project\settings.py:38
+msgid "French"
+msgstr ""
+
+#: .\demo_project\settings.py:39
+msgid "Polish"
+msgstr "Puola"
+
+#: .\demo_project\settings.py:40
+msgid "Portugese"
+msgstr ""
+
+#: .\demo_project\settings.py:41
+msgid "Spanish"
+msgstr ""
+
+#: .\demo_project\templates\404.html.py:4
+msgid "Page not found"
+msgstr ""
+
+#: .\demo_project\templates\404.html.py:7
+msgid "Page could not be found."
+msgstr ""
+
+#: .\demo_project\templates\404.html.py:8
+msgid "If you think this is a bug in userena, please create an issue at Github."
+msgstr ""
+
+#: .\demo_project\templates\base.html.py:32
+#: .\templates\base.html.py:32
+msgid "Choose language"
+msgstr "Valitse kieli"
+
+#: .\demo_project\templates\base.html.py:39
+#: .\templates\base.html.py:39
+msgid "Change language"
+msgstr "Vaihda kieli"
+
+#: .\demo_project\templates\base.html.py:51
+#: .\templates\base.html.py:51
+msgid "Home"
+msgstr "Etusivu"
+
+#: .\demo_project\templates\base.html.py:53
+#: .\templates\base.html.py:53
+#, fuzzy
+msgid "All profiles"
+msgstr "Minun profiilini"
+
+#: .\demo_project\templates\base.html.py:54
+#: .\templates\base.html.py:54
+msgid "Messages"
+msgstr ""
+
+#: .\demo_project\templates\base.html.py:55
+#: .\templates\base.html.py:55
+msgid "Account"
+msgstr ""
+
+#: .\demo_project\templates\base.html.py:56
+#: .\templates\base.html.py:56
+msgid "Signout"
+msgstr ""
+
+#: .\demo_project\templates\base.html.py:58
+#: .\templates\base.html.py:58
+#: .\templates\userena\signin_form.html.py:4
+#: .\templates\userena\signin_form.html.py:10
+#: .\templates\userena\signin_form.html.py:28
+msgid "Signin"
+msgstr ""
+
+#: .\demo_project\templates\base.html.py:59
+#: .\templates\base.html.py:59
+#: .\templates\userena\signup_complete.html.py:6
+#: .\templates\userena\signup_form.html.py:4
+#: .\templates\userena\signup_form.html.py:27
+msgid "Signup"
+msgstr ""
+
+#: .\demo_project\templates\base.html.py:68
+#: .\templates\base.html.py:68
+msgid "Fork me hard"
+msgstr ""
+
+#: .\demo_project\templates\base.html.py:73
+#: .\templates\base.html.py:73
+msgid "Made by"
+msgstr ""
+
+#: .\demo_project\templates\umessages\message_detail.html.py:7
+msgid "Reply"
+msgstr ""
+
+#: .\demo_project\templates\userena\email_form.html.py:9
+#: .\demo_project\templates\userena\email_form.html.py:18
+#: .\demo_project\templates\userena\password_form.html.py:11
+#: .\demo_project\templates\userena\password_form.html.py:20
+#: .\demo_project\templates\userena\profile_detail.html.py:14
+#: .\demo_project\templates\userena\profile_form.html.py:12
+#: .\demo_project\templates\userena\profile_form.html.py:22
+#: .\templates\userena\email_form.html.py:9
+#: .\templates\userena\password_form.html.py:11
+#: .\templates\userena\profile_detail.html.py:14
+#: .\templates\userena\profile_form.html.py:12
+#, fuzzy
+msgid "View profile"
+msgstr "Luo profiili"
+
+#: .\demo_project\templates\userena\email_form.html.py:10
+#: .\demo_project\templates\userena\password_form.html.py:12
+#: .\demo_project\templates\userena\profile_detail.html.py:15
+#: .\demo_project\templates\userena\profile_form.html.py:13
+#: .\templates\userena\profile_detail.html.py:15
+msgid "Edit details"
+msgstr ""
+
+#: .\demo_project\templates\userena\email_form.html.py:11
+#: .\demo_project\templates\userena\email_form.html.py:20
+#: .\demo_project\templates\userena\password_form.html.py:4
+#: .\demo_project\templates\userena\password_form.html.py:13
+#: .\demo_project\templates\userena\password_form.html.py:22
+#: .\demo_project\templates\userena\password_form.html.py:31
+#: .\demo_project\templates\userena\profile_detail.html.py:16
+#: .\demo_project\templates\userena\profile_form.html.py:14
+#: .\demo_project\templates\userena\profile_form.html.py:24
+#: .\templates\userena\email_form.html.py:11
+#: .\templates\userena\password_form.html.py:4
+#: .\templates\userena\password_form.html.py:13
+#: .\templates\userena\password_form.html.py:21
+#: .\templates\userena\profile_detail.html.py:16
+#: .\templates\userena\profile_form.html.py:14
+msgid "Change password"
+msgstr ""
+
+#: .\demo_project\templates\userena\email_form.html.py:12
+#: .\demo_project\templates\userena\email_form.html.py:21
+#: .\demo_project\templates\userena\email_form.html.py:29
+#: .\demo_project\templates\userena\password_form.html.py:14
+#: .\demo_project\templates\userena\password_form.html.py:23
+#: .\demo_project\templates\userena\profile_detail.html.py:17
+#: .\demo_project\templates\userena\profile_form.html.py:15
+#: .\demo_project\templates\userena\profile_form.html.py:25
+#: .\templates\userena\email_form.html.py:12
+#: .\templates\userena\email_form.html.py:19
+#: .\templates\userena\password_form.html.py:14
+#: .\templates\userena\profile_detail.html.py:17
+#: .\templates\userena\profile_form.html.py:15
+msgid "Change email"
+msgstr ""
+
+#: .\demo_project\templates\userena\email_form.html.py:19
+#: .\demo_project\templates\userena\password_form.html.py:21
+#: .\demo_project\templates\userena\profile_form.html.py:23
+#: .\templates\userena\email_form.html.py:10
+#: .\templates\userena\password_form.html.py:12
+#: .\templates\userena\profile_form.html.py:13
+#, fuzzy
+msgid "Edit profile"
+msgstr "Luo profiili"
+
+#: .\demo_project\templates\userena\email_form.html.py:26
+#: .\templates\userena\email_form.html.py:16
+msgid "Change email address"
+msgstr ""
+
+#: .\demo_project\templates\userena\password_form.html.py:27
+#: .\templates\userena\password_form.html.py:17
+msgid "Change Password"
+msgstr ""
+
+#: .\demo_project\templates\userena\profile_detail.html.py:4
+#, fuzzy
+msgid "profile"
+msgstr "Minun profiilini"
+
+#: .\demo_project\templates\userena\profile_detail.html.py:22
+#: .\templates\userena\profile_detail.html.py:22
+msgid "Your mugshot"
+msgstr ""
+
+#: .\demo_project\templates\userena\profile_detail.html.py:24
+#: .\templates\userena\profile_detail.html.py:24
+msgid "Name"
+msgstr ""
+
+#: .\demo_project\templates\userena\profile_detail.html.py:27
+#: .\templates\userena\profile_detail.html.py:30
+msgid "Age"
+msgstr ""
+
+#: .\demo_project\templates\userena\profile_detail.html.py:30
+#: .\templates\userena\profile_detail.html.py:33
+msgid "Website"
+msgstr ""
+
+#: .\demo_project\templates\userena\profile_detail.html.py:33
+#: .\templates\userena\profile_detail.html.py:36
+msgid "Location"
+msgstr ""
+
+#: .\demo_project\templates\userena\profile_detail.html.py:36
+#: .\templates\userena\profile_detail.html.py:39
+msgid "About me"
+msgstr ""
+
+#: .\demo_project\templates\userena\profile_form.html.py:4
+#: .\templates\userena\profile_form.html.py:4
+msgid "Account setup"
+msgstr ""
+
+#: .\demo_project\templates\userena\profile_form.html.py:30
+#: .\templates\userena\profile_form.html.py:19
+#, fuzzy
+msgid "Edit Profile"
+msgstr "Minun profiilini"
+
+#: .\demo_project\templates\userena\profile_form.html.py:33
+#: .\templates\userena\profile_form.html.py:22
+msgid "Save changes"
+msgstr ""
+
+#: .\demo_project\templates\userena\profile_list.html.py:4
+#: .\templates\userena\profile_list.html.py:4
+#, fuzzy
+msgid "Profiles"
+msgstr "Minun profiilini"
+
+#: .\demo_project\templates\userena\profile_list.html.py:21
+#: .\templates\userena\profile_list.html.py:21
+msgid "previous"
+msgstr "edellinen"
+
+#: .\demo_project\templates\userena\profile_list.html.py:25
+msgid "Page"
+msgstr ""
+
+#: .\demo_project\templates\userena\profile_list.html.py:25
+msgid "of"
+msgstr ""
+
+#: .\demo_project\templates\userena\profile_list.html.py:29
+#: .\templates\userena\profile_list.html.py:31
+msgid "next"
+msgstr "seuraava"
+
+#: .\templates\etreg\base.html.py:37
+msgid "Pick Date"
+msgstr "Valitse päivämäärä"
+
+#: .\templates\etreg\base.html.py:134
+msgid "Registration deadline now extended until 30. April 2012!"
+msgstr "Ilmoittautumisaikaa on jatkettu 30.4.2012 asti!"
+
+#: .\templates\etreg\person_detail.html.py:26
+msgid "Email this page to"
+msgstr "Lähetä tämä sivu sähköpostiin"
+
+#: .\templates\etreg\person_detail.html.py:30
+msgid "Your email has been sent."
+msgstr "Viestisi on lähetetty."
+
+#: .\templates\etreg\person_detail.html.py:44
+#: .\templates\etreg\person_detail.html.py:83
+#: .\templates\etreg\person_detail.html.py:122
+msgid "Return to correct information"
+msgstr "Palaa edelliselle sivulle korjataksesi tietoja"
+
+#: .\templates\etreg\person_detail.html.py:47
+#: .\templates\etreg\person_detail.html.py:86
+#: .\templates\etreg\person_detail.html.py:125
+msgid "Print this page"
+msgstr "Tulosta sivu"
+
+#: .\templates\etreg\person_detail.html.py:156
+#: .\templates\etreg\person_email_html.html.py:100
+#: .\templates\etreg\person_form.html.py:173
+#: .\templates\etreg\Trash\test_email_text.html.py:35
+msgid "Online Registration"
+msgstr "Rekisteröidy verkossa"
+
+#: .\templates\etreg\person_detail.html.py:273
+#: .\templates\etreg\person_email_html.html.py:217
+#: .\templates\etreg\person_form.html.py:626
+#: .\templates\etreg\Trash\test_email_text.html.py:152
+msgid "Program Choices"
+msgstr "Ohjelmavalinnat"
+
+#: .\templates\etreg\person_detail.html.py:276
+#: .\templates\etreg\person_email_html.html.py:220
+#: .\templates\etreg\person_email_text.html.py:139
+#: .\templates\etreg\person_form.html.py:640
+#: .\templates\etreg\Trash\test_email_text.html.py:155
+msgid "Arrival in Tampere &ndash; Welcome and Info packets"
+msgstr "Saapuminen Tampereelle. Tervetulo- ja infopakettien jako"
+
+#: .\templates\etreg\person_detail.html.py:280
+#: .\templates\etreg\person_email_html.html.py:224
+#: .\templates\etreg\person_email_text.html.py:141
+#: .\templates\etreg\person_form.html.py:641
+#: .\templates\etreg\Trash\test_email_text.html.py:159
+msgid "Viking Evening and 1st Big Welcome Evening"
+msgstr "Viikinki-ilta ja ensimmäinen Tervetuloilta"
+
+#: .\templates\etreg\person_detail.html.py:291
+#: .\templates\etreg\person_email_html.html.py:235
+#: .\templates\etreg\person_email_text.html.py:146
+#: .\templates\etreg\person_form.html.py:677
+#: .\templates\etreg\Trash\test_email_text.html.py:170
+msgid "Trip to the town of Nokia & Tampere sightseeing tour by bus"
+msgstr "Retki Nokian kaupunkiin ja Tampereen opastettu kaupunkikiertoajelu"
+
+#: .\templates\etreg\person_detail.html.py:295
+#: .\templates\etreg\person_email_html.html.py:239
+#: .\templates\etreg\person_email_text.html.py:148
+#: .\templates\etreg\person_form.html.py:678
+#: .\templates\etreg\Trash\test_email_text.html.py:174
+msgid "Young&Tall &ndash; guided sightseeing tours in Tampere and a lot of fun"
+msgstr "Pitkät&Nuoret – opastettu Tampereen kaupunkikierros ja muuta hauskaa"
+
+#: .\templates\etreg\person_detail.html.py:299
+#: .\templates\etreg\person_email_html.html.py:243
+#: .\templates\etreg\person_email_text.html.py:150
+#: .\templates\etreg\person_form.html.py:679
+#: .\templates\etreg\Trash\test_email_text.html.py:178
+msgid "2nd Big Welcome Evening with infotainment, professional shows and live music"
+msgstr "Viihteellinen Tervetuloilta"
+
+#: .\templates\etreg\person_detail.html.py:303
+#: .\templates\etreg\person_email_html.html.py:247
+#: .\templates\etreg\person_email_text.html.py:152
+#: .\templates\etreg\person_form.html.py:706
+#: .\templates\etreg\Trash\test_email_text.html.py:182
+msgid "Public meeting of the representatives of the European Council/Board"
+msgstr "Euroopan neuvoston kokous – avoinna kaikille"
+
+#: .\templates\etreg\person_detail.html.py:307
+#: .\templates\etreg\person_email_html.html.py:251
+#: .\templates\etreg\person_email_text.html.py:154
+#: .\templates\etreg\person_form.html.py:707
+#: .\templates\etreg\Trash\test_email_text.html.py:186
+msgid "A possibility also for lunch exists, at additional cost"
+msgstr "Kokoukseen osallistujille lounasmahdollisuus lisähinnasta"
+
+#: .\templates\etreg\person_detail.html.py:311
+#: .\templates\etreg\person_email_html.html.py:255
+#: .\templates\etreg\person_email_text.html.py:156
+#: .\templates\etreg\person_form.html.py:708
+#: .\templates\etreg\Trash\test_email_text.html.py:190
+msgid "Young&Tall &ndash; trip to the Särkänniemi Adventure park. Approx. 35 euro/person*"
+msgstr "Nuoret&Pitkät – päiväretki Särkänniemen Huvipuistoon. Ranneke n. 35* eur/hlö"
+
+#: .\templates\etreg\person_detail.html.py:315
+#: .\templates\etreg\person_email_html.html.py:259
+#: .\templates\etreg\person_email_text.html.py:158
+#: .\templates\etreg\person_form.html.py:710
+#: .\templates\etreg\Trash\test_email_text.html.py:194
+msgid "Boat trip on Lake Pyhäjärvi & an outdoor evening on Viikinsaari Island."
+msgstr "Risteily Pyhäjärvellä ja illanvietto Viikinsaaressa"
+
+#: .\templates\etreg\person_detail.html.py:319
+#: .\templates\etreg\person_email_html.html.py:263
+#: .\templates\etreg\person_email_text.html.py:160
+#: .\templates\etreg\person_form.html.py:739
+#: .\templates\etreg\Trash\test_email_text.html.py:198
+msgid "Full day trip to the capital of Finland, and&#133; (check one below)"
+msgstr "Kokopäiväretki Helsinkiin, Suomen pääkaupunkiin (valitse ohjelman lisäksi yksi ao.)"
+
+#: .\templates\etreg\person_detail.html.py:323
+#: .\templates\etreg\person_email_html.html.py:267
+#: .\templates\etreg\person_email_text.html.py:162
+#: .\templates\etreg\person_form.html.py:740
+#: .\templates\etreg\Trash\test_email_text.html.py:202
+msgid "Boat trip to Suomenlinna incl. a historical video presentation. (Max 240 guests)"
+msgstr "Lisää vierailu Suomenlinnaan sis. Suomenlinna Experience-fimiesityksen (enint. 240 osallistujaa)"
+
+#: .\templates\etreg\person_detail.html.py:327
+#: .\templates\etreg\person_email_html.html.py:271
+#: .\templates\etreg\person_email_text.html.py:164
+#: .\templates\etreg\person_form.html.py:741
+#: .\templates\etreg\Trash\test_email_text.html.py:206
+msgid "OR free time in Helsinki (approx. 4 hrs)"
+msgstr "TAI vapaa-aikaa Helsingissä, n. 4 tuntia"
+
+#: .\templates\etreg\person_detail.html.py:331
+#: .\templates\etreg\person_email_html.html.py:275
+#: .\templates\etreg\person_email_text.html.py:166
+#: .\templates\etreg\person_form.html.py:767
+#: .\templates\etreg\Trash\test_email_text.html.py:210
+msgid "The biggest summer celebration in Finland called &quot;Juhannus&quot;. A long day in the beautiful, authentic countryside atmosphere."
+msgstr "Vietä päivä maalla ja Juhannusperinteistä nauttien: tanssia, musiikkia ja viihdettä Tampereen maaseudulla."
+
+#: .\templates\etreg\person_detail.html.py:335
+#: .\templates\etreg\person_email_html.html.py:279
+#: .\templates\etreg\person_email_text.html.py:168
+#: .\templates\etreg\person_form.html.py:786
+#: .\templates\etreg\Trash\test_email_text.html.py:214
+msgid "Pispala & Pyynikki &ndash; The Pearls of Tampere. Guided walking & bus tour to the most essential part of the Finnish daily life and sauna traditions. Feel the heat&#133;"
+msgstr "Pispala & Pyynikki – Tampereen helmet. Opastettu kävelykierros Pyynikin-harjun maisemissa ja tutustutaan suomalaiseen saunaperinteeseen"
+
+#: .\templates\etreg\person_detail.html.py:339
+#: .\templates\etreg\person_email_html.html.py:283
+#: .\templates\etreg\person_email_text.html.py:170
+#: .\templates\etreg\person_form.html.py:787
+#: .\templates\etreg\Trash\test_email_text.html.py:218
+msgid "Optional Sauna at hotel Scandic Rosendahl / Cumulus Hämeenpuisto"
+msgstr "Päivän päätteeksi saunominen Scandic Rosendahlissa / Cumulus Hämeenpuistossa"
+
+#: .\templates\etreg\person_detail.html.py:343
+#: .\templates\etreg\person_email_html.html.py:287
+#: .\templates\etreg\person_email_text.html.py:172
+#: .\templates\etreg\person_form.html.py:809
+#: .\templates\etreg\Trash\test_email_text.html.py:222
+msgid "Dancing and Entertainment in Scandic Rosendahl until the morning&#133;"
+msgstr "Tanssia ja illanviettoa aamuun asti Scandic Rosendahlissa"
+
+#: .\templates\etreg\person_detail.html.py:347
+#: .\templates\etreg\person_email_html.html.py:291
+#: .\templates\etreg\person_email_text.html.py:174
+#: .\templates\etreg\person_form.html.py:823
+#: .\templates\etreg\Trash\test_email_text.html.py:226
+msgid "Sunday June 17th &ndash; Kiitos ja näkemiin! &ndash; Thank you and goodbye!"
+msgstr "Sunnuntai 17.6.2012 &ndash; Kiitos ja näkemiin!"
+
+#: .\templates\etreg\person_detail.html.py:351
+#: .\templates\etreg\person_email_html.html.py:295
+#: .\templates\etreg\person_email_text.html.py:176
+#: .\templates\etreg\person_form.html.py:846
+#: .\templates\etreg\Trash\test_email_text.html.py:230
+msgid "Additional yearly fee for the voluntary work on the European level"
+msgstr "Vuotuinen lisämaksu Euroopan tasolla tehtävälle vapaaehtoistyölle"
+
+#: .\templates\etreg\person_detail.html.py:355
+#: .\templates\etreg\person_email_html.html.py:299
+#: .\templates\etreg\person_email_text.html.py:177
+#: .\templates\etreg\person_form.html.py:847
+#: .\templates\etreg\Trash\test_email_text.html.py:234
+msgid "Additional fee for Non-Tall Club members"
+msgstr "Lisämaksu rekisteröityneille ei-jäsenille"
+
+#: .\templates\etreg\person_detail.html.py:361
+#: .\templates\etreg\person_email_html.html.py:305
+#: .\templates\etreg\person_email_text.html.py:180
+#: .\templates\etreg\person_form.html.py:865
+msgid "Total amount EUR"
+msgstr "Yhteensä EUR"
+
+#: .\templates\etreg\person_email_text.html.py:82
+msgid "ONLINE REGISTRATION"
+msgstr "REKISTERÖIDY VERKOSSA"
+
+#: .\templates\etreg\person_email_text.html.py:137
+msgid "PROGRAM CHOICES"
+msgstr "OHJELMAVALINNAT"
+
+#: .\templates\etreg\person_form.html.py:20
+#: .\templates\etreg\person_form.html.py:27
+#: .\templates\etreg\person_form.html.py:34
+msgid "View all registrations"
+msgstr "Näytä luettelo kaikista rekisteröitymisistä"
+
+#: .\templates\etreg\person_form.html.py:25
+#: .\templates\etreg\person_form.html.py:32
+#: .\templates\etreg\person_list.html.py:11
+msgid "Add registration"
+msgstr "Lisää rekisteröityminen"
+
+#: .\templates\etreg\person_form.html.py:26
+msgid "Update registration information"
+msgstr "Päivitä tietoja"
+
+#: .\templates\etreg\person_form.html.py:33
+msgid "View registration information"
+msgstr "Katsele tietoja"
+
+#: .\templates\etreg\person_form.html.py:40
+#: .\templates\etreg\person_list.html.py:15
+msgid "45th European Convention 2012 Finland"
+msgstr "45. Eurooppatreffit 2012 Suomi"
+
+#: .\templates\etreg\person_form.html.py:41
+#: .\templates\etreg\person_list.html.py:16
+msgid "10th June &ndash; 17th June 2012"
+msgstr "10.–17.6.2012"
+
+#: .\templates\etreg\person_form.html.py:49
+msgid "Registration"
+msgstr "Rekisteröintilomake"
+
+#: .\templates\etreg\person_form.html.py:50
+#: .\templates\etreg\person_list.html.py:25
+msgid "One registration form per person"
+msgstr "Yksi rekisteröintilomake per henkilö"
+
+#: .\templates\etreg\person_form.html.py:64
+msgid "Please note that your registration is not complete until payment has been received."
+msgstr "Huomioithan, että rekisteröitymisesi on lopullinen vasta, kun olemme vastaanottaneet maksusi."
+
+#: .\templates\etreg\person_form.html.py:377
+#: .\templates\etreg\person_form.html.py:386
+msgid "Date (yyyy-mm-dd)"
+msgstr "Päivämäärä (vvvv-kk-pp)"
+
+#: .\templates\etreg\person_form.html.py:395
+msgid "We will inform the bus company ExpressBus about capacity needs for the route Helsinki-Vantaa Airport &ndash; Tampere City / Tampere City &ndash; Helsinki-Vantaa Airport (approx. 26 &#8364;/one way)"
+msgstr "Ilmoitamme bussiyhtiölle (ExpressBus) kapasiteettitarpeesta reitille Helsinki-Vantaa Lentokenttä – Tampere / Tampere – Helsinki-Vantaa Lentokenttä (n. 26 &#8364;/suunta)"
+
+#: .\templates\etreg\person_form.html.py:426
+msgid "Only information for the organization team, not a booking!"
+msgstr "Vain tiedoksi organisaatiotiimille, ei varaus!"
+
+#: .\templates\etreg\person_form.html.py:493
+msgid "For participants 13&ndash;20 years old, only"
+msgstr "Vain 13&ndash;20vuotiaille!"
+
+#: .\templates\etreg\person_form.html.py:508
+msgid "If no, parents name and mobile phone nr."
+msgstr "Jos et, vanhempien nimi ja matkapuhelinnro"
+
+#: .\templates\etreg\person_form.html.py:524
+msgid "Participant under 18 needs to have an adult as guardian"
+msgstr "Osallistuja alle 18v. tarvitsee aikuisen valvojan"
+
+#: .\templates\etreg\person_form.html.py:548
+msgid "Diet"
+msgstr "Ruokavalio"
+
+#: .\templates\etreg\person_form.html.py:588
+msgid "Special needs/assistance"
+msgstr "Erityistarpeet / henkilökohtainen apu"
+
+#: .\templates\etreg\person_form.html.py:615
+msgid "Please contact the ET2012FI-Orgateam for organising a practical nurse student to help you! Please note with your payment! The additional price for an assistant is the same price as for each event per person. Only for day's/evening's program."
+msgstr "Otathan yhteyttä ET2012FI-organisaatiotiimiin henkilökohtaisen avustajan / lähihoitajaopiskelijan järjestämisessä avuksesi. Henkilökohtainen auttaja maksaa saman ohjelmahinnan kuin ko. päivän ohjelma. Huomioithan maksussasi! Vain ainoastaan ohjelman ajaksi!"
+
+#: .\templates\etreg\person_form.html.py:635
+msgid "Sunday June 10th &ndash; Welcome! &ndash; Tervetuloa!"
+msgstr "Sunnuntai 10.6.2012 &ndash; Tervetuloa!"
+
+#: .\templates\etreg\person_form.html.py:653
+msgid "* If one session is filled we may have to schedule you in the other one!"
+msgstr "* Mikäli toinen kattaus on täynnä, joudumme siirtämään toiseen."
+
+#: .\templates\etreg\person_form.html.py:672
+msgid "Monday June 11th &ndash; Nokia &ndash; Connecting Tall People"
+msgstr "Maanantai 11.6.2012 &ndash; Nokia &ndash; Connecting Tall People"
+
+#: .\templates\etreg\person_form.html.py:701
+msgid "Tuesday June 12th &ndash; Finnish nature, fun and entertainment"
+msgstr "Tiistai 12.6.2012 – Suomen luonto & hauskanpitoa"
+
+#: .\templates\etreg\person_form.html.py:709
+msgid "* Payment at the entrance (opens at 11am)."
+msgstr "* Maksu portilla. (Portit avataan klo 11)"
+
+#: .\templates\etreg\person_form.html.py:734
+msgid "Wednesday June 13th &ndash; Helsinki, the daughter of the Baltic Sea"
+msgstr "Keskiviikko 13.6.2012 - Helsinki, Itämeren helmi"
+
+#: .\templates\etreg\person_form.html.py:762
+msgid "Thursday June 14th &ndash; Magic of Midsummer"
+msgstr "Torstai 14.6.2012 – Juhannuksen taikaa"
+
+#: .\templates\etreg\person_form.html.py:781
+msgid "Friday June 15th &ndash; Sauna Day"
+msgstr "Perjantai 15.6.2012 – Sauna-päivä"
+
+#: .\templates\etreg\person_form.html.py:804
+msgid "Saturday June 16th &ndash; Gala Evening"
+msgstr "Lauantai 16.6.2012 &ndash; Gaala-ilta"
+
+#: .\templates\etreg\person_form.html.py:828
+msgid "We will see you again in Hamburg 2013!"
+msgstr "Nähdään Hampurissa 2013!"
+
+#: .\templates\etreg\person_form.html.py:841
+msgid "Additional fees"
+msgstr "Lisämaksut"
+
+#: .\templates\etreg\person_form.html.py:880
+msgid "Payments only by Bank Transfer to:"
+msgstr "Maksut vain tilisiirtona:"
+
+#: .\templates\etreg\person_form.html.py:886
+msgid "Beneficiary's name and address:"
+msgstr "Saajan nimi ja osoite:"
+
+#: .\templates\etreg\person_form.html.py:888
+msgid "Po Box 186"
+msgstr "PL 186"
+
+#: .\templates\etreg\person_form.html.py:892
+msgid "Beneficiary bank account / bank details:"
+msgstr "Saajan pankkiyhteys:"
+
+#: .\templates\etreg\person_form.html.py:894
+msgid "Nordea Bank Finland Plc,"
+msgstr "Nordea Pankki Suomi Oyj"
+
+#: .\templates\etreg\person_form.html.py:904
+msgid "All bank charges are at the responsibility of the participants. For payments outside Europe, add 7 EUR to the total amount to cover receiving bank’s fee of incoming payment! Message for payment: ET2012FI/participant’s name/-s."
+msgstr "Maksaja maksaa kaikki kulut. Maksut Euroopan ulkopuolelta: lisää loppusummaan 7 euroa kattamaan saapuvan ulkomaan maksun kulut. Viesti maksuun: ET2012FI/Osallistujan nimi"
+
+#: .\templates\etreg\person_form.html.py:913
+msgid "SEND"
+msgstr "LÄHETÄ"
+
+#: .\templates\etreg\person_form.html.py:914
+msgid "Update"
+msgstr "Päivitä"
+
+#: .\templates\etreg\person_form.html.py:930
+msgid "Electronic registration will open here."
+msgstr "Rekisteröitymislomake avataan tähän."
+
+#: .\templates\etreg\person_form.html.py:931
+msgid "Please be patient!"
+msgstr "Hetki vielä!"
+
+#: .\templates\etreg\person_list.html.py:24
+msgid "Registration form"
+msgstr "Rekisteröintilomake"
+
+#: .\templates\etreg\person_list.html.py:42
+msgid "No registrations yet"
+msgstr "Ei vielä rekisteröitymisiä"
+
+#: .\templates\profiles\create_profile.html.py:11
+msgid "Create Profile"
+msgstr "Luo profiili"
+
+#: .\templates\profiles\create_profile.html.py:14
+msgid "My Profile"
+msgstr "Minun profiilini"
+
+#: .\templates\profiles\create_profile.html.py:14
+#: .\templates\profiles\create_profile.html.py:25
+msgid "Create"
+msgstr "Luo"
+
+#: .\templates\profiles\create_profile.html.py:18
+msgid "Create profile"
+msgstr "Luo profiili"
+
+#: .\templates\userena\activate_fail.html.py:4
+msgid "Account activation failed."
+msgstr ""
+
+#: .\templates\userena\activate_fail.html.py:5
+msgid "Your account could not be activated.."
+msgstr ""
+
+#: .\templates\userena\activate_fail.html.py:8
+msgid "Your account could not be activated. This could be because your activation link has aged."
+msgstr ""
+
+#: .\templates\userena\activate_fail.html.py:9
+msgid "Please try signing up again or contact us if you think something went wrong."
+msgstr ""
+
+#: .\templates\userena\disabled.html.py:4
+msgid "Disabled account"
+msgstr ""
+
+#: .\templates\userena\disabled.html.py:5
+msgid "Your account has been disabled"
+msgstr ""
+
+#: .\templates\userena\disabled.html.py:7
+msgid "It seems your account has been disabled."
+msgstr ""
+
+#: .\templates\userena\disabled.html.py:8
+msgid "If you feel that injustice has been done to you, feel free to contact the administrators to find out why"
+msgstr ""
+
+#: .\templates\userena\email_change_complete.html.py:4
+msgid "Email verification"
+msgstr ""
+
+#: .\templates\userena\email_change_complete.html.py:5
+msgid "Confirm your new email"
+msgstr ""
+
+#: .\templates\userena\email_change_complete.html.py:8
+#, python-format
+msgid "You have received an email at %(email)s."
+msgstr ""
+
+#: .\templates\userena\email_change_complete.html.py:9
+#, python-format
+msgid "To associate this email address with your account (%(username)s) click on the link provided in this email."
+msgstr ""
+
+#: .\templates\userena\email_confirm_complete.html.py:4
+msgid "Email changed!"
+msgstr ""
+
+#: .\templates\userena\email_confirm_complete.html.py:6
+msgid "New email"
+msgstr ""
+
+#: .\templates\userena\email_confirm_complete.html.py:8
+msgid "Your new email address is saved. You can continue using userena with this email."
+msgstr ""
+
+#: .\templates\userena\email_confirm_fail.html.py:4
+msgid "Email verification failed."
+msgstr ""
+
+#: .\templates\userena\email_confirm_fail.html.py:5
+msgid "Your email could not be verified.."
+msgstr ""
+
+#: .\templates\userena\email_confirm_fail.html.py:8
+msgid "Your email could not be verified..."
+msgstr ""
+
+#: .\templates\userena\email_confirm_fail.html.py:9
+msgid "You could try changing it again in your account settings."
+msgstr ""
+
+#: .\templates\userena\email_form.html.py:4
+#: .\templates\userena\password_form.html.py:6
+#: .\templates\userena\profile_form.html.py:6
+#, python-format
+msgid "Account &raquo; %(username)s"
+msgstr ""
+
+#: .\templates\userena\password_complete.html.py:4
+msgid "Password changed"
+msgstr ""
+
+#: .\templates\userena\password_complete.html.py:5
+msgid "Your password has been changed"
+msgstr ""
+
+#: .\templates\userena\password_complete.html.py:8
+msgid "From now on you can use your new password to signin"
+msgstr ""
+
+#: .\templates\userena\password_reset_complete.html.py:4
+msgid "Password reset"
+msgstr ""
+
+#: .\templates\userena\password_reset_complete.html.py:5
+msgid "Your password has been reset"
+msgstr ""
+
+#: .\templates\userena\password_reset_complete.html.py:7
+msgid "You can now "
+msgstr ""
+
+#: .\templates\userena\password_reset_complete.html.py:7
+#, fuzzy
+msgid "signin"
+msgstr "Helsingistä"
+
+#: .\templates\userena\password_reset_complete.html.py:7
+msgid "with your new password."
+msgstr ""
+
+#: .\templates\userena\password_reset_confirm_form.html.py:4
+#: .\templates\userena\password_reset_confirm_form.html.py:13
+#: .\templates\userena\password_reset_form.html.py:4
+msgid "Reset password"
+msgstr ""
+
+#: .\templates\userena\password_reset_confirm_form.html.py:9
+#: .\templates\userena\password_reset_form.html.py:9
+msgid "Reset Password"
+msgstr ""
+
+#: .\templates\userena\password_reset_done.html.py:4
+#: .\templates\userena\password_reset_done.html.py:5
+msgid "Reset password email is send"
+msgstr ""
+
+#: .\templates\userena\password_reset_done.html.py:8
+msgid "An e-mail has been send to you which explains how to reset your password."
+msgstr ""
+
+#: .\templates\userena\password_reset_form.html.py:13
+msgid "Send password"
+msgstr ""
+
+#: .\templates\userena\profile_detail.html.py:4
+#, python-format
+msgid "%(username)s's profile."
+msgstr ""
+
+#: .\templates\userena\profile_list.html.py:25
+#, python-format
+msgid ""
+"\n"
+"      Page %(page)s of %(num_pages)s\n"
+"      "
+msgstr ""
+
+#: .\templates\userena\signin_form.html.py:29
+msgid "Forgot your password?"
+msgstr ""
+
+#: .\templates\userena\signout.html.py:4
+msgid "Signed out"
+msgstr ""
+
+#: .\templates\userena\signout.html.py:5
+msgid "You have been signed out"
+msgstr ""
+
+#: .\templates\userena\signout.html.py:8
+msgid "You have been signed out. Till we meet again."
+msgstr ""
+
+#: .\templates\userena\signup_complete.html.py:4
+msgid "Signup almost done!"
+msgstr ""
+
+#: .\templates\userena\signup_complete.html.py:9
+msgid "Thank you for signing up with us!"
+msgstr ""
+
+#: .\templates\userena\signup_complete.html.py:12
+msgid "You have been send an e-mail with an activation link to the supplied email."
+msgstr ""
+
+#: .\templates\userena\signup_complete.html.py:13
+msgid ""
+"We will store your signup information for {{\n"
+"  userena_activation_days }} days on our server. "
+msgstr ""
+
+#: .\templates\userena\signup_complete.html.py:16
+msgid "You can now use the supplied credentials to signin."
+msgstr ""
+
+#~ msgid "Welcome!"
+#~ msgstr "Tervetuloa!"
+
+#~ msgid "Moro!"
+#~ msgstr "Moro!"
+
+#~ msgid "Program"
+#~ msgstr "Ohjelma"
+
+#~ msgid "Sunday, June 10th 2012"
+#~ msgstr "Sunnuntai 10.6.2012"
+
+#~ msgid "Monday, June 11th 2012"
+#~ msgstr "Maanantai 11.5.2012"
+
+#~ msgid "Young &#038; Tall"
+#~ msgstr "Nuoret &#038; Pitkät"
+
+#~ msgid "Accommodation"
+#~ msgstr "Majoitus"
+
+#~ msgid "Travel info"
+#~ msgstr "Matkustusinfo"
+
+#~ msgid "Contact us"
+#~ msgstr "Ota yhteyttä"
+
+#~ msgid "Contact info"
+#~ msgstr "Yhteystiedot"
+
+#~ msgid "Organisation Team"
+#~ msgstr "Organisaatiotiimi"
+
+#~ msgid "More&#8230;"
+#~ msgstr "Lisää&#8230;"
+
+#~ msgid "Photo gallery"
+#~ msgstr "Kuvagalleria"
+
+#~ msgid "Media"
+#~ msgstr "Media"
+
+#~ msgid "Arr. /Date"
+#~ msgstr "Saapumispvä"
+
+#~ msgid "Dep. /Date"
+#~ msgstr "Lähtöpvä"
+
+#~ msgid "Important! Read before sending registration: Terms and Conditions"
+#~ msgstr "Tärkeää! Lue Ehdot ennen kuin lähetät rekisteröitymislomakkeen."
+
+#~ msgid "Send"
+#~ msgstr "Lähetä"
+
+#~ msgid "Add"
+#~ msgstr "Lisää"
+
+#~ msgid "Date (YYYY-MM-DD)"
+#~ msgstr "Päivämäärä (VVVV-KK-PP)"
+
+#~ msgid "Date"
+#~ msgstr "Päivämäärä"
+
+#, fuzzy
+#~ msgid "Tampereelle"
+#~ msgstr "Tampereelta"
+
+#~ msgid "Language for"
+#~ msgstr "Tervetulopaketin ja"
+
+#~ msgid "Date of birth (dd-mm-yyyy)"
+#~ msgstr "Syntymäpäivä (pp.kk.vvvv)"
+
+#~ msgid "Program choices"
+#~ msgstr "Ohjelmavalinnat"
+
+#~ msgid "Which language/-s do you speak?"
+#~ msgstr "Mitä kieliä puhut?"
+
+#~ msgid "Date and estimated time of arrival to Helsinki*/Tampere"
+#~ msgstr "Arvioitu saapumisaika Helsinkiin* / Tampereelle (pvä, klo)"
+
+#~ msgid "Date and estimated departure time from Tampere/Helsinki*"
+#~ msgstr "Arvioitu lähtöaika Tamperelta /Helsingistä* (pvä, klo)"
+
+#~ msgid "Arr. /Date."
+#~ msgstr "Saapumispvä"
+
+#~ msgid "Dep. /Date ."
+#~ msgstr "Lähtöpvä"
+
+#~ msgid "Other, where"
+#~ msgstr "Muu, missä?"
+
+#~ msgid "Guardian’s name and mobile phone nr."
+#~ msgstr "Valvojan nimi ja matkapuhelinnro"
+
+#~ msgid "Parents signature"
+#~ msgstr "Vanhempien allekirjoitus"
+
+#~ msgid ""
+#~ "Other special needs or health risk factors the Organisation team should "
+#~ "know? (please specify)"
+#~ msgstr ""
+#~ "Muut erityistarpeet tai terveysriskit mitä organisaatiotiimin tulisi "
+#~ "tietää? (erittele)"
+
+#~ msgid ""
+#~ "Please send your registration form and program choices by email to "
+#~ "reg@europatreffen.com or by fax to number +358x-xxxxxxx or by mail Tall "
+#~ "and Small Association Finland/ET2012FI, Po Box 186, FI-00931 Helsinki, "
+#~ "Finland."
+#~ msgstr ""
+#~ "Lähetä rekisteröitymislomake ja ohjelmavalinnat sähköpostitse "
+#~ "osoitteeseen reg@europatreffen.com tai faksitse numeroon +358x-xxxxxxx "
+#~ "tai postitse osoitteeseen Pieni- ja Isokenkäiset ry/ET2012FI, PL 186, "
+#~ "00931 Helsinki"
+
+#~ msgid "Last day for registration and payment April 10th 2012"
+#~ msgstr "Viimeinen rekisteröinti ja maksupäivä 10.4.2012"
+
+#~ msgid "Which language(s) do you speak?"
+#~ msgstr "Mitä kieliä puhut?"
+
+#~ msgid "Download printable registration form"
+#~ msgstr "Lataa tulostettava rekisteröitymislomake"
+
+#~ msgid "View printable registration form"
+#~ msgstr "Näytä rekisteröitymislomake"
+
+#~ msgid "Scandic Rosendahl"
+#~ msgstr "Scandic Rosendahl"

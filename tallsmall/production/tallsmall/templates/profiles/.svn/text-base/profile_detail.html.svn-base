@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% comment %}
+# profiles/profile_detail.html
+# This will publicly display a user's profile; it receives one
+# variable -- ``profile``, representing the profile object --
+# directly, and also uses ``RequestContext`` so that context
+# processors will be applied.
+{% endcomment %}
+
+{% block description %}
+<span class="section_header">Minun maisemani</span><span class="section_aspect"> | Profiilitiedot</span>
+{% endblock %}
+
+{% block content %}
+<h1>Profiili</h1>
+<p>K&auml;tt&auml;j&auml; <strong>{{ user.first_name }} {{ user.last_name}}</strong></p>
+<table id="form_table">
+</tr>
+<tr><th>Favorite animal:</th><td>{{ profile.favorite_animal }}</td></tr>
+<tr><th>Favorite color:</th><td>{{ profile.favorite_color }}</td></tr>
+</tbody>
+</table>
+<br/>
+<ul class="navlist">
+  <li><a href="/maisemapaikka/accounts/profiles/edit/">Muokkaa tietoja</a></li>
+  <li><a href="/maisemapaikka/accounts/profiles/">Näytä kaikki profiilit</a></li>
+<li>
+{% endblock %}
+

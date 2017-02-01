@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block topbanner %}
+<img src="{{ STATIC_URL }}img/koli_980x300.jpg">
+{% endblock %}
+
+{% block descriptionbox %}
+<div class="box_sq_616_green">
+  <div class="padding_10">	
+    {% block description %}{% endblock %}
+  </div>
+</div>
+{% endblock %}

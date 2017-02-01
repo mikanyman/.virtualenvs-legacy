@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+
+{% block search %}
+{% if query %}
+<h2>Tulokset haulle "{{ query|escape }}":</h2>
+
+{% if results %}
+<ul>
+  {% for waypoint in results %}
+    <li>{{ waypoint }}</l1>
+  {% endfor %}
+</ul>
+{% else %}
+  <p>0 tulosta.</p>
+{% endif %}
+{% endif %}
+{% if submit %}
+  <h2>Kalliomaalaukset:</h2>
+  {% if results %}
+  <ul>
+    {% for waypoint in results %}
+    <li>{{ waypoint }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% endif %}
+
+{% endblock %}

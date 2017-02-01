@@ -1,0 +1,11 @@
+{% load cms_tags sekizai_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- django-cms -->
+  {% render_block "css" %}
+</head>
+<body>
+<!-- django-cms -->
+{% render_block "js" %}
+</body>

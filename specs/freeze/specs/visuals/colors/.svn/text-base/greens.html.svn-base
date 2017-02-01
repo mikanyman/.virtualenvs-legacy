@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>colors.html</title>
+<style type="text/css">
+
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: #efefef;
+}
+dl {
+	width: 600px;
+	padding: 8px 8px 16px 16px;
+	margin-bottom: 16px;
+	border: solid 1px #999;
+	background-color: #fff;
+}
+dt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 8px;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-bottom: 4px;
+}
+.footer {
+	width: 100%;
+	clear: both;
+	color: #333;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-top: 16px;
+}
+
+/* MediumSeaGreen #3CB371 */
+h1 .medium_sea_green_hea {
+	color: #3CB371;
+}
+.medium_sea_green_text {
+	color: #3CB371;
+	margin-bottom: 8px;
+	font-size: 12px;
+}
+.medium_sea_green_box {
+	float: left;
+	clear: right;
+	width: 200px;
+	height: 40px;
+	background-color: #3CB371;
+}
+.medium_sea_green_border {
+	float: left;
+	width: 188px;
+	height: 38px;
+	margin-left: 16px;
+	border: solid 1px #3CB371;
+}
+
+/* SeaGreen #2E8B57 */
+h1 .sea_green_hea {
+	color: #2E8B57;
+}
+.sea_green_text {
+	color: #2E8B57;
+	margin-bottom: 8px;
+	font-size: 12px;
+}
+.sea_green_box {
+	float: left;
+	clear: right;
+	width: 200px;
+	height: 40px;
+	background-color: #2E8B57;
+}
+.sea_green_border {
+	float: left;
+	width: 188px;
+	height: 38px;
+	margin-left: 16px;
+	border: solid 1px #2E8B57;
+}
+
+</style>
+</head>
+<body>
+
+<dl>
+<dt>MediumSeaGreen #3CB371</dt>
+<dd>
+<h1><span class="medium_sea_green_hea">Lorem ipsum dolor sit amet</span></h1>
+<div class="medium_sea_green_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+<div class="medium_sea_green_box"></div>
+<div class="medium_sea_green_border"></div>
+<div class="footer">
+  <strong>L&auml;hde:</strong> http://www.dhtmlgoodies.com/scripts/color-schemer/color-schemer.html
+</div>
+</dd>
+</dl>
+
+<dl>
+<dt>SeaGreen #2E8B57</dt>
+<dd>
+<h1><span class="sea_green_hea">Lorem ipsum dolor sit amet</span></h1>
+<div class="sea_green_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+<div class="sea_green_box"></div>
+<div class="sea_green_border"></div>
+<div class="footer">
+  <strong>L&auml;hde:</strong> http://www.dhtmlgoodies.com/scripts/color-schemer/color-schemer.html
+</div>
+</dd>
+</dl>
+
+
+</body>
+</html>

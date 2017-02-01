@@ -1,0 +1,724 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TallSmall\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-19 23:20+0200\n"
+"PO-Revision-Date: 2012-02-19 23:22+0200\n"
+"Last-Translator: Mika Nyman <mika.nyman@synapse-computing.com>\n"
+"Language-Team: Synapse Computing <mika.nyman@synapse-computing.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: Finnish\n"
+"X-Poedit-Country: FINLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: .\settings.py:27
+#: .\apps\etreg\models.py:26
+#: .\templates\etreg\etreg.html.py:116
+msgid "Finnish"
+msgstr "Suomi"
+
+#: .\settings.py:28
+#: .\apps\etreg\models.py:28
+#: .\templates\etreg\etreg.html.py:115
+msgid "German"
+msgstr "Saksa"
+
+#: .\settings.py:29
+#: .\apps\etreg\models.py:27
+#: .\templates\etreg\etreg.html.py:114
+msgid "English"
+msgstr "Englanti"
+
+#: .\apps\etreg\models.py:62
+msgid "Other, Where?"
+msgstr "Muu, missä?"
+
+#: .\apps\etreg\models.py:74
+#: .\templates\etreg\etreg.html.py:135
+msgid "Vegetarian"
+msgstr "Kasvis"
+
+#: .\apps\etreg\models.py:75
+#: .\templates\etreg\etreg.html.py:136
+msgid "Gluten-free"
+msgstr "Gluteeniton"
+
+#: .\apps\etreg\models.py:76
+#: .\templates\etreg\etreg.html.py:137
+msgid "Diabetic"
+msgstr "Diabeetikko"
+
+#: .\apps\etreg\models.py:77
+#: .\templates\etreg\etreg.html.py:138
+msgid "Low lactose"
+msgstr "Laktoositon"
+
+#: .\apps\etreg\models.py:189
+#: .\templates\etreg\etreg.html.py:28
+msgid "Last name"
+msgstr "Sukunimi"
+
+#: .\apps\etreg\models.py:192
+#: .\templates\etreg\etreg.html.py:32
+msgid "First name"
+msgstr "Etunimi"
+
+#: .\apps\etreg\models.py:196
+#: .\templates\etreg\etreg.html.py:188
+#: .\templates\etreg\person_form.html.py:691
+msgid "Gender"
+msgstr "Kutsumatapa"
+
+#: .\apps\etreg\models.py:202
+#: .\templates\etreg\etreg.html.py:41
+msgid "Address"
+msgstr "Osoite"
+
+#: .\apps\etreg\models.py:207
+msgid "Date of birth (yyyy-mm-dd)"
+msgstr "Syntymäpäivä (vvvv-kk-pp)"
+
+#: .\apps\etreg\models.py:211
+#: .\templates\etreg\etreg.html.py:47
+msgid "Height"
+msgstr "Pituus"
+
+#: .\apps\etreg\models.py:225
+#: .\templates\etreg\etreg.html.py:59
+msgid "Member of a Tall Club"
+msgstr "Pitkien yhdistyksen jäsen"
+
+#: .\apps\etreg\models.py:231
+#: .\templates\etreg\etreg.html.py:68
+msgid "Country"
+msgstr "Maa"
+
+#: .\apps\etreg\models.py:235
+#: .\templates\etreg\etreg.html.py:72
+msgid "Which Tall Club are you registered with?"
+msgstr "Minkä yhdistyksen jäsen olet?"
+
+#: .\apps\etreg\models.py:241
+#: .\templates\etreg\etreg.html.py:78
+msgid "Email"
+msgstr "Sähköposti"
+
+#: .\apps\etreg\models.py:245
+#: .\templates\etreg\etreg.html.py:82
+msgid "Membership number"
+msgstr "Jäsennumero"
+
+#: .\apps\etreg\models.py:251
+#: .\templates\etreg\etreg.html.py:108
+msgid "Mobile phone number with country code"
+msgstr "Matkapuhelinnumero"
+
+#: .\apps\etreg\models.py:255
+#: .\templates\etreg\etreg.html.py:109
+msgid "Home phone number with country code"
+msgstr "Kotipuhelinnumero"
+
+#: .\apps\etreg\models.py:259
+#: .\templates\etreg\etreg.html.py:110
+msgid "Fax number with country code"
+msgstr "Faksinumero"
+
+#: .\apps\etreg\models.py:263
+msgid "Which language(s) do you speak?"
+msgstr "Mitä kieliä puhut?"
+
+#: .\apps\etreg\models.py:269
+msgid "Estimated arrival to Helsinki*/Tampere Date (yyyy-mm-dd)"
+msgstr "Arvioitu saapumisaika Helsinkiin* / Tampereelle (pvä, klo)"
+
+#: .\apps\etreg\models.py:273
+#: .\apps\etreg\models.py:281
+msgid "Time"
+msgstr "Aika"
+
+#: .\apps\etreg\models.py:277
+msgid "Estimated departure from Tampere/Helsinki* (yyyy-mm-dd)"
+msgstr "Arvioitu lähtöaika Tamperelta /Helsingistä* (pvä, klo)"
+
+#: .\apps\etreg\models.py:287
+msgid "Arr. /Date"
+msgstr "Saapumispvä"
+
+#: .\apps\etreg\models.py:291
+msgid "Dep. /Date"
+msgstr "Lähtöpvä"
+
+#: .\apps\etreg\models.py:295
+#: .\templates\etreg\etreg.html.py:120
+msgid "In which hotel/hostel you are staying?"
+msgstr "Missä hotellissa majoitut?"
+
+#: .\apps\etreg\models.py:302
+msgid "Check-in date (yyyy-mm-dd)"
+msgstr "Saapumispäivämäärä (vvvv-kk-pp)"
+
+#: .\apps\etreg\models.py:306
+msgid "Check-out date (yyyy-mm-dd)"
+msgstr "Lähtöpäivämäärä (vvvv-kk-pp)"
+
+#: .\apps\etreg\models.py:312
+#: .\templates\etreg\etreg.html.py:125
+msgid "Young & Tall"
+msgstr "Nuoret & Pitkät"
+
+#: .\apps\etreg\models.py:316
+#: .\templates\etreg\etreg.html.py:127
+msgid "Are you travelling with your parents?"
+msgstr "Matkustatko vanhempiesi kanssa?"
+
+#: .\apps\etreg\models.py:320
+msgid "Parents name"
+msgstr "Huoltajan nimi"
+
+#: .\apps\etreg\models.py:324
+msgid "Parents mobile phone number"
+msgstr "Huoltajan matkapuhelinnumero"
+
+#: .\apps\etreg\models.py:328
+msgid "Guardians name"
+msgstr "Valvojan sukunimi"
+
+#: .\apps\etreg\models.py:332
+msgid "Guardians mobile phone number"
+msgstr "Valvojan matkapuhelinnro"
+
+#: .\apps\etreg\models.py:338
+#: .\templates\etreg\etreg.html.py:134
+msgid "Diet"
+msgstr "Ruokavalio"
+
+#: .\apps\etreg\models.py:344
+#: .\templates\etreg\etreg.html.py:140
+msgid "Do you need any personal assistance (if available) during the events?"
+msgstr "Tarvitsetko henkilökohtaisen avustajan (mikäli tarjottavissa) ohjelmien ajaksi?"
+
+#: .\apps\etreg\models.py:348
+#: .\apps\etreg\models.py:356
+msgid "Please specify"
+msgstr "Tarkenna"
+
+#: .\apps\etreg\models.py:352
+msgid "Other special needs or health risk factors the Organisation team should know?"
+msgstr "Muut erityistarpeet tai terveysriskit jotka organisaatiotiimin tulisi tietää? (erittele)"
+
+#: .\apps\etreg\models.py:363
+msgid "Test 1"
+msgstr ""
+
+#: .\apps\etreg\models.py:367
+msgid "Test 2"
+msgstr ""
+
+#: .\templates\etreg\base.html.py:37
+msgid "Pick Date"
+msgstr "Valitse päivämäärä"
+
+#: .\templates\etreg\base.html.py:59
+msgid "Home"
+msgstr "Etusivu"
+
+#: .\templates\etreg\base.html.py:60
+msgid "Welcome!"
+msgstr "Tervetuloa!"
+
+#: .\templates\etreg\base.html.py:62
+msgid "Moro!"
+msgstr "Moro!"
+
+#: .\templates\etreg\base.html.py:65
+msgid "Program"
+msgstr "Ohjelma"
+
+#: .\templates\etreg\base.html.py:67
+msgid "Sunday, June 10th 2012"
+msgstr "Sunnuntai 10.6.2012"
+
+#: .\templates\etreg\base.html.py:68
+msgid "Monday, June 11th 2012"
+msgstr "Maanantai 11.5.2012"
+
+#: .\templates\etreg\base.html.py:71
+msgid "Young &#038; Tall"
+msgstr "Nuoret &#038; Pitkät"
+
+#: .\templates\etreg\base.html.py:72
+msgid "Accommodation"
+msgstr "Majoitus"
+
+#: .\templates\etreg\base.html.py:73
+msgid "Travel info"
+msgstr "Matkustusinfo"
+
+#: .\templates\etreg\base.html.py:74
+msgid "Contact us"
+msgstr "Ota yhteyttä"
+
+#: .\templates\etreg\base.html.py:76
+msgid "Contact info"
+msgstr "Yhteystiedot"
+
+#: .\templates\etreg\base.html.py:77
+msgid "Organisation Team"
+msgstr "Organisaatiotiimi"
+
+#: .\templates\etreg\base.html.py:80
+msgid "More&#8230;"
+msgstr "Lisää&#8230;"
+
+#: .\templates\etreg\base.html.py:82
+msgid "Photo gallery"
+msgstr "Kuvagalleria"
+
+#: .\templates\etreg\base.html.py:83
+msgid "Media"
+msgstr "Media"
+
+#: .\templates\etreg\etreg.html.py:11
+#: .\templates\etreg\person_form.html.py:36
+#: .\templates\etreg\person_list.html.py:14
+msgid "45th European Convention 2012 Finland"
+msgstr "45. Eurooppatreffit 2012 Suomi"
+
+#: .\templates\etreg\etreg.html.py:12
+#: .\templates\etreg\person_form.html.py:37
+#: .\templates\etreg\person_list.html.py:15
+msgid "10th June &ndash; 17th June 2012"
+msgstr "10.–17.6.2012"
+
+#: .\templates\etreg\etreg.html.py:22
+#: .\templates\etreg\person_list.html.py:23
+msgid "Registration form"
+msgstr "Rekisteröintilomake"
+
+#: .\templates\etreg\etreg.html.py:23
+#: .\templates\etreg\person_form.html.py:46
+#: .\templates\etreg\person_list.html.py:24
+msgid "One registration form per person"
+msgstr "Yksi rekisteröinti lomake per henkilö"
+
+#: .\templates\etreg\etreg.html.py:34
+msgid "Ms."
+msgstr "Neiti"
+
+#: .\templates\etreg\etreg.html.py:35
+msgid "Mrs."
+msgstr "Rouva"
+
+#: .\templates\etreg\etreg.html.py:36
+msgid "Mr."
+msgstr "Herra"
+
+#: .\templates\etreg\etreg.html.py:45
+msgid "Date of birth (dd-mm-yyyy)"
+msgstr "Syntymäpäivä (pp.kk.vvvv)"
+
+#: .\templates\etreg\etreg.html.py:53
+msgid "Postcode"
+msgstr "Postinumero"
+
+#: .\templates\etreg\etreg.html.py:57
+msgid "City"
+msgstr "Kaupunki"
+
+#: .\templates\etreg\etreg.html.py:60
+#: .\templates\etreg\etreg.html.py:128
+msgid "Yes"
+msgstr "Kyllä"
+
+#: .\templates\etreg\etreg.html.py:62
+#: .\templates\etreg\etreg.html.py:129
+msgid "No"
+msgstr "Ei"
+
+#: .\templates\etreg\etreg.html.py:95
+msgid "Program choices"
+msgstr "Ohjelmavalinnat"
+
+#: .\templates\etreg\etreg.html.py:111
+msgid "Language"
+msgstr "Kieli"
+
+#: .\templates\etreg\etreg.html.py:112
+msgid "for welcome packets and guided tours"
+msgstr "tervetulopaketin ja opastettujen kierrosten kieli"
+
+#: .\templates\etreg\etreg.html.py:113
+msgid "Which language/-s do you speak?"
+msgstr "Mitä kieliä puhut?"
+
+#: .\templates\etreg\etreg.html.py:117
+msgid "Date and estimated time of arrival to Helsinki*/Tampere"
+msgstr "Arvioitu saapumisaika Helsinkiin* / Tampereelle (pvä, klo)"
+
+#: .\templates\etreg\etreg.html.py:118
+msgid "Date and estimated departure time from Tampere/Helsinki*"
+msgstr "Arvioitu lähtöaika Tamperelta /Helsingistä* (pvä, klo)"
+
+#: .\templates\etreg\etreg.html.py:119
+#: .\templates\etreg\person_form.html.py:340
+msgid "We will inform the bus company ExpressBus about capacity needs for the route Helsinki-Vantaa Airport &ndash; Tampere City / Tampere City &ndash; Helsinki-Vantaa Airport (approx. 26€/one way)"
+msgstr "Ilmoitamme bussiyhtiölle (ExpressBus) kapasiteettitarpeesta reitille Helsinki-Vantaa Lentokenttä – Tampere / Tampere – Helsinki-Vantaa Lentokenttä (n. 26€/suunta)"
+
+#: .\templates\etreg\etreg.html.py:121
+msgid "Arr. /Date."
+msgstr "Saapumispvä"
+
+#: .\templates\etreg\etreg.html.py:122
+msgid "Dep. /Date ."
+msgstr "Lähtöpvä"
+
+#: .\templates\etreg\etreg.html.py:123
+msgid "Other, where"
+msgstr "Muu, missä?"
+
+#: .\templates\etreg\etreg.html.py:124
+#: .\templates\etreg\person_form.html.py:372
+msgid "Only information for the organization team, not a booking!"
+msgstr "Vain tiedoksi organisaatiotiimille, ei varaus!"
+
+#: .\templates\etreg\etreg.html.py:126
+#: .\templates\etreg\person_form.html.py:468
+msgid "For participants 13&ndash;20 years old, only"
+msgstr "Vain 13&ndash;20vuotiaille!"
+
+#: .\templates\etreg\etreg.html.py:130
+#: .\templates\etreg\person_form.html.py:476
+msgid "If no, parents name and mobile phone nr."
+msgstr "Jos et, vanhempien nimi ja matkapuhelinnro"
+
+#: .\templates\etreg\etreg.html.py:131
+msgid "Guardian’s name and mobile phone nr."
+msgstr "Valvojan nimi ja matkapuhelinnro"
+
+#: .\templates\etreg\etreg.html.py:132
+msgid "Parents signature"
+msgstr "Vanhempien allekirjoitus"
+
+#: .\templates\etreg\etreg.html.py:133
+#: .\templates\etreg\person_form.html.py:477
+msgid "Participant under 18 needs to have an adult as guardian"
+msgstr "Osallistuja alle 18v. tarvitsee aikuisen valvojan"
+
+#: .\templates\etreg\etreg.html.py:139
+#: .\templates\etreg\person_form.html.py:530
+msgid "Special needs/assistance"
+msgstr "Erityistarpeet / henkilökohtainen apu"
+
+#: .\templates\etreg\etreg.html.py:141
+msgid "Other special needs or health risk factors the Organisation team should know? (please specify)"
+msgstr "Muut erityistarpeet tai terveysriskit mitä organisaatiotiimin tulisi tietää? (erittele)"
+
+#: .\templates\etreg\etreg.html.py:142
+#: .\templates\etreg\person_form.html.py:556
+msgid "Please contact the ET2012FI-Orgateam for organising a practical nurse student to help you! Please note with your payment! The additional price for an assistant is the same price as for each event per person. Only for day's/evening's program."
+msgstr "Otathan yhteyttä ET2012FI-organisaatiotiimiin henkilökohtaisen avustajan / lähihoitajaopiskelijan järjestämisessä avuksesi. Henkilökohtainen auttaja maksaa saman ohjelmahinnan kuin ko. päivän ohjelma. Huomioithan maksussasi! Vain ainoastaan ohjelman ajaksi!"
+
+#: .\templates\etreg\etreg.html.py:143
+msgid "Please send your registration form and program choices by email to reg@europatreffen.com or by fax to number +358x-xxxxxxx or by mail Tall and Small Association Finland/ET2012FI, Po Box 186, FI-00931 Helsinki, Finland."
+msgstr "Lähetä rekisteröitymislomake ja ohjelmavalinnat sähköpostitse osoitteeseen reg@europatreffen.com tai faksitse numeroon +358x-xxxxxxx tai postitse osoitteeseen Pieni- ja Isokenkäiset ry/ET2012FI, PL 186, 00931 Helsinki"
+
+#: .\templates\etreg\etreg.html.py:144
+#: .\templates\etreg\person_form.html.py:60
+msgid "Please note that your registration is not complete until payment has been received."
+msgstr "Huomioithan, että rekisteröitymisesi on vasta lopullinen kun olemme vastaanottaneet maksusi."
+
+#: .\templates\etreg\etreg.html.py:145
+msgid "Last day for registration and payment April 10th 2012"
+msgstr "Viimeinen rekisteröinti ja maksupäivä 10.4.2012"
+
+#: .\templates\etreg\etreg.html.py:147
+#: .\templates\etreg\person_form.html.py:590
+msgid "Sunday June 10th &ndash; Welcome! &ndash; Tervetuloa!"
+msgstr "Sunnuntai 10.6.2012 &ndash; Tervetuloa!"
+
+#: .\templates\etreg\etreg.html.py:148
+#: .\templates\etreg\person_form.html.py:591
+msgid "Arrival in Tampere &ndash; Welcome and Info packets"
+msgstr "Saapuminen Tampereelle. Tervetulo- ja infopakettien jako"
+
+#: .\templates\etreg\etreg.html.py:149
+#: .\templates\etreg\person_form.html.py:615
+msgid "Viking Evening and 1st Big Welcome Evening"
+msgstr "Viikinki-ilta ja ensimmäinen Tervetuloilta"
+
+#: .\templates\etreg\etreg.html.py:150
+#: .\templates\etreg\person_form.html.py:616
+msgid "Choose your wish for setting time"
+msgstr "Valitse toivekattausaika"
+
+#: .\templates\etreg\etreg.html.py:151
+#: .\templates\etreg\person_form.html.py:616
+msgid "First setting* at 6pm"
+msgstr "1. kattaus klo 18"
+
+#: .\templates\etreg\etreg.html.py:152
+#: .\templates\etreg\person_form.html.py:616
+msgid "Second setting* at 9pm"
+msgstr "2. kattaus klo 21"
+
+#: .\templates\etreg\etreg.html.py:153
+#: .\templates\etreg\person_form.html.py:617
+msgid "If one session is filled we may have to schedule you in the other one!"
+msgstr "*Mikäli toinen kattaus on täynnä, joudumme siirtämään toiseen."
+
+#: .\templates\etreg\etreg.html.py:154
+#: .\templates\etreg\person_form.html.py:657
+msgid "Monday June 11th &ndash; Nokia &ndash; Connecting Tall People"
+msgstr "Maanantai 11.6.2012 &ndash; Nokia &ndash; Connecting Tall People"
+
+#: .\templates\etreg\etreg.html.py:155
+#: .\templates\etreg\person_form.html.py:658
+msgid "Trip to the town of Nokia & Tampere sightseeing tour by bus"
+msgstr "Retki Nokian kaupunkiin ja Tampereen opastettu kaupunkikiertoajelu"
+
+#: .\templates\etreg\etreg.html.py:156
+#: .\templates\etreg\person_form.html.py:659
+msgid "Young&Tall &ndash; guided sightseeing tours in Tampere and a lot of fun"
+msgstr "Pitkät&Nuoret – opastettu Tampereen kaupunkikierros ja muuta hauskaa"
+
+#: .\templates\etreg\etreg.html.py:157
+#: .\templates\etreg\person_form.html.py:660
+msgid "2nd Big Welcome Evening with infotainment, professional shows and live music"
+msgstr "Viihteellinen Tervetuloilta"
+
+#: .\templates\etreg\etreg.html.py:158
+#: .\templates\etreg\person_form.html.py:661
+msgid "Tuesday June 12th &ndash; Finnish nature, fun and entertainment"
+msgstr "Tiistai 12.6.2012 – Suomen luonto & hauskanpitoa"
+
+#: .\templates\etreg\etreg.html.py:159
+#: .\templates\etreg\person_form.html.py:662
+msgid "Public meeting of the representatives of the European Council/Board"
+msgstr "Euroopan neuvoston kokous – avoinna kaikille"
+
+#: .\templates\etreg\etreg.html.py:160
+#: .\templates\etreg\person_form.html.py:663
+msgid "A possibility also for lunch exists, at additional cost"
+msgstr "Kokoukseen osallistujille lounasmahdollisuus lisähinnasta"
+
+#: .\templates\etreg\etreg.html.py:161
+#: .\templates\etreg\person_form.html.py:664
+msgid "Young&Tall &ndash; trip to the Särkänniemi Adventure park. Approx. 35 euro/person*"
+msgstr "Nuoret&Pitkät – päiväretki Särkänniemen Huvipuistoon. Ranneke n. 35* eur/hlö"
+
+#: .\templates\etreg\etreg.html.py:162
+#: .\templates\etreg\person_form.html.py:665
+msgid "Payment at the entrance (opens at 11am)."
+msgstr "*Maksu portilla. ( Portit avataan klo 11)"
+
+#: .\templates\etreg\etreg.html.py:163
+#: .\templates\etreg\person_form.html.py:666
+msgid "Boat trip on Lake Pyhäjärvi & an outdoor evening on Viikinsaari Island."
+msgstr "Risteily Pyhäjärvellä ja illanvietto Viikinsaaressa"
+
+#: .\templates\etreg\etreg.html.py:164
+#: .\templates\etreg\person_form.html.py:667
+msgid "Wednesday June 13th &ndash; Helsinki, the daughter of the Baltic Sea"
+msgstr "Keskiviikko 13.6.2012 - Helsinki, Itämeren helmi"
+
+#: .\templates\etreg\etreg.html.py:165
+#: .\templates\etreg\person_form.html.py:668
+msgid "Full day trip to the capital of Finland, and&#133; (check one below)"
+msgstr "Kokopäiväretki Helsinkiin, Suomen pääkaupunkiin. (valitse ohjelman lisäksi yksi ao.)"
+
+#: .\templates\etreg\etreg.html.py:166
+#: .\templates\etreg\person_form.html.py:669
+msgid "Boat trip to Suomenlinna incl. a historical video presentation. (Max 240 guests)"
+msgstr "Lisää Helsinki-päivään vierailu Suomenlinnassa, sisältää Suomenlinna Experience-fimiesityksen (enint. 240 osallistujaa)"
+
+#: .\templates\etreg\etreg.html.py:167
+#: .\templates\etreg\person_form.html.py:670
+msgid "Or free time in Helsinki (approx. 4 hrs)"
+msgstr "Tai vapaa-aikaa Helsingissä, n. 4 tuntia"
+
+#: .\templates\etreg\etreg.html.py:168
+#: .\templates\etreg\person_form.html.py:671
+msgid "Thursday June 14th &ndash; Magic of Midsummer"
+msgstr "Torstai 14.6.2012 – Juhannuksen taikaa"
+
+#: .\templates\etreg\etreg.html.py:169
+#: .\templates\etreg\person_form.html.py:672
+msgid "The biggest summer celebration in Finland called &quot;Juhannus&quot;. A long day in the beautiful, authentic countryside atmosphere."
+msgstr "Suomen suurin kesäjuhla, Juhannus. Vietä päivä maaseudun tunnelmassa ja Juhannus traditioista nauttien, tanssia, musiikkia ja viihdettä Tampereen ulkopuolella."
+
+#: .\templates\etreg\etreg.html.py:170
+#: .\templates\etreg\person_form.html.py:673
+msgid "Friday June 15th &ndash; Sauna Day"
+msgstr "Perjantai 15.6.2012 – Sauna-päivä"
+
+#: .\templates\etreg\etreg.html.py:171
+#: .\templates\etreg\person_form.html.py:674
+msgid "Pispala & Pyynikki &ndash; The Pearls of Tampere. Guided walking & bus tour to the most essential part of the Finnish daily life and sauna traditions. Feel the heat&#133;"
+msgstr "Pispala & Pyynikki – Tampereen helmet. Opastettu kävelykierros Pyynikin-harjun maisemissa ja tutustutaan suomalaiseen saunaperinteeseen"
+
+#: .\templates\etreg\etreg.html.py:172
+#: .\templates\etreg\person_form.html.py:675
+msgid "Optional Sauna at hotel Scandic Rosendahl / Cumulus Hämeenpuisto"
+msgstr "Päivän päätteeksi saunominen Scandic Rosendahlissa / Cumulus Hämeenpuistossa"
+
+#: .\templates\etreg\etreg.html.py:173
+#: .\templates\etreg\person_form.html.py:676
+msgid "Saturday June 16th &ndash; Gala Evening"
+msgstr "Lauantai 16.6.2012 &ndash; Gaala-ilta"
+
+#: .\templates\etreg\etreg.html.py:174
+#: .\templates\etreg\person_form.html.py:677
+msgid "Dancing and Entertainment in Scandic Rosendahl until the morning&#133;"
+msgstr "Tanssia ja illanviettoa aamuun asti Scandic Rosendahlissa"
+
+#: .\templates\etreg\etreg.html.py:175
+#: .\templates\etreg\person_form.html.py:678
+msgid "Sunday June 17th &ndash; Kiitos ja näkemiin! &ndash; Thank you and goodbye!"
+msgstr "Sunnuntai 17.6.2012 &ndash; Kiitos ja näkemiin!"
+
+#: .\templates\etreg\etreg.html.py:176
+#: .\templates\etreg\person_form.html.py:679
+msgid "We will see you again in Hamburg 2013!"
+msgstr "Nähdään Hampurissa 2013!"
+
+#: .\templates\etreg\etreg.html.py:177
+#: .\templates\etreg\person_form.html.py:680
+msgid "Additional fees"
+msgstr "Lisämaksut"
+
+#: .\templates\etreg\etreg.html.py:178
+#: .\templates\etreg\person_form.html.py:681
+msgid "Additional yearly fee for the voluntary work on the European level"
+msgstr "Vuotuinen lisämaksu Euroopan tasolla tehtävälle vapaaehtoistyölle"
+
+#: .\templates\etreg\etreg.html.py:179
+#: .\templates\etreg\person_form.html.py:682
+msgid "Additional fee for Non-Tall Club members"
+msgstr "Lisämaksu rekisteröityneille ei-jäsenille"
+
+#: .\templates\etreg\etreg.html.py:180
+#: .\templates\etreg\person_form.html.py:683
+msgid "Payments only by Bank Transfer to:"
+msgstr "Maksut vain tilisiirtona:"
+
+#: .\templates\etreg\etreg.html.py:181
+#: .\templates\etreg\person_form.html.py:684
+msgid "Beneficiary's name and address:"
+msgstr "Saajan nimi ja osoite:"
+
+#: .\templates\etreg\etreg.html.py:182
+#: .\templates\etreg\person_form.html.py:685
+msgid "Po Box 186"
+msgstr "PL 186"
+
+#: .\templates\etreg\etreg.html.py:183
+#: .\templates\etreg\person_form.html.py:686
+msgid "Beneficiary bank account / bank details:"
+msgstr "Saajan pankkiyhteys:"
+
+#: .\templates\etreg\etreg.html.py:184
+#: .\templates\etreg\person_form.html.py:687
+msgid "Nordea Bank Finland Plc,"
+msgstr "Nordea Pankki Suomi Oyj"
+
+#: .\templates\etreg\etreg.html.py:185
+#: .\templates\etreg\person_form.html.py:688
+msgid "Total amount EUR"
+msgstr "Yhteensä EUR"
+
+#: .\templates\etreg\etreg.html.py:186
+#: .\templates\etreg\person_form.html.py:689
+msgid "All bank charges are at the responsibility of the participants. For payments outside Europe, add 7 EUR to the total amount to cover receiving bank’s fee of incoming payment! Message for payment: ET2012FI/participant’s name/-s."
+msgstr "Maksaja maksaa kaikki kulut. Maksut Euroopan ulkopuolelta lisää loppusummaan 7 euroa kattamaan saapuvan ulkomaan maksun kulut. Viesti maksuun: ET2012FI/Osallistujan nimi"
+
+#: .\templates\etreg\person_form.html.py:17
+#: .\templates\etreg\person_form.html.py:24
+#: .\templates\etreg\person_form.html.py:31
+msgid "View all registrations"
+msgstr "Näytä luettelo kaikista reisteröitymisistä"
+
+#: .\templates\etreg\person_form.html.py:22
+#: .\templates\etreg\person_form.html.py:29
+#: .\templates\etreg\person_list.html.py:10
+msgid "Add registration"
+msgstr "Lisää rekisteröityminen"
+
+#: .\templates\etreg\person_form.html.py:23
+msgid "Update registration information"
+msgstr "Päivitä tietoja"
+
+#: .\templates\etreg\person_form.html.py:30
+msgid "View registration information"
+msgstr "Katsele tietoja"
+
+#: .\templates\etreg\person_form.html.py:45
+msgid "Registration"
+msgstr "Rekisteröintilomake"
+
+#: .\templates\etreg\person_form.html.py:109
+#: .\templates\etreg\person_form.html.py:128
+#: .\templates\etreg\person_form.html.py:146
+msgid "Important! Read before sending registration: Terms and Conditions"
+msgstr "Tärkeää! Lue Ehdot ennen kuin lähetät rekisteröitymislomakkeen."
+
+#: .\templates\etreg\person_form.html.py:158
+msgid "Online Registration"
+msgstr "Rekisteröityminen verkossa"
+
+#: .\templates\etreg\person_form.html.py:572
+msgid "Program Choices"
+msgstr "Ohjelmavalinnat"
+
+#: .\templates\etreg\person_form.html.py:642
+msgid "Add"
+msgstr "Lisää"
+
+#: .\templates\etreg\person_form.html.py:643
+msgid "Update"
+msgstr "Päivitä"
+
+#: .\templates\etreg\person_form.html.py:694
+msgid "Electronic registration will open here."
+msgstr "Rekisteröitymislomake avataan tähän."
+
+#: .\templates\etreg\person_form.html.py:695
+msgid "Please be patient!"
+msgstr "Hetki vielä!"
+
+#: .\templates\etreg\person_list.html.py:40
+msgid "No registrations yet"
+msgstr "Ei vielä rekisteröitymisiä"
+
+#: .\templates\profiles\create_profile.html.py:11
+msgid "Create Profile"
+msgstr "Luo profiili"
+
+#: .\templates\profiles\create_profile.html.py:14
+msgid "My Profile"
+msgstr "Minun profiilini"
+
+#: .\templates\profiles\create_profile.html.py:14
+#: .\templates\profiles\create_profile.html.py:25
+msgid "Create"
+msgstr "Luo"
+
+#: .\templates\profiles\create_profile.html.py:18
+msgid "Create profile"
+msgstr "Luo profiili"
+
+#~ msgid "Download printable registration form"
+#~ msgstr "Lataa tulostettava rekisteröitymislomake"
+
+#~ msgid "View printable registration form"
+#~ msgstr "Näytä rekisteröitymislomake"
+
+#~ msgid "Scandic Rosendahl"
+#~ msgstr "Scandic Rosendahl"

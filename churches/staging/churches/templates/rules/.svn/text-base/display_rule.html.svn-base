@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if object %}
+    <h1>Item Details</h1>
+    <ul>
+      <li>ID: {{ object.id }}</li>
+      <li>Description: {{ object.description }}</li>
+      <li>Item text:
+          {{ object.rule }}
+      </li>
+    </ul>
+  {% else %}
+    <h1>List of All Items</h1>
+    {% if object_list %}
+      <table class="list">
+        {% for rule in object_list %}
+        </tr>
+          <td class="{% cycle 'list_white' 'list_blue' %}">
+            <div style="float:left">
+              {% if user.is_authenticated %}
+              {{ rule.description }}
+              {% else %}
+              <a href="/{{ lang }}/detail/{{ rule.id }}/">{{ rule.description }}</a>
+              {% endif %}
+            </div>
+            {% if user.is_authenticated %}
+            <div class="crud_menu" style="float:right">
+              <ul>
+                <li><a href="/{{ lang }}/detail/{{ rule.id }}/">DETAILS</a></li>
+                <li><a href="/{{ lang }}/update/{{ rule.id }}/">MODIFY</a></li>
+                <li><a href="/{{ lang }}/delete/{{ rule.id }}/">DELETE</a></li>
+              </ul>
+            </div>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    {% else %}
+      No items defined yet.
+    {% endif %}
+{% endif %}
+{% endblock %}

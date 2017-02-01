@@ -1,0 +1,90 @@
+/* ---------- Muradora topnavi ---------- */
+#topnavi {
+	float: left;
+	width: 100%;
+	/* background: #2AA8C3 ... #004C7E=tummansininen ... url(http://www.tallsmall.fi:8080/site_media/img/muradora/bluepix.gif) repeat-x bottom left; */ /* topnavi-color */
+	background: url(http://www.tallsmall.fi:8080/site_media/img/specs/tab_background.gif) no-repeat left top;
+}
+#topnavi ul {
+	margin: 0;
+	padding: 0 10px 0 20px;
+	list-style: none;
+	}
+#topnavi li {
+	display: inline;
+	margin-bottom: 0;
+	padding: 0;
+}
+#topnavi a {
+	float: left;
+	background: url("http://www.tallsmall.fi:8080/site_media/img/muradora/tableft.gif") no-repeat left top;
+	margin: 0 2px 0 0; /* alkujaan vain nolla */
+	padding: 0 0 0 4px;
+	text-decoration: none;
+	border-bottom: solid 1px #2AA8C3 /* #004C7E topnavi-color */
+}
+#topnavi a span {
+	float: left;
+	background: url("http://www.tallsmall.fi:8080/site_media/img/muradora/tabright.gif") no-repeat right top;
+	display: block;
+	padding: 4px 15px 4px 6px;
+	color: #002440; /* #666 */
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: normal;
+	}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+/*
+#topnavi a span {
+	float: none;
+	}
+*/
+/* End IE5-Mac hack */
+
+#topnavi a:hover {
+	background-position: 0% -42px;
+	border-bottom: solid 1px #fff;
+}
+
+#topnavi a:hover span {
+	color: #E54A14; /* orange */
+	background-position: 100% -42px;
+	}
+
+#topnavi a:active {
+	background-position: 0% -42px;
+}
+
+#topnavi a:active span {
+	background-position: 100% -42px;
+	}
+
+body#etusivu a#etusivuLink,
+body#verkkolehti a#verkkolehtiLink,
+body#kuvagalleria a#kuvagalleriaLink,
+body#tagforum_list a#tagforum_listLink,
+body#vaikuta a#vaikutaLink,
+body#apua_ongelmiin a#apua_ongelmiinLink,
+body#tuotteet a#tuotteetLink,
+body#yhdistys a#yhdistysLink {
+	background-position: 0% -42px;
+	border-bottom: solid 1px #fff;
+}
+
+body#etusivu a#etusivuLink span,
+body#verkkolehti a#verkkolehtiLink span,
+body#kuvagalleria a#kuvagalleriaLink span,
+body#tagforum_list a#tagforum_listLink span,
+body#vaikuta a#vaikutaLink span,
+body#apua_ongelmiin a#apua_ongelmiinLink span,
+body#tuotteet a#tuotteetLink span,
+body#yhdistys a#yhdistysLink span {
+	background-position: 100% -42px;
+	color: #E54A14 /* selected tab orange */
+	}
+	
+	
+
+/**************** tanfa menu coding *****************/
+

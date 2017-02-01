@@ -1,0 +1,20 @@
+{% for event in content_from_callable %}
+  <h1 class="orange">{{ event.theme}}</h1>
+  {% ifequal event.evtimestart|date:"i:H" "00:00" %}
+    <!-- Aika nolla -->
+    {% if event.evtimestart %}<p><strong>{{ event.evtimestart|date:"d.m.Y" }}{% endif %}
+    {% if event.evtimend %} - {{ event.evtimend|date:"d.m.Y" }}</strong>, {% endif %}
+  {% else %}
+    <!-- Aika mainittu -->
+    {% if event.evtimestart %}<p><strong>{{ event.evtimestart|date:"d.m.Y k\lo H:i" }}{% endif %}
+    {% if event.evtimend %} - {{ event.evtimend|date:"H:i" }}</strong>, {% endif %}	
+  {% endifequal %}
+
+  {% if event.placename %}{{ event.placename }}<br/>{% endif %}
+  {% if event.placedescription %}{{ event.placedescription}}</p>{% endif %}
+  {% if event.description %}<p>{{ event.description|safe}}</p>{% endif %}
+  {% if event.author %}<p><strong>{{ event.author}}</strong></p>{% endif %}
+  {% if not forloop.last %}
+  <hr style="color:#5195CE; height:0.8px; margin-top: 10px; margin-bottom: 10px">
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Confirm Removal of Item</h1>
+<form method="post" action=".">{% csrf_token %}
+<p>Are you sure you want to delete "ID:{{ object.id }}, {{ object.description }}"?</p>
+<input type="submit" value="Submit" />
+</form>
+{% endblock %}

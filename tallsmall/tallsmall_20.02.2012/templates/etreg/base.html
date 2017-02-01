@@ -1,0 +1,183 @@
+{% comment %}
+
++ JQuery UI components: Slider, Datepicker, 
++ Time picker localization: https://github.com/trentrichardson/jQuery-Timepicker-Addon/tree/master/localization
++ Datepicker localization documentation: http://jqueryui.com/demos/datepicker/
+
+{% endcomment %}
+{% load i18n %}
+{% load cms_tags sekizai_tags %}
+{% load cache menu_tags %}
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" >
+  <meta name="robots" content="noindex, nofollow">
+  <link type="text/css" rel="stylesheet" media="screen" href="{{ STATIC_URL }}css/styles.css?{% now "YmdHis" %}"/>
+  <!-- django-cms -->
+  {% render_block "css" %}
+   
+  <!-- jQuery UI datepicker -->
+  <link type="text/css" href="{{ STATIC_URL }}css/redmond/jquery-ui-1.8.17.custom.css" rel="stylesheet" />  
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.8.17.custom.min.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.ui.datepicker-{{ lang }}.js"></script>
+  
+  <!-- time picker add-on -->
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-timepicker-addon.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-sliderAccess.js"></script>
+  
+  <script type="text/javascript">
+  $(function(){
+    $('.datepicker').datepicker({
+      dateFormat:'yy-mm-dd',
+      showOn: 'button',
+      buttonImage: '{{ STATIC_URL }}img/calendar.gif',
+      buttonText: '{% trans "Pick Date" %}',
+      buttonImageOnly: true
+      },
+    $.datepicker.regional['{{ lang }}']);
+  });
+  </script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/pricecalc.js"></script>
+
+</head>
+<body class="home page page-id-76 page-template-default custom-background">
+  <div id="ancestor-homepage" class="siteframe page-siteframe ">
+      <div id="container">
+        <div id="container2">
+            
+          <!-- topnavi -->
+          <div class="nav-horz nav-main" id="menu">
+            <div class="nav-main-left">
+              <div class="nav-main-right">
+                
+                <!-- menu active: current_page_item -->
+                <div class="menu">
+                  <ul>
+                    <li class="page_item page-item-76"><a href="http://www.europatreffen.com/">{% trans "Home" %}</a></li>
+                    <li class="page_item page-item-636"><a href="http://www.europatreffen.com/?page_id=636">{% trans "Welcome!" %}</a>
+                      <ul class='children'>
+                        <li class="page_item page-item-645"><a href="http://www.europatreffen.com/?page_id=645">{% trans "Moro!" %}</a></li>
+                      </ul>
+                    </li>
+                    <li class="page_item page-item-1863"><a href="http://www.europatreffen.com/?page_id=1863">{% trans "Program" %}</a>
+                      <ul class='children'>
+                        <li class="page_item page-item-1965"><a href="http://www.europatreffen.com/?page_id=1965">{% trans "Sunday, June 10th 2012" %}</a></li>
+                        <li class="page_item page-item-1909"><a href="http://www.europatreffen.com/?page_id=1909">{% trans "Monday, June 11th 2012" %}</a></li>
+                      </ul>
+                    </li>
+                    <li class="page_item page-item-86"><a href="http://www.europatreffen.com/?page_id=86">{% trans "Young &#038; Tall" %}</a></li>
+                    <li class="page_item page-item-80"><a href="http://www.europatreffen.com/?page_id=80">{% trans "Accommodation" %}</a></li>
+                    <li class="page_item page-item-82"><a href="http://www.europatreffen.com/?page_id=82">{% trans "Travel info" %}</a></li>
+                    <li class="page_item page-item-10"><a href="http://www.europatreffen.com/?page_id=10">{% trans "Contact us" %}</a>
+                      <ul class='children'>
+                        <li class="page_item page-item-211"><a href="http://www.europatreffen.com/?page_id=211">{% trans "Contact info" %}</a></li>
+                        <li class="page_item page-item-215"><a href="http://www.europatreffen.com/?page_id=215">{% trans "Organisation Team" %}</a></li>
+                      </ul>
+                    </li>
+                    <li class="page_item page-item-95"><a href="http://www.europatreffen.com/?page_id=95">{% trans "More&#8230;" %}</a>
+                      <ul class='children'>
+                        <li class="page_item page-item-113"><a href="http://www.europatreffen.com/?page_id=113">{% trans "Photo gallery" %}</a></li>
+                        <li class="page_item page-item-130"><a href="http://www.europatreffen.com/?page_id=130">{% trans "Media" %}</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end menu -->
+                
+              </div>
+            </div>
+            <div class="nav-main-bottom"></div>
+          </div>
+          <div class="clear"></div>
+          <!-- end topnavi -->
+          
+          <div id="header">
+            <div id="header2">
+              <div id="header3">
+                <div id="header4">
+            	  <div id="logo">
+	            <div id="logo-2">
+		      <div id="logo-3">
+		        <table>
+                          <tr>
+                            <td>
+                              <a href="http://www.europatreffen.com/"><img src="http://www.europatreffen.com/kuvia/Banner_sticker.jpg" alt="45. Europatreffen 2012 Finland" /></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+	          </div>
+	          <div id="banner">
+                    <img src="http://www.europatreffen.com/wp-content/uploads/2011/05/cropped-Pyynikki-7-Custom.jpg" width="920" height="360" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content"  id="col-3">
+            <div id="col-main" style="">
+              <div id="main-content">
+                <div class="margin-30">
+                
+                <!-- begin language switcher -->
+                <div id="lang">
+                {% for lang in LANGUAGES %} 
+                  {% ifequal lang.0 LANGUAGE_CODE %} 
+                  <span class="selected"><img src="{{ STATIC_URL }}img/png/{{ lang.0 }}.png"> {{ lang.1 }}</span> 
+                  {% else %} 
+                  <span><img src="{{ STATIC_URL }}img/png/{{ lang.0 }}.png"> <a href="/{{lang.0}}{{request.path}}">{{ lang.1 }}</a></span> 
+                  {% endifequal %} 
+                {% endfor %}
+                </div>
+                <!-- end language switcher -->
+                
+                <!-- begin main content-->
+                {% block content %}{% endblock %}                        
+                <!-- begin main content-->
+                
+                </div>
+              </div>
+            </div>
+          <!--
+	  <div id="col-left" class="sidebar" style="">
+            xxxxxxxx     
+	  </div>
+          <div id="col-right" class="sidebar" style="">
+            xxxxxxxx
+  	  </div>
+          -->
+          <div class="clear"></div>
+        </div>
+	<div class="clear"></div>          
+
+	<!-- begin footer -->
+        <div id="footer">
+	  <div class="nav-horz nav-footer">
+            <div class="menu-testimenu-container">
+              <ul id="menu-testimenu" class="menu">
+                <li id="menu-item-454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-454">
+                  <!-- <a href="http://www.sairanen.fi">Sairanen Solutions</a> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+	  <div class="clear"></div>
+        </div>
+	<!-- end footer -->
+        
+      </div>
+    </div>
+    <div id="colophon">
+      <a id="ctxophon" href="http://www.contextureintl.com/?sref=aj" title="A WordPress Theme by Contexture International"></a>
+      <div class="clear"></div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- django-cms -->
+{% render_block "js" %}

@@ -1,0 +1,13 @@
+{% extends "portal/base_home.html" %}
+{% load i18n %}
+{% load cms_tags %}
+
+{% block description %}
+<span class="section_header">{% trans "Mindscapes" %}</span><span class="section_aspect"> | {% trans "A Location Based Service for Culture" %}</span>
+{% endblock %}
+
+{% block content %}
+<div class="padding_10">
+  {% placeholder home_info_content %}
+</div>
+{% endblock %}

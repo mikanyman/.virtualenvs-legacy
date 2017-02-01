@@ -1,0 +1,169 @@
+<style type="text/css">
+table {
+	border-collapse:collapse;
+	}
+table, th, td {
+	border: 1px solid black;
+	padding: 3px;
+	}
+p {
+	margin-top: 25px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	}
+p.joo {
+	margin-top: 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	}
+div.wrap {
+	width:auto;
+	height: 24px;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding: 0
+        }
+div.left {
+	float: left;
+	}
+div.center {
+	float: left;
+	margin-left: 130px;
+	}
+div.right {
+	float: right;
+	}
+a.arrow {
+	text-decoration:none;
+	font-size: 12pt;
+	color: #e5a83e
+	}
+</style>
+<p>
+<img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/etusivu4.jpg">
+</p>
+
+<div class="wrap">
+  <div class="left"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/5_1.html">&larr; Edellinen sivu</a></div>
+  <div class="center"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/sisallysluettelo.html">Sis&auml;llysluettelo</a></div>
+  <div class="right"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/5_3.html">Seuraava sivu &rarr;</a></div>
+</div>
+
+<h2>5.2 Tutkimuksen eteneminen</h2>
+<p>
+Opinn&auml;ytety&ouml; k&auml;ynnistyi tutustumalla alkuper&auml;iseen Pieni- ja Isokenk&auml;iset yhdistykselt&auml;
+saatuun MITTAVA kyselylomakkeeseen ja sen muutost&ouml;iden tekemisell&auml; 26.8.2009 -
+1.2.2010. Taulukossa 1. esitell&auml;&auml;n tutkimuksen etenemisen vaiheet (TAULUKKO 1).
+Opinn&auml;ytesopimus Pieni- ja Isokenk&auml;iset ry:n kanssa allekirjoitettiin 3.2.2010 (LIITE
+2). Alkuper&auml;isest&auml; lomakkeesta poistettiin rinnanymp&auml;rys sek&auml; lis&auml;ttiin paino, alaraajojen
+sis&auml;pituus, oikean reiden ymp&auml;rys, oikean ja vasemman kantap&auml;&auml;n ymp&auml;rys. Alkuper&auml;isess&auml;
+lomakkeessa kysyttiin ik&auml;&auml;, joka muutettiin syntym&auml;vuodeksi. Lomakkeesta
+poistettiin kysymykset jalkaterveytt&auml; heikent&auml;vist&auml; vaivoista ja kipuasteikko. Lomakkeen
+lopussa olevat kysymykset asiantuntijan jalkojen kunnon tutkimisesta, sek&auml; omat
+arviot jalkater&auml;n asentovirheist&auml; ja tukipohjallisten k&auml;yt&ouml;st&auml; poistettiin. Alkuper&auml;isest&auml;
+lomakkeesta poistetut kohdat eiv&auml;t ole tarpeellisia alaraajojen mittojen omatoimista mittaamista
+varten kehitelt&auml;v&auml;ss&auml; ty&ouml;v&auml;lineess&auml;. Teoriatiedon ker&auml;&auml;minen alkoi alaraajojen
+mittauskohtien m&auml;&auml;ritt&auml;misest&auml;, mittaustavoista sek&auml; sopivien kuvien etsiminen ihmisvartalosta
+ohjeistusta varten.
+</p>
+<p>
+Opinn&auml;ytety&ouml; k&auml;ynnistyi tutustumalla alkuper&auml;iseen Pieni- ja Isokenk&auml;iset yhdistykselt&auml;
+saatuun MITTAVA kyselylomakkeeseen ja sen muutost&ouml;iden tekemisell&auml; 26.8.2009 -
+1.2.2010. Taulukossa 1. esitell&auml;&auml;n tutkimuksen etenemisen vaiheet (TAULUKKO 1).
+Opinn&auml;ytesopimus Pieni- ja Isokenk&auml;iset ry:n kanssa allekirjoitettiin 3.2.2010 (LIITE
+2). Alkuper&auml;isest&auml; lomakkeesta poistettiin rinnanymp&auml;rys sek&auml; lis&auml;ttiin paino, alaraajojen
+sis&auml;pituus, oikean reiden ymp&auml;rys, oikean ja vasemman kantap&auml;&auml;n ymp&auml;rys. Alkuper&auml;isess&auml;
+lomakkeessa kysyttiin ik&auml;&auml;, joka muutettiin syntym&auml;vuodeksi. Lomakkeesta
+poistettiin kysymykset jalkaterveytt&auml; heikent&auml;vist&auml; vaivoista ja kipuasteikko. Lomakkeen
+lopussa olevat kysymykset asiantuntijan jalkojen kunnon tutkimisesta, sek&auml; omat
+arviot jalkater&auml;n asentovirheist&auml; ja tukipohjallisten k&auml;yt&ouml;st&auml; poistettiin. Alkuper&auml;isest&auml;
+lomakkeesta poistetut kohdat eiv&auml;t ole tarpeellisia alaraajojen mittojen omatoimista mittaamista
+varten kehitelt&auml;v&auml;ss&auml; ty&ouml;v&auml;lineess&auml;. Teoriatiedon ker&auml;&auml;minen alkoi alaraajojen
+mittauskohtien m&auml;&auml;ritt&auml;misest&auml;, mittaustavoista sek&auml; sopivien kuvien etsiminen ihmisvartalosta
+ohjeistusta varten.
+</p>
+<p>
+Tutkimuslupa saatiin Metropolian Ammattikorkeakoulun Hyvinvointi ja toimintakyky
+klusterin johtajalta 23.3.2010 (LIITE 3). Tutkimuslupa koski tutkimuksen ensimm&auml;isen
+vaiheen tiedonkeruuta. Tutkimuksen ensimm&auml;isess&auml; vaiheessa mittauslomakkeen ja sen
+k&auml;ytt&ouml;ohjeistuksen koek&auml;ytti kuusi henkil&ouml;ll&auml;, jotka tekiv&auml;t itse mittaukset ja t&auml;yttiv&auml;t
+lomakkeen. Sen j&auml;lkeen heid&auml;t haastateltiin.
+</p>
+<p>
+Lomaketta muokattiin sis&auml;ll&ouml;nanalyysin tuottaman tiedon perusteella. Ensimm&auml;isen
+vaiheen aineiston keruusta laaditun yhteenvedon perusteella tehtiin lomakkeeseen muutoksia.
+</p>
+<center>
+<p>
+TAULUKKO 1. Tutkimuksen eteneminen
+</p>
+<p class="joo">
+<table>
+	<tr>
+		<td>P&auml;iv&auml;m&auml;&auml;r&auml;</td>
+		<td>Aihe</td>
+		<td>Sis&auml;lt&ouml;</td>
+	</tr>
+	<tr>
+		<td>26.8.2009 - 1.2.2010</td>
+		<td>Alkuper&auml;isen lomakkeen muokkaus</td>
+		<td>MITTAVA-lomakkeeseen tutustuminen ja siihen tulevien muutost&ouml;iden miettiminen. Teoriatiedon keruu.</td>
+	</tr>
+	<tr>
+		<td>3.2.2010</td>
+		<td>Opinn&auml;ytesopimus</td>
+		<td>Sopimuksen allekirjoitus</td>
+	</tr>
+	<tr>
+		<td>1.2.2010 - 8.3.2010</td>
+		<td>Ohjeistuksen laatiminen</td>
+		<td>Lomakkeen k&auml;ytt&ouml;ohjeistuksen laatiminen</td>
+	</tr>
+	<tr>
+		<td>23.3.2010</td>
+		<td>Tutkimuslupa</td>
+		<td>Tutkimuksen ensimm&auml;isen vaiheen aineiston keruu alkoi 23.3.2010 tutkimusluvan saannilla Metropolia Ammattikorkeakoulun, Hyvinvointi ja
+                toimintakyky-klusterin johtajalta.</td>
+	</tr>
+	<tr>
+		<td>23.3.2010 - 24.3.2010</td>
+		<td>Tutkimuksen ensimm&auml;isen vaihe</td>
+		<td>Lomakkeen k&auml;ytt&ouml;ohjeistuksen ymm&auml;rrett&auml;vyyden ja yksiselitteisyyden selvitt&auml;minen.</td>
+	</tr>
+	<tr>
+		<td>25.3.2010 - 30.4.2010</td>
+		<td>Lomakkeen muokkaus</td>
+		<td>Sis&auml;ll&ouml;nanalyysi&auml;. Ensimm&auml;isen vaiheen aineistonkeruusta laaditun yhteenvedon perusteella tehtiin lomakkeeseen muutoksia.</td>
+	</tr>
+	<tr>
+		<td>6.5.2010 - 31.8.2010</td>
+		<td>Tutkimuksen toinen vaihe</td>
+		<td>Ty&ouml;v&auml;lineen luotettavuuden selvitt&auml;minen.</td>
+	</tr>
+	<tr>
+		<td>23.8.2010 - 20.10.2010</td>
+		<td>Aineiston analysointi ja raportointi</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2.11.2010</td>
+		<td>Opinn&auml;ytety&ouml;n esitys</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2011</td>
+		<td>Tulosten julkistaminen</td>
+		<td>Keng&auml;n koputus -lehdess&auml; artikkeli</td>
+	</tr>
+</table>
+</p>
+</center>
+<p>
+Tutkimuksen toisessa vaiheessa 6.5.2010 - 31.8.2010 selvitimme ty&ouml;v&auml;lineen luotettavuutta
+31 koehenkil&ouml;ll&auml;, jotka olivat eri henkil&ouml;it&auml; kuin tutkimuksen ensimm&auml;isess&auml;
+vaiheessa. Aineiston analysointi ja raportointi, sek&auml; teoriatiedon keruu tapahtui
+23.8.2010 - 20.10.2010 v&auml;lisen&auml; aikana. Opinn&auml;ytety&ouml; esitet&auml;&auml;n 2.11.2010. Tulokset
+julkaistaan artikkelina Keng&auml;n koputus- lehden 2011 ensimm&auml;isess&auml; numerossa.
+</p>

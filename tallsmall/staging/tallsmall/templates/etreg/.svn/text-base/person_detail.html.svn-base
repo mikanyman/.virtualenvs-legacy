@@ -1,0 +1,370 @@
+{% load i18n %}
+
+<html>
+<head>
+  <link rel="stylesheet" href="{{ STATIC_URL }}css/print.css" type="text/css" media="print" />
+  <style>
+    h1 {font-family:Arial,Helvetica,sans-serif}
+    td {vertical-align:top}
+    ul {margin:0; padding:0 18px}
+    li {list-style-type: square}
+    a {color:#EE0000}
+  </style>
+</head>
+<body>
+
+<div class="print" style="width:800px; padding:0 40px 20px 36px">
+  <img src="{{ STATIC_URL }}img/etreg/etlogo_0.jpg">
+</div>
+
+{% if object.id in allowed_id_list or user.is_authenticated %}
+    
+  {% if object.email %}
+  <div style="width:840px; padding:0px 40px 20px 40px; background-color:#FFFFFF; font-family:Arial,Helvetica,sans-serif">
+    <br/><br/>
+    <form name="email_confirm" style="float:left; width:550px; margin:0; padding:0" method="get" action="/etreg/email/{{ object.id }}/">
+      <img src="{{ STATIC_URL }}img/email.png">&nbsp;&nbsp;<a href="#" onclick="document.forms[0].submit(); return false">{% trans "Email this page to" %}</a> 
+      {{ object.email }}  
+    </form>
+    {% ifequal email_token "sent" %}
+    <div style="color:#EE0000; display:block; background-color:#FFFF99; padding:0px 20px; text-align:center; float:left">{% trans "Your email has been sent." %}</div>
+    {% endifequal %}
+  </div>
+  {% endif %}
+
+<div class="print" style="width:800px; padding:0px 40px 20px 40px; background-color:#FFFFFF; font-family:Arial,Helvetica,sans-serif">
+  {% ifequal lang "en" %}
+  <p>
+    Thank you for your registration! Please, kindly check that the information sent is valid and correct.
+    If you notice any mistakes, click RETURN, correct it and send the form again.
+    After checking the changes, PRINT the form if you wish, and then transfer the amount to our bank account
+    with the info below.
+  </p>
+  <p>
+    <img src="{{ STATIC_URL }}img/arrow_undo.png">&nbsp;&nbsp;<a href="/etreg/update/{{ object.id}}/">{% trans "Return to correct information" %}</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <!-- http://javascript.about.com/library/blprint.htm -->
+    <img src="{{ STATIC_URL }}img/printer.png">&nbsp;&nbsp;<a href="#" onclick="window.print();return false;">{% trans "Print this page" %}</a>
+  </p>
+  <p>
+    Please note that your registration is not complete until payment has been received! We will confirm your full payment either by email of by fax.
+    <strong>Last day for registration and payment April 10th 2012!</strong>
+  </p>
+  <p>
+    Payments only by Bank Transfer to<br/>
+    Beneficiary’s name and address:<br/>
+    Pieni- ja Isokenkäiset ry/ET2012FI<br/>
+    Po Box 186<br/>
+    FI-00931 Helsinki<br/>
+    Finland
+  </p>
+  <p>
+    Beneficiary bank account / bank details:<br/>
+    IBAN: FI17 1153 3000 2126 69<br/>
+    BIC/SWIFT: NDEAFIHH<br/>
+    Nordea Bank Finland Plc.<br/>
+    Aleksanterinkatu 36, 00100 Helsinki
+  </p>
+  <p>
+    All bank charges are at the responsibility of the participants. For payments outside Europe, add 7 EUR to the total amount to cover receiving bank’s fee of incoming payment!
+    Message for payment: ET2012FI/participant’s name/-s.
+  </p>
+  {% endifequal %}
+
+  {% ifequal lang "fi" %}
+
+  <h2>Kiitos rekisteröitymisestäsi!</h2>
+  <p>
+    Pyydämme sinua ystävällisesti tarkistamaan, että lähettämäsi tiedot ovat oikein.
+    Mikäli haluat muuttaa tietoja, PALAA, korjaa ja lähetä uudelleen.
+    Tarkista, että korjaamasi tieto on muuttunut. TULOSTA lomake halutessasi.
+  </p>
+  <p>
+    <img src="{{ STATIC_URL }}img/arrow_undo.png">&nbsp;&nbsp;<a href="/etreg/update/{{ object.id}}/">{% trans "Return to correct information" %}</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <!-- http://javascript.about.com/library/blprint.htm -->
+    <img src="{{ STATIC_URL }}img/printer.png">&nbsp;&nbsp;<a href="#" onclick="window.print();return false;">{% trans "Print this page" %}</a>
+  </p>
+  <p>
+    Kun olet hyväksynyt tiedot, suorita maksu alla olevien ohjeiden mukaan.
+    Huomioithan, että rekisteröitymisesi on lopullinen vasta sen jälkeen, kun olemme vastaanottaneet maksusi.
+    Lähetämme suorituksesta vahvistuksen joko sähköpostilla tai kirjeitse. 
+    <strong>Viimeinen rekisteröinti- ja maksupäivä 10.4.2012!</strong>
+  </p>
+  <p>
+    Maksut vain tilisiirtona<br/>
+    Saajan nimi ja osoite:<br/>
+    Pieni- ja Isokenkäiset ry/ET2012FI<br/>
+    PL 186<br/>
+    00931 Helsinki
+  </p>
+  <p>
+    Saajan pankkiyhteys:<br/>
+    IBAN: FI17 1153 3000 2126 69<br/>
+    BIC: NDEAFIHH<br/>
+    Nordea Pankki Suomi Oyj,<br/>
+    Aleksanterinkatu 36, 00100 Helsinki
+  </p>
+  <p>
+    Maksaja maksaa kaikki kulut. Maksut Euroopan ulkopuolelta lisää loppusummaan 7 euroa kattamaan saapuvan ulkomaan maksun kulut.
+    Viesti maksuun: ET2012FI/Osallistujan/-jien nimi/nimet.
+  </p>
+  {% endifequal %}
+    
+  {% ifequal lang "de" %}
+  <p>
+    Danke für Deine Anmeldung! Bitte überprüft ob Eure gesendeten Informationen korrekt und vollständig sind.
+    Falls Ihr Fehler feststellen solltet, auf RETURN klicken, dann korrigieren und nochmal senden.
+    Nachdem überprüfen Eurer Korrekturen, PRINT klicken um zu drucken falls gewüsncht, und dann die
+    Summe auf unser Konto überweisen mit den unten folgenden Bank Informationen.
+  </p>
+  <p>
+    <img src="{{ STATIC_URL }}img/arrow_undo.png">&nbsp;&nbsp;<a href="/etreg/update/{{ object.id}}/">RETURN</a> {% trans "Return to correct information" %}
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <!-- http://javascript.about.com/library/blprint.htm -->
+    <img src="{{ STATIC_URL }}img/printer.png">&nbsp;&nbsp;<a href="#" onclick="window.print();return false;">PRINT</a> {% trans "Print this page" %}
+  </p>
+  <p>
+    Bitte bedenken dass Eure Anmeldung nicht komplett ist bevor die Zahlung erhalten wurde! Eure Anmeldung wird per EMail oder per FAX bestätigt. 
+    <strong>Letzter Tag für die Anmeldung und Zahlung ist der 10. April 2012!</strong>
+  </p>
+  <p>
+    Zahlungen nur per Überweisung an<br/>
+    Begünstigter und Adresse:<br/>
+    Pieni- ja Isokenkäiset ry/ET2012FI<br/>
+    Po Box 186<br/>
+    FI-00931 Helsinki<br/>
+    Finnland
+  </p>
+  <p>
+    Kontonummer des Begünstigten / Bank Details:<br/>
+    IBAN: FI17 1153 3000 2126 69<br/>
+    BIC: NDEAFIHH<br/>
+    Nordea Bank Finland Plc,<br/>
+    Aleksanterinkatu 36, 00100 Helsinki
+  </p>
+  <p>
+    Alle Bankgebühren obliegen der Verantwortung der Teilnehmer. Für Zahlungen von ausserhalb Europas, bitte 7.00 Euro zusätzlich für die Gebühr des Empfangs der erhaltenden Bank!
+    Kommentar für die Zahlung: ET2012 FI / Name des/r Teilnehmer/s.
+  </p>
+  {% endifequal %}
+</div>
+
+<div style="page-break-after:always"></div>
+
+<div class="print" style="width:800px; padding:0 40px; background-color:#FFFFFF; font-family:Arial,Helvetica,sans-serif">
+  <h2>{% trans "Online Registration" %}</h2>
+  <table style="width:800px">
+  <tr>
+    <td colspan="2">
+      <strong>{% trans "Gender" %}:</strong> {{ object.gender }}<br/>
+      <strong>{% trans "First name" %}:</strong> {{ object.firstname }}<br/>
+      <strong>{% trans "Last name" %}:</strong> {{ object.lastname }}<br/>
+      <strong>{% trans "Address" %}:</strong> {{ object.address }}<br/>
+      <strong>{% trans "Postcode" %}:</strong> {{ object.postalcode }}<br/>
+      <strong>{% trans "City" %}:</strong> {{ object.city }}<br/>
+      <strong>{% trans "Country" %}:</strong> {{ object.country }}<br/>
+    </td>
+    <td colspan="2">
+      <strong>{% trans "Date of birth (yyyy-mm-dd)" %}:</strong> {{ object.dateofbirth }}<br/>
+      <strong>{% trans "Height" %}:</strong> {{ object.height }}<br/>
+      <strong>{% trans "Member of a Tall Club" %}:</strong> {% if object.clubmember %}{% trans "Yes" %}{% else %}---{% endif %}<br/>
+      <strong>{% trans "Which Tall Club are you registered with?" %}:</strong> {{ object.whichclub }}<br/>
+      <strong>{% trans "Membership number" %}:</strong> {{ object.membnumb }}<br/>
+    </td>
+  </tr>
+  <tr><td colspan="4" style="height:20px"></td></tr>
+  <tr>
+    <td colspan="4">
+      <strong>{% trans "Email" %}:</strong> {{ object.email }}<br/>
+      <strong>{% trans "Mobile phone number with country code" %}:</strong> {{ object.mobilephone }}<br/>
+      <strong>{% trans "Home phone number with country code" %}:</strong> {{ object.homephone }}<br/>
+      <strong>{% trans "Fax number with country code" %}:</strong> {{ object.fax }}<br/>
+    </td>
+  </tr>
+  <tr><td colspan="4" style="height:20px"></td></tr>
+  <tr>
+    <td colspan="4">
+      <strong>{% trans "Language for welcome packets and guided tours" %}:</strong>
+      {% ifequal object.language "Finnish" %}{% trans "Finnish" %}{% endifequal%}
+      {% ifequal object.language "English" %}{% trans "English" %}{% endifequal%}
+      {% ifequal object.language "German" %}{% trans "German" %}{% endifequal%}
+    </td>
+  </tr>
+  {% comment %}
+  <tr><td colspan="4" style="height:20px"></td></tr>
+  <tr>
+    <td colspan="2"><strong>{% trans "Estimated arrival" %}:</strong> {{ object.flightarrlocation }}</td>
+    <td colspan="2"><strong>{% trans "Estimated departure" %}:</strong> {{ object.flightdeplocation }}</td>
+  </tr>
+  {% endcomment %}
+  <tr><td colspan="4" style="height:20px"></td></tr>
+  <tr>
+    <td colspan="4">
+      <strong>
+      {% ifequal object.flightarrlocation "Arrival to Helsinki" %}{% trans "Arrival to Helsinki" %}:{% endifequal %}
+      {% ifequal object.flightarrlocation "Arrival to Tampere" %}{% trans "Arrival to Tampere" %}:{% endifequal %}
+      </strong> {{ object.flightarrdate }} <strong>{% trans "Time" %}:</strong> {{ object.flightarrtime }}<br/>
+      
+      <strong>
+      {% ifequal object.flightdeplocation "Departure from Tampere" %}{% trans "Departure from Tampere" %}:{% endifequal %}
+      {% ifequal object.flightdeplocation "Departure from Helsinki" %}{% trans "Departure from Helsinki" %}:{% endifequal %}
+      </strong> {{ object.flightdepdate }} <strong>{% trans "Time" %}:</strong> {{ object.flightdeptime }}
+    </td>
+  </tr>
+  <tr><td colspan="4" style="height:20px"></td></tr>
+  <tr>
+    <td colspan="4">
+      <strong>{% trans "In which hotel/hostel you are staying?" %}:</strong>
+      
+      {% ifequal object.hotel "1" %}Scandic Rosendahl{% endifequal %}
+      {% ifequal object.hotel "2" %}Scandic City Tampere{% endifequal %}
+      {% ifequal object.hotel "3" %}Cumulus Hämeenpuisto{% endifequal %}
+      {% ifequal object.hotel "4" %}Omena Hotel Tampere 1{% endifequal %}
+      {% ifequal object.hotel "5" %}Omena Hotel Tampere 2{% endifequal %}
+      {% ifequal object.hotel "6" %}Hostel Sofia{% endifequal %}
+      {% ifequal object.hotel "7" %}{{ object.hotelother }}{% endifequal %}
+      
+      <br/>
+      <strong>{% trans "Check-in date (yyyy-mm-dd)" %}:</strong> {{ object.hotelarrdate }}<br/>
+      <strong>{% trans "Check-out date (yyyy-mm-dd)" %}:</strong> {{ object.hoteldepdate }}<br/>
+    </td>
+  </tr>
+  <tr><td colspan="4" style="height:20px"></td></tr>
+  <tr>
+    <td colspan="4">
+      <strong>{% trans "Young & Tall" %}:</strong> {% if object.youngtall %}{% trans "Yes" %}{% else %}---{% endif %}<br/>
+      <strong>{% trans "Are you travelling with your parents?" %}:</strong>
+      {% ifequal object.withparents "Yes" %}{% trans "Yes" %}{% endifequal %}
+      {% ifequal object.withparents "No" %}{% trans "No" %}{% endifequal %}<br/>
+      <strong>{% trans "Parents name" %}:</strong> {{ object.parentsname }}<br>
+      <strong>{% trans "Parents mobile phone number" %}:</strong> {{ object.parentsmobile }}<br/>
+      <strong>{% trans "Guardians name" %}:</strong> {{ object.guardiansname }}<br/>
+      <strong>{% trans "Guardians mobile phone number" %}:</strong> {{ object.gurardiansmobile }}<br/>
+    </td>
+  </tr>
+  <tr><td colspan="4" style="height:20px"></td></tr>
+  <tr>
+    <td colspan="4">
+      <strong>{% trans "Vegetarian" %}:</strong> {% if object.dietvegetarian %}{% trans "Yes" %}{% else %}---{% endif %} 
+      <strong>{% trans "Gluten-free" %}:</strong> {% if object.dietglutenfree %}{% trans "Yes" %}{% else %}---{% endif %} 
+      <strong>{% trans "Diabetic" %}:</strong> {% if object.dietdiabetic %}{% trans "Yes" %}{% else %}---{% endif %} 
+      <strong>{% trans "Low lactose" %}:</strong> {% if object.dietlowlactose %}{% trans "Yes" %}{% else %}---{% endif %}
+    </td>
+  </tr>
+  <tr><td colspan="4" style="height:20px"></td></tr>
+  <tr>
+    <!-- ---------- r 1:11 ---------- -->
+    <td colspan="4">
+      <strong>{% trans "Do you need any personal assistance (if available) during the events?" %}:</strong> {% if object.assistance %}{% trans "Yes" %}{% else %}---{% endif %}<br/>
+      <strong>{% trans "Please specify" %}:</strong> {{ object.assistancespecify }}<br/>
+      <strong>{% trans "Other special needs or health risk factors the Organisation team should know?" %}:</strong> {% if object.specialneeds %}{% trans "Yes" %}{% else %}---{% endif %}<br/>
+      <strong>{% trans "Please specify" %}:</strong> {{ object.specialneedsspecify }}<br/>
+    </td>
+  </tr>
+  <tr><td colspan="4" style="height:20px"></td></tr>
+  </table>
+</div>
+
+<div style="page-break-after:always"></div>
+
+<div class="print" style="width:800px; padding:0 40px; background-color:#FFFFFF; font-family:Arial,Helvetica,sans-serif">
+  <h2>{% trans "Program Choices" %}</h2>
+  <table>
+  <tr>
+    <td><ul><li>{% trans "Arrival in Tampere &ndash; Welcome and Info packets" %}:</strong></li></ul></td>
+    <td style="width:200px; text-align:left">{% if object.prsuarrival %}{% trans "Yes" %}{% else %}{% trans "No" %}{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Viking Evening and 1st Big Welcome Evening" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prsu1welcome %}27,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Choose your wish for setting time*" %}:</strong></li></ul></td>
+    <td style="text-align:left">
+      {% ifequal object.prsusetting "setting_1" %}{% trans "First setting* at 6pm" %}{% endifequal %}
+      {% ifequal object.prsusetting "setting_2" %}{% trans "Second setting* at 9pm" %}{% endifequal %}
+    </td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Trip to the town of Nokia & Tampere sightseeing tour by bus" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prmonokia %}27,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Young&Tall &ndash; guided sightseeing tours in Tampere and a lot of fun" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prmotampere %}27,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "2nd Big Welcome Evening with infotainment, professional shows and live music" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prmo2welcome %}53,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Public meeting of the representatives of the European Council/Board" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prtuboard %}{% trans "Yes" %}{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "A possibility also for lunch exists, at additional cost" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prtulunch %}8,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Young&Tall &ndash; trip to the Särkänniemi Adventure park. Approx. 35 euro/person*" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prtuadvpark %}{% trans "Yes" %}{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Boat trip on Lake Pyhäjärvi & an outdoor evening on Viikinsaari Island." %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prtuboat %}40,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Full day trip to the capital of Finland, and&#133; (check one below)" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prwehelsinki %}68,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Boat trip to Suomenlinna incl. a historical video presentation. (Max 240 guests)" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prwesuomenlinna %}17,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "OR free time in Helsinki (approx. 4 hrs)" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prwefree %}{% trans "Yes" %}{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "The biggest summer celebration in Finland called &quot;Juhannus&quot;. A long day in the beautiful, authentic countryside atmosphere." %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prthujuhannus %}55,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Pispala & Pyynikki &ndash; The Pearls of Tampere. Guided walking & bus tour to the most essential part of the Finnish daily life and sauna traditions. Feel the heat&#133;" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prfrisaunapis %}37,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Optional Sauna at hotel Scandic Rosendahl / Cumulus Hämeenpuisto" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prfrisaunaros %}{% trans "Yes" %}{% else %}---{% endif %}{{ object. }}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Dancing and Entertainment in Scandic Rosendahl until the morning&#133;" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prsatgala %}70,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Sunday June 17th &ndash; Kiitos ja näkemiin! &ndash; Thank you and goodbye!" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.prsugoodbye %}{% trans "Yes" %}{% else %}---{% endif %}</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Additional yearly fee for the voluntary work on the European level" %}:</strong></li></ul></td>
+    <td style="text-align:left">8,00 &#8364;</td>
+  </tr>
+  <tr>
+    <td><ul><li>{% trans "Additional fee for Non-Tall Club members" %}:</strong></li></ul></td>
+    <td style="text-align:left">{% if object.nontallclub %}20,00 &#8364;{% else %}---{% endif %}</td>
+  </tr>
+  <tr style="height: 20px;"><td colspan="2"></td></tr>
+  <tr>
+    <td style="vertical-align:top">
+      <span style="float:right; margin-right: 20px; font-size:14pt; font-weight:bold"><h4 style="margin:0; padding:0">{% trans "Total amount EUR" %}</h4></span>
+    </td>
+    <td style="vertical-align:top">
+      <span style="float:left; color:#EE0000; font-size:14pt; font-weight:bold;">{{ object.total }} &#8364;</span>
+    </td>
+  </tr>
+  </table>
+{% endif %}
+</div>
+</body>
+</html>

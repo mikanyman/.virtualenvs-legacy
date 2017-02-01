@@ -1,0 +1,3 @@
+{% block topnavi %}
+  {% ssi /var/django/specs/templates/ssi/topnavi.inc parsed %}
+{% endblock %}

@@ -1,0 +1,103 @@
+﻿{% load i18n %}
+<div id="thumbs" class="navigation">
+    
+  <div class="top pagination">
+  <span class="current">1</span>
+  <a title="2" href="#16" rel="history">2</a>
+  <a title="Next ›" href="#16" rel="history">Next ›</a>
+  </div>
+  
+  <ul class="thumbs noscript">
+    
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/huhkojarvi_15/hh-10.9.2010-kullervon-kivi-huhkojarvi-15.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/huhkojarvi_15/hh-10.9.2010-kullervon-kivi-huhkojarvi-15_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/huhkojarvi_15/hh-10.9.2010-kullervon-kivi-huhkojarvi-15_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+    
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/huhkojarvi_4/hh-10.9.-2010-pirunkallio-huhkojarvi-4.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/huhkojarvi_4/hh-10.9.-2010-pirunkallio-huhkojarvi-4_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/huhkojarvi_4/hh-10.9.-2010-pirunkallio-huhkojarvi-4_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kirous_1/Kullervon-kirous-Valtion-taidemuseo-KKA-Hannu-Aaltonen-1.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kirous_1/Kullervon-kirous-Valtion-taidemuseo-KKA-Hannu-Aaltonen-1_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kirous_1/Kullervon-kirous-Valtion-taidemuseo-KKA-Hannu-Aaltonen-1_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+    
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kivikoski_44/kivikoski-1905-44.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kivikoski_44/kivikoski-1905-44_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kivikoski_44/kivikoski-1905-44_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+    
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kotakosken_37/hh-27.8.2010-kotakosken-suu-ja-silta-37.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kotakosken_37/hh-27.8.2010-kotakosken-suu-ja-silta-37_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kotakosken_37/hh-27.8.2010-kotakosken-suu-ja-silta-37_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+    
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kymonkoski_16/hh-19-08-2010-kymonkoski-16.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kymonkoski_16/hh-19-08-2010-kymonkoski-16_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kymonkoski_16/hh-19-08-2010-kymonkoski-16_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+    
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kymonkoski_17/ap-kymonkoski-17.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kymonkoski_17/ap-kymonkoski-17_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/kymonkoski_17/ap-kymonkoski-17_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+    
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/lumminvuorelta_33/hh-27.8.2010-nakyma-lumminvuorelta-33.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/lumminvuorelta_33/hh-27.8.2010-nakyma-lumminvuorelta-33_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/lumminvuorelta_33/hh-27.8.2010-nakyma-lumminvuorelta-33_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+    
+    <li>
+      <a class="thumb" name="leaf" href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/pilvinen_1/sjostrom-pilvinen-paiva-valtion-taidemuseo-kka-kuvaaja-hannu-aaltonen-1.jpg" title="{% trans 'Caption' %} #0">
+      <img src="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/pilvinen_1/sjostrom-pilvinen-paiva-valtion-taidemuseo-kka-kuvaaja-hannu-aaltonen-1_s.jpg" alt="{% trans 'Caption' %} #0" /></a>
+      <div class="caption">
+        <div class="download"><a href="http://a199.myrootshell.com:8080/maisemapaikka/staging/media/photologue/photos/kkm_demo/maisemat/pilvinen_1/sjostrom-pilvinen-paiva-valtion-taidemuseo-kka-kuvaaja-hannu-aaltonen-1_b.jpg">{% trans "Download Original" %}</a></div>
+        <div class="image-title">{% trans "Caption" %} #0</div>
+        <div class="image-desc">{% trans "Metadata" %}</div>
+      </div>
+    </li>
+    
+  </ul>
+</div>

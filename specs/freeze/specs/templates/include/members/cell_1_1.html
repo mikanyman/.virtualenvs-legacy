@@ -1,0 +1,10 @@
+{# extends cell_template_1_1 #}
+
+{% block content %}
+  {% for entry in entry_1_1_dict.items %}
+    {% for item in entry.1 %}
+      {{ item }}
+	  <p>Manual line: ABC {{ some_val }}</p>
+    {% endfor %}
+  {% endfor %}
+{% endblock %}

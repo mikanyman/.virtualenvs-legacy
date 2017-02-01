@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+
+{% block waypoints %}
+{% for waypoint in waypoints %}
+<div id={{waypoint.id}} class='waypoint linkOFF'>
+  {{waypoint.name}} ({{waypoint.geometry.y}}, {{waypoint.geometry.x}}, {{waypoint.place}}, {{waypoint.description}})
+</div>
+{% endfor %}
+{% endblock %}

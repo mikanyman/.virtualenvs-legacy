@@ -1,0 +1,134 @@
+{% load i18n %}
+<html>
+<head>
+  <title>Demo App | Items</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}css/styles.css" />
+</head>
+<body>
+
+  <div id="banner">
+    <div style="width:980; margin: 0 auto;">
+      <div style="float:right">
+        <img src="https://www.jyu.fi/++theme++jyu.theme2011dz/images/jyu-logo.png">
+      </div>
+      <div style="height:30px; padding-top:10px">
+	
+        <!-- login or register -->
+        <div id="login" style="float:left; margin-right:20px;">
+          {% if user.is_authenticated %}
+          <a href="/accounts/signout/?next=/en/list/">{% trans "Logout" %}</a> | 
+          <a href="/accounts/{{ user.username }}/">{% trans "View profile" %}</a>
+          {% else %}
+          <a href="/accounts/signin/">{% trans "Login" %}</a> | 
+          <a href="/accounts/signup/">{% trans "Register" %}</a>
+          {% endif %}
+        </div>
+        <!-- /login or register -->
+        
+        <!-- select language -->
+        <script type="text/javascript">
+        function setLangAndSubmit(lang) {
+        document.forms[0].elements["language"].value = lang;
+        {% if page_has_object %}
+        document.forms[0].elements["next"].value = '/'+lang+'/{{ gen_view }}/{{ object.id }}/';
+	{% else %}
+        document.forms[0].elements["next"].value = '/'+lang+'/{{ gen_view }}/';
+	{% endif %}
+        document.forms[0].submit();
+        }
+        </script>
+        <form method="post" action="/i18n/setlang/">{% csrf_token %}
+        <input type="hidden" name="language" value="">
+        <input type="hidden" name="next" value="">
+        <div id="flags" style="float:left; margin-right:20px;">
+          <a href="javascript:setLangAndSubmit('fi')"><img src="{{ STATIC_URL }}img/fi.png"></a> 
+          <a href="javascript:setLangAndSubmit('sv')"><img src="{{ STATIC_URL }}img/sv.png"></a> 
+          <a href="javascript:setLangAndSubmit('en')"><img src="{{ STATIC_URL }}img/en.png"></a>
+        </div>
+        <!-- /select language -->
+	
+	<!-- welcome -->
+        {% if user.is_authenticated %}
+        <div id="welcome" style="float:left">
+	  Welcome
+	  {% if user.first_name%}
+	    {{ user.first_name }}
+	  {% else %}
+	    {{ user.username }}
+	  {% endif %}
+	</div>
+        {% endif %}
+	<!-- /welcome -->
+	
+        </form><!-- /form -->
+	
+      </div>
+      <div style="color:#666666; font-weight:bold; font-size:14pt; margin-top:8px">CHRI - Cultural Heritage Research Infrastructure</div>
+      <div class="logotype">Research Data on Churches</div>
+    </div>
+  </div>
+
+  <div id="wrapper">
+    
+    <div id="topnavi">
+      <!-- TOPNAVI -->
+    </div>
+    
+    {% if user.is_authenticated %}
+    <div class="crud_menu_top">
+      
+      {% ifequal gen_view "list"%}
+      <ul>
+      <li><a href="/{{ lang }}/create/">ADD NEW ITEM</a></li>
+      </ul>
+      {% endifequal %}
+    
+      {% ifequal gen_view "create"%}
+      <ul>
+      <li><a href="/{{ lang }}/list/">LIST ITEMS</a></li>
+      </ul>
+      {% endifequal %}
+    
+      {% ifequal gen_view "detail"%}     
+      <ul>
+      <li><a href="/{{ lang }}/update/{{ object.id }}/">MODIFY ITEM</a></li>
+      <li><a href="/{{ lang }}/delete/{{ object.id }}/">DELETE ITEM</a></li>
+      <li><a href="/{{ lang }}/create/">ADD ITEM</a></li>
+      <li><a href="/{{ lang }}/list/">LIST ITEMS</a></li>
+      </ul>
+      {% endifequal %}
+    
+      {% ifequal gen_view "update"%}
+      <ul>
+      <li><a href="/{{ lang }}/list/">LIST ITEMS</a></li>
+      </ul>
+      {% endifequal %}
+    
+      {% ifequal gen_view "delete"%}
+      <ul>
+      <li><a href="/{{ lang }}/list/">LIST ITEMS</a></li>
+      </ul>
+    {% endifequal %}
+    
+    </div>
+    {% else %}
+      
+      <!-- if not auth -->
+      {% ifequal gen_view "detail"%}
+      <a href="/{{ lang }}/list/">List Items</a>
+      {% endifequal %}
+      
+    {% endif %}
+      
+    <div id="content">
+      {% block content %}{% endblock %}
+    </div>
+
+    <div id="footer">
+      Taiteiden ja kulttuurin tutkimuksen laitos | Synapse Computing
+    </div>
+
+  </div>
+
+</body>
+</html>

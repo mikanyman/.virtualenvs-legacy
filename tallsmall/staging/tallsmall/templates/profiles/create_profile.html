@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% comment %}
+# profiles/create_profile.html
+# This will display the form for users to initially fill in their
+# profiles; it receives one variable -- "form", representing the
+# form for profile creation -- directly, and also uses
+# "RequestContext" so that context processors will be applied.
+{% endcomment %}
+
+{% block title %}{% trans "Create Profile" %}{% endblock %}
+
+{% block description %}
+<span class="section_header">{% trans "My Profile" %}</span><span class="section_aspect"> | {% trans "Create" %}</span>
+{% endblock %}
+ 
+{% block content %}
+<h1>{% trans "Create profile" %}</h1>
+<form method="POST" action="">{% csrf_token %}
+<table id="form_table">
+{{ form.as_table }}
+</table>
+
+<div class="submit">
+  <input type="submit" name="submit" value="{% trans 'Create' %}" id="submit">
+</div>
+</form>
+{% endblock content %}

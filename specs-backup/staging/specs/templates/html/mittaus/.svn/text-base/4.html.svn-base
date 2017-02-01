@@ -1,0 +1,53 @@
+<style type="text/css">
+p {
+	margin-top: 25px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	}
+div.wrap {
+	width:auto;
+	height: 24px;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding: 0
+        }
+div.left {
+	float: left;
+	}
+div.center {
+	float: left;
+	margin-left: 130px;
+	}
+div.right {
+	float: right;
+	}
+a.arrow {
+	text-decoration:none;
+	font-size: 12pt;
+	color: #e5a83e
+	}
+</style>
+<p>
+<img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/etusivu4.jpg">
+</p>
+
+<div class="wrap">
+  <div class="left"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/3_5.html">&larr; Edellinen sivu</a></div>
+  <div class="center"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/sisallysluettelo.html">Sis&auml;llysluettelo</a></div>
+  <div class="right"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/5_1.html">Seuraava sivu &rarr;</a></div>
+</div>
+
+<h2>4 TUTKIMUKSEN TARKOITUS JA TUTKIMUKYSYMYKSET</h2>
+<p>
+Opinn&auml;ytety&ouml;n tarkoituksena oli kehitt&auml;&auml; ihmisen omatoimiseen mittaamiseen k&auml;ytett&auml;v&auml;
+ty&ouml;v&auml;line, sek&auml; selvitt&auml;&auml;, voidaanko sen avulla tuottaa luotettavaa tietoa alaraajojen
+mitoista vaatteiden ja jalkineiden mitoitusta varten.
+</p>
+<p>
+Opinn&auml;ytety&ouml;n t&auml;smennetyt kysymykset olivat:<br><br>
+1. Millainen ohjeistus varmistaa, ett&auml; omatoiminen mittaaminen tuottaa t&auml;sm&auml;llist&auml; mittatietoa
+alaraajojen mitoista?<br>
+2. Miss&auml; m&auml;&auml;rin koehenkil&ouml;iden mittaamat alaraajojen mitat eroavat asiantuntijoiden
+mittaamista mitoista?<br>
+</p>

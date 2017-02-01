@@ -1,0 +1,415 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Maisemapaikka\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-17 20:34+0200\n"
+"PO-Revision-Date: 2012-01-17 20:36+0200\n"
+"Last-Translator: Mika Nyman <mika.nyman@synapse-computing.com>\n"
+"Language-Team: Synapse Computing <info@synapse-computing.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: Finnish\n"
+"X-Poedit-Country: FINLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: .\context_processors.py:24
+#: .\templates\includes\aspects_churches.html.py:6
+#: .\templates\includes\aspects_churches.html.py:8
+#: .\templates\includes\aspects_landscapes.html.py:6
+#: .\templates\includes\aspects_landscapes.html.py:8
+#: .\templates\includes\aspects_rockart.html.py:6
+#: .\templates\includes\aspects_rockart.html.py:8
+#: .\templates\portal\churches_frontpg.html.py:5
+#: .\templates\portal\landscapes_frontpg.html.py:5
+#: .\templates\portal\rockart_frontpg.html.py:5
+msgid "Home"
+msgstr "Etusivu"
+
+#: .\context_processors.py:25
+#: .\templates\includes\aspects_churches.html.py:12
+#: .\templates\includes\aspects_churches.html.py:14
+#: .\templates\includes\aspects_landscapes.html.py:12
+#: .\templates\includes\aspects_landscapes.html.py:14
+#: .\templates\includes\aspects_rockart.html.py:12
+#: .\templates\includes\aspects_rockart.html.py:14
+msgid "Travel in Time"
+msgstr "Aikamatka"
+
+#: .\context_processors.py:26
+#: .\templates\includes\aspects_churches.html.py:18
+#: .\templates\includes\aspects_churches.html.py:20
+#: .\templates\includes\aspects_landscapes.html.py:18
+#: .\templates\includes\aspects_landscapes.html.py:20
+#: .\templates\includes\aspects_rockart.html.py:18
+#: .\templates\includes\aspects_rockart.html.py:20
+#: .\templates\portal\churches_photo.html.py:5
+#: .\templates\portal\landscapes_photo.html.py:5
+#: .\templates\portal\rockart_photo.html.py:5
+msgid "Images"
+msgstr "Kuvat"
+
+#: .\context_processors.py:27
+#: .\templates\includes\aspects_churches.html.py:24
+#: .\templates\includes\aspects_churches.html.py:26
+#: .\templates\includes\aspects_landscapes.html.py:24
+#: .\templates\includes\aspects_landscapes.html.py:26
+#: .\templates\includes\aspects_rockart.html.py:24
+#: .\templates\includes\aspects_rockart.html.py:26
+#: .\templates\portal\churches_research.html.py:5
+#: .\templates\portal\churches_rhtml.html.py:5
+#: .\templates\portal\landscapes_research.html.py:5
+#: .\templates\portal\landscapes_rhtml.html.py:5
+#: .\templates\portal\rockart_research.html.py:5
+#: .\templates\portal\rockart_rhtml.html.py:5
+msgid "Research"
+msgstr "Tutkimustietoa"
+
+#: .\context_processors.py:28
+#: .\templates\includes\aspects_churches.html.py:30
+#: .\templates\includes\aspects_churches.html.py:32
+#: .\templates\includes\aspects_landscapes.html.py:30
+#: .\templates\includes\aspects_landscapes.html.py:32
+#: .\templates\includes\aspects_rockart.html.py:30
+#: .\templates\includes\aspects_rockart.html.py:32
+#: .\templates\portal\churches_map.html.py:39
+#: .\templates\portal\landscapes_map.html.py:39
+#: .\templates\portal\rockart_map.html.py:39
+msgid "Map"
+msgstr "Kartta"
+
+#: .\context_processors.py:29
+#: .\templates\includes\aspects_churches.html.py:36
+#: .\templates\includes\aspects_churches.html.py:38
+#: .\templates\includes\aspects_landscapes.html.py:36
+#: .\templates\includes\aspects_landscapes.html.py:38
+#: .\templates\includes\aspects_rockart.html.py:36
+#: .\templates\includes\aspects_rockart.html.py:38
+#: .\templates\portal\churches_story.html.py:5
+#: .\templates\portal\landscapes_story.html.py:5
+#: .\templates\portal\rockart_story.html.py:5
+msgid "Stories"
+msgstr "Paikan tarinat"
+
+#: .\settings.py:50
+msgid "Finnish"
+msgstr "Suomi"
+
+#: .\settings.py:51
+msgid "Swedish"
+msgstr "Svenska"
+
+#: .\settings.py:52
+msgid "English"
+msgstr "English"
+
+#: .\apps\wiki\models.py:16
+msgid "creator"
+msgstr "tekijä"
+
+#: .\apps\wiki\models.py:17
+msgid "Creators"
+msgstr "Tekijät"
+
+#: .\apps\wiki\models.py:27
+msgid "tab"
+msgstr "välilehti"
+
+#: .\apps\wiki\models.py:28
+msgid "Tabs"
+msgstr "Välilehdet"
+
+#: .\apps\wiki\models.py:41
+msgid "remote page"
+msgstr "etäsivu"
+
+#: .\apps\wiki\models.py:42
+msgid "Remote pages"
+msgstr "Etäsivut"
+
+#: .\apps\wiki\models.py:69
+msgid "page"
+msgstr "sivu"
+
+#: .\apps\wiki\models.py:70
+msgid "Pages"
+msgstr "Sivut"
+
+#: .\templates\base.html.py:35
+msgid "Mindscapes"
+msgstr "Maisemapaikka"
+
+#: .\templates\base.html.py:36
+msgid "Discover the Landscape"
+msgstr "Löydä ympäristösi"
+
+#: .\templates\base.html.py:57
+msgid "Login"
+msgstr "Kirjaudu sisään"
+
+#: .\templates\base.html.py:58
+msgid "Register"
+msgstr "Rekisteröidy"
+
+#: .\templates\base.html.py:61
+msgid "Logout"
+msgstr "Kirjaudu ulos"
+
+#: .\templates\base.html.py:81
+#: .\templates\portal\landscapes_frontpg.html.py:5
+#: .\templates\portal\landscapes_map.html.py:39
+#: .\templates\portal\landscapes_photo.html.py:5
+#: .\templates\portal\landscapes_research.html.py:5
+#: .\templates\portal\landscapes_rhtml.html.py:5
+#: .\templates\portal\landscapes_story.html.py:5
+#: .\templates\portal\landscapes_time.html.py:5
+msgid "Landscapes"
+msgstr "Maisemat"
+
+#: .\templates\base.html.py:82
+msgid "Buildings"
+msgstr "Rakennukset"
+
+#: .\templates\base.html.py:83
+#: .\templates\portal\rockart_frontpg.html.py:5
+#: .\templates\portal\rockart_map.html.py:39
+#: .\templates\portal\rockart_photo.html.py:5
+#: .\templates\portal\rockart_research.html.py:5
+#: .\templates\portal\rockart_rhtml.html.py:5
+#: .\templates\portal\rockart_story.html.py:5
+#: .\templates\portal\rockart_time.html.py:5
+msgid "Rock Art"
+msgstr "Muinaistaide"
+
+#: .\templates\base.html.py:84
+msgid "My Places"
+msgstr "Minun maisemani"
+
+#: .\templates\base.html.py:85
+msgid "Administration"
+msgstr "Hallinta"
+
+#: .\templates\base.html.py:130
+#: .\templates\base.html.py:139
+#: .\templates\base.html.py:148
+msgid "Select Aspect"
+msgstr "Valitse näkökulma"
+
+#: .\templates\base.html.py:211
+msgid "Play Slideshow"
+msgstr "Näytä kuvaesitys"
+
+#: .\templates\base.html.py:212
+msgid "Pause Slideshow"
+msgstr "Keskeytä kuvaesitys"
+
+#: .\templates\base.html.py:213
+msgid "Previous Photo"
+msgstr "Edellinen kuva"
+
+#: .\templates\base.html.py:214
+msgid "Next Photo"
+msgstr "Seuraava kuva"
+
+#: .\templates\base.html.py:215
+msgid "Next"
+msgstr "Seuraava"
+
+#: .\templates\base.html.py:216
+msgid "Prev"
+msgstr "Edellinen"
+
+#: .\templates\includes\gallerific\thumbs.html.py:13
+#: .\templates\includes\gallerific\thumbs.html.py:14
+#: .\templates\includes\gallerific\thumbs.html.py:17
+#: .\templates\includes\gallerific\thumbs.html.py:23
+#: .\templates\includes\gallerific\thumbs.html.py:24
+#: .\templates\includes\gallerific\thumbs.html.py:29
+#: .\templates\includes\gallerific\thumbs.html.py:30
+#: .\templates\includes\gallerific\thumbs.html.py:33
+#: .\templates\includes\gallerific\thumbs.html.py:39
+#: .\templates\includes\gallerific\thumbs.html.py:40
+#: .\templates\includes\gallerific\thumbs.html.py:43
+#: .\templates\includes\gallerific\thumbs.html.py:49
+#: .\templates\includes\gallerific\thumbs.html.py:50
+#: .\templates\includes\gallerific\thumbs.html.py:53
+#: .\templates\includes\gallerific\thumbs.html.py:59
+#: .\templates\includes\gallerific\thumbs.html.py:60
+#: .\templates\includes\gallerific\thumbs.html.py:63
+#: .\templates\includes\gallerific\thumbs.html.py:69
+#: .\templates\includes\gallerific\thumbs.html.py:70
+#: .\templates\includes\gallerific\thumbs.html.py:73
+#: .\templates\includes\gallerific\thumbs.html.py:79
+#: .\templates\includes\gallerific\thumbs.html.py:80
+#: .\templates\includes\gallerific\thumbs.html.py:83
+#: .\templates\includes\gallerific\thumbs.html.py:89
+#: .\templates\includes\gallerific\thumbs.html.py:90
+#: .\templates\includes\gallerific\thumbs.html.py:93
+#: .\templates\includes\gallerific\thumbs.html.py:99
+#: .\templates\includes\gallerific\thumbs.html.py:100
+#: .\templates\includes\gallerific\thumbs.html.py:103
+#: .\templates\includes\gallerific\thumbs.html.py:109
+#: .\templates\includes\gallerific\thumbs.html.py:110
+#: .\templates\includes\gallerific\thumbs.html.py:113
+#: .\templates\includes\gallerific\thumbs.html.py:119
+#: .\templates\includes\gallerific\thumbs.html.py:120
+#: .\templates\includes\gallerific\thumbs.html.py:123
+#: .\templates\includes\gallerific\thumbs.html.py:129
+#: .\templates\includes\gallerific\thumbs.html.py:130
+#: .\templates\includes\gallerific\thumbs.html.py:133
+#: .\templates\includes\gallerific\thumbs.html.py:139
+#: .\templates\includes\gallerific\thumbs.html.py:140
+#: .\templates\includes\gallerific\thumbs.html.py:143
+#: .\templates\includes\gallerific\thumbs.html.py:149
+#: .\templates\includes\gallerific\thumbs.html.py:150
+#: .\templates\includes\gallerific\thumbs.html.py:153
+#: .\templates\includes\gallerific\thumbs.html.py:159
+#: .\templates\includes\gallerific\thumbs.html.py:160
+#: .\templates\includes\gallerific\thumbs.html.py:163
+#: .\templates\includes\gallerific\thumbs.html.py:169
+#: .\templates\includes\gallerific\thumbs.html.py:170
+#: .\templates\includes\gallerific\thumbs.html.py:173
+#: .\templates\includes\gallerific\thumbs.html.py:179
+#: .\templates\includes\gallerific\thumbs.html.py:180
+#: .\templates\includes\gallerific\thumbs.html.py:183
+#: .\templates\includes\gallerific\thumbs.html.py:189
+#: .\templates\includes\gallerific\thumbs.html.py:190
+#: .\templates\includes\gallerific\thumbs.html.py:193
+#: .\templates\includes\gallerific\thumbs.html.py:199
+#: .\templates\includes\gallerific\thumbs.html.py:200
+#: .\templates\includes\gallerific\thumbs.html.py:203
+#: .\templates\includes\gallerific\thumbs.html.py:209
+#: .\templates\includes\gallerific\thumbs.html.py:210
+#: .\templates\includes\gallerific\thumbs.html.py:213
+#: .\templates\includes\gallerific\thumbs.html.py:219
+#: .\templates\includes\gallerific\thumbs.html.py:220
+#: .\templates\includes\gallerific\thumbs.html.py:223
+#: .\templates\includes\gallerific\thumbs.html.py:229
+#: .\templates\includes\gallerific\thumbs.html.py:230
+#: .\templates\includes\gallerific\thumbs.html.py:233
+#: .\templates\includes\gallerific\thumbs.html.py:239
+#: .\templates\includes\gallerific\thumbs.html.py:240
+#: .\templates\includes\gallerific\thumbs.html.py:243
+msgid "Caption"
+msgstr "Kuvateksti"
+
+#: .\templates\includes\gallerific\thumbs.html.py:16
+#: .\templates\includes\gallerific\thumbs.html.py:32
+#: .\templates\includes\gallerific\thumbs.html.py:42
+#: .\templates\includes\gallerific\thumbs.html.py:52
+#: .\templates\includes\gallerific\thumbs.html.py:62
+#: .\templates\includes\gallerific\thumbs.html.py:72
+#: .\templates\includes\gallerific\thumbs.html.py:82
+#: .\templates\includes\gallerific\thumbs.html.py:92
+#: .\templates\includes\gallerific\thumbs.html.py:102
+#: .\templates\includes\gallerific\thumbs.html.py:112
+#: .\templates\includes\gallerific\thumbs.html.py:122
+#: .\templates\includes\gallerific\thumbs.html.py:132
+#: .\templates\includes\gallerific\thumbs.html.py:142
+#: .\templates\includes\gallerific\thumbs.html.py:152
+#: .\templates\includes\gallerific\thumbs.html.py:162
+#: .\templates\includes\gallerific\thumbs.html.py:172
+#: .\templates\includes\gallerific\thumbs.html.py:182
+#: .\templates\includes\gallerific\thumbs.html.py:192
+#: .\templates\includes\gallerific\thumbs.html.py:202
+#: .\templates\includes\gallerific\thumbs.html.py:212
+#: .\templates\includes\gallerific\thumbs.html.py:222
+#: .\templates\includes\gallerific\thumbs.html.py:232
+#: .\templates\includes\gallerific\thumbs.html.py:242
+msgid "Download Original"
+msgstr "Lataa alkuperäinen kuva"
+
+#: .\templates\includes\gallerific\thumbs.html.py:18
+#: .\templates\includes\gallerific\thumbs.html.py:34
+#: .\templates\includes\gallerific\thumbs.html.py:44
+#: .\templates\includes\gallerific\thumbs.html.py:54
+#: .\templates\includes\gallerific\thumbs.html.py:64
+#: .\templates\includes\gallerific\thumbs.html.py:74
+#: .\templates\includes\gallerific\thumbs.html.py:84
+#: .\templates\includes\gallerific\thumbs.html.py:94
+#: .\templates\includes\gallerific\thumbs.html.py:104
+#: .\templates\includes\gallerific\thumbs.html.py:114
+#: .\templates\includes\gallerific\thumbs.html.py:124
+#: .\templates\includes\gallerific\thumbs.html.py:134
+#: .\templates\includes\gallerific\thumbs.html.py:144
+#: .\templates\includes\gallerific\thumbs.html.py:154
+#: .\templates\includes\gallerific\thumbs.html.py:164
+#: .\templates\includes\gallerific\thumbs.html.py:174
+#: .\templates\includes\gallerific\thumbs.html.py:184
+#: .\templates\includes\gallerific\thumbs.html.py:194
+#: .\templates\includes\gallerific\thumbs.html.py:204
+#: .\templates\includes\gallerific\thumbs.html.py:214
+#: .\templates\includes\gallerific\thumbs.html.py:224
+#: .\templates\includes\gallerific\thumbs.html.py:234
+#: .\templates\includes\gallerific\thumbs.html.py:244
+msgid "Metadata"
+msgstr "Metatiedot"
+
+#: .\templates\includes\gallerific\thumbs.html.py:25
+msgid "Any html can be placed here..."
+msgstr "Tähän mitä tahansa HTML-tekstiä..."
+
+#: .\templates\portal\churches_frontpg.html.py:5
+#: .\templates\portal\churches_map.html.py:39
+#: .\templates\portal\churches_photo.html.py:5
+#: .\templates\portal\churches_research.html.py:5
+#: .\templates\portal\churches_rhtml.html.py:5
+#: .\templates\portal\churches_story.html.py:5
+#: .\templates\portal\churches_time.html.py:5
+msgid "Buildings and Monuments"
+msgstr "Rakennukset"
+
+#: .\templates\portal\churches_frontpg.html.py:15
+#: .\templates\portal\churches_story.html.py:15
+#: .\templates\portal\churches_time.html.py:15
+#: .\templates\portal\landscapes_frontpg.html.py:15
+#: .\templates\portal\landscapes_story.html.py:16
+#: .\templates\portal\landscapes_time.html.py:15
+#: .\templates\portal\rockart_frontpg.html.py:15
+#: .\templates\portal\rockart_story.html.py:15
+#: .\templates\portal\rockart_time.html.py:15
+msgid "Comments"
+msgstr "Kommentit"
+
+#: .\templates\portal\churches_rhtml.html.py:11
+#: .\templates\portal\landscapes_rhtml.html.py:11
+#: .\templates\portal\rockart_rhtml.html.py:11
+msgid "Back to List"
+msgstr "Takaisin luettelosivulle"
+
+#: .\templates\portal\churches_time.html.py:5
+#: .\templates\portal\landscapes_time.html.py:5
+#: .\templates\portal\rockart_time.html.py:5
+msgid "Travel in time"
+msgstr "Aikamatka"
+
+#: .\templates\profiles\create_profile.html.py:11
+msgid "Create Profile"
+msgstr "Luo profiili"
+
+#: .\templates\profiles\create_profile.html.py:14
+#, fuzzy
+msgid "My Profile"
+msgstr "Minun maisemani"
+
+#: .\templates\profiles\create_profile.html.py:14
+#: .\templates\profiles\create_profile.html.py:25
+#, fuzzy
+msgid "Create"
+msgstr "Tekijät"
+
+#: .\templates\profiles\create_profile.html.py:18
+msgid "Create profile"
+msgstr "Luo profiili"
+
+#~ msgid "Place"
+#~ msgstr "Paikka"
+
+#~ msgid "Photographer"
+#~ msgstr "Valokuvaaja"

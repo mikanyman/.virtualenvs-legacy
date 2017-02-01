@@ -1,0 +1,82 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Pieni- ja Isokenk&auml;iset ry</title>
+<link href="http://www.tallsmall.fi:8080/site_media/css/styles.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="http://www.tallsmall.fi:8080/site_media/favicons/pikryfav.ico" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23670215-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body id="{{ tab }}">
+<div id="wrap">
+
+  <!-- header -->
+  <div id="header">
+    {% include "include/header_left_registration.html" %}
+    <span id="lang">
+      <a href="/fi/{{ profile }}/{{ event }}/{{ app }}/{{ pg }}/" id="fiLink"><img src="http://www.tallsmall.fi:8080/site_media/img/flags/flag_fi.gif" border="0"></a> 
+      <a href="/sv/{{ profile }}/{{ event }}/{{ app }}/{{ pg }}/" id="swLink"><img src="http://www.tallsmall.fi:8080/site_media/img/flags/flag_se.gif" border="0"></a> 
+      <a href="/ru/{{ profile }}/{{ event }}/{{ app }}/{{ pg }}/" id="ruLink"><img src="http://www.tallsmall.fi:8080/site_media/img/flags/flag_ru.gif" border="0"></a> 
+      <a href="/en/{{ profile }}/{{ event }}/{{ app }}/{{ pg }}/" id="enLink"><img src="http://www.tallsmall.fi:8080/site_media/img/flags/flag_gb.gif" border="0"></a> 
+      <a href="/de/{{ profile }}/{{ event }}/{{ app }}/{{ pg }}/" id="geLink"><img src="http://www.tallsmall.fi:8080/site_media/img/flags/flag_de.gif" border="0"></a>
+      <a href="/no/{{ profile }}/{{ event }}/{{ app }}/{{ pg }}/" id="noLink"><img src="http://www.tallsmall.fi:8080/site_media/img/flags/flag_no.gif" border="0"></a> 
+    </span>
+	{% comment %}
+    <span id="event">
+      <a href="/{{ lang }}/{{ profile }}/e1/{{ app }}/{{ pg }}/" id="p1Link">e1</a> |
+      <a href="/{{ lang }}/{{ profile }}/e2/{{ app }}/{{ pg }}/" id_"p2Link">e2</a>
+    </span>
+	{% endcomment %}
+    <span id="profile">
+      <a href="/{{ lang }}/tall/{{ event }}/{{ app }}/{{ pg }}/" id="tallLink">{% trans "Tall" %}</a> | 
+      <a href="/{{ lang }}/small/{{ event }}/{{ app }}/{{ pg }}/" id="smallLink">{% trans "Small" %}</a> | 
+      <a href="/{{ lang }}/all/{{ event }}/{{ app }}/{{ pg }}/" id="allLink">{% trans "All" %}</a>&nbsp;
+    </span>
+  </div>
+  <!-- /header -->
+
+  <!-- topbanner, topnavi -->
+  <div id="topbanner">
+  	<div id="banner">
+      <div id="logotext"></div>
+    </div>
+    <div id="topnavi">
+      {% include "menus/topnavi.html" %}
+    </div>
+  </div>
+  <!-- /topbanner -->
+
+  <!-- statusbar -->
+  <div id="statusbar">
+  	<div id="statusbar_frame">
+      <span class="page_name">{{ page_name }}</span><span class="crumb_path">{{ crumb_path|safe }}</span>
+	</div>
+  </div>
+  <!-- /statusbar -->
+
+  <!-- content -->
+  {% block content %}{% endblock %}
+  <!-- /content -->
+
+  <!-- footer -->
+  <div id="footer">
+  	<span>Pieni- ja Isokenk&auml;iset ry &nbsp;|&nbsp; PL 186 &nbsp;|&nbsp; 00931 Helsinki &nbsp;|&nbsp; toimisto(at)<!--&#64;-->tallsmall.fi</span>
+  </div>
+  <!-- /footer -->
+
+</div>
+</body>
+</html>

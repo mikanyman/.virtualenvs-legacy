@@ -1,0 +1,335 @@
+[
+    {
+        "pk": 8, 
+        "model": "pages.page", 
+        "fields": {
+            "name": "services"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "pages.page", 
+        "fields": {
+            "name": "products"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "pages.page", 
+        "fields": {
+            "name": "projects"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "pages.page", 
+        "fields": {
+            "name": "technologies"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "pages.page", 
+        "fields": {
+            "name": "standards"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "pages.page", 
+        "fields": {
+            "name": "company"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "pages.lang", 
+        "fields": {
+            "label": "fi"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "pages.lang", 
+        "fields": {
+            "label": "sv"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "pages.lang", 
+        "fields": {
+            "label": "en"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 3, 
+            "updated": "2011-07-20 19:59:46", 
+            "author": 1, 
+            "title": "Services (en)", 
+            "summary": "", 
+            "content": "<h1>Services</h1>\r\n<ul>\r\n<li>From Concept Development to Production</li>\r\n<li>Scaleable cloud hosting of projects and sites (VM Ware)</li>\r\n<li>Stable, versatile, extensible CMS</li>\r\n<li>Layered environment for projects (Development - Staging - Production)</li>\r\n<li>Subversion/Trac version management</li>\r\n</ul>\r\n<!--\r\n<p>Tools</p>\r\n<p>Ideas</p>\r\n<p>Documents</p>\r\n<p>APIs</p>\r\n<p>Courses</p>\r\n<p>Tutoring</p>\r\n-->", 
+            "created": "2010-07-14 01:00:29", 
+            "slug": "services-en", 
+            "page": 8
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 2, 
+            "updated": "2010-09-29 02:16:27", 
+            "author": 1, 
+            "title": "Services (sv)", 
+            "summary": "", 
+            "content": "<h1>Tj\u00e4nster</h1>\r\n\r\n<p>H\u00e4rb\u00e4rgering (hosting) av projekt och tj\u00e4nster i en molnomgivning (VM Ware)</p>\r\n<p>Anpassningsbart inneh\u00e5llshanteringssystem for projekt och tj\u00e4nster (inklusive  bloggar)</p>\r\n<p>Trac wikis f\u00f6r projektplanering och styrning</p>", 
+            "created": "2010-07-14 01:00:01", 
+            "slug": "services-sv", 
+            "page": 8
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 1, 
+            "updated": "2010-07-24 20:36:11", 
+            "author": 1, 
+            "title": "Services (fi)", 
+            "summary": null, 
+            "content": "<h1>Services</h1>\r\n<p>Services (fi) - Animi cum possimus id eveniet minus similique      excepturi ipsa reiciendis  nemo provident, necessitatibus fuga quibusdam      omnis veritatis. Ipsam  harum nesciunt expedita asperiores,     consectetur  atque culpa ratione,  repellendus numquam accusantium     maxime esse  doloribus in labore quidem.  Quia deleniti fugiat     laboriosam dignissimos  at ea sapiente culpa  quisquam, placeat in     dolores, nobis ipsum quam,  optio eligendi ipsam?  Accusamus id     voluptates explicabo, eaque itaque  dolorum expedita  veritatis impedit     architecto harum quam deserunt  placeat, blanditiis  maiores unde     suscipit saepe tempora ut eius, fuga  sit aspernatur  consequatur     impedit saepe tenetur, asperiores nam ad?   Inventore dolorum quas     impedit cum voluptas quibusdam molestiae placeat   porro optio, dolore     incidunt explicabo illum quaerat molestiae   temporibus id suscipit     error quas, molestiae consequuntur totam quidem   in assumenda odio.</p>\r\n<p>Animi cum possimus id eveniet minus similique excepturi ipsa      reiciendis  nemo provident, necessitatibus fuga quibusdam omnis      veritatis. Ipsam  harum nesciunt expedita asperiores, consectetur atque      culpa ratione,  repellendus numquam accusantium maxime esse  doloribus    in  labore quidem.  Quia deleniti fugiat laboriosam  dignissimos at ea     sapiente culpa  quisquam, placeat in dolores,  nobis ipsum quam,  optio    eligendi ipsam?  Accusamus id voluptates  explicabo, eaque  itaque  dolorum   expedita  veritatis impedit  architecto harum quam  deserunt  placeat,   blanditiis  maiores unde  suscipit saepe tempora ut  eius, fuga  sit   aspernatur  consequatur  impedit saepe tenetur,  asperiores nam ad?     Inventore dolorum quas  impedit cum voluptas  quibusdam molestiae  placeat    porro optio,  dolore incidunt explicabo  illum quaerat  molestiae    temporibus id  suscipit error quas, molestiae  consequuntur  totam quidem    in  assumenda odio.</p>", 
+            "created": "2010-07-14 00:59:32", 
+            "slug": "services-fi", 
+            "page": 8
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 3, 
+            "updated": "2010-07-26 02:38:21", 
+            "author": 1, 
+            "title": "Products (en)", 
+            "summary": "", 
+            "content": "<h1>Products</h1>\r\n<p>Products (en) - Animi cum <strong>possimus </strong>id eveniet minus similique      excepturi ipsa reiciendis  nemo provident, necessitatibus fuga quibusdam      omnis veritatis. Ipsam  harum nesciunt expedita asperiores,     consectetur  atque culpa ratione,  repellendus numquam accusantium     maxime esse  doloribus in labore quidem.  Quia deleniti fugiat     laboriosam dignissimos  at ea sapiente culpa  quisquam, placeat in     dolores, nobis ipsum quam,  optio eligendi ipsam?  Accusamus id     voluptates explicabo, eaque itaque  dolorum expedita  veritatis impedit     architecto harum quam deserunt  placeat, blanditiis  maiores unde     suscipit saepe tempora ut eius, fuga  sit aspernatur  consequatur     impedit saepe tenetur, asperiores nam ad?   Inventore dolorum quas     impedit cum voluptas quibusdam molestiae placeat   porro optio, dolore     incidunt explicabo illum quaerat molestiae   temporibus id suscipit     error quas, molestiae consequuntur totam quidem   in assumenda odio.</p>\r\n<p>Animi cum possimus id eveniet minus similique excepturi ipsa      reiciendis  nemo provident, necessitatibus fuga quibusdam omnis      veritatis. Ipsam  harum nesciunt expedita asperiores, consectetur atque      culpa ratione,  repellendus numquam accusantium maxime esse  doloribus    in  labore quidem.  Quia deleniti fugiat laboriosam  dignissimos at ea     sapiente culpa  quisquam, placeat in dolores,  nobis ipsum quam,  optio    eligendi ipsam?  Accusamus id voluptates  explicabo, eaque  itaque  dolorum   expedita  veritatis impedit  architecto harum quam  deserunt  placeat,   blanditiis  maiores unde  suscipit saepe tempora ut  eius, fuga  sit   aspernatur  consequatur  impedit saepe tenetur,  asperiores nam ad?     Inventore dolorum quas  impedit cum voluptas  quibusdam molestiae  placeat    porro optio,  dolore incidunt explicabo  illum quaerat  molestiae    temporibus id  suscipit error quas, molestiae  consequuntur  totam quidem    in  assumenda odio.</p>", 
+            "created": "2010-07-14 00:58:26", 
+            "slug": "products-en", 
+            "page": 7
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 2, 
+            "updated": "2010-07-24 20:36:43", 
+            "author": 1, 
+            "title": "Products (sv)", 
+            "summary": null, 
+            "content": "<h1>Products</h1>\r\n<p>Products (sv) - Animi cum possimus id eveniet minus similique      excepturi ipsa reiciendis  nemo provident, necessitatibus fuga quibusdam      omnis veritatis. Ipsam  harum nesciunt expedita asperiores,     consectetur  atque culpa ratione,  repellendus numquam accusantium     maxime esse  doloribus in labore quidem.  Quia deleniti fugiat     laboriosam dignissimos  at ea sapiente culpa  quisquam, placeat in     dolores, nobis ipsum quam,  optio eligendi ipsam?  Accusamus id     voluptates explicabo, eaque itaque  dolorum expedita  veritatis impedit     architecto harum quam deserunt  placeat, blanditiis  maiores unde     suscipit saepe tempora ut eius, fuga  sit aspernatur  consequatur     impedit saepe tenetur, asperiores nam ad?   Inventore dolorum quas     impedit cum voluptas quibusdam molestiae placeat   porro optio, dolore     incidunt explicabo illum quaerat molestiae   temporibus id suscipit     error quas, molestiae consequuntur totam quidem   in assumenda odio.</p>\r\n<p>Animi cum possimus id eveniet minus similique excepturi ipsa      reiciendis  nemo provident, necessitatibus fuga quibusdam omnis      veritatis. Ipsam  harum nesciunt expedita asperiores, consectetur atque      culpa ratione,  repellendus numquam accusantium maxime esse  doloribus    in  labore quidem.  Quia deleniti fugiat laboriosam  dignissimos at ea     sapiente culpa  quisquam, placeat in dolores,  nobis ipsum quam,  optio    eligendi ipsam?  Accusamus id voluptates  explicabo, eaque  itaque  dolorum   expedita  veritatis impedit  architecto harum quam  deserunt  placeat,   blanditiis  maiores unde  suscipit saepe tempora ut  eius, fuga  sit   aspernatur  consequatur  impedit saepe tenetur,  asperiores nam ad?     Inventore dolorum quas  impedit cum voluptas  quibusdam molestiae  placeat    porro optio,  dolore incidunt explicabo  illum quaerat  molestiae    temporibus id  suscipit error quas, molestiae  consequuntur  totam quidem    in  assumenda odio.</p>", 
+            "created": "2010-07-14 00:57:49", 
+            "slug": "products-sv", 
+            "page": 7
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 1, 
+            "updated": "2010-07-24 20:36:58", 
+            "author": 1, 
+            "title": "Products (fi)", 
+            "summary": null, 
+            "content": "<h1>Products</h1>\r\n<p>Products (fi) - Animi cum possimus id eveniet minus similique      excepturi ipsa reiciendis  nemo provident, necessitatibus fuga quibusdam      omnis veritatis. Ipsam  harum nesciunt expedita asperiores,     consectetur  atque culpa ratione,  repellendus numquam accusantium     maxime esse  doloribus in labore quidem.  Quia deleniti fugiat     laboriosam dignissimos  at ea sapiente culpa  quisquam, placeat in     dolores, nobis ipsum quam,  optio eligendi ipsam?  Accusamus id     voluptates explicabo, eaque itaque  dolorum expedita  veritatis impedit     architecto harum quam deserunt  placeat, blanditiis  maiores unde     suscipit saepe tempora ut eius, fuga  sit aspernatur  consequatur     impedit saepe tenetur, asperiores nam ad?   Inventore dolorum quas     impedit cum voluptas quibusdam molestiae placeat   porro optio, dolore     incidunt explicabo illum quaerat molestiae   temporibus id suscipit     error quas, molestiae consequuntur totam quidem   in assumenda odio.</p>\r\n<p>Animi cum possimus id eveniet minus similique excepturi ipsa      reiciendis  nemo provident, necessitatibus fuga quibusdam omnis      veritatis. Ipsam  harum nesciunt expedita asperiores, consectetur atque      culpa ratione,  repellendus numquam accusantium maxime esse  doloribus    in  labore quidem.  Quia deleniti fugiat laboriosam  dignissimos at ea     sapiente culpa  quisquam, placeat in dolores,  nobis ipsum quam,  optio    eligendi ipsam?  Accusamus id voluptates  explicabo, eaque  itaque  dolorum   expedita  veritatis impedit  architecto harum quam  deserunt  placeat,   blanditiis  maiores unde  suscipit saepe tempora ut  eius, fuga  sit   aspernatur  consequatur  impedit saepe tenetur,  asperiores nam ad?     Inventore dolorum quas  impedit cum voluptas  quibusdam molestiae  placeat    porro optio,  dolore incidunt explicabo  illum quaerat  molestiae    temporibus id  suscipit error quas, molestiae  consequuntur  totam quidem    in  assumenda odio.</p>", 
+            "created": "2010-07-14 00:57:18", 
+            "slug": "products-fi", 
+            "page": 7
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 3, 
+            "updated": "2010-09-28 22:21:54", 
+            "author": 1, 
+            "title": "Projects (en)", 
+            "summary": "", 
+            "content": "<h1>Projects</h1>\r\n<p>Workspaces for projects</p>\r\n<p>\r\n  <a href=\"/trac/acerbi/\">The Acerbi Project</a> <span style=\"color: grey\">The National Library of Finland</span><br/>\r\n  <a href=\"/trac/maisemat/\">Journey through the Landscape</a> <span style=\"color: grey\">The University of Jyv\u00e4skyl\u00e4</span><br/>\r\n  <a href=\"/trac/synapse/\">Ephemera</a> <span style=\"color: grey\">The National Library of Finland</span><br/>\r\n  <a href=\"/trac/synapse/\">Palestinian Cultural Heritage</a> <span style=\"color: grey\">Beit Atfal Assumoud (Lebanon)</span><br/>\r\n<br/>\r\n  <a href=\"/trac/synapse/\">Internal</a> <span style=\"color: grey\">Synapse Computing</span><br/>\r\n</p>", 
+            "created": "2010-07-14 00:51:46", 
+            "slug": "projects-en", 
+            "page": 6
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 2, 
+            "updated": "2010-09-28 22:22:10", 
+            "author": 1, 
+            "title": "Projects (sv)", 
+            "summary": "", 
+            "content": "<h1>Projekt</h1>\r\n<p>Virtuella projektrum</p>\r\n<p>\r\n  <a href=\"/trac/acerbi/\">Acerbi-projektet</a> <span style=\"color: grey\">Nationalbiblioteket</span><br/>\r\n  <a href=\"/trac/maisemat/\">Resa i landskapet</a> <span style=\"color: grey\">Jyv\u00e4skyl\u00e4 universitet</span><br/>\r\n  <a href=\"/trac/synapse/\">Ephemera</a> <span style=\"color: grey\">Nationalbiblioteket</span><br/>\r\n  <a href=\"/trac/synapse/\">Det palestinska kulturarvet</a> <span style=\"color: grey\">Beit Atfal Assumoud (Libanon)</span><br/>\r\n<br/>\r\n  <a href=\"/trac/synapse/\">Internt</a> <span style=\"color: grey\">Synapse Computing</span><br/>\r\n</p>", 
+            "created": "2010-07-14 00:51:05", 
+            "slug": "projects-sv", 
+            "page": 6
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 1, 
+            "updated": "2010-09-28 22:22:27", 
+            "author": 1, 
+            "title": "Projects (fi)", 
+            "summary": "", 
+            "content": "<h1>Projektit</h1>\r\n<p>Virtuaaliset projektitilat</p>\r\n<p>\r\n  <a href=\"/trac/acerbi/\">Acerbi-projekti</a> <span style=\"color: grey\">Kansalliskirjasto</span><br/>\r\n  <a href=\"/trac/maisemat/\">Matka maisemaan</a> <span style=\"color: grey\">Jyv\u00e4skyl\u00e4n yliopisto</span><br/>\r\n  <a href=\"/trac/synapse/\">Ephemera</a> <span style=\"color: grey\">Kansalliskirjasto</span><br/>\r\n  <a href=\"/trac/synapse/\">Palestiinalaisten kulttuuriperint\u00f6</a> <span style=\"color: grey\">Beit Atfal Assumoud (Libanon)</span><br/>\r\n<br/>\r\n  <a href=\"/trac/synapse/\">Sis\u00e4inen</a> <span style=\"color: grey\">Synapse Computing</span><br/>\r\n</p>", 
+            "created": "2010-07-14 00:50:16", 
+            "slug": "projects-fi", 
+            "page": 6
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 3, 
+            "updated": "2010-09-27 13:03:44", 
+            "author": 1, 
+            "title": "Technologies (en)", 
+            "summary": "", 
+            "content": "<h1>Technologies</h1>\r\n<p>Our services are beeing transfered to a high availability Cloud Computing environment for the benefit of our customers and partners.</p>", 
+            "created": "2010-07-14 00:45:19", 
+            "slug": "technologies-en", 
+            "page": 5
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 2, 
+            "updated": "2010-09-27 13:10:25", 
+            "author": 1, 
+            "title": "Technologies (sv)", 
+            "summary": "", 
+            "content": "<h1>Technologies</h1>\r\n<p>V\u00e5ra tj\u00e4nster flyttas till en molnomgivning (Cloud Computing) f\u00f6r att erbjuda h\u00f6g tillg\u00e4nlighet och skalerbarhet \u00e5t v\u00e5ra kunder och partner.</p>", 
+            "created": "2010-07-14 00:44:32", 
+            "slug": "technologies-sv", 
+            "page": 5
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 1, 
+            "updated": "2010-09-27 13:14:07", 
+            "author": 1, 
+            "title": "Technologies (fi)", 
+            "summary": "", 
+            "content": "<h1>Technologies</h1>\r\n<p>Palvelumme siirret\u00e4\u00e4n pilviymp\u00e4rist\u00f6\u00f6n (Cloud Computing) voidaksemme tarjota korkean saavutettavuuden ja skaalautuvuuden asiakkaillemme ja kumppaneillemme.</p>", 
+            "created": "2010-07-14 00:44:06", 
+            "slug": "technologies-fi", 
+            "page": 5
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 3, 
+            "updated": "2010-08-04 00:30:17", 
+            "author": 1, 
+            "title": "Standards (en)", 
+            "summary": "", 
+            "content": "<h1>Standards</h1>\r\n<p>Our work is based on the conviction that classification and description of stored digital objects should be based on explicit conceptual models. In the library community these models are called Functional Requirements.</p>\r\n<p>We also emphasise the role of official institutional standards and participate in their development. At the same time we believe that institutions should be in touch with experimental projects and scolarly research on order to evaluate, evolve and enrich institutional standards.</p>\r\n<p>One of our special interest is to investigate the cognitive grounding of Conceptual Models - how digital solutions reflect the human cognitive system including the neural wiring of the brain and the phenomenology of mind.</p>", 
+            "created": "2010-07-14 00:39:01", 
+            "slug": "standards-en", 
+            "page": 4
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 2, 
+            "updated": "2010-07-22 02:59:59", 
+            "author": 1, 
+            "title": "Standards (sv)", 
+            "summary": null, 
+            "content": "<h1>Standards</h1>\r\n<p>Standards (sv) - Animi cum possimus id eveniet minus similique   excepturi ipsa reiciendis  nemo provident, necessitatibus fuga quibusdam   omnis veritatis. Ipsam  harum nesciunt expedita asperiores,  consectetur  atque culpa ratione,  repellendus numquam accusantium  maxime esse  doloribus in labore quidem.  Quia deleniti fugiat  laboriosam dignissimos  at ea sapiente culpa  quisquam, placeat in  dolores, nobis ipsum quam,  optio eligendi ipsam?  Accusamus id  voluptates explicabo, eaque itaque  dolorum expedita  veritatis impedit  architecto harum quam deserunt  placeat, blanditiis  maiores unde  suscipit saepe tempora ut eius, fuga  sit aspernatur  consequatur  impedit saepe tenetur, asperiores nam ad?   Inventore dolorum quas  impedit cum voluptas quibusdam molestiae placeat   porro optio, dolore  incidunt explicabo illum quaerat molestiae   temporibus id suscipit  error quas, molestiae consequuntur totam quidem   in assumenda odio.</p>\r\n<p>Animi cum possimus id eveniet minus similique excepturi ipsa   reiciendis  nemo provident, necessitatibus fuga quibusdam omnis   veritatis. Ipsam  harum nesciunt expedita asperiores, consectetur atque   culpa ratione,  repellendus numquam accusantium maxime esse doloribus  in  labore quidem.  Quia deleniti fugiat laboriosam dignissimos at ea   sapiente culpa  quisquam, placeat in dolores, nobis ipsum quam, optio   eligendi ipsam?  Accusamus id voluptates explicabo, eaque itaque dolorum   expedita  veritatis impedit architecto harum quam deserunt placeat,   blanditiis  maiores unde suscipit saepe tempora ut eius, fuga sit   aspernatur  consequatur impedit saepe tenetur, asperiores nam ad?    Inventore dolorum quas impedit cum voluptas quibusdam molestiae placeat    porro optio, dolore incidunt explicabo illum quaerat molestiae    temporibus id suscipit error quas, molestiae consequuntur totam quidem    in assumenda odio.</p>", 
+            "created": "2010-07-14 00:38:33", 
+            "slug": "standards-sv", 
+            "page": 4
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 1, 
+            "updated": "2010-07-22 03:00:28", 
+            "author": 1, 
+            "title": "Standards (fi)", 
+            "summary": null, 
+            "content": "<h1>Standards</h1>\r\n<p>Standards (fi) - Animi cum possimus id eveniet minus similique   excepturi ipsa reiciendis  nemo provident, necessitatibus fuga quibusdam   omnis veritatis. Ipsam  harum nesciunt expedita asperiores,  consectetur  atque culpa ratione,  repellendus numquam accusantium  maxime esse  doloribus in labore quidem.  Quia deleniti fugiat  laboriosam dignissimos  at ea sapiente culpa  quisquam, placeat in  dolores, nobis ipsum quam,  optio eligendi ipsam?  Accusamus id  voluptates explicabo, eaque itaque  dolorum expedita  veritatis impedit  architecto harum quam deserunt  placeat, blanditiis  maiores unde  suscipit saepe tempora ut eius, fuga  sit aspernatur  consequatur  impedit saepe tenetur, asperiores nam ad?   Inventore dolorum quas  impedit cum voluptas quibusdam molestiae placeat   porro optio, dolore  incidunt explicabo illum quaerat molestiae   temporibus id suscipit  error quas, molestiae consequuntur totam quidem   in assumenda odio.</p>\r\n<p>Animi cum possimus id eveniet minus similique excepturi ipsa   reiciendis  nemo provident, necessitatibus fuga quibusdam omnis   veritatis. Ipsam  harum nesciunt expedita asperiores, consectetur atque   culpa ratione,  repellendus numquam accusantium maxime esse doloribus  in  labore quidem.  Quia deleniti fugiat laboriosam dignissimos at ea   sapiente culpa  quisquam, placeat in dolores, nobis ipsum quam, optio   eligendi ipsam?  Accusamus id voluptates explicabo, eaque itaque dolorum   expedita  veritatis impedit architecto harum quam deserunt placeat,   blanditiis  maiores unde suscipit saepe tempora ut eius, fuga sit   aspernatur  consequatur impedit saepe tenetur, asperiores nam ad?    Inventore dolorum quas impedit cum voluptas quibusdam molestiae placeat    porro optio, dolore incidunt explicabo illum quaerat molestiae    temporibus id suscipit error quas, molestiae consequuntur totam quidem    in assumenda odio.</p>", 
+            "created": "2010-07-14 00:38:07", 
+            "slug": "standards-fi", 
+            "page": 4
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 2, 
+            "updated": "2010-09-14 15:02:39", 
+            "author": 1, 
+            "title": "Company (sv)", 
+            "summary": "", 
+            "content": "<h1>F\u00f6retaget</h1>\r\n\r\n<p>Synapse Computing specialiserar sig p\u00e5 informationssystem och tj\u00e4nster f\u00f6r kulturarvssektorn. V\u00e5ra kunder representerar arkiv, bibliotek och museer samt forskningsinstitutioner fr\u00e4mst inom humaniora.</p>\r\n\r\n<p>Vi arbetar i spetsen av utvecklingen f\u00f6r att skapa en delad, global infrastruktur f\u00f6r kulturarv och forskning. V\u00e5ra l\u00f6sningar - ramverk och komponenter - baserar sig p\u00e5 \u00f6ppen k\u00e4llkod. Vi f\u00f6rordar \u00f6ppen tillg\u00e5ng till information (Open Access) och \u00f6ppna standarder.</p>\r\n\r\n<p>Ut\u00f6ver praktiska IT-till\u00e4mpningar \u00e4r vi engagerade i forskning d\u00e4r v\u00e5rt m\u00e5l \u00e4r att inf\u00f6ra nya id\u00e9er till digital humaniora fr\u00e5n k\u00e4llor som kognitionsvetenskap, lingvistik, semiotik och filosofi. Vi bygger verktyg f\u00f6r kunskapsskapande s\u00e5 v\u00e4l som f\u00f6r informationshantering.</p>\r\n\r\n<p>Vi deltar i utbyggandet av globala n\u00e4tvek f\u00f6r akt\u00f6rer inom digital humaniora. V\u00e5rt speciella intresse inom detta gebit \u00e4r att utveckla ett ramverk f\u00f6r delad f\u00f6rst\u00e5else, delade standarder och delade tj\u00e4nster. Ett specialintresse \u00e4r f\u00f6rverkligandet av tematiska portaler.</p>", 
+            "created": "2010-07-14 00:17:14", 
+            "slug": "company-sv", 
+            "page": 3
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 1, 
+            "updated": "2010-07-22 03:29:00", 
+            "author": 1, 
+            "title": "Company (fi)", 
+            "summary": null, 
+            "content": "<h1>Company</h1>\r\n<p>Company (fi) - Animi cum possimus id eveniet minus similique  excepturi ipsa reiciendis  nemo provident, necessitatibus fuga quibusdam  omnis veritatis. Ipsam  harum nesciunt expedita asperiores, consectetur  atque culpa ratione,  repellendus numquam accusantium maxime esse  doloribus in labore quidem.  Quia deleniti fugiat laboriosam dignissimos  at ea sapiente culpa  quisquam, placeat in dolores, nobis ipsum quam,  optio eligendi ipsam?  Accusamus id voluptates explicabo, eaque itaque  dolorum expedita  veritatis impedit architecto harum quam deserunt  placeat, blanditiis  maiores unde suscipit saepe tempora ut eius, fuga  sit aspernatur  consequatur impedit saepe tenetur, asperiores nam ad?   Inventore dolorum quas impedit cum voluptas quibusdam molestiae placeat   porro optio, dolore incidunt explicabo illum quaerat molestiae   temporibus id suscipit error quas, molestiae consequuntur totam quidem   in assumenda odio.</p>\r\n<p>Animi cum possimus id eveniet minus similique excepturi ipsa  reiciendis  nemo provident, necessitatibus fuga quibusdam omnis  veritatis. Ipsam  harum nesciunt expedita asperiores, consectetur atque  culpa ratione,  repellendus numquam accusantium maxime esse doloribus in  labore quidem.  Quia deleniti fugiat laboriosam dignissimos at ea  sapiente culpa  quisquam, placeat in dolores, nobis ipsum quam, optio  eligendi ipsam?  Accusamus id voluptates explicabo, eaque itaque dolorum  expedita  veritatis impedit architecto harum quam deserunt placeat,  blanditiis  maiores unde suscipit saepe tempora ut eius, fuga sit  aspernatur  consequatur impedit saepe tenetur, asperiores nam ad?   Inventore dolorum quas impedit cum voluptas quibusdam molestiae placeat   porro optio, dolore incidunt explicabo illum quaerat molestiae   temporibus id suscipit error quas, molestiae consequuntur totam quidem   in assumenda odio.</p>", 
+            "created": "2010-07-14 00:16:38", 
+            "slug": "company-fi", 
+            "page": 3
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "pages.entry", 
+        "fields": {
+            "lang": 3, 
+            "updated": "2010-11-24 13:05:01", 
+            "author": 1, 
+            "title": "Company (en)", 
+            "summary": "", 
+            "content": "<h1>Company</h1>\r\n<p>Synapse Computing is a company specializing in building information systems for the cultural heritage sector. Our clients represent the Libraries, Archives, Museums community as well as research institutions, mainly in the field of humanities.</p>\r\n<p>We work in the forefront of creating a shared, global infrastructure for cultural heritage and research. Our solutions are based on open source frameworks and components. We promote open access to information and global standards.</p>\r\n<p>In addition to building working solutions we are engaged in research with the aim of introducing new ideas into digital humanities from fields of Cognitive Science, Linguistics, Semiotics and Philosophy. We build tools for Knowledge Creation as well as Knowledge Management.</p>\r\n<p>We participate in building global networks for actors in the area of digital humanities. Our special interests in this area include developing shared understanding, shared standards, and shared services. One area of interest is building thematic portals.</p>\r\n\r\n<iframe src=\"http://free.timeanddate.com/clock/i2cawjds/n101/tlfi16\" frameborder=\"0\" width=\"58\" height=\"18\"></iframe>", 
+            "created": "2010-07-13 21:19:49", 
+            "slug": "company-en", 
+            "page": 3
+        }
+    }
+]

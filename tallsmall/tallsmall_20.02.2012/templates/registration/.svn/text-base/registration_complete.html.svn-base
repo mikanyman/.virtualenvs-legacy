@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block description %}
+<span class="section_header">Kirjaudu</span>
+{% endblock %}
+
+{% block content %}
+<div class="padding_10">
+  <div id="login_form">
+    <p>Rekister&ouml;itymisesi on vastaanotettu.</p>
+  </div>
+</div>
+{% endblock %}

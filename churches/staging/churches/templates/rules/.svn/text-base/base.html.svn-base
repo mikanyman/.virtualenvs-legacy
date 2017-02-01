@@ -1,0 +1,105 @@
+<html>
+<head>
+  <title>Demo App | Items</title>
+  <style type="text/css">
+  body {
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+    margin:0;
+    padding:0;
+  }
+  h1 {
+    color: #000066;
+    font-size: 18pt;
+    font-weight: bold;
+  }
+  a {
+    color: #000066;
+  }
+  th {
+    vertical-align: top;
+    text-align: right;
+    font-weight: bold;
+    color: #666666;
+    padding-top: 2px;
+  }
+  hr {
+    border: 0,
+    color: #DEDEDE;
+    background-color: #DEDEDE;
+    height: 1px;
+  }
+  #banner {
+    color: #EE0000;
+    font-size: 30pt;
+    font-weight: bold;
+    width: auto;
+    border-bottom:solid 1px #666666;
+    margin: 0px;
+    padding: 0 20px;
+    background: url(" http://www.jyu.fi/hallinto/++theme++jyu.theme2011dz/images/top-gradient.png") repeat-x scroll 0 0 #F1F1F1;
+    height: 120px;
+  }
+  #wrapper {
+    background-color: #FFFFFF;
+    width: 980px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #content {
+    width: auto;
+    min-height: 400px;
+    padding: 20px 0;
+    border-bottom: solid 1px #666666;
+  }
+  #footer {
+    color: #666666;
+    padding: 10px 0;
+  }
+
+  table.list {
+     width:980px;
+     margin: 0;
+     border: 0;
+     border-collapse: collapse;
+  }
+
+  table.list td.list_blue {
+	text-align: left;
+	background-color: #F6F6F6;
+	padding: 5px;
+  }
+  table.list td.list_white {
+	text-align: left;
+	background-color: #FFFFFF;
+	padding: 5px;
+  }
+
+  </style>
+</head>
+<body>
+
+  <div id="banner">
+    <div style="width:980; margin: 0 auto;">
+      <div style="float:right">
+        <img src="https://www.jyu.fi/++theme++jyu.theme2011dz/images/jyu-logo.png">
+      </div>
+      <div style="padding-top:70px">Demo App for Churches</div>
+    </div>
+  </div>
+
+
+  <div id="wrapper">
+
+    <div id="content">
+      {% block contents %}{% endblock %}
+    </div>
+
+    <div id="footer">
+      Taiteiden ja kulttuurin tutkimuksen laitos | Synapse Computing
+    </div>
+
+  </div>
+
+</body>
+</html>

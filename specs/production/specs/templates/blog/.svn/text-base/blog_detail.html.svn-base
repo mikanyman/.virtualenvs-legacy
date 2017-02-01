@@ -1,0 +1,32 @@
+{% extends layout %}
+{% load markup %}
+
+{% block main %}
+<!-- entry -->
+<div class="roundbox_660">
+  <div class="roundbox_660_top"></div>
+  <div class="roundbox_660_mid">
+    <br />
+	<div class="post_text">
+	  <h1 class="orange">{{ object.title|escape }}</h1>
+	  {{ object.body|escape|markdown }}
+	</div>
+	<div class="post_info">
+      <span class="speech"><img src="http://www.tallsmall.fi:8080/site_media/img/icons/eb/speech2.png"></span>
+      <span class="text_333"><strong>{{ object.creator|lower|capfirst }}</strong></span>
+	  <span class="text_666">{{ object.created|date:"d.m.Y H:i" }}</span>
+	</div>
+    </div>
+  <div class="roundbox_660_bottom"></div>
+</div>
+<!-- /entry -->
+{% endblock %}
+
+{% block blogbar_right %}
+  {% if feed_3_1_dict %}{% include "cells/common/cell_3_1.html" %}{% endif %}
+  {% if feed_3_2_dict %}{% include "cells/common/cell_3_2.html" %}{% endif %}
+  {% if feed_3_3_dict %}{% include "cells/common/cell_3_3.html" %}{% endif %}
+  {% if feed_3_4_dict %}{% include "cells/common/cell_3_4.html" %}{% endif %}
+  {% if feed_3_5_dict %}{% include "cells/common/cell_3_5.html" %}{% endif %}
+{% endblock %}
+

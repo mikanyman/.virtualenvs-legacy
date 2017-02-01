@@ -1,0 +1,24 @@
+{% extends "common/base.html" %}
+
+{% block topnavi %}
+    <ul>
+      <li><a href="/specs/{{ lang }}/{{ profile }}/frontpg/etusivu/" id="etusivuLink">Etusivu</a></li>
+      <li><a href="/specs/{{ lang }}/{{ profile }}/frontpg/verkkolehti/" id="verkkolehtiLink">Verkkolehti</a></li>
+      <li><a href="/specs/{{ lang }}/{{ profile }}/frontpg/kuvagalleria/" id="kuvagalleriaLink">Kuvagalleria</a></li>
+      <li><a href="/specs/{{ lang }}/{{ profile }}/frontpg/keskustele/" id="keskusteleLink">Keskustele</a></li>
+      <li><a href="/specs/{{ lang }}/{{ profile }}/frontpg/vaikuta/" id="vaikutaLink">Vaikuta</a></li>
+      <li><a href="/specs/{{ lang }}/{{ profile }}/frontpg/apua_ongelmiin/" id="apua_ongelmiinLink">Apua ongelmiin</a></li>
+      <li><a href="/specs/{{ lang }}/{{ profile }}/frontpg/tuotteet/" id="tuotteetLink">Tuotteet</a></li>
+      <li><a href="/specs/{{ lang }}/{{ profile }}/frontpg/yhdistys/" id="yhdistysLink">Yhdistys</a></li>
+    </ul>
+{% endblock %}
+
+{% block keski %}AAABBBBCCC
+  <p>Kieli: {{ lang }}<br />K&auml;yytt&auml;yj&auml;yprofiili: {{ profile }}</p>
+  Kirjautumistieto: {{ open_id }}<br />
+  <ul>
+  {% for object in otsikko %}
+    <li> <a href="#">{{ object }}</a><br>
+  {% endfor %}
+  </ul>
+{% endblock %}

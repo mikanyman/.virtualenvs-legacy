@@ -1,0 +1,28 @@
+{% extends layout %}
+
+{% block sidebar_left %}
+  {% if feed_1_1_dict %}{% include "cells/common/cell_1_1.html" %}{% endif %}
+  {% if feed_1_2_dict %}{% include "cells/common/cell_1_2.html" %}{% endif %}
+  {% if feed_1_3_dict %}{% include "cells/common/cell_1_3.html" %}{% endif %}
+  {% if feed_1_4_dict %}{% include "cells/common/cell_1_4.html" %}{% endif %}
+  {% if feed_1_5_dict %}{% include "cells/common/cell_1_5.html" %}{% endif %}
+{% endblock %}
+
+{% block main %}
+  {% if feed_2_1_dict %}{% include "cells/common/cell_2_1.html" %}{% endif %}
+  {% if feed_2_2_dict %}{% include "cells/common/cell_2_2.html" %}{% endif %}
+  {% if feed_2_3_dict %}{% include "cells/common/cell_2_3.html" %}{% endif %}
+  {% if feed_2_4_dict %}{% include "cells/common/cell_2_4.html" %}{% endif %}
+  {% if feed_2_5_dict %}{% include "cells/common/cell_2_5.html" %}{% endif %}
+{% endblock %}
+
+{% block sidebar_right %}
+  {% if feed_3_1_dict %}{% include "cells/common/cell_3_1.html" %}{% endif %}
+  {% if feed_3_2_dict %}{% include "cells/common/cell_3_2.html" %}{% endif %}
+  {% if feed_3_3_dict %}{% include "cells/common/cell_3_3.html" %}{% endif %}
+  {% if feed_3_4_dict %}{% include "cells/common/cell_3_4.html" %}{% endif %}
+  {% if feed_3_5_dict %}{% include "cells/common/cell_3_5.html" %}{% endif %}
+{% endblock %}
+
+
+

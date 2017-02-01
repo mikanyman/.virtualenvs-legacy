@@ -1,0 +1,7 @@
+{% load i18n %}
+<tr><th></th><td>
+  {% ifequal call 'create' %}<input type="submit" value="{% trans 'Tallenna uudet tiedot' %}">{% endifequal %}
+  {% ifequal call 'update' %}<input type="submit" value="{% trans 'P&auml;ivit&auml; tiedot' %}">{% endifequal %}
+  {% ifequal call 'delete' %}<input type="submit" value="{% trans 'Poista tiedot' %}">{% endifequal %}
+  {% ifequal call 'search' %}<input type="submit" value="{% trans 'Hae tietoja' %}">{% endifequal %}
+</td></tr>

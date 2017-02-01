@@ -1,0 +1,16 @@
+{% extends "portal/base_rockart.html" %}
+{% load i18n %}
+{% load cms_tags %}
+
+{% block metadata %}
+<div class="metadata">
+{{ test }} 
+<strong>{% trans "DC.Title" %}:</strong> {{ note.title }} <strong>{% trans "DC.Issued" %}:</strong> {{ note.pub_date|date:"Y-m-d" }}
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="padding_10">
+xxx {{ ihtml|safe }}
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layouts/2col_sidebar_right.html" %}
+{% load i18n %}
+
+{% block main %}
+<div class="form-box">
+<fieldset>
+  <legend>{% trans "Membership Application" %}</legend>
+  <form method="post" action="http://www.tallsmall.fi/{{ lang }}/{{ profile }}/{{ event }}/{{ app }}/{{ pg }}/post/">{% csrf_token %}
+  {% comment %}
+    form completed: {{ form_completed }} applicant id: {{ applicant_id }}
+    <ul><li>S&auml;hk&ouml;inen j&auml;senhakemuslomake ei viel&auml; ole k&auml;ytett&auml;viss&auml;.</li></ul>
+  {% endcomment %}
+
+  <div style="width: 700px; margin: 8px; padding-bottom: 12px">
+  <h2 class="blue">N&auml;in liityt yhdistyksen j&auml;seneksi</h2>
+  T&auml;yt&auml; alla oleva lomake huolellisesti ja l&auml;het&auml; se painamalla "L&auml;het&auml;"-painiketta lomakkeen alareunassa. 
+  Postitamme Sinulle pankkisiirtolomakkeen, jolla voit maksaa yhdistyksen j&auml;senmaksun. J&auml;senyytesi astuu voimaan, kun suorituksesi 
+  n&auml;kyy yhdistyksen tilill&auml;.
+  </div>
+  
+  <table>
+    {{ form.as_table }}
+	<tr><td></td><td><input class="submit" type="submit" value={% trans "Submit"%}></td></tr>
+  </table>
+</form>
+</fieldset>
+</div>
+{% endblock %}
+
+{% block sidebar_right %}
+  {% include "include/login/cell_2_1.html" %}
+{% endblock %}

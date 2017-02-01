@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block description %}
+  <h2>Mik&auml; sivu t&auml;m&auml; on...</h2>
+{% endblock description %}
+
+{% block content %}
+<h1>{{ page_name }}</h1>
+{{ content }}
+<hr />
+<a href="/maisemapaikka/wiki/{{ page_name }}/edit/">Edit this page?</a>
+{% endblock content %}
+
+{% block navi %}
+  <a href="/maisemapaikka/church/map/">Mik&auml; navi t&auml;m&auml; on...</a>
+{% endblock navi %}

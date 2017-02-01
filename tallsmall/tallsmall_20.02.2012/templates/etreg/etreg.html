@@ -1,0 +1,190 @@
+{% extends "etreg/base.html" %}
+{% load i18n %}
+{% load cms_tags %}
+
+{% block content %}
+<table class="ereg_hea">
+<tbody>
+<tr>
+  <td></td>
+  <td class="rcol">
+    <div class="header">{% trans "45th European Convention 2012 Finland" %}</div>
+    <div class="date">{% trans "10th June &ndash; 17th June 2012" %}</div>
+  </td>
+</tr>
+</tbody>
+</table>
+
+<!-- 42 35 23 -->
+<form>
+<table class="ereg_1">
+<tr class="hea">
+  <td class="hea_bold">{% trans "Registration form" %}</td>
+  <td class="hea" colspan="2">{% trans "One registration form per person" %}</td>
+</tr>
+<tr style="height: 8px;"><td colspan="3"></td></tr>
+<tr>
+  <td>
+    <label class="label" for="id_lastname">{% trans "Last name" %}</label>
+    <input type="text" size="35" name="lastname" id="id_lastname">
+  </td>
+  <td colspan="2">
+    <label class="label" for="id_firstname">{% trans "First name" %}</label>
+    <input type="text" size="20" name="firstname" id="id_firstname">&nbsp;
+    <label>{% trans "Ms." %}</label> <span class="radio"><input type="radio" name="marstatus" value="ms" style="border: 0" /></span> 
+    <label>{% trans "Mrs." %}</label> <span class="radio"><input class="chbox" type="radio" name="marstatus" value="mrs" style="border: 0" /></span> 
+    <label>{% trans "Mr." %}</label> <span class="radio"><input class="chbox" type="radio" name="marstatus" value="mr" style="border: 0" /></span>&nbsp;
+  </td>
+</tr>
+<tr>
+  <td>
+    <label class="label" for="id_address">{% trans "Address" %}</label>
+    <input type="text" size="35" name="address" id="id_address">
+  </td>
+  <td colspan="2">
+    <label class="label" for="id_dateofbirth">{% trans "Date of birth (dd-mm-yyyy)" %}</label>
+    <input type="text" size="10" name="dateofbirth" id="id_dateofbirth">
+    <label class="label" for="id_height">{% trans "Height" %}</label>
+    <input type="text" size="3" name="height" id="id_height">
+  </td>
+</tr>
+<tr>
+  <td>
+    <label class="label" for="id_postalcode">{% trans "Postcode" %}</label>
+    <input type="text" size="10" name="postalcode" id="id_postalcode">
+  </td>
+  <td colspan="2">
+    <label class="label" for="id_city">{% trans "City" %}</label>
+    <input type="text" size="20" name="city" id="id_city">
+    <label class="label" for="id_memberofclub">{% trans "Member of a Tall Club" %}</label>&nbsp;&nbsp;
+    <label class="label">{% trans "Yes" %}</label> 
+    <span class="radio"><input type="radio" name="memberofclub" value="yes" style="border: 0" /></span>
+    <label class="label">{% trans "No" %}</label> 
+    <span class="radio"><input type="radio" name="memberofclub" value="no" style="border: 0" /></span>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label class="label" for="id_country">{% trans "Country" %}</label>
+    <input type="text" size="35" name="country" id="id_country">
+  </td>
+  <td colspan="2">
+    <label class="label" for="id_whichclub">{% trans "Which Tall Club are you registered with?" %}</label>
+    <input type="text" size="35" name="whichclub" id="id_whichclub">
+  </td>
+</tr>
+<tr>
+  <td>
+    <label class="label" for="id_email">{% trans "Email" %}</label>
+    <input type="text" size="35" name="email" id="id_email">
+  </td>
+  <td colspan="2">
+    <label class="label" for="id_memnumber">{% trans "Membership number" %}</label>
+    <input type="text" size="35" name="memnumber" id="id_memnumber">
+  </td>
+</tr>
+</table>
+
+
+
+
+    
+<table class="ereg_2">
+<tbody>
+<tr class="hea">
+  <td>{% trans "Program choices" %}</td>
+  <td class="rcol">ET2012FI</td>
+</tr>
+<tr>
+  <td>xxx</td>
+  <td>yyy</td>
+</tr>
+</tbody>
+</table>
+</form>
+<ul>
+
+etreg.html
+<li>{% trans "Mobile phone number with country code" %}</li>
+<li>{% trans "Home phone number with country code" %}</li>
+<li>{% trans "Fax number with country code" %}</li>
+<li>{% trans "Language" %}</li>
+<li>{% trans "for welcome packets and guided tours" %}</li>
+<li>{% trans "Which language/-s do you speak?" %}</li>
+<li>{% trans "English" %}</li>
+<li>{% trans "German" %}</li>
+<li>{% trans "Finnish" %}</li>
+<li>{% trans "Date and estimated time of arrival to Helsinki*/Tampere" %}</li>
+<li>{% trans "Date and estimated departure time from Tampere/Helsinki*" %}</li>
+<li>{% trans "We will inform the bus company ExpressBus about capacity needs for the route Helsinki-Vantaa Airport &ndash; Tampere City / Tampere City &ndash; Helsinki-Vantaa Airport (approx. 26€/one way)" %}</li>
+<li>{% trans "In which hotel/hostel you are staying?" %}</li>
+<li>{% trans "Arr. /Date." %}</li>
+<li>{% trans "Dep. /Date ." %}</li>
+<li>{% trans "Other, where" %}</li>
+<li>{% trans "Only information for the organization team, not a booking!" %}</li>
+<li>{% trans "Young & Tall" %}</li>
+<li>{% trans "For participants 13&ndash;20 years old, only" %}</li>
+<li>{% trans "Are you travelling with your parents?" %}</li>
+<li>{% trans "Yes" %}</li>
+<li>{% trans "No" %}</li>
+<li>{% trans "If no, parents name and mobile phone nr." %}</li>
+<li>{% trans "Guardian’s name and mobile phone nr." %}</li>
+<li>{% trans "Parents signature" %}</li>
+<li>{% trans "Participant under 18 needs to have an adult as guardian" %}</li>
+<li>{% trans "Diet" %}</li>
+<li>{% trans "Vegetarian" %}</li>
+<li>{% trans "Gluten-free" %}</li>
+<li>{% trans "Diabetic" %}</li>
+<li>{% trans "Low lactose" %}</li>
+<li>{% trans "Special needs/assistance" %}</li>
+<li>{% trans "Do you need any personal assistance (if available) during the events?" %}</li>
+<li>{% trans "Other special needs or health risk factors the Organisation team should know? (please specify)" %}</li>
+<li>{% trans "Please contact the ET2012FI-Orgateam for organising a practical nurse student to help you! Please note with your payment! The additional price for an assistant is the same price as for each event per person. Only for day's/evening's program." %}</li>
+<li>{% trans "Please send your registration form and program choices by email to reg@europatreffen.com or by fax to number +358x-xxxxxxx or by mail Tall and Small Association Finland/ET2012FI, Po Box 186, FI-00931 Helsinki, Finland." %}</li>
+<li>{% trans "Please note that your registration is not complete until payment has been received." %}</li>
+<li>{% trans "Last day for registration and payment April 10th 2012" %}</li>
+
+<li>{% trans "Sunday June 10th &ndash; Welcome! &ndash; Tervetuloa!" %}</li>
+<li>{% trans "Arrival in Tampere &ndash; Welcome and Info packets" %}</li>
+<li>{% trans "Viking Evening and 1st Big Welcome Evening" %}</li>
+<li>{% trans "Choose your wish for setting time" %}</li>
+<li>{% trans "First setting* at 6pm" %}</li>
+<li>{% trans "Second setting* at 9pm" %}</li>
+<li>{% trans "If one session is filled we may have to schedule you in the other one!" %}</li>
+<li>{% trans "Monday June 11th &ndash; Nokia &ndash; Connecting Tall People" %}</li>
+<li>{% trans "Trip to the town of Nokia & Tampere sightseeing tour by bus" %}</li>
+<li>{% trans "Young&Tall &ndash; guided sightseeing tours in Tampere and a lot of fun" %}</li>
+<li>{% trans "2nd Big Welcome Evening with infotainment, professional shows and live music" %}</li>
+<li>{% trans "Tuesday June 12th &ndash; Finnish nature, fun and entertainment" %}</li>
+<li>{% trans "Public meeting of the representatives of the European Council/Board" %}</li>
+<li>{% trans "A possibility also for lunch exists, at additional cost" %}</li>
+<li>{% trans "Young&Tall &ndash; trip to the Särkänniemi Adventure park. Approx. 35 euro/person*" %}</li>
+<li>{% trans "Payment at the entrance (opens at 11am)." %}</li>
+<li>{% trans "Boat trip on Lake Pyhäjärvi & an outdoor evening on Viikinsaari Island." %}</li>
+<li>{% trans "Wednesday June 13th &ndash; Helsinki, the daughter of the Baltic Sea" %}</li>
+<li>{% trans "Full day trip to the capital of Finland, and&#133; (check one below)" %}</li>
+<li>{% trans "Boat trip to Suomenlinna incl. a historical video presentation. (Max 240 guests)" %}</li>
+<li>{% trans "Or free time in Helsinki (approx. 4 hrs)" %}</li>
+<li>{% trans "Thursday June 14th &ndash; Magic of Midsummer" %}</li>
+<li>{% trans "The biggest summer celebration in Finland called &quot;Juhannus&quot;. A long day in the beautiful, authentic countryside atmosphere." %}</li>
+<li>{% trans "Friday June 15th &ndash; Sauna Day" %}</li>
+<li>{% trans "Pispala & Pyynikki &ndash; The Pearls of Tampere. Guided walking & bus tour to the most essential part of the Finnish daily life and sauna traditions. Feel the heat&#133;" %}</li>
+<li>{% trans "Optional Sauna at hotel Scandic Rosendahl / Cumulus Hämeenpuisto" %}</li>
+<li>{% trans "Saturday June 16th &ndash; Gala Evening" %}</li>
+<li>{% trans "Dancing and Entertainment in Scandic Rosendahl until the morning&#133;" %}</li>
+<li>{% trans "Sunday June 17th &ndash; Kiitos ja näkemiin! &ndash; Thank you and goodbye!" %}</li>
+<li>{% trans "We will see you again in Hamburg 2013!" %}</li>
+<li>{% trans "Additional fees" %}</li>
+<li>{% trans "Additional yearly fee for the voluntary work on the European level" %}</li>
+<li>{% trans "Additional fee for Non-Tall Club members" %}</li>
+<li>{% trans "Payments only by Bank Transfer to:" %}</li>
+<li>{% trans "Beneficiary's name and address:" %}</li>
+<li>{% trans "Po Box 186" %}</li>
+<li>{% trans "Beneficiary bank account / bank details:" %}</li>
+<li>{% trans "Nordea Bank Finland Plc," %}</li>
+<li>{% trans "Total amount EUR" %}</li>
+<li>{% trans "All bank charges are at the responsibility of the participants. For payments outside Europe, add 7 EUR to the total amount to cover receiving bank’s fee of incoming payment! Message for payment: ET2012FI/participant’s name/-s." %}</li>
+
+<li>{% trans "Gender" %}</li>
+</ul>
+{% endblock %}

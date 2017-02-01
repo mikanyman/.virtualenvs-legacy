@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block googlemaps %}
+<script>
+var map;
+var marker;
+var waypointByID = {};
+
+function initialize() {
+	if (document.getElementById("map_canvas")) {
+		map = new google.maps.Map(document.getElementById('map_canvas'), {
+			zoom: 5,
+			center: new google.maps.LatLng(65.379535, 21.0),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		});
+		<!-- Create waypoint marker overlay //-->
+		{% for waypoint in waypoints %}
+		var waypoint = waypointByID[{{waypoint.id}}] = {
+			title: "{{waypoint.name}}",
+            lat: {{waypoint.geometry.y}},
+            lng: {{waypoint.geometry.x}}
+        };
+        var markerLatLng = new google.maps.LatLng(waypoint.lat, waypoint.lng);
+        marker = new google.maps.Marker({map: map, position: markerLatLng});
+        var infowindow = new google.maps.InfoWindow();
+
+        google.maps.event.addListener(marker, 'click', function() {
+			infowindow.setContent("testi");
+			infowindow.open(map, marker);
+        });
+        {% endfor %}
+    }
+}
+</script>
+{% endblock %}
+
+{% block description %}
+<span class="section_header">{% trans "Landscapes" %}</span><span class="section_aspect"> | {% trans "Map" %}</span>
+{% endblock %}
+
+{% block content %}
+<div class="map_index">
+  <div id="map_canvas" style="width: 618px; height: 600px" class="map_canvas"></div>
+  {% include "includes/waypoints.html" %}
+</div>
+{% endblock %}
+

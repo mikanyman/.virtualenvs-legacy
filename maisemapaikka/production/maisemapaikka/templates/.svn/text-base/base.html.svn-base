@@ -1,0 +1,246 @@
+{% load i18n %}
+{% load cms_tags sekizai_tags %}
+{% load cache menu_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" >
+  <meta name="robots" content="noindex, nofollow">
+  <link type="text/css" rel="stylesheet" media="screen" href="{{ STATIC_URL }}css/styles.css?{% now "YmdHis" %}"/>
+  <link type="text/css" rel="stylesheet" media="screen" href="{{ STATIC_URL }}css/tabs/tabs.css?{% now "YmdHis" %}"/>
+ 
+  <!-- form.media -->
+  {{ form.media }}
+  
+  {% ifequal aspect "photo" %}
+  <!-- Gallerific -->
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.3.2.js"></script>
+  <link type="text/css" href="{{ STATIC_URL }}css/galleriffic-2.css" rel="stylesheet">
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.galleriffic.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.history.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.opacityrollover.js"></script>
+  {% endifequal %}
+
+  <!-- Google Maps -->
+  {% ifequal aspect "map" %}
+  <link type="text/css" rel="stylesheet" media="all" href="{{ STATIC_URL }}css/location_picker.css" />
+  <script type="text/javascript" src="http://maps.google.com/maps?file=api&sensor=false&v=2&key=AIzaSyAwp2xwieQ8pzDBepV1QNb4oBVOe60Nyx8"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.location_picker.js"></script>
+  {% endifequal %}
+
+  {% ifequal tab "mylocation" %}
+  {% ifequal aspect "frontpg" %}
+  <link type="text/css" rel="stylesheet" media="all" href="{{ STATIC_URL }}css/location_picker.css" />
+  <script type="text/javascript" src="http://maps.google.com/maps?file=api&sensor=false&v=2&key=AIzaSyAwp2xwieQ8pzDBepV1QNb4oBVOe60Nyx8"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.location_picker.js"></script>
+  {% endifequal %}
+  {% endifequal %}
+
+  {% block googlemaps %}{% endblock googlemaps %}
+
+  <!-- django-cms -->
+  {% render_block "css" %}
+</head>
+<body id="{{ tab }}" onload='initialize()'>
+
+<div id="wrapper">
+    
+  <div id="top">
+
+    <span id="logo">{% trans "Mindscapes" %}</span>
+    <span id="slogan">{% trans "Discover the Landscape" %}</span>
+
+    <!-- Select Language -->
+    {% comment %}<span id="flags">{% language_chooser "language_chooser.html" %}</span>{% endcomment %}
+    
+    <script type="text/javascript">
+    function setLangAndSubmit(lang) {
+    document.forms[0].elements["language"].value = lang;
+    document.forms[0].elements["next"].value = '/'+lang+'/{{ tab }}/{{ aspect }}/';
+    document.forms[0].submit();
+    }
+    </script>
+    <form method="post" action="/i18n/setlang/">{% csrf_token %}
+    <input type="hidden" name="language" value="">
+    <input type="hidden" name="next" value="">
+    <span id="flags">
+    <a href="javascript:setLangAndSubmit('fi')"><img src="{{ STATIC_URL }}img/fi.png"></a> 
+    <a href="javascript:setLangAndSubmit('sv')"><img src="{{ STATIC_URL }}img/sv.png"></a> 
+    <a href="javascript:setLangAndSubmit('en')"><img src="{{ STATIC_URL }}img/en.png"></a>
+    </span>
+    </form>
+
+    <!-- Login or Register -->
+    <span id="login">
+      {% if user.is_authenticated %}
+      <span style="color:#FFCC33; margin-right:20px">{{ user.username }}</span>
+      <a href="/{{ lang }}/accounts/signout/?next=/accounts/signin/">{% trans "Logout" %}</a> | 
+      <a href="/{{ lang }}/accounts/{{ user.username }}/">{% trans "View profile" %}</a>
+      {% else %}
+      <a href="/{{ lang }}/accounts/signin/">{% trans "Login" %}</a> | 
+      <a href="/{{ lang }}/accounts/signup/">{% trans "Register" %}</a>
+      {% endif %}
+    </span>
+    <!-- /Login or Register -->
+    
+  </div>
+  
+  <div id="topbanner">
+    {% block topbanner %}{% endblock %}
+  </div>
+  
+  <div id="topnavi">
+    <ul>
+      <li><a id="homeLink" href="/{{ lang }}/home/frontpg/"><span>{% trans "Mindscapes" %}</span></a></li>
+      <li><a id="landscapesLink" href="/{{ lang }}/landscapes/frontpg/"><span>{% trans "Landscapes" %}</span></a></li>
+      <li><a id="churchesLink" href="/{{ lang }}/churches/frontpg/"><span>{% trans "Buildings" %}</span></a></li>
+      <li><a id="rockartLink" href="/{{ lang }}/rockart/frontpg/"><span>{% trans "Rock Art" %}</span></a></li>
+      <li><a id="mylocationLink" href="/{{ lang }}/mylocation/frontpg/"><span>{% trans "My Location" %}</span></a></li>
+      {% ifequal tab "accounts" %}<li><a id="accountsLink" href="/{{ lang }}/rockart/frontpg/"><span>{% trans "My Account" %}</span></a></li>{% endifequal %}
+    </ul>
+  </div>
+  
+  <div id="mid_container">
+
+    <div id="main_col">
+      {% block descriptionbox %}{% endblock %}
+      <div id="clearer"></div>
+      
+      {% block metadata %}{% endblock %}
+      
+      <div class="{% ifequal aspect 'photo' %}box_sq_616_ss{% else %}box_sq_616{% endifequal %}">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+
+    <!-- navi col -->
+    <div id="navi_col">
+
+      <!-- navi col box 1 -->
+      <div class="box_sq_320">
+        <div class="box_header">{% trans "Select Aspect" %}</div>
+        <div class="padding_10">
+          {% ifequal tab "home" %}
+          {% include "includes/aspects_home.html" %}
+          {% endifequal %}
+        
+          {% ifequal tab "landscapes" %}
+          {% include "includes/aspects_landscapes.html" %}
+          {% endifequal %}
+        
+          {% ifequal tab "churches" %}
+          {% include "includes/aspects_churches.html" %}
+          {% endifequal %}
+
+          {% ifequal tab "rockart" %}
+          {% include "includes/aspects_rockart.html" %}
+          {% endifequal %}
+
+          {% ifequal tab "mylocation" %}
+          {% include "includes/aspects_mylocation.html" %}
+          {% endifequal %}
+        
+          {% ifequal tab "accounts" %}
+          {% include "includes/aspects_accounts.html" %}
+          {% endifequal %}
+        </div>
+      </div>
+
+      <!-- navi col box 2 -->
+      {% ifequal aspect "photo" %}
+      <div class="box_sq_320_666">
+      <div class="box_header">{{ aspect_visible_name }}</div>
+        <div class="padding_thumbs">
+          {% ifequal tab "landscapes" %}
+          {% include "includes/gallerific/landscapes_thumbs.html" %}
+          {% endifequal %}
+        
+          {% ifequal tab "churches" %}
+          {% include "includes/gallerific/churches_thumbs.html" %}
+          {% endifequal %}
+
+          {% ifequal tab "rockart" %}
+          {% include "includes/gallerific/rockart_thumbs.html" %}
+          {% endifequal %}
+          <div id="clearer"></div>
+        </div>
+      </div>
+      <br/>
+      {% endifequal %}
+
+    </div><!-- /navi_col -->
+    <div id="clearer"></div>
+  </div><!-- mid_container -->
+
+  <div id="footer">
+    <div id="textfooter_textblock">
+    Text footer
+    </div>
+    
+    {% ifequal aspect "photo" %}
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      // We only want these styles applied when javascript is enabled
+      $('div.navigation').css({'width' : '300px', 'float' : 'left'});
+      $('div.content').css('display', 'block');
+      // Initially set opacity on thumbs and add
+      // additional styling for hover effect on thumbs
+      var onMouseOutOpacity = 0.67;
+      $('#thumbs ul.thumbs li').opacityrollover({
+        mouseOutOpacity:   onMouseOutOpacity,
+        mouseOverOpacity:  1.0,
+        fadeSpeed:         'fast',
+        exemptionSelector: '.selected'
+      });
+         
+      // Initialize Advanced Galleriffic Gallery
+      var gallery = $('#thumbs').galleriffic({
+        delay:                     2500,
+        numThumbs:                 15,
+        preloadAhead:              10,
+        enableTopPager:            true,
+        enableBottomPager:         true,
+        maxPagesToShow:            7,
+        imageContainerSel:         '#slideshow',
+        controlsContainerSel:      '#controls',
+        captionContainerSel:       '#caption',
+        loadingContainerSel:       '#loading',
+        renderSSControls:          true,
+        renderNavControls:         true,
+        playLinkText:              "{% trans 'Play Slideshow' %}",
+        pauseLinkText:             "{% trans 'Pause Slideshow' %}",
+        prevLinkText:              "&lsaquo; {% trans 'Previous Photo' %}",
+        nextLinkText:              "{% trans 'Next Photo' %} &rsaquo;",
+        nextPageLinkText:          "{% trans 'Next' %} &rsaquo;",
+        prevPageLinkText:          "&lsaquo; {% trans 'Prev' %}",
+        enableHistory:             false,
+        autoStart:                 false,
+        syncTransitions:           true,
+        defaultTransitionDuration: 900,
+        onSlideChange:             function(prevIndex, nextIndex) {
+          // 'this' refers to the gallery, which is an extension of $('#thumbs')
+          this.find('ul.thumbs').children()
+            .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+            .eq(nextIndex).fadeTo('fast', 1.0);
+        },
+        onPageTransitionOut:       function(callback) {
+          this.fadeTo('fast', 0.0, callback);
+        },
+        onPageTransitionIn:        function() {
+          this.fadeTo('fast', 1.0);
+        }
+      });
+    });
+    </script>
+    {% endifequal %}
+    
+  </div>  
+</div>
+
+
+
+{% render_block "js" %}<!-- django-cms -->
+
+
+</html>
+</body>

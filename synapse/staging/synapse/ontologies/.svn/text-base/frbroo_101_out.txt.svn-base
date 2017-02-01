@@ -1,0 +1,3677 @@
+F1 Work
+=======
+
+    List of superclasses:
+    ---------------------
+    F1, E89, E28, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F1 Work':
+    ---------------------------------
+    R1 is logical successor of: F1 Work
+    R2 is derivative of: F1 Work
+    R3 is realised in: F22 Self-Contained Expression
+    R40 has representative expression: F22 Self-Contained Expression
+
+    No declared reverse properties
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F2 Expression
+=============
+
+    List of superclasses:
+    ---------------------
+    F2, E73, E89, E90, E28, E71, E72, E70, E77, E1, object, 
+
+    Properties declared for 'F2 Expression':
+    ---------------------------------------
+    R4 carriers provided by: F3 Manifestation Product Type
+    R5 has component: F22 Self-Contained Expression
+
+    No declared reverse properties
+
+    Properties inherited from 'E73 Information Object':
+    ---------------------------------------------------
+    No inherited forward properties
+
+    P128B is carried by: E24 Physical Man-Made Thing
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E90 Symbolic Object':
+    ------------------------------------------------
+    P106 is composed of: E90 Symbolic Object
+
+    P106B forms part of: E90 Symbolic Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F3 Manifestation Product Type
+=============================
+
+    List of superclasses:
+    ---------------------
+    F3, E55, E28, E71, E72, E70, E77, E1, object, 
+
+    Properties declared for 'F3 Manifestation Product Type':
+    -------------------------------------------------------
+    CLP2 should have type: E55 Type
+    CLP43 should have dimension: E54 Dimension
+    CLP45 should consist of: E57 Material
+    CLP46 should be composed of: F3 Manifestation Product Type
+    CLP57 should have number of parts: E60 Number
+    subject to: E30 Right
+    CLP105 right held by: E39 Actor
+    CLR6 should carry: F24 Publication Expression
+
+    No declared reverse properties
+
+    Properties inherited from 'E55 Type':
+    -------------------------------------
+    P127 has broader term: E55 Type
+
+    P2B is type of: E1 CRM Entity
+    P21B was purpose of: E7 Activity
+    P32B was technique of: E7 Activity
+    P42B was assigned by: E17 Type Assignment
+    P71B is listed in: E32 Authority Document
+    P101B was use of: E70 Thing
+    P103B was intention of: E71 Man-Made Thing
+    P125B was type of object used in: E7 Activity
+    P127B has narrower term: E55 Type
+    P135B was created by: E83 Type Creation
+    P137B is exemplified by: E1 CRM Entity
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F4 Manifestation Singleton
+==========================
+
+    List of superclasses:
+    ---------------------
+    F4, E24, E18, E72, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F4 Manifestation Singleton':
+    ----------------------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'E24 Physical Man-Made Thing':
+    --------------------------------------------------------
+    P62 depicts: E1 CRM Entity
+    P65 shows visual item: E36 Visual Item
+    P128 carries: E73 Information Object
+
+    P31B was modified by: E11 Modification
+    P108B was produced by: E12 Production
+    P110B was augmented by: E79 Part Addition
+    P112B was diminished by: E80 Part Removal
+
+    Properties inherited from 'E18 Physical Thing':
+    -----------------------------------------------
+    P44 has condition: E3 Condition State
+    P45 consists of: E57 Material
+    P46 is composed of: E18 Physical Thing
+    P49 has former or current keeper: E39 Actor
+    P50 has current keeper: E39 Actor
+    P51 has former or current owner: E39 Actor
+    P52 has current owner: E39 Actor
+    P53 has former or current location: E53 Place
+    P58 has section definition: E46 Section Definition
+    P59 has section: E53 Place
+
+    P13B was destroyed by: E6 Destruction
+    P24B changed ownership through: E8 Acquisition
+    P30B custody transferred through: E10 Transfer of Custody
+    P34B was assessed by: E14 Condition Assessment
+    P46B forms part of: E18 Physical Thing
+    P111B was added by: E79 Part Addition
+    P113B was removed by: E80 Part Removal
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F5 Item
+=======
+
+    List of superclasses:
+    ---------------------
+    F5, E84, E22, E19, E24, E18, E72, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F5 Item':
+    ---------------------------------
+    R6 carries: F24 Publication Expression
+    R7 is example of: F3 Manifestation Product Type
+
+    No declared reverse properties
+
+    Properties inherited from 'E84 Information Carrier':
+    ----------------------------------------------------
+    No inherited forward properties
+
+    No inherited reverse properties
+
+    Properties inherited from 'E22 Man-Made Object':
+    ------------------------------------------------
+    No inherited forward properties
+
+    No inherited reverse properties
+
+    Properties inherited from 'E19 Physical Object':
+    ------------------------------------------------
+    P54 has current permanent location: E53 Place
+    P55 has current location: E53 Place
+    P56 bears feature: E26 Physical Feature
+    P57 has number of parts: E60 Number
+
+    P8B witnessed: E4 Period
+    P25B moved by: E9 Move
+
+    Properties inherited from 'E24 Physical Man-Made Thing':
+    --------------------------------------------------------
+    P62 depicts: E1 CRM Entity
+    P65 shows visual item: E36 Visual Item
+    P128 carries: E73 Information Object
+
+    P31B was modified by: E11 Modification
+    P108B was produced by: E12 Production
+    P110B was augmented by: E79 Part Addition
+    P112B was diminished by: E80 Part Removal
+
+    Properties inherited from 'E18 Physical Thing':
+    -----------------------------------------------
+    P44 has condition: E3 Condition State
+    P45 consists of: E57 Material
+    P46 is composed of: E18 Physical Thing
+    P49 has former or current keeper: E39 Actor
+    P50 has current keeper: E39 Actor
+    P51 has former or current owner: E39 Actor
+    P52 has current owner: E39 Actor
+    P53 has former or current location: E53 Place
+    P58 has section definition: E46 Section Definition
+    P59 has section: E53 Place
+
+    P13B was destroyed by: E6 Destruction
+    P24B changed ownership through: E8 Acquisition
+    P30B custody transferred through: E10 Transfer of Custody
+    P34B was assessed by: E14 Condition Assessment
+    P46B forms part of: E18 Physical Thing
+    P111B was added by: E79 Part Addition
+    P113B was removed by: E80 Part Removal
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F6 Concept
+==========
+
+    List of superclasses:
+    ---------------------
+    F6, E28, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F6 Concept':
+    ------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F7 Object
+=========
+
+    List of superclasses:
+    ---------------------
+    F7, E18, E72, E70, E77, E1, object, 
+
+    Properties declared for 'F7 Object':
+    -----------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'E18 Physical Thing':
+    -----------------------------------------------
+    P44 has condition: E3 Condition State
+    P45 consists of: E57 Material
+    P46 is composed of: E18 Physical Thing
+    P49 has former or current keeper: E39 Actor
+    P50 has current keeper: E39 Actor
+    P51 has former or current owner: E39 Actor
+    P52 has current owner: E39 Actor
+    P53 has former or current location: E53 Place
+    P58 has section definition: E46 Section Definition
+    P59 has section: E53 Place
+
+    P13B was destroyed by: E6 Destruction
+    P24B changed ownership through: E8 Acquisition
+    P30B custody transferred through: E10 Transfer of Custody
+    P34B was assessed by: E14 Condition Assessment
+    P46B forms part of: E18 Physical Thing
+    P111B was added by: E79 Part Addition
+    P113B was removed by: E80 Part Removal
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F8 Event
+========
+
+    List of superclasses:
+    ---------------------
+    F8, E4, E2, E1, object, 
+
+    Properties declared for 'F8 Event':
+    ----------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'E4 Period':
+    --------------------------------------
+    P7 took place at: E53 Place
+    P8 took place on or within: E19 Physical Object
+    P9 consists of: E4 Period
+    P10 falls within: E4 Period
+    P132 overlaps with: E4 Period
+    P133 is separated from: E4 Period
+
+    P9B forms part of: E4 Period
+    P10B contains: E4 Period
+    P132B overlaps with: E4 Period
+    P133B is separated from: E4 Period
+
+    Properties inherited from 'E2 Temporal Entity':
+    -----------------------------------------------
+    P4 has time-span: E52 Time-Span
+    P114 is equal in time to: E2 Temporal Entity
+    P115 finishes: E2 Temporal Entity
+    P116 starts: E2 Temporal Entity
+    P117 occurs during: E2 Temporal Entity
+    P118 overlaps in time with: E2 Temporal Entity
+    P119 meets in time with: E2 Temporal Entity
+    P120 occurs before: E2 Temporal Entity
+
+    P114B is equal in time to: E2 Temporal Entity
+    P115B is finished by: E2 Temporal Entity
+    P116B is started by: E2 Temporal Entity
+    P117B includes: E2 Temporal Entity
+    P118B is overlapped in time by: E2 Temporal Entity
+    P119B is met in time by: E2 Temporal Entity
+    P120B occurs after: E2 Temporal Entity
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F9 Place
+========
+
+    List of superclasses:
+    ---------------------
+    F9, E53, E1, object, 
+
+    Properties declared for 'F9 Place':
+    ----------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'E53 Place':
+    --------------------------------------
+    P87 is identified by: E44 Place Appellation
+    P88 consists of: E53 Place
+    P89 falls within: E53 Place
+    P121 overlaps with: E53 Place
+    P122 borders with: E53 Place
+
+    P7B witnessed: E4 Period
+    P26B was destination of: E9 Move
+    P27B was origin of: E9 Move
+    P53B is former or current location of: E18 Physical Thing
+    P54B is current permanent location of: E19 Physical Object
+    P55B currently holds: E19 Physical Object
+    P59B is located on or within: E18 Physical Thing
+    P74B is current or former residence of: E39 Actor
+    P88B forms part of: E53 Place
+    P89B contains: E53 Place
+    P121B overlaps with: E53 Place
+    P122B borders with: E53 Place
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F10 Person
+==========
+
+    List of superclasses:
+    ---------------------
+    F10, E21, E20, E19, E18, E72, E70, E39, E77, E1, object, 
+
+    Properties declared for 'F10 Person':
+    ------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'E21 Person':
+    ---------------------------------------
+    No inherited forward properties
+
+    P96B gave birth: E67 Birth
+    P97B was father for: E67 Birth
+    P98B was born: E67 Birth
+    P100B died in: E69 Death
+
+    Properties inherited from 'E20 Biological Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    No inherited reverse properties
+
+    Properties inherited from 'E19 Physical Object':
+    ------------------------------------------------
+    P54 has current permanent location: E53 Place
+    P55 has current location: E53 Place
+    P56 bears feature: E26 Physical Feature
+    P57 has number of parts: E60 Number
+
+    P8B witnessed: E4 Period
+    P25B moved by: E9 Move
+
+    Properties inherited from 'E18 Physical Thing':
+    -----------------------------------------------
+    P44 has condition: E3 Condition State
+    P45 consists of: E57 Material
+    P46 is composed of: E18 Physical Thing
+    P49 has former or current keeper: E39 Actor
+    P50 has current keeper: E39 Actor
+    P51 has former or current owner: E39 Actor
+    P52 has current owner: E39 Actor
+    P53 has former or current location: E53 Place
+    P58 has section definition: E46 Section Definition
+    P59 has section: E53 Place
+
+    P13B was destroyed by: E6 Destruction
+    P24B changed ownership through: E8 Acquisition
+    P30B custody transferred through: E10 Transfer of Custody
+    P34B was assessed by: E14 Condition Assessment
+    P46B forms part of: E18 Physical Thing
+    P111B was added by: E79 Part Addition
+    P113B was removed by: E80 Part Removal
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E39 Actor':
+    --------------------------------------
+    P74 has current or former residence: E53 Place
+    P75 possesses: E30 Right
+    P76 has contact point: E51 Contact Point
+    P131 is identified by: E82 Actor Appellation
+
+    P11B participated in: E5 Event
+    P14B performed: E7 Activity
+    P22B acquired title through: E8 Acquisition
+    P23B surrendered title through: E8 Acquisition
+    P28B surrendered custody through: E10 Transfer of Custody
+    P29B received custody through: E10 Transfer of Custody
+    P49B is former or current keeper of: E18 Physical Thing
+    P50B is current keeper of: E18 Physical Thing
+    P51B is former or current owner of: E18 Physical Thing
+    P52B is current owner of: E18 Physical Thing
+    P105B has right on: E72 Legal Object
+    P107B is current or former member of: E74 Group
+    P109B is current or former curator of: E78 Collection
+    P143B was joined by: E85 Joining
+    P145B left by: E86 Leaving
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F11 Corporate Body
+==================
+
+    List of superclasses:
+    ---------------------
+    F11, E74, E39, E77, E1, object, 
+
+    Properties declared for 'F11 Corporate Body':
+    --------------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'E74 Group':
+    --------------------------------------
+    P107 has current or former member: E39 Actor
+
+    P95B was formed by: E66 Formation
+    P99B was dissolved by: E68 Dissolution
+    P144B gained member by: E85 Joining
+    P146B lost member by: E86 Leaving
+
+    Properties inherited from 'E39 Actor':
+    --------------------------------------
+    P74 has current or former residence: E53 Place
+    P75 possesses: E30 Right
+    P76 has contact point: E51 Contact Point
+    P131 is identified by: E82 Actor Appellation
+
+    P11B participated in: E5 Event
+    P14B performed: E7 Activity
+    P22B acquired title through: E8 Acquisition
+    P23B surrendered title through: E8 Acquisition
+    P28B surrendered custody through: E10 Transfer of Custody
+    P29B received custody through: E10 Transfer of Custody
+    P49B is former or current keeper of: E18 Physical Thing
+    P50B is current keeper of: E18 Physical Thing
+    P51B is former or current owner of: E18 Physical Thing
+    P52B is current owner of: E18 Physical Thing
+    P105B has right on: E72 Legal Object
+    P107B is current or former member of: E74 Group
+    P109B is current or former curator of: E78 Collection
+    P143B was joined by: E85 Joining
+    P145B left by: E86 Leaving
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F12 Name
+========
+
+    List of superclasses:
+    ---------------------
+    F12, E41, E90, E28, E71, E72, E70, E77, E1, object, 
+
+    Properties declared for 'F12 Name':
+    ----------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'E41 Appellation':
+    --------------------------------------------
+    P139 has alternative form: E41 Appellation
+
+    P1B identifies: E1 CRM Entity
+    P139B has alternative form: E41 Appellation
+    P142B was used in: E15 Identifier Assignment
+
+    Properties inherited from 'E90 Symbolic Object':
+    ------------------------------------------------
+    P106 is composed of: E90 Symbolic Object
+
+    P106B forms part of: E90 Symbolic Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F13 Identifier
+==============
+
+    List of superclasses:
+    ---------------------
+    F13, E42, F12, E41, E90, E28, E71, E72, E70, E77, E1, object, 
+
+    Properties declared for 'F13 Identifier':
+    ----------------------------------------
+    R8 consists of: F12 Name
+
+    No declared reverse properties
+
+    Properties inherited from 'E42 Identifier':
+    -------------------------------------------
+    No inherited forward properties
+
+    P48B is preferred identifier of: E1 CRM Entity
+    P37B was assigned by: E15 Identifier Assignment
+    P38B was deassigned by: E15 Identifier Assignment
+
+    Properties inherited from 'F12 Name':
+    -------------------------------------
+    No inherited forward properties
+
+    No inherited reverse properties
+
+    Properties inherited from 'E41 Appellation':
+    --------------------------------------------
+    P139 has alternative form: E41 Appellation
+
+    P1B identifies: E1 CRM Entity
+    P139B has alternative form: E41 Appellation
+    P142B was used in: E15 Identifier Assignment
+
+    Properties inherited from 'E90 Symbolic Object':
+    ------------------------------------------------
+    P106 is composed of: E90 Symbolic Object
+
+    P106B forms part of: E90 Symbolic Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F14 Individual Work
+===================
+
+    List of superclasses:
+    ---------------------
+    F14, F1, E89, E28, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F14 Individual Work':
+    ---------------------------------------------
+    R9 is realised in: F22 Self-Contained Expression
+
+    No declared reverse properties
+
+    Properties inherited from 'F1 Work':
+    ------------------------------------
+    R1 is logical successor of: F1 Work
+    R2 is derivative of: F1 Work
+    R3 is realised in: F22 Self-Contained Expression
+    R40 has representative expression: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F15 Complex Work
+================
+
+    List of superclasses:
+    ---------------------
+    F15, F1, E89, E28, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F15 Complex Work':
+    ------------------------------------------
+    R10 has member: F1 Work
+
+    No declared reverse properties
+
+    Properties inherited from 'F1 Work':
+    ------------------------------------
+    R1 is logical successor of: F1 Work
+    R2 is derivative of: F1 Work
+    R3 is realised in: F22 Self-Contained Expression
+    R40 has representative expression: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F16 Container Work
+==================
+
+    List of superclasses:
+    ---------------------
+    F16, F1, E89, E28, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F16 Container Work':
+    --------------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'F1 Work':
+    ------------------------------------
+    R1 is logical successor of: F1 Work
+    R2 is derivative of: F1 Work
+    R3 is realised in: F22 Self-Contained Expression
+    R40 has representative expression: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F17 Aggregation Work
+====================
+
+    List of superclasses:
+    ---------------------
+    F17, F14, F16, F1, E89, E28, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F17 Aggregation Work':
+    ----------------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'F14 Individual Work':
+    ------------------------------------------------
+    R9 is realised in: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'F16 Container Work':
+    -----------------------------------------------
+    No inherited forward properties
+
+    No inherited reverse properties
+
+    Properties inherited from 'F1 Work':
+    ------------------------------------
+    R1 is logical successor of: F1 Work
+    R2 is derivative of: F1 Work
+    R3 is realised in: F22 Self-Contained Expression
+    R40 has representative expression: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F18 Serial Work
+===============
+
+    List of superclasses:
+    ---------------------
+    F18, F15, F19, F16, F1, E89, E28, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F18 Serial Work':
+    -----------------------------------------
+    R11 has issuing rule: E29 Design or Procedure
+
+    No declared reverse properties
+
+    Properties inherited from 'F15 Complex Work':
+    ---------------------------------------------
+    R10 has member: F1 Work
+
+    No inherited reverse properties
+
+    Properties inherited from 'F19 Publication Work':
+    -------------------------------------------------
+    No inherited forward properties
+
+    No inherited reverse properties
+
+    Properties inherited from 'F16 Container Work':
+    -----------------------------------------------
+    No inherited forward properties
+
+    No inherited reverse properties
+
+    Properties inherited from 'F1 Work':
+    ------------------------------------
+    R1 is logical successor of: F1 Work
+    R2 is derivative of: F1 Work
+    R3 is realised in: F22 Self-Contained Expression
+    R40 has representative expression: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F19 Publication Work
+====================
+
+    List of superclasses:
+    ---------------------
+    F19, F16, F1, E89, E28, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F19 Publication Work':
+    ----------------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'F16 Container Work':
+    -----------------------------------------------
+    No inherited forward properties
+
+    No inherited reverse properties
+
+    Properties inherited from 'F1 Work':
+    ------------------------------------
+    R1 is logical successor of: F1 Work
+    R2 is derivative of: F1 Work
+    R3 is realised in: F22 Self-Contained Expression
+    R40 has representative expression: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F20 Performance Work
+====================
+
+    List of superclasses:
+    ---------------------
+    F20, F16, F1, E89, E28, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F20 Performance Work':
+    ----------------------------------------------
+    R12 is realised in: F25 Performance Plan
+
+    No declared reverse properties
+
+    Properties inherited from 'F16 Container Work':
+    -----------------------------------------------
+    No inherited forward properties
+
+    No inherited reverse properties
+
+    Properties inherited from 'F1 Work':
+    ------------------------------------
+    R1 is logical successor of: F1 Work
+    R2 is derivative of: F1 Work
+    R3 is realised in: F22 Self-Contained Expression
+    R40 has representative expression: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F21 Recording Work
+==================
+
+    List of superclasses:
+    ---------------------
+    F21, F1, E89, E28, E71, E70, E77, E1, object, 
+
+    Properties declared for 'F21 Recording Work':
+    --------------------------------------------
+    R13 is realised in: F26 Recording
+
+    No declared reverse properties
+
+    Properties inherited from 'F1 Work':
+    ------------------------------------
+    R1 is logical successor of: F1 Work
+    R2 is derivative of: F1 Work
+    R3 is realised in: F22 Self-Contained Expression
+    R40 has representative expression: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F22 Self-Contained Expression
+=============================
+
+    List of superclasses:
+    ---------------------
+    F22, F2, E73, E89, E90, E28, E71, E72, E70, E77, E1, object, 
+
+    Properties declared for 'F22 Self-Contained Expression':
+    -------------------------------------------------------
+    R14 incorporates: F2 Expression
+
+    No declared reverse properties
+
+    Properties inherited from 'F2 Expression':
+    ------------------------------------------
+    R4 carriers provided by: F3 Manifestation Product Type
+    R5 has component: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E73 Information Object':
+    ---------------------------------------------------
+    No inherited forward properties
+
+    P128B is carried by: E24 Physical Man-Made Thing
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E90 Symbolic Object':
+    ------------------------------------------------
+    P106 is composed of: E90 Symbolic Object
+
+    P106B forms part of: E90 Symbolic Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F23 Expression Fragment
+=======================
+
+    List of superclasses:
+    ---------------------
+    F23, F2, E73, E89, E90, E28, E71, E72, E70, E77, E1, object, 
+
+    Properties declared for 'F23 Expression Fragment':
+    -------------------------------------------------
+    R15 has fragment: F2 Expression
+
+    No declared reverse properties
+
+    Properties inherited from 'F2 Expression':
+    ------------------------------------------
+    R4 carriers provided by: F3 Manifestation Product Type
+    R5 has component: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E73 Information Object':
+    ---------------------------------------------------
+    No inherited forward properties
+
+    P128B is carried by: E24 Physical Man-Made Thing
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E90 Symbolic Object':
+    ------------------------------------------------
+    P106 is composed of: E90 Symbolic Object
+
+    P106B forms part of: E90 Symbolic Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F24 Publication Expression
+==========================
+
+    List of superclasses:
+    ---------------------
+    F24, F22, F2, E73, E89, E90, E28, E71, E72, E70, E77, E1, object, 
+
+    Properties declared for 'F24 Publication Expression':
+    ----------------------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'F22 Self-Contained Expression':
+    ----------------------------------------------------------
+    R14 incorporates: F2 Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'F2 Expression':
+    ------------------------------------------
+    R4 carriers provided by: F3 Manifestation Product Type
+    R5 has component: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E73 Information Object':
+    ---------------------------------------------------
+    No inherited forward properties
+
+    P128B is carried by: E24 Physical Man-Made Thing
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E90 Symbolic Object':
+    ------------------------------------------------
+    P106 is composed of: E90 Symbolic Object
+
+    P106B forms part of: E90 Symbolic Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F25 Performance Plan
+====================
+
+    List of superclasses:
+    ---------------------
+    F25, F22, F2, E29, E73, E89, E90, E28, E71, E72, E70, E77, E1, object, 
+
+    Properties declared for 'F25 Performance Plan':
+    ----------------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'F22 Self-Contained Expression':
+    ----------------------------------------------------------
+    R14 incorporates: F2 Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'F2 Expression':
+    ------------------------------------------
+    R4 carriers provided by: F3 Manifestation Product Type
+    R5 has component: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E29 Design or Procedure':
+    ----------------------------------------------------
+    P68 foresees use of: E57 Material
+    P69 is associated with: E29 Design or Procedure
+
+    No inherited reverse properties
+
+    Properties inherited from 'E73 Information Object':
+    ---------------------------------------------------
+    No inherited forward properties
+
+    P128B is carried by: E24 Physical Man-Made Thing
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E90 Symbolic Object':
+    ------------------------------------------------
+    P106 is composed of: E90 Symbolic Object
+
+    P106B forms part of: E90 Symbolic Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F26 Recording
+=============
+
+    List of superclasses:
+    ---------------------
+    F26, F22, F2, E73, E89, E90, E28, E71, E72, E70, E77, E1, object, 
+
+    Properties declared for 'F26 Recording':
+    ---------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'F22 Self-Contained Expression':
+    ----------------------------------------------------------
+    R14 incorporates: F2 Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'F2 Expression':
+    ------------------------------------------
+    R4 carriers provided by: F3 Manifestation Product Type
+    R5 has component: F22 Self-Contained Expression
+
+    No inherited reverse properties
+
+    Properties inherited from 'E73 Information Object':
+    ---------------------------------------------------
+    No inherited forward properties
+
+    P128B is carried by: E24 Physical Man-Made Thing
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E90 Symbolic Object':
+    ------------------------------------------------
+    P106 is composed of: E90 Symbolic Object
+
+    P106B forms part of: E90 Symbolic Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F27 Work Conception
+===================
+
+    List of superclasses:
+    ---------------------
+    F27, E65, E7, E63, E5, E4, E2, E1, object, 
+
+    Properties declared for 'F27 Work Conception':
+    ---------------------------------------------
+    R16 initiated: F1 Work
+
+    No declared reverse properties
+
+    Properties inherited from 'E65 Creation':
+    -----------------------------------------
+    P94 has created: E28 Conceptual Object
+
+    No inherited reverse properties
+
+    Properties inherited from 'E7 Activity':
+    ----------------------------------------
+    P14 carried out by: E39 Actor
+    P15 was influenced by: E1 CRM Entity
+    P16 used specific object: E70 Thing
+    P19 was intended use of: E71 Man-Made Thing
+    P20 had specific purpose: E5 Event
+    P21 had general purpose: E55 Type
+    P32 used general technique: E55 Type
+    P33 used specific technique: E29 Design or Procedure
+    P125 used object of type: E55 Type
+    P134 continued: E7 Activity
+
+    P134B was continued by: E7 Activity
+
+    Properties inherited from 'E63 Beginning of Existence':
+    -------------------------------------------------------
+    P92 brought into existence: E77 Persistent Item
+
+    No inherited reverse properties
+
+    Properties inherited from 'E5 Event':
+    -------------------------------------
+    P11 had participant: E39 Actor
+    P12 occurred in the presence of: E77 Persistent Item
+
+    P20B was purpose of: E7 Activity
+
+    Properties inherited from 'E4 Period':
+    --------------------------------------
+    P7 took place at: E53 Place
+    P8 took place on or within: E19 Physical Object
+    P9 consists of: E4 Period
+    P10 falls within: E4 Period
+    P132 overlaps with: E4 Period
+    P133 is separated from: E4 Period
+
+    P9B forms part of: E4 Period
+    P10B contains: E4 Period
+    P132B overlaps with: E4 Period
+    P133B is separated from: E4 Period
+
+    Properties inherited from 'E2 Temporal Entity':
+    -----------------------------------------------
+    P4 has time-span: E52 Time-Span
+    P114 is equal in time to: E2 Temporal Entity
+    P115 finishes: E2 Temporal Entity
+    P116 starts: E2 Temporal Entity
+    P117 occurs during: E2 Temporal Entity
+    P118 overlaps in time with: E2 Temporal Entity
+    P119 meets in time with: E2 Temporal Entity
+    P120 occurs before: E2 Temporal Entity
+
+    P114B is equal in time to: E2 Temporal Entity
+    P115B is finished by: E2 Temporal Entity
+    P116B is started by: E2 Temporal Entity
+    P117B includes: E2 Temporal Entity
+    P118B is overlapped in time by: E2 Temporal Entity
+    P119B is met in time by: E2 Temporal Entity
+    P120B occurs after: E2 Temporal Entity
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F28 Expression Creation
+=======================
+
+    List of superclasses:
+    ---------------------
+    F28, E12, E11, E65, E7, E63, E5, E4, E2, E1, object, 
+
+    Properties declared for 'F28 Expression Creation':
+    -------------------------------------------------
+    R17 created: F2 Expression
+    R18 created: F4 Manifestation Singleton
+    R19 created a realisation of: F1 Work
+
+    No declared reverse properties
+
+    Properties inherited from 'E12 Production':
+    -------------------------------------------
+    P108 has produced: E24 Physical Man-Made Thing
+
+    No inherited reverse properties
+
+    Properties inherited from 'E11 Modification':
+    ---------------------------------------------
+    P31 has modified: E24 Physical Man-Made Thing
+    P126 employed: E57 Material
+
+    No inherited reverse properties
+
+    Properties inherited from 'E65 Creation':
+    -----------------------------------------
+    P94 has created: E28 Conceptual Object
+
+    No inherited reverse properties
+
+    Properties inherited from 'E7 Activity':
+    ----------------------------------------
+    P14 carried out by: E39 Actor
+    P15 was influenced by: E1 CRM Entity
+    P16 used specific object: E70 Thing
+    P19 was intended use of: E71 Man-Made Thing
+    P20 had specific purpose: E5 Event
+    P21 had general purpose: E55 Type
+    P32 used general technique: E55 Type
+    P33 used specific technique: E29 Design or Procedure
+    P125 used object of type: E55 Type
+    P134 continued: E7 Activity
+
+    P134B was continued by: E7 Activity
+
+    Properties inherited from 'E63 Beginning of Existence':
+    -------------------------------------------------------
+    P92 brought into existence: E77 Persistent Item
+
+    No inherited reverse properties
+
+    Properties inherited from 'E5 Event':
+    -------------------------------------
+    P11 had participant: E39 Actor
+    P12 occurred in the presence of: E77 Persistent Item
+
+    P20B was purpose of: E7 Activity
+
+    Properties inherited from 'E4 Period':
+    --------------------------------------
+    P7 took place at: E53 Place
+    P8 took place on or within: E19 Physical Object
+    P9 consists of: E4 Period
+    P10 falls within: E4 Period
+    P132 overlaps with: E4 Period
+    P133 is separated from: E4 Period
+
+    P9B forms part of: E4 Period
+    P10B contains: E4 Period
+    P132B overlaps with: E4 Period
+    P133B is separated from: E4 Period
+
+    Properties inherited from 'E2 Temporal Entity':
+    -----------------------------------------------
+    P4 has time-span: E52 Time-Span
+    P114 is equal in time to: E2 Temporal Entity
+    P115 finishes: E2 Temporal Entity
+    P116 starts: E2 Temporal Entity
+    P117 occurs during: E2 Temporal Entity
+    P118 overlaps in time with: E2 Temporal Entity
+    P119 meets in time with: E2 Temporal Entity
+    P120 occurs before: E2 Temporal Entity
+
+    P114B is equal in time to: E2 Temporal Entity
+    P115B is finished by: E2 Temporal Entity
+    P116B is started by: E2 Temporal Entity
+    P117B includes: E2 Temporal Entity
+    P118B is overlapped in time by: E2 Temporal Entity
+    P119B is met in time by: E2 Temporal Entity
+    P120B occurs after: E2 Temporal Entity
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F29 Recording Event
+===================
+
+    List of superclasses:
+    ---------------------
+    F29, F28, E12, E11, E65, E7, E63, E5, E4, E2, E1, object, 
+
+    Properties declared for 'F29 Recording Event':
+    ---------------------------------------------
+    R20 recorded: E5 Event
+    R21 created: F26 Recording
+    R22 created a realisation of: F21 Recording Work
+
+    No declared reverse properties
+
+    Properties inherited from 'F28 Expression Creation':
+    ----------------------------------------------------
+    R17 created: F2 Expression
+    R18 created: F4 Manifestation Singleton
+    R19 created a realisation of: F1 Work
+
+    No inherited reverse properties
+
+    Properties inherited from 'E12 Production':
+    -------------------------------------------
+    P108 has produced: E24 Physical Man-Made Thing
+
+    No inherited reverse properties
+
+    Properties inherited from 'E11 Modification':
+    ---------------------------------------------
+    P31 has modified: E24 Physical Man-Made Thing
+    P126 employed: E57 Material
+
+    No inherited reverse properties
+
+    Properties inherited from 'E65 Creation':
+    -----------------------------------------
+    P94 has created: E28 Conceptual Object
+
+    No inherited reverse properties
+
+    Properties inherited from 'E7 Activity':
+    ----------------------------------------
+    P14 carried out by: E39 Actor
+    P15 was influenced by: E1 CRM Entity
+    P16 used specific object: E70 Thing
+    P19 was intended use of: E71 Man-Made Thing
+    P20 had specific purpose: E5 Event
+    P21 had general purpose: E55 Type
+    P32 used general technique: E55 Type
+    P33 used specific technique: E29 Design or Procedure
+    P125 used object of type: E55 Type
+    P134 continued: E7 Activity
+
+    P134B was continued by: E7 Activity
+
+    Properties inherited from 'E63 Beginning of Existence':
+    -------------------------------------------------------
+    P92 brought into existence: E77 Persistent Item
+
+    No inherited reverse properties
+
+    Properties inherited from 'E5 Event':
+    -------------------------------------
+    P11 had participant: E39 Actor
+    P12 occurred in the presence of: E77 Persistent Item
+
+    P20B was purpose of: E7 Activity
+
+    Properties inherited from 'E4 Period':
+    --------------------------------------
+    P7 took place at: E53 Place
+    P8 took place on or within: E19 Physical Object
+    P9 consists of: E4 Period
+    P10 falls within: E4 Period
+    P132 overlaps with: E4 Period
+    P133 is separated from: E4 Period
+
+    P9B forms part of: E4 Period
+    P10B contains: E4 Period
+    P132B overlaps with: E4 Period
+    P133B is separated from: E4 Period
+
+    Properties inherited from 'E2 Temporal Entity':
+    -----------------------------------------------
+    P4 has time-span: E52 Time-Span
+    P114 is equal in time to: E2 Temporal Entity
+    P115 finishes: E2 Temporal Entity
+    P116 starts: E2 Temporal Entity
+    P117 occurs during: E2 Temporal Entity
+    P118 overlaps in time with: E2 Temporal Entity
+    P119 meets in time with: E2 Temporal Entity
+    P120 occurs before: E2 Temporal Entity
+
+    P114B is equal in time to: E2 Temporal Entity
+    P115B is finished by: E2 Temporal Entity
+    P116B is started by: E2 Temporal Entity
+    P117B includes: E2 Temporal Entity
+    P118B is overlapped in time by: E2 Temporal Entity
+    P119B is met in time by: E2 Temporal Entity
+    P120B occurs after: E2 Temporal Entity
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F30 Publication Event
+=====================
+
+    List of superclasses:
+    ---------------------
+    F30, F28, E12, E11, E65, E7, E63, E5, E4, E2, E1, object, 
+
+    Properties declared for 'F30 Publication Event':
+    -----------------------------------------------
+    R23 created a realisation of: F19 Publication Work
+    R24 created: F24 Publication Expression
+
+    No declared reverse properties
+
+    Properties inherited from 'F28 Expression Creation':
+    ----------------------------------------------------
+    R17 created: F2 Expression
+    R18 created: F4 Manifestation Singleton
+    R19 created a realisation of: F1 Work
+
+    No inherited reverse properties
+
+    Properties inherited from 'E12 Production':
+    -------------------------------------------
+    P108 has produced: E24 Physical Man-Made Thing
+
+    No inherited reverse properties
+
+    Properties inherited from 'E11 Modification':
+    ---------------------------------------------
+    P31 has modified: E24 Physical Man-Made Thing
+    P126 employed: E57 Material
+
+    No inherited reverse properties
+
+    Properties inherited from 'E65 Creation':
+    -----------------------------------------
+    P94 has created: E28 Conceptual Object
+
+    No inherited reverse properties
+
+    Properties inherited from 'E7 Activity':
+    ----------------------------------------
+    P14 carried out by: E39 Actor
+    P15 was influenced by: E1 CRM Entity
+    P16 used specific object: E70 Thing
+    P19 was intended use of: E71 Man-Made Thing
+    P20 had specific purpose: E5 Event
+    P21 had general purpose: E55 Type
+    P32 used general technique: E55 Type
+    P33 used specific technique: E29 Design or Procedure
+    P125 used object of type: E55 Type
+    P134 continued: E7 Activity
+
+    P134B was continued by: E7 Activity
+
+    Properties inherited from 'E63 Beginning of Existence':
+    -------------------------------------------------------
+    P92 brought into existence: E77 Persistent Item
+
+    No inherited reverse properties
+
+    Properties inherited from 'E5 Event':
+    -------------------------------------
+    P11 had participant: E39 Actor
+    P12 occurred in the presence of: E77 Persistent Item
+
+    P20B was purpose of: E7 Activity
+
+    Properties inherited from 'E4 Period':
+    --------------------------------------
+    P7 took place at: E53 Place
+    P8 took place on or within: E19 Physical Object
+    P9 consists of: E4 Period
+    P10 falls within: E4 Period
+    P132 overlaps with: E4 Period
+    P133 is separated from: E4 Period
+
+    P9B forms part of: E4 Period
+    P10B contains: E4 Period
+    P132B overlaps with: E4 Period
+    P133B is separated from: E4 Period
+
+    Properties inherited from 'E2 Temporal Entity':
+    -----------------------------------------------
+    P4 has time-span: E52 Time-Span
+    P114 is equal in time to: E2 Temporal Entity
+    P115 finishes: E2 Temporal Entity
+    P116 starts: E2 Temporal Entity
+    P117 occurs during: E2 Temporal Entity
+    P118 overlaps in time with: E2 Temporal Entity
+    P119 meets in time with: E2 Temporal Entity
+    P120 occurs before: E2 Temporal Entity
+
+    P114B is equal in time to: E2 Temporal Entity
+    P115B is finished by: E2 Temporal Entity
+    P116B is started by: E2 Temporal Entity
+    P117B includes: E2 Temporal Entity
+    P118B is overlapped in time by: E2 Temporal Entity
+    P119B is met in time by: E2 Temporal Entity
+    P120B occurs after: E2 Temporal Entity
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F31 Performance
+===============
+
+    List of superclasses:
+    ---------------------
+    F31, E7, E5, E4, E2, E1, object, 
+
+    Properties declared for 'F31 Performance':
+    -----------------------------------------
+    R25 performed: F25 Performance Plan
+
+    No declared reverse properties
+
+    Properties inherited from 'E7 Activity':
+    ----------------------------------------
+    P14 carried out by: E39 Actor
+    P15 was influenced by: E1 CRM Entity
+    P16 used specific object: E70 Thing
+    P19 was intended use of: E71 Man-Made Thing
+    P20 had specific purpose: E5 Event
+    P21 had general purpose: E55 Type
+    P32 used general technique: E55 Type
+    P33 used specific technique: E29 Design or Procedure
+    P125 used object of type: E55 Type
+    P134 continued: E7 Activity
+
+    P134B was continued by: E7 Activity
+
+    Properties inherited from 'E5 Event':
+    -------------------------------------
+    P11 had participant: E39 Actor
+    P12 occurred in the presence of: E77 Persistent Item
+
+    P20B was purpose of: E7 Activity
+
+    Properties inherited from 'E4 Period':
+    --------------------------------------
+    P7 took place at: E53 Place
+    P8 took place on or within: E19 Physical Object
+    P9 consists of: E4 Period
+    P10 falls within: E4 Period
+    P132 overlaps with: E4 Period
+    P133 is separated from: E4 Period
+
+    P9B forms part of: E4 Period
+    P10B contains: E4 Period
+    P132B overlaps with: E4 Period
+    P133B is separated from: E4 Period
+
+    Properties inherited from 'E2 Temporal Entity':
+    -----------------------------------------------
+    P4 has time-span: E52 Time-Span
+    P114 is equal in time to: E2 Temporal Entity
+    P115 finishes: E2 Temporal Entity
+    P116 starts: E2 Temporal Entity
+    P117 occurs during: E2 Temporal Entity
+    P118 overlaps in time with: E2 Temporal Entity
+    P119 meets in time with: E2 Temporal Entity
+    P120 occurs before: E2 Temporal Entity
+
+    P114B is equal in time to: E2 Temporal Entity
+    P115B is finished by: E2 Temporal Entity
+    P116B is started by: E2 Temporal Entity
+    P117B includes: E2 Temporal Entity
+    P118B is overlapped in time by: E2 Temporal Entity
+    P119B is met in time by: E2 Temporal Entity
+    P120B occurs after: E2 Temporal Entity
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F32 Carrier Production Event
+============================
+
+    List of superclasses:
+    ---------------------
+    F32, E12, E11, E7, E63, E5, E4, E2, E1, object, 
+
+    Properties declared for 'F32 Carrier Production Event':
+    ------------------------------------------------------
+    R26 produced things of type: F3 Manifestation Product Type
+    R27 used as source material: F24 Publication Expression
+    R28 produced: F5 Item
+
+    No declared reverse properties
+
+    Properties inherited from 'E12 Production':
+    -------------------------------------------
+    P108 has produced: E24 Physical Man-Made Thing
+
+    No inherited reverse properties
+
+    Properties inherited from 'E11 Modification':
+    ---------------------------------------------
+    P31 has modified: E24 Physical Man-Made Thing
+    P126 employed: E57 Material
+
+    No inherited reverse properties
+
+    Properties inherited from 'E7 Activity':
+    ----------------------------------------
+    P14 carried out by: E39 Actor
+    P15 was influenced by: E1 CRM Entity
+    P16 used specific object: E70 Thing
+    P19 was intended use of: E71 Man-Made Thing
+    P20 had specific purpose: E5 Event
+    P21 had general purpose: E55 Type
+    P32 used general technique: E55 Type
+    P33 used specific technique: E29 Design or Procedure
+    P125 used object of type: E55 Type
+    P134 continued: E7 Activity
+
+    P134B was continued by: E7 Activity
+
+    Properties inherited from 'E63 Beginning of Existence':
+    -------------------------------------------------------
+    P92 brought into existence: E77 Persistent Item
+
+    No inherited reverse properties
+
+    Properties inherited from 'E5 Event':
+    -------------------------------------
+    P11 had participant: E39 Actor
+    P12 occurred in the presence of: E77 Persistent Item
+
+    P20B was purpose of: E7 Activity
+
+    Properties inherited from 'E4 Period':
+    --------------------------------------
+    P7 took place at: E53 Place
+    P8 took place on or within: E19 Physical Object
+    P9 consists of: E4 Period
+    P10 falls within: E4 Period
+    P132 overlaps with: E4 Period
+    P133 is separated from: E4 Period
+
+    P9B forms part of: E4 Period
+    P10B contains: E4 Period
+    P132B overlaps with: E4 Period
+    P133B is separated from: E4 Period
+
+    Properties inherited from 'E2 Temporal Entity':
+    -----------------------------------------------
+    P4 has time-span: E52 Time-Span
+    P114 is equal in time to: E2 Temporal Entity
+    P115 finishes: E2 Temporal Entity
+    P116 starts: E2 Temporal Entity
+    P117 occurs during: E2 Temporal Entity
+    P118 overlaps in time with: E2 Temporal Entity
+    P119 meets in time with: E2 Temporal Entity
+    P120 occurs before: E2 Temporal Entity
+
+    P114B is equal in time to: E2 Temporal Entity
+    P115B is finished by: E2 Temporal Entity
+    P116B is started by: E2 Temporal Entity
+    P117B includes: E2 Temporal Entity
+    P118B is overlapped in time by: E2 Temporal Entity
+    P119B is met in time by: E2 Temporal Entity
+    P120B occurs after: E2 Temporal Entity
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F33 Reproduction Event
+======================
+
+    List of superclasses:
+    ---------------------
+    F33, E12, E11, E7, E63, E5, E4, E2, E1, object, 
+
+    Properties declared for 'F33 Reproduction Event':
+    ------------------------------------------------
+    R29 reproduced: E84 Information Carrier
+    R30 produced: E84 Information Carrier
+
+    No declared reverse properties
+
+    Properties inherited from 'E12 Production':
+    -------------------------------------------
+    P108 has produced: E24 Physical Man-Made Thing
+
+    No inherited reverse properties
+
+    Properties inherited from 'E11 Modification':
+    ---------------------------------------------
+    P31 has modified: E24 Physical Man-Made Thing
+    P126 employed: E57 Material
+
+    No inherited reverse properties
+
+    Properties inherited from 'E7 Activity':
+    ----------------------------------------
+    P14 carried out by: E39 Actor
+    P15 was influenced by: E1 CRM Entity
+    P16 used specific object: E70 Thing
+    P19 was intended use of: E71 Man-Made Thing
+    P20 had specific purpose: E5 Event
+    P21 had general purpose: E55 Type
+    P32 used general technique: E55 Type
+    P33 used specific technique: E29 Design or Procedure
+    P125 used object of type: E55 Type
+    P134 continued: E7 Activity
+
+    P134B was continued by: E7 Activity
+
+    Properties inherited from 'E63 Beginning of Existence':
+    -------------------------------------------------------
+    P92 brought into existence: E77 Persistent Item
+
+    No inherited reverse properties
+
+    Properties inherited from 'E5 Event':
+    -------------------------------------
+    P11 had participant: E39 Actor
+    P12 occurred in the presence of: E77 Persistent Item
+
+    P20B was purpose of: E7 Activity
+
+    Properties inherited from 'E4 Period':
+    --------------------------------------
+    P7 took place at: E53 Place
+    P8 took place on or within: E19 Physical Object
+    P9 consists of: E4 Period
+    P10 falls within: E4 Period
+    P132 overlaps with: E4 Period
+    P133 is separated from: E4 Period
+
+    P9B forms part of: E4 Period
+    P10B contains: E4 Period
+    P132B overlaps with: E4 Period
+    P133B is separated from: E4 Period
+
+    Properties inherited from 'E2 Temporal Entity':
+    -----------------------------------------------
+    P4 has time-span: E52 Time-Span
+    P114 is equal in time to: E2 Temporal Entity
+    P115 finishes: E2 Temporal Entity
+    P116 starts: E2 Temporal Entity
+    P117 occurs during: E2 Temporal Entity
+    P118 overlaps in time with: E2 Temporal Entity
+    P119 meets in time with: E2 Temporal Entity
+    P120 occurs before: E2 Temporal Entity
+
+    P114B is equal in time to: E2 Temporal Entity
+    P115B is finished by: E2 Temporal Entity
+    P116B is started by: E2 Temporal Entity
+    P117B includes: E2 Temporal Entity
+    P118B is overlapped in time by: E2 Temporal Entity
+    P119B is met in time by: E2 Temporal Entity
+    P120B occurs after: E2 Temporal Entity
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F40 Identifier Assignment
+=========================
+
+    List of superclasses:
+    ---------------------
+    F40, E15, E13, E7, E5, E4, E2, E1, object, 
+
+    Properties declared for 'F40 Identifier Assignment':
+    ---------------------------------------------------
+    R45 assigned to: E1 CRM Entity
+    R46 assigned: F13 Identifier
+    R47 used constituent: F12 Name
+    R52 used rule: F43 Identifier Rule
+
+    No declared reverse properties
+
+    Properties inherited from 'E15 Identifier Assignment':
+    ------------------------------------------------------
+    P37 assigned: E42 Identifier
+    P38 deassigned: E42 Identifier
+    P142 used constituent: E41 Appellation
+
+    No inherited reverse properties
+
+    Properties inherited from 'E13 Attribute Assignment':
+    -----------------------------------------------------
+    P140 assigned attribute to: E1 CRM Entity
+    P141 assigned: E1 CRM Entity
+
+    No inherited reverse properties
+
+    Properties inherited from 'E7 Activity':
+    ----------------------------------------
+    P14 carried out by: E39 Actor
+    P15 was influenced by: E1 CRM Entity
+    P16 used specific object: E70 Thing
+    P19 was intended use of: E71 Man-Made Thing
+    P20 had specific purpose: E5 Event
+    P21 had general purpose: E55 Type
+    P32 used general technique: E55 Type
+    P33 used specific technique: E29 Design or Procedure
+    P125 used object of type: E55 Type
+    P134 continued: E7 Activity
+
+    P134B was continued by: E7 Activity
+
+    Properties inherited from 'E5 Event':
+    -------------------------------------
+    P11 had participant: E39 Actor
+    P12 occurred in the presence of: E77 Persistent Item
+
+    P20B was purpose of: E7 Activity
+
+    Properties inherited from 'E4 Period':
+    --------------------------------------
+    P7 took place at: E53 Place
+    P8 took place on or within: E19 Physical Object
+    P9 consists of: E4 Period
+    P10 falls within: E4 Period
+    P132 overlaps with: E4 Period
+    P133 is separated from: E4 Period
+
+    P9B forms part of: E4 Period
+    P10B contains: E4 Period
+    P132B overlaps with: E4 Period
+    P133B is separated from: E4 Period
+
+    Properties inherited from 'E2 Temporal Entity':
+    -----------------------------------------------
+    P4 has time-span: E52 Time-Span
+    P114 is equal in time to: E2 Temporal Entity
+    P115 finishes: E2 Temporal Entity
+    P116 starts: E2 Temporal Entity
+    P117 occurs during: E2 Temporal Entity
+    P118 overlaps in time with: E2 Temporal Entity
+    P119 meets in time with: E2 Temporal Entity
+    P120 occurs before: E2 Temporal Entity
+
+    P114B is equal in time to: E2 Temporal Entity
+    P115B is finished by: E2 Temporal Entity
+    P116B is started by: E2 Temporal Entity
+    P117B includes: E2 Temporal Entity
+    P118B is overlapped in time by: E2 Temporal Entity
+    P119B is met in time by: E2 Temporal Entity
+    P120B occurs after: E2 Temporal Entity
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F41 Representative Manifestation Assignment
+===========================================
+
+    List of superclasses:
+    ---------------------
+    F41, E13, E7, E5, E4, E2, E1, object, 
+
+    Properties declared for 'F41 Representative Manifestation Assignment':
+    ---------------------------------------------------------------------
+    R43 carried out by: F44 Bibliographic Agency
+    R48 assigned to: F2 Expression
+    R49 assigned: F3 Manifestation Product Type
+    R53 assigned: F4 Manifestation Singleton
+
+    No declared reverse properties
+
+    Properties inherited from 'E13 Attribute Assignment':
+    -----------------------------------------------------
+    P140 assigned attribute to: E1 CRM Entity
+    P141 assigned: E1 CRM Entity
+
+    No inherited reverse properties
+
+    Properties inherited from 'E7 Activity':
+    ----------------------------------------
+    P14 carried out by: E39 Actor
+    P15 was influenced by: E1 CRM Entity
+    P16 used specific object: E70 Thing
+    P19 was intended use of: E71 Man-Made Thing
+    P20 had specific purpose: E5 Event
+    P21 had general purpose: E55 Type
+    P32 used general technique: E55 Type
+    P33 used specific technique: E29 Design or Procedure
+    P125 used object of type: E55 Type
+    P134 continued: E7 Activity
+
+    P134B was continued by: E7 Activity
+
+    Properties inherited from 'E5 Event':
+    -------------------------------------
+    P11 had participant: E39 Actor
+    P12 occurred in the presence of: E77 Persistent Item
+
+    P20B was purpose of: E7 Activity
+
+    Properties inherited from 'E4 Period':
+    --------------------------------------
+    P7 took place at: E53 Place
+    P8 took place on or within: E19 Physical Object
+    P9 consists of: E4 Period
+    P10 falls within: E4 Period
+    P132 overlaps with: E4 Period
+    P133 is separated from: E4 Period
+
+    P9B forms part of: E4 Period
+    P10B contains: E4 Period
+    P132B overlaps with: E4 Period
+    P133B is separated from: E4 Period
+
+    Properties inherited from 'E2 Temporal Entity':
+    -----------------------------------------------
+    P4 has time-span: E52 Time-Span
+    P114 is equal in time to: E2 Temporal Entity
+    P115 finishes: E2 Temporal Entity
+    P116 starts: E2 Temporal Entity
+    P117 occurs during: E2 Temporal Entity
+    P118 overlaps in time with: E2 Temporal Entity
+    P119 meets in time with: E2 Temporal Entity
+    P120 occurs before: E2 Temporal Entity
+
+    P114B is equal in time to: E2 Temporal Entity
+    P115B is finished by: E2 Temporal Entity
+    P116B is started by: E2 Temporal Entity
+    P117B includes: E2 Temporal Entity
+    P118B is overlapped in time by: E2 Temporal Entity
+    P119B is met in time by: E2 Temporal Entity
+    P120B occurs after: E2 Temporal Entity
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F42 Representative Expression Assignment
+========================================
+
+    List of superclasses:
+    ---------------------
+    F42, E13, E7, E5, E4, E2, E1, object, 
+
+    Properties declared for 'F42 Representative Expression Assignment':
+    ------------------------------------------------------------------
+    R44 carried out by: F44 Bibliographic Agency
+    R50 assigned to: F15 Complex Work
+    R51 assigned: F2 Expression
+
+    No declared reverse properties
+
+    Properties inherited from 'E13 Attribute Assignment':
+    -----------------------------------------------------
+    P140 assigned attribute to: E1 CRM Entity
+    P141 assigned: E1 CRM Entity
+
+    No inherited reverse properties
+
+    Properties inherited from 'E7 Activity':
+    ----------------------------------------
+    P14 carried out by: E39 Actor
+    P15 was influenced by: E1 CRM Entity
+    P16 used specific object: E70 Thing
+    P19 was intended use of: E71 Man-Made Thing
+    P20 had specific purpose: E5 Event
+    P21 had general purpose: E55 Type
+    P32 used general technique: E55 Type
+    P33 used specific technique: E29 Design or Procedure
+    P125 used object of type: E55 Type
+    P134 continued: E7 Activity
+
+    P134B was continued by: E7 Activity
+
+    Properties inherited from 'E5 Event':
+    -------------------------------------
+    P11 had participant: E39 Actor
+    P12 occurred in the presence of: E77 Persistent Item
+
+    P20B was purpose of: E7 Activity
+
+    Properties inherited from 'E4 Period':
+    --------------------------------------
+    P7 took place at: E53 Place
+    P8 took place on or within: E19 Physical Object
+    P9 consists of: E4 Period
+    P10 falls within: E4 Period
+    P132 overlaps with: E4 Period
+    P133 is separated from: E4 Period
+
+    P9B forms part of: E4 Period
+    P10B contains: E4 Period
+    P132B overlaps with: E4 Period
+    P133B is separated from: E4 Period
+
+    Properties inherited from 'E2 Temporal Entity':
+    -----------------------------------------------
+    P4 has time-span: E52 Time-Span
+    P114 is equal in time to: E2 Temporal Entity
+    P115 finishes: E2 Temporal Entity
+    P116 starts: E2 Temporal Entity
+    P117 occurs during: E2 Temporal Entity
+    P118 overlaps in time with: E2 Temporal Entity
+    P119 meets in time with: E2 Temporal Entity
+    P120 occurs before: E2 Temporal Entity
+
+    P114B is equal in time to: E2 Temporal Entity
+    P115B is finished by: E2 Temporal Entity
+    P116B is started by: E2 Temporal Entity
+    P117B includes: E2 Temporal Entity
+    P118B is overlapped in time by: E2 Temporal Entity
+    P119B is met in time by: E2 Temporal Entity
+    P120B occurs after: E2 Temporal Entity
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F43 Identifier Rule
+===================
+
+    List of superclasses:
+    ---------------------
+    F43, E29, E73, E89, E90, E28, E71, E72, E70, E77, E1, object, 
+
+    Properties declared for 'F43 Identifier Rule':
+    ---------------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'E29 Design or Procedure':
+    ----------------------------------------------------
+    P68 foresees use of: E57 Material
+    P69 is associated with: E29 Design or Procedure
+
+    No inherited reverse properties
+
+    Properties inherited from 'E73 Information Object':
+    ---------------------------------------------------
+    No inherited forward properties
+
+    P128B is carried by: E24 Physical Man-Made Thing
+
+    Properties inherited from 'E89 Propositional Object':
+    -----------------------------------------------------
+    P67 refers to: E1 CRM Entity
+    P129 is about: E1 CRM Entity
+    P148 has component: E89 Propositional Object
+
+    P148B is component of: E89 Propositional Object
+
+    Properties inherited from 'E90 Symbolic Object':
+    ------------------------------------------------
+    P106 is composed of: E90 Symbolic Object
+
+    P106B forms part of: E90 Symbolic Object
+
+    Properties inherited from 'E28 Conceptual Object':
+    --------------------------------------------------
+    No inherited forward properties
+
+    P94B was created by: E65 Creation
+
+    Properties inherited from 'E71 Man-Made Thing':
+    -----------------------------------------------
+    P102 has title: E35 Title
+    P103 was intended for: E55 Type
+
+    P19B was made for: E7 Activity
+
+    Properties inherited from 'E72 Legal Object':
+    ---------------------------------------------
+    P104 is subject to: E30 Right
+    P105 right held by: E39 Actor
+
+    No inherited reverse properties
+
+    Properties inherited from 'E70 Thing':
+    --------------------------------------
+    P43 has dimension: E54 Dimension
+    P101 had as general use: E55 Type
+    P130 shows features of: E70 Thing
+
+    P16B was used for: E7 Activity
+    P130B features are also found on: E70 Thing
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+
+F44 Bibliographic Agency
+========================
+
+    List of superclasses:
+    ---------------------
+    F44, F11, E74, E39, E77, E1, object, 
+
+    Properties declared for 'F44 Bibliographic Agency':
+    --------------------------------------------------
+    No declared forward properties
+
+    No declared reverse properties
+
+    Properties inherited from 'F11 Corporate Body':
+    -----------------------------------------------
+    No inherited forward properties
+
+    No inherited reverse properties
+
+    Properties inherited from 'E74 Group':
+    --------------------------------------
+    P107 has current or former member: E39 Actor
+
+    P95B was formed by: E66 Formation
+    P99B was dissolved by: E68 Dissolution
+    P144B gained member by: E85 Joining
+    P146B lost member by: E86 Leaving
+
+    Properties inherited from 'E39 Actor':
+    --------------------------------------
+    P74 has current or former residence: E53 Place
+    P75 possesses: E30 Right
+    P76 has contact point: E51 Contact Point
+    P131 is identified by: E82 Actor Appellation
+
+    P11B participated in: E5 Event
+    P14B performed: E7 Activity
+    P22B acquired title through: E8 Acquisition
+    P23B surrendered title through: E8 Acquisition
+    P28B surrendered custody through: E10 Transfer of Custody
+    P29B received custody through: E10 Transfer of Custody
+    P49B is former or current keeper of: E18 Physical Thing
+    P50B is current keeper of: E18 Physical Thing
+    P51B is former or current owner of: E18 Physical Thing
+    P52B is current owner of: E18 Physical Thing
+    P105B has right on: E72 Legal Object
+    P107B is current or former member of: E74 Group
+    P109B is current or former curator of: E78 Collection
+    P143B was joined by: E85 Joining
+    P145B left by: E86 Leaving
+
+    Properties inherited from 'E77 Persistent Item':
+    ------------------------------------------------
+    No inherited forward properties
+
+    P12B was present at: E5 Event
+    P92B was brought into existence by: E63 Beginning of Existence
+    P93B was taken out of existence by: E64 End of Existence
+    P123B resulted from: E81 Transformation
+    P124B was transformed by: E81 Transformation
+
+    Properties inherited from 'E1 CRM Entity':
+    ------------------------------------------
+    P1 is identified by: E41 Appellation
+    P2 has type: E55 Type
+    P3 has note: E62 String
+    P48 has preferred identifier: E42 Identifier
+    P137 exemplifies: E55 Type
+
+    P15B influenced: E7 Activity
+    P17B motivated: E7 Activity
+    P39B was measured by: E16 Measurement
+    P41B was classified by: E17 Type Assignment
+    P62B is depicted by: E24 Physical Man-Made Thing
+    P67B is referred to by: E89 Propositional Object
+    P70B is documented in: E31 Document
+    P129B is subject of: E89 Propositional Object
+    P136B supported type creation: E83 Type Creation
+    P138B has representation: E36 Visual Item
+    P140B was attributed by: E13 Attribute Assignment
+    P141B was assigned by: E13 Attribute Assignment
+
+

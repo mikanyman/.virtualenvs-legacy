@@ -1,0 +1,16 @@
+{% extends "common/base.html" %}
+
+{% block content %}
+{% comment %}
+<div id="content_2col">
+  <div id="col_2" class="columns">{% block col_2 %}{% endblock %}</div>
+  <div id="col_1" class="columns">{% block col_1 %}{% endblock %}</div>
+</div>
+{% endcomment %}
+<div id="col2_col3_right">
+  {% block col_2 %}{% endblock %}
+</div>	
+<div id="col1">
+  {% block col_1 %}{% endblock %}
+</div>
+{% endblock %}

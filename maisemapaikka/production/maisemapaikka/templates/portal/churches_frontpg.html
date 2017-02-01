@@ -1,0 +1,13 @@
+{% extends "portal/base_churches.html" %}
+{% load i18n %}
+{% load cms_tags %}
+
+{% block description %}
+<span class="section_header">{% trans "Buildings and Monuments" %}</span><span class="section_aspect"> | {% trans "Home" %}</span>
+{% endblock %}
+
+{% block content %}
+<div class="padding_10">
+  {% placeholder churches_frontpg_content %}
+</div>
+{% endblock %}

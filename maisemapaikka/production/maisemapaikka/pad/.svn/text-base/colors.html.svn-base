@@ -1,0 +1,19 @@
+<style>
+.patch {
+    width: 600px;
+    display: block;
+    padding: 8px;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: Arial;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+</style>
+
+<div class="patch" style="background-color:#FFCC33">Lorem ipsum</div>
+<div class="patch" style="background-color:#3A6BB8">Lorem ipsum</div>
+<div class="patch" style="background-color:#6EB94B">Lorem ipsum</div>
+<div class="patch" style="background-color:#FF4040">Lorem ipsum</div>
+<div class="patch" style="background-color:#78A0C8">Lorem ipsum</div>
+<div class="patch" style="background-color:#8B6396">Lorem ipsum</div>

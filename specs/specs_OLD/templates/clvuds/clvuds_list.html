@@ -1,0 +1,10 @@
+<div class="cluds">
+<table>
+{% for member in members %}
+<tr class="{% cycle blue,white %}">
+  <td><a href="./{{ member.id }}">{{ member.id }}</a></td><td>{{ member.sukunimi }}</td><td class="last">{{ member.etunimi }}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+

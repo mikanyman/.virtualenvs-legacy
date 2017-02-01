@@ -1,0 +1,15 @@
+{% extends "common/base.html" %}
+
+{% block content %}
+<div id="col1_col2_left">
+  <div id="col2">
+    {% block main %}{% endblock %}
+  </div>
+  <div id="col1">
+    {% block sidebar_left %}{% endblock %}
+  </div>
+</div>
+<div id="col3">
+  {% block sidebar_right %}{% endblock %}
+</div>
+{% endblock %}

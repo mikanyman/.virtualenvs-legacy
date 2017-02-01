@@ -1,0 +1,16 @@
+{% load i18n %}
+
+<!-- Landscapes -->
+<ul class="navlist">
+  {% ifnotequal aspect "frontpg" %}
+  <li><a href="/home/frontpg/">{% trans "Home" %}</a></li>
+  {% else %}
+   <li><span class="selected">{% trans "Home" %}</span></li>
+  {% endifnotequal %}
+
+  {% ifnotequal aspect "info" %}
+  <li><a href="/home/info/">{% trans "Info about the Site" %}</a></li>
+  {% else %}
+  <li><span class="selected">{% trans "Info about the Site" %}</span></li>
+  {% endifnotequal %}
+</ul>

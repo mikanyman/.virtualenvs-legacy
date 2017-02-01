@@ -1,0 +1,31 @@
+from django.conf.urls.defaults import patterns, include, url
+import os
+from tallsmall.local_redirects import REDIRECTS
+
+from django.contrib import admin
+admin.autodiscover()
+
+urlpatterns = REDIRECTS
+urlpatterns += patterns('',
+
+    # Examples:
+    # url(r'^$', 'tallsmall.views.home', name='home'),
+    url(r'^etreg/', include('tallsmall.apps.etreg.urls')),
+    url(r'^accounts/', include('registration.urls'),),
+    url(r'^profiles/', include('profiles.urls')),
+
+    # ---------- admin ----------
+    url(r'^admin_tools/', include('admin_tools.urls')),
+    url(r'^admin/jsi18n/$', 'django.views.i18n.javascript_catalog'),
+    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include('cms.urls')),
+)
+
+if os.name == 'nt':
+    from django.conf import settings
+    from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+    urlpatterns += staticfiles_urlpatterns()
+    urlpatterns += patterns('django.views',
+        (r'^%s(?P<path>.*)$' % settings.MEDIA_URL, 'static.serve', {'document_root': settings.MEDIA_ROOT })
+    )

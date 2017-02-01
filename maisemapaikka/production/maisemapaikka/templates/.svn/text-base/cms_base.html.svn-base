@@ -1,0 +1,20 @@
+{% load cms_tags sekizai_tags %}
+{% load cache menu_tags %}
+<html>
+  <head>
+      {% render_block "css" %}
+  </head>
+  <body>
+      <p>Testausta...</p>
+      <div>{% show_breadcrumb %}</div>
+      <ul>
+        {% show_menu 0 100 100 100 %}
+      </ul>
+      
+      {% cms_toolbar %}
+      {% placeholder base_content %}
+      {% block base_content%}{% endblock %}
+      {% render_block "js" %}
+  </body>
+</html>
+

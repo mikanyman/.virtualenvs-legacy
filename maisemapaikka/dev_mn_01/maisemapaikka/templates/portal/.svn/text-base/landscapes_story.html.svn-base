@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block description %}
+<span class="section_header">{% trans "Landscapes" %}</span><span class="section_aspect"> | {% trans "Stories" %}</span>
+{% endblock %}
+
+{% block content %}
+<div class="padding_10">
+  <div> 
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+  <h1>Kohde</h1>
+  <h2>{% trans "Comments" %}</h2>
+  <div class="comment">
+  Ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+  laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+  architecto beatae vitae dicta sunt explicabo.
+  </div>
+  <div class="comment">
+  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+  velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+  aliquam quaerat voluptatem.
+  </div>
+</div>
+{% endblock %}

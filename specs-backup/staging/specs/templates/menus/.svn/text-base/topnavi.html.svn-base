@@ -1,0 +1,5 @@
+<ul>
+{% for item in topmenu_items %}
+  <li><a {% ifequal item.page 'verkkolehti' %}rel="dropmenu1_e{% endifequal %} href="/{{ lang }}/{{ profile }}/{{ event }}/{{ item.application }}/{{ item.page }}/" id="{{ item.page }}Link"><span>{{ item.visible_name }}</span></a></li>
+{% endfor %}
+</ul>

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block description %}
+<span class="section_header">Kirjaudu</span>
+{% endblock %}
+
+{% block content %}
+<div class="padding_10">
+  <div id="login_form">
+    <form method="post" action=".">{% csrf_token %}
+    <table id="form">
+    {{ form.as_table }}
+    </table>
+    <input class="submit" type="submit" value="Kirjaudu" />
+    <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+    <p>Etk&ouml; ole viel&auml; rekister&ouml;itynyt? <a href="{% url registration_register %}">Rekister&ouml;idy</a></p>
+    <p>Unohditko k&auml;ytt&auml;j&auml;tunnuksen tai salasanan? <a href="{% url auth_password_reset %}">L&auml;het&auml; muistutus</a></p>
+  </div>
+</div>
+{% endblock %}

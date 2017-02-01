@@ -1,0 +1,8 @@
+<div class="cluds">
+<table>
+<tr class="white">
+  <td>{{ members.sukunimi }}</td><td class="last">{{ members.etunimi }}</td>
+</tr>
+</table>
+</div>
+

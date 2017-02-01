@@ -1,0 +1,1023 @@
+# specs/frontpg/views.py
+
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+
+from django.template.loader import get_template
+from django.template import Context, TemplateDoesNotExist
+
+from specs.modules import namesdays
+from specs.modules.cell_entries import entry_sets, cell_contexts
+
+from specs.portal.models import Page
+from specs.portal.models import Cell
+
+
+def index(request, url_app, url_pg):
+    
+    # N‰yt‰ n‰yt‰ mit‰ soluja kutsutulla sivulla on
+    #cells = ['aaa', 'bbb', 'ccc']
+    #p = Page.objects.get(name=url_pg)
+    #cells = p.cell_set.all()
+    #cells = p
+    ### Layout for pg
+    cells = []
+    try:
+        page = Page.objects.get(application__name=url_app, name=url_pg)
+        layout = 'layouts/' + str(page.layout) + '.html'
+        cells = page.cell_set.all() # reverse FK query. creates list of Cell-objects
+    except Page.DoesNotExist:
+        page = ''
+        cells = ''
+        layout = 'layouts/3col.html' # TO-DO: Mit‰ k‰ytet‰‰n kun sivua ei ole tiedossa?
+
+    # Create and populate entry_dict.
+    # Contains references to all objects bound to each cell on current page
+    cell_dict = {}
+    entry_set = {}
+    cell_context = {}
+
+    counter = 0
+    # cells = cells in this page, e.g. frontpg
+    for cell in cells:
+        
+        # Populates dict 'entry_set' vastaa modulin (modules/cell_entries.py)toiminnallisuutta
+        str_1 = "cell_%s = Cell.objects.get(application__name='%s', page__name='%s', celllocation__name='%s')" % (cell.celllocation, url_app, url_pg, cell.celllocation)
+
+        #str_2 = "cell_context['cell_%s'] = cell_%s" % (cell.celllocation, cell.celllocation)
+        #str_3 = "box_%s = cell_context['cell_%s'].box" % (cell.celllocation, cell.celllocation)        
+        str_4 = "box_%s = cell_%s.box" % (cell.celllocation, cell.celllocation)
+        
+        str_5 = "entry_set['entry_%s'] = cell_%s.entry_set.all()" % (cell.celllocation, cell.celllocation)
+        str_6 = "entry_%s_dict = {}" % cell.celllocation
+        
+        exec str_1
+        #exec str_2        
+        #exec str_3
+        exec str_4        
+        exec str_5
+        exec str_6
+        
+        counter = 0
+        
+        key = 'entry_%s' % cell.celllocation
+        for e in entry_set[key]: 
+    
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+                
+                # insert current list into dict
+                str_7 = "entry_%s_dict['%s'] = %s" % (cell.celllocation, counter, entry_list_name)
+                exec str_7
+
+    #test = cells #entry_1_1_dict['frontpg_etusivu_1_1'] TOIMII
+    test = entry_1_1_dict
+    entry_1_1_dict = 'jotain'
+    
+    
+    #test = entry_list_name
+
+        ### Dictionary with content going to cells {'1': '['title', 'body', 'callable']', '2': '['title', 'body', 'callable']'}
+        #'entry_1_1_dict': entry_1_1_dict,
+
+        
+    #frontpg_etusivu_1_1 = cell_dict['frontpg_etusivu_1_1']
+    #entry_dict = cell_dict['frontpg_etusivu_1_1']
+
+    #for entry_object in entry_dict:
+    #    for entry in entry_object:
+        
+    #cells = entry_1_1_dict['1']
+    ### Create entry dict
+    
+    entry_set = entry_sets(url_app, url_pg)
+    
+    entry_1_1_dict = {}
+    if entry_set['entry_1_1'] != '':
+        counter = 0
+        for e in entry_set['entry_1_1']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_1_1_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_1_1_dict[str(counter)] = entry_list_name
+
+    entry_1_2_dict = {}
+    if entry_set['entry_1_2'] != '':                
+        counter = 0
+        for e in entry_set['entry_1_2']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_1_2_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_1_2_dict[str(counter)] = entry_list_name
+
+    entry_1_3_dict = {}
+    if entry_set['entry_1_3'] != '':        
+        counter = 0
+        for e in entry_set['entry_1_3']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_1_3_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_1_3_dict[str(counter)] = entry_list_name
+                
+    entry_1_4_dict = {}
+    if entry_set['entry_1_4'] != '':  
+        counter = 0
+        for e in entry_set['entry_1_4']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_1_4_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_1_4_dict[str(counter)] = entry_list_name
+                
+    entry_1_5_dict = {}
+    if entry_set['entry_1_5'] != '':              
+        counter = 0
+        for e in entry_set['entry_1_5']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_1_5_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_1_5_dict[str(counter)] = entry_list_name
+                
+    entry_2_1_dict = {}
+    if entry_set['entry_2_1'] != '':        
+        counter = 0
+        for e in entry_set['entry_2_1']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_2_1_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_2_1_dict[str(counter)] = entry_list_name
+
+    entry_2_2_dict = {}
+    if entry_set['entry_2_2'] != '':        
+        counter = 0
+        for e in entry_set['entry_2_2']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_2_2_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_2_2_dict[str(counter)] = entry_list_name
+            
+    entry_2_3_dict = {}
+    if entry_set['entry_2_3'] != '':        
+        counter = 0
+        for e in entry_set['entry_2_3']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_2_3_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_2_3_dict[str(counter)] = entry_list_name
+
+    entry_2_4_dict = {}
+    if entry_set['entry_2_4'] != '':    
+        counter = 0
+        for e in entry_set['entry_2_4']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_2_4_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_2_4_dict[str(counter)] = entry_list_name
+
+    entry_2_5_dict = {}
+    if entry_set['entry_2_5'] != '':        
+        counter = 0
+        for e in entry_set['entry_2_5']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_2_5_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_2_5_dict[str(counter)] = entry_list_name
+
+    entry_3_1_dict = {}
+    if entry_set['entry_3_1'] != '':
+        counter = 0
+        for e in entry_set['entry_3_1']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_3_1_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_3_1_dict[str(counter)] = entry_list_name
+
+    entry_3_2_dict = {}
+    if entry_set['entry_3_2'] != '':
+        counter = 0
+        for e in entry_set['entry_3_2']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_3_2_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_3_2_dict[str(counter)] = entry_list_name
+
+    entry_3_3_dict = {}
+    if entry_set['entry_3_3'] != '':
+        counter = 0
+        for e in entry_set['entry_3_3']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_3_3_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_3_3_dict[str(counter)] = entry_list_name
+
+    entry_3_4_dict = {}
+    if entry_set['entry_3_4'] != '':
+        counter = 0
+        for e in entry_set['entry_3_4']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_3_4_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_3_4_dict[str(counter)] = entry_list_name
+
+    entry_3_5_dict = {}
+    if entry_set['entry_3_5'] != '':        
+        counter = 0
+        for e in entry_set['entry_3_5']:
+            
+            ### user_rights
+            if e.auth == True and e.confirmation == 't' and request.user.is_authenticated() and \
+                request.user.is_staff and request.user.is_active:
+                user_clearance = True
+            elif e.auth == False and not e.confirmation:
+                user_clearance = True
+            else:
+                user_clearance = False    
+
+            if user_clearance:        
+                counter += 1
+                # initialize list:
+                entry_list_name = 'entry_list_3_5_' + str(counter)
+                entry_list_name = []
+            
+                # 1. append current title to current list
+                if e.title: entry_list_name.append('<strong>'+e.title+'</strong><br />')
+                else: entry_list_name.append('')
+            
+                # 2. append current body to current list
+                if e.body: entry_list_name.append(e.body)
+                else: entry_list_name.append('')
+
+                # 3. append current include to current list
+                if e.include:
+                    file = open(r'/var/django/wrk/specs/templates/' + str(e.include), 'r')
+                    entry_list_name.append(file.read())
+                    file.close()
+                else: entry_list_name.append('')
+            
+                # 4. append current callable with template to current list
+                if e.callable:
+                    try:
+                        t = get_template(e.callable.template)
+                        try:
+                            c = Context({ 'content_from_callable': eval(str(e.callable.call)) })
+                            entry_list_name.append(t.render(c))
+                        except SyntaxError:
+                            entry_list_name.append('SyntaxError: Template Only. Add Callable or Remove Callable from Entry')
+                        except UnboundLocalError:
+                            entry_list_name.append('UnboundLocalError: Missing Argument')
+                    except TemplateDoesNotExist:
+                        entry_list_name.append(eval(str(e.callable.call)))
+                else: entry_list_name.append('')
+            
+                # insert current list into dict    
+                entry_3_5_dict[str(counter)] = entry_list_name
+    
+    
+    ### Needed for cell functionality
+    ### Tells wich box template should use ('cell_template_1_1': 'boxes/' + box_1_1 + '.html',)
+    cell_context = cell_contexts(url_pg)
+    
+    #try: box_1_1 = str(cell_context['cell_1_1'].box)
+    #except AttributeError: box_1_1 = ''
+    #try: box_1_2 = str(cell_context['cell_1_2'].box)
+    #except AttributeError: box_1_2 = ''
+    #try: box_1_3 = str(cell_context['cell_1_3'].box)
+    #except AttributeError: box_1_3 = ''
+    #try: box_1_4 = str(cell_context['cell_1_4'].box)
+    #except AttributeError: box_1_4 = ''
+    #try: box_1_5 = str(cell_context['cell_1_5'].box)
+    #except AttributeError: box_1_5 = ''
+    
+    #try: box_2_1 = str(cell_context['cell_2_1'].box)
+    #except AttributeError: box_2_1 = ''
+    #try: box_2_2 = str(cell_context['cell_2_2'].box)
+    #except AttributeError: box_2_2 = ''
+    #try: box_2_3 = str(cell_context['cell_2_3'].box)
+    #except AttributeError: box_2_3 = ''
+    #try: box_2_4 = str(cell_context['cell_2_4'].box)
+    #except AttributeError: box_2_4 = ''
+    #try: box_2_5 = str(cell_context['cell_2_5'].box)
+    #except AttributeError: box_2_5 = ''
+    
+    #try: box_3_1 = str(cell_context['cell_3_1'].box)
+    #except AttributeError: box_3_1 = ''
+    #try: box_3_2 = str(cell_context['cell_3_2'].box)
+    #except AttributeError: box_3_2 = ''
+    #try: box_3_3 = str(cell_context['cell_3_3'].box)
+    #except AttributeError: box_3_3 = ''
+    #try: box_3_4 = str(cell_context['cell_3_4'].box)
+    #except AttributeError: box_3_4 = ''
+    #try: box_3_5 = str(cell_context['cell_3_5'].box)
+    #except AttributeError: box_3_5 = ''
+    
+    
+
+    response = render_to_response('frontpg/'+ str(url_pg) +'.html', {
+        
+        ### Test stuff
+        #'page': url_pg,
+        #'cells' : cells,
+        #'entry_dict': entry_dict,
+        'test': test,
+        
+        ### Layout for pg                                  
+        'layout': layout,
+        
+        ### Goes as variable to line {% extends cell_template_1_1 %} in include/cell_1_1.html
+        'cell_template_1_1': 'boxes/' + str(box_1_1) + '.html',
+        'cell_template_1_2': 'boxes/' + str(box_1_2) + '.html',
+        'cell_template_1_3': 'boxes/' + str(box_1_3) + '.html',
+        'cell_template_1_4': 'boxes/' + str(box_1_4) + '.html',
+        'cell_template_1_5': 'boxes/' + str(box_1_5) + '.html',
+        
+        'cell_template_2_1': 'boxes/' + str(box_2_1) + '.html',
+        'cell_template_2_2': 'boxes/' + str(box_2_2) + '.html',
+        'cell_template_2_3': 'boxes/' + str(box_2_3) + '.html',
+        'cell_template_2_4': 'boxes/' + str(box_2_4) + '.html',
+
+        
+        'cell_template_3_1': 'boxes/' + str(box_3_1) + '.html',
+        'cell_template_3_2': 'boxes/' + str(box_3_2) + '.html',
+        'cell_template_3_3': 'boxes/' + str(box_3_3) + '.html',
+        'cell_template_3_4': 'boxes/' + str(box_3_4) + '.html',
+        'cell_template_3_5': 'boxes/' + str(box_3_5) + '.html',
+
+        ### Dictionary with content going to cells {'1': '['title', 'body', 'callable']', '2': '['title', 'body', 'callable']'}
+        'entry_1_1_dict': entry_1_1_dict,
+        'entry_1_2_dict': entry_1_2_dict,
+        'entry_1_3_dict': entry_1_3_dict,
+        'entry_1_4_dict': entry_1_4_dict,
+        'entry_1_5_dict': entry_1_5_dict,
+        
+        'entry_2_1_dict': entry_2_1_dict,
+        'entry_2_2_dict': entry_2_2_dict,
+        'entry_2_3_dict': entry_2_3_dict,
+        'entry_2_4_dict': entry_2_4_dict,
+
+        
+        'entry_3_1_dict': entry_3_1_dict,
+        'entry_3_2_dict': entry_3_2_dict,
+        'entry_3_3_dict': entry_3_3_dict,
+        'entry_3_4_dict': entry_3_4_dict,
+        'entry_3_5_dict': entry_3_5_dict,
+                
+    }, context_instance=RequestContext(request))
+    response.set_cookie('favorite_color', 'Galuboi')
+    return response
+

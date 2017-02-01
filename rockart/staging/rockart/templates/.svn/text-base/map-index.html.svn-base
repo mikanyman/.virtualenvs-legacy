@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META NAME="ROBOTS" CONTENT="NONE">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>Karttapalvelu</title>
+    <style type="text/css">
+      body,
+      html {
+      margin:0;
+      padding:0;
+      color:#000;
+      background:#a7a09a;
+      }
+      
+      #wrap {
+      width:750px;
+      margin:0 auto;
+      background:#99c;
+      }
+      
+      #header {
+      padding:5px 10px;
+      background-image: url('../images/headerkp.png');
+      }
+      
+      h1 {
+      margin:0;
+      }
+      
+      #nav {
+      padding:5px 10px;
+      background:#c99;
+      }
+      
+      #nav ul {
+      margin:0;
+      padding:0;
+      list-style:none;
+      }
+      
+      #nav li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
+      
+      #main {
+      float:left;
+      width:480px;
+      padding:10px;
+      background:#9c9;
+      }
+      
+      h2 {
+      margin:0 0 1em;
+      }
+      
+      #sidebar {
+      float:right;
+      width:230px;
+      padding:10px;
+      background:#99c;
+      }
+      
+      #footer {
+      clear:both;
+      padding:5px 10px;
+      background:#cc9;
+      }
+      
+      #footer p {
+      margin:0;
+      }
+
+      .map_index {
+      /*position: absolute;*/
+      width: 480px;
+      height: 750px;
+      border: solid 1px #605E5E;
+      }
+      
+      .map_canvas {
+      /*position: absolute;*/
+      width: 480px;
+      height: 750px;
+      color: #000000;
+      background-color: #ffffff;
+      margin-bottom: 10px;
+      }
+
+      .map_canvas a {
+      color: #000000;
+      text-decoration: underline;
+      }
+      
+      .mapCanvas {
+      width: 450px;
+      height: 360px;
+      float: left;
+      color: #000000;
+      }
+      
+      .map_others {
+      margin-top: 0px;
+      width: 500px;
+      height: 520px;
+      }
+      
+      
+      * html #footer {
+      height:1px;
+      }
+    </style>
+    
+    <!--Google Maps -->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    
+    <script>
+      var map;
+      var marker;
+      var waypointByID = {};
+      
+      function initialize() {
+      if (document.getElementById("map_canvas")) {
+      map = new google.maps.Map(document.getElementById('map_canvas'), {
+      zoom: 4,
+      center: new google.maps.LatLng(65.379535, 21.0),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      <!-- Create waypoint marker overlay //-->
+      {% for result in results %}
+      var i = 0;
+      var waypoint = waypointByID[{{result.id}}] = {
+      title: "{{result.name}}",
+      lat: {{result.geometry.y}},
+      lng: {{result.geometry.x}}
+      };
+      var markerLatLng = new google.maps.LatLng(waypoint.lat, waypoint.lng);
+      marker = new google.maps.Marker({map: map, position: markerLatLng});
+      var infowindow = new google.maps.InfoWindow();
+      
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
+              infowindow.setContent("<a href="+"/rock-art/kartat/show-item/?id={{result.id}}"+"><b>{{result.name}}</b></a><br/><br/>");
+              infowindow.open(map, marker);
+          }
+      })(marker, i));
+      i++;
+      {% endfor %}
+      }
+      }
+    </script>
+  </head>
+  
+  <body onload='initialize()'>
+    <div id="wrap">
+
+      <div id="header"><h1>KARTTAPALVELU</h1></div>
+
+      <div id="nav">
+      </div>
+      
+      <div id="main">
+	<div class="map_index">
+	  <div id="map_canvas" class="map_canvas"></div>
+	</div>
+      </div>
+      
+      <div id="sidebar">
+	  <ul>
+	    {% if query == "" or query == "1" %}
+	    <li><a href="/rock-art/kartat?map=1"><b>Acerbi</b></a></li>
+	    {% else %}
+	    <li><a href="/rock-art/kartat?map=1">Acerbi</a></li>
+	    {% endif %}
+	    {% if query == "2" %}
+	    <li><a href="/rock-art/kartat?map=2"><b>Kirkot</b></a></li>
+	    {% else %}
+	    <li><a href="/rock-art/kartat?map=2">Kirkot</a></li>
+	    {% endif %}
+	    {% if query == "3" %}
+	    <li><a href="/rock-art/kartat?map=3"><b>Kalliomaalaukset</b></a></li>
+	    {% else %}
+	    <li><a href="/rock-art/kartat?map=3">Kalliomaalaukset</a></li>
+	    {% endif %}
+	  </ul>
+      </div>
+      
+      <div id="footer">
+      </div>
+
+    </div>
+  </body>
+
+</html>

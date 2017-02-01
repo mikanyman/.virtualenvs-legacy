@@ -1,0 +1,11 @@
+{% extends layout %}
+
+{% block main %}
+  <div class="content_padding_10">
+  {% if feed_2_1_dict %}{% include "cells/common/cell_2_1.html" %}{% endif %}
+  </div>
+{% endblock %}
+
+{% block sidebar_right %}
+  {% if feed_3_1_dict %}{% include "cells/common/cell_3_1.html" %}{% endif %}
+{% endblock %}

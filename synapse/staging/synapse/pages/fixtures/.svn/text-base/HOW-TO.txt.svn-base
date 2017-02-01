@@ -1,0 +1,20 @@
+
+EX:
+python manage.py dumpdata myapp1 myapp2.my_model
+
+
+DUMP:
+python manage.py dumpdata pages --indent=4 > ./pages/fixtures/dump_pages.json
+
+LOAD:
+python manage.py loaddata ./pages/fixtures/dump_pages.json
+
+
+DUMP SPECIFIC MODEL:
+python manage.py dumpdata pages --indent=4 > ./pages/fixtures/dump_pages.json
+
+RSYNC:
+rsync -arvz -e ssh /var/django/synapse/pages/fixtures/ mnyman@a199.myrootshell.com:/home/mnyman/rsyng_target/
+
+-- huom. .svn kansio...
+

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block description %}
+  <h2>Mik&auml; sivu t&auml;m&auml; on...</h2>
+{% endblock description %}
+
+{% block content %}
+<h1>{{ page_name }}</h1>
+This page does not exist. <a href="/maisemapaikka/wiki/{{ page_name }}/create/">Create?</a>
+{% endblock content %}
+
+{% block navi %}
+  <a href="/maisemapaikka/church/map/">Mik&auml; navi t&auml;m&auml; on...</a>
+{% endblock navi %}

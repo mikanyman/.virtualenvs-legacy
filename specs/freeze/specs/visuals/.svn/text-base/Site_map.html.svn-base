@@ -1,0 +1,8 @@
+SITE MAP
+
+Jäsenrekisteri
+    Varsinaiset jäsenet		members_person
+    Yhteisöjäsenet			members_corp
+    Kunniajäsenet			members_hon
+    Kaikki jäsenet			members_all
+    Postituslista			members_mail

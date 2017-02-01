@@ -1,0 +1,33 @@
+from django.conf.urls.defaults import *
+import re
+from django.conf import settings
+
+## Put in urls.py
+
+urlpatterns = patterns('',
+    url(r'^(?P<url_lang>\w{2})/(?P<url_profile>\w*)/(?P<url_event>\w*)/(?P<url_app>\w*)/(?P<url_pg>\w*)/$', 'specs.frontpg.views.index', name='frontpg-index'),
+	)
+
+
+class Entry(models.Model):
+
+    ## model stuff goes here....
+
+    @models.permalink
+    def get_absolute_url(self):
+
+        ## Attempt to create dynamic model failed...
+        status = 'wrk'
+        project = 'specs'
+        lang = 'fi'
+        profile = 'tall'
+        event = 'e0'
+        app = 'frontpg'
+        pg = 'etusivu'
+        
+        return ('frontpg-index', (), {
+            'url_lang': lang, 
+            'url_profile': profile, 
+            'url_event': event, 
+            'url_app': app, 
+            'url_pg': pg})

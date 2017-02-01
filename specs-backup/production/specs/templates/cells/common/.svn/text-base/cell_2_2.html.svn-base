@@ -1,0 +1,10 @@
+{% extends cell_template_2_2 %}
+
+{% block content %}
+  {% for feed in feed_2_2_dict.items %}
+    {% for item in feed.1 %}
+      {{ item|safe }}
+    {% endfor %}
+  {% endfor %}
+{% endblock %}
+

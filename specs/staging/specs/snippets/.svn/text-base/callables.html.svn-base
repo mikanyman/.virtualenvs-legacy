@@ -1,0 +1,172 @@
+views.py:
+
+from specs.modules import namesdays
+from specs.modules.cell_entries import entry_sets, cell_contexts
+
+def index(request, url_pg):
+
+    entry_set = entry_sets(url_pg)
+    cell_context = cell_contexts(url_pg)
+    
+    ### Namesday Calendar
+    t = get_template('include/names_day.html')
+    html = t.render(Context({'names_day': 'ABC'}))
+
+    entry_3_1_callable = []
+    entry_3_1_callable_template = []
+    entry_3_1_dict = {}
+    entry_3_1_list = []
+
+
+    counter = 0
+    for e in entry_set['entry_3_1']:
+        if e.callable:
+            counter += 1
+            
+            ### Alla olevat toimivat lista-tasolla           
+            entry_list_name = 'entry_list_' + str(counter)
+            entry_list_name = []
+            entry_list_name.append(e.callable)
+            entry_list_name.append(eval(str(e.callable)))
+            entry_3_1_dict[counter] = entry_list_name
+            
+            ### Dict {'1': {'name':'output'}, '2': {'name':'output'}}
+
+            ### Alla olevat toimivat...
+            entry_3_1_callable.append(eval(str(e.callable))) # append to list
+            entry_3_1_callable_template.append(str(e.callable)) # append to list
+
+
+    try: box_1_1 = str(cell_context['cell_1_1'].box)
+    except AttributeError: box_1_1 = ''
+    try: box_1_2 = str(cell_context['cell_1_2'].box)
+    except AttributeError: box_1_2 = ''
+    try: box_1_3 = str(cell_context['cell_1_3'].box)
+    except AttributeError: box_1_3 = ''
+    try: box_1_4 = str(cell_context['cell_1_4'].box)
+    except AttributeError: box_1_4 = ''
+    try: box_1_5 = str(cell_context['cell_1_5'].box)
+    except AttributeError: box_1_5 = ''
+    
+    try: box_2_1 = str(cell_context['cell_2_1'].box)
+    except AttributeError: box_2_1 = ''
+    try: box_2_2 = str(cell_context['cell_2_2'].box)
+    except AttributeError: box_2_2 = ''
+    try: box_2_3 = str(cell_context['cell_2_3'].box)
+    except AttributeError: box_2_3 = ''
+    try: box_2_4 = str(cell_context['cell_2_4'].box)
+    except AttributeError: box_2_4 = ''
+    try: box_2_5 = str(cell_context['cell_2_5'].box)
+    except AttributeError: box_2_5 = ''
+    
+    try: box_3_1 = str(cell_context['cell_3_1'].box)
+    except AttributeError: box_3_1 = ''
+    try: box_3_2 = str(cell_context['cell_3_2'].box)
+    except AttributeError: box_3_2 = ''
+    try: box_3_3 = str(cell_context['cell_3_3'].box)
+    except AttributeError: box_3_3 = ''
+    try: box_3_4 = str(cell_context['cell_3_4'].box)
+    except AttributeError: box_3_4 = ''
+    try: box_3_5 = str(cell_context['cell_3_5'].box)
+    except AttributeError: box_3_5 = ''
+
+    response = render_to_response('frontpg/'+ url_pg +'.html', {
+                                                                
+        #'names_day': names_day,
+        'entry_3_1_dict': html,
+        'entry_3_1_callable': entry_3_1_callable, # list
+        'entry_3_1_callable_template': entry_3_1_callable_template, # list
+
+        'cell_1_1': cell_context['cell_1_1'],
+        'cell_1_2': cell_context['cell_1_2'],
+        'cell_1_3': cell_context['cell_1_3'],
+        'cell_1_4': cell_context['cell_1_4'],
+        'cell_1_5': cell_context['cell_1_5'],
+        
+        'cell_2_1': cell_context['cell_2_1'],
+        'cell_2_2': cell_context['cell_2_2'],
+        'cell_2_3': cell_context['cell_2_3'],
+        'cell_2_4': cell_context['cell_2_4'],
+        'cell_2_5': cell_context['cell_2_5'],
+        
+        'cell_3_1': cell_context['cell_3_1'],
+        'cell_3_2': cell_context['cell_3_2'],
+        'cell_3_3': cell_context['cell_3_3'],
+        'cell_3_4': cell_context['cell_3_4'],
+        'cell_3_5': cell_context['cell_3_5'],
+        
+        ### Goes as variable to line {% extends cell_template_1_1 %} in include/cell_1_1.html
+        'cell_template_1_1': 'boxes/' + box_1_1 + '.html',
+        'cell_template_1_2': 'boxes/' + box_1_2 + '.html',
+        'cell_template_1_3': 'boxes/' + box_1_3 + '.html',
+        'cell_template_1_4': 'boxes/' + box_1_4 + '.html',
+        'cell_template_1_5': 'boxes/' + box_1_5 + '.html',
+        
+        'cell_template_2_1': 'boxes/' + box_2_1 + '.html',
+        'cell_template_2_2': 'boxes/' + box_2_2 + '.html',
+        'cell_template_2_3': 'boxes/' + box_2_3 + '.html',
+        'cell_template_2_4': 'boxes/' + box_2_4 + '.html',
+        'cell_template_2_5': 'boxes/' + box_2_5 + '.html',
+        
+        'cell_template_3_1': 'boxes/' + box_3_1 + '.html',
+        'cell_template_3_2': 'boxes/' + box_3_2 + '.html',
+        'cell_template_3_3': 'boxes/' + box_3_3 + '.html',
+        'cell_template_3_4': 'boxes/' + box_3_4 + '.html',
+        'cell_template_3_5': 'boxes/' + box_3_5 + '.html',
+
+        #'entry_3_1_callable': entry_set['entry_3_1'],
+
+        'entry_1_1': entry_set['entry_1_1'],
+        'entry_1_2': entry_set['entry_1_2'],
+        'entry_1_3': entry_set['entry_1_3'],
+        'entry_1_4': entry_set['entry_1_4'],
+        'entry_1_5': entry_set['entry_1_5'],
+        
+        'entry_2_1': entry_set['entry_2_1'],
+        'entry_2_2': entry_set['entry_2_2'],
+        'entry_2_3': entry_set['entry_2_3'],
+        'entry_2_4': entry_set['entry_2_4'],
+        'entry_2_5': entry_set['entry_2_5'],
+        
+        'entry_3_1': entry_set['entry_3_1'],
+        'entry_3_2': entry_set['entry_3_2'],
+        'entry_3_3': entry_set['entry_3_3'],
+        'entry_3_4': entry_set['entry_3_4'],
+        'entry_3_5': entry_set['entry_3_5'],
+        
+    }, context_instance=RequestContext(request))
+    response.set_cookie('favorite_color', 'Galuboi')
+    return response
+    
+
+templates/cell_3_1.html:
+------------------------    
+    
+{% extends cell_template_3_1 %}
+
+{% block content %}
+  {% for entry in entry_3_1 %}
+    {% if entry.title %}<strong>{{ entry.title }}</strong><br />{% endif %}
+    {{ entry.body  }}
+  {% endfor %}
+  
+  {% for entry in entry_3_1_callable %}
+    {{ entry }}
+  {% endfor %}
+  
+  {% for entry in entry_3_1_callable_template %}
+    {{ entry }}
+  {% endfor %}
+  ---
+  
+  {{ entry_3_1_callable }}
+  
+  {% for entry in entry_3_1_dict.items %}
+    {% for item in entry.1 %}
+      {{ item }}
+    {% endfor %}
+  {% endfor %}
+  
+  {{ entry_3_1_dict }}
+
+{% endblock %}

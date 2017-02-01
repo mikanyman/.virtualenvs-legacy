@@ -1,0 +1,24 @@
+{% extends "layouts/2col_sidebar_right.html" %}
+{% load i18n %}
+
+{% block main %}
+<div class="form-box">
+<fieldset>
+  <legend>{% trans "Membership Application" %}</legend>
+  <form action="http://www.tallsmall.fi/{{ lang }}/{{ profile }}/{{ event }}/{{ app }}/{{ pg }}/post/" method="POST">
+  {% comment %}
+    form completed: {{ form_completed }} applicant id: {{ applicant_id }}
+    <ul><li>S&auml;hk&ouml;inen j&auml;senhakemuslomake ei viel&auml; ole k&auml;ytett&auml;viss&auml;.</li></ul>
+  {% endcomment %}
+  <table>
+    {{ form.as_table }}
+	<tr><td></td><td><input class="submit" type="submit" value={% trans "Submit"%}></td></tr>
+  </table>
+</form>
+</fieldset>
+</div>
+{% endblock %}
+
+{% block sidebar_right %}
+  {% include "include/login/cell_2_1.html" %}
+{% endblock %}

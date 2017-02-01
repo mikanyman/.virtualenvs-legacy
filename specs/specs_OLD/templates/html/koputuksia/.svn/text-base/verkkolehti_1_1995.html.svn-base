@@ -1,0 +1,71 @@
+<style type="text/css">
+
+.righttable
+
+        {
+        position: absolute;
+        margin-left: 500px;
+        }
+
+</style>
+
+<div class="back_to_index">
+<a href="/fi/all/e0/frontpg/lehtiarkisto/"><span class="prev_arrow">
+<img border="0" src="http://www.tallsmall.fi:8080/site_media/img/arrows/naviarr_or_prev.gif">
+</span></a>
+<a href="/fi/all/e0/frontpg/lehtiarkisto/">Edellinen sivu</a>
+</div>
+
+<table style="page-break-before: always;" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td colspan="2">
+<h1 class="orange">Keng&auml;n koputuksia, lehden sis&auml;llysluettelo</h1>
+<br/>
+<h2 class="blue">Nro 1 / 1995</h2>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br/>
+<div id="righttable" class="righttable">
+    
+<table>
+<tbody>
+<tr>
+<td>
+<a href="/site_media/pdf/koputuksia/1995_1.pdf" target="_blank">
+<img src="http://www.tallsmall.fi:8080/site_media/pics/specs/pikkukannet/1_1995_pikkukansi.jpg" align="right"></a>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; padding-top: 15px">
+<a href="/site_media/pdf/koputuksia/1995_1.pdf" target="_blank"><big>Lue koko lehti</big></a>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<table style="page-break-before: always;" border="0" cellpadding="0" cellspacing="0" width="450px">
+<tbody>
+    <tr valign="top">
+      <td width="10%"/>
+      <td width="90%"/>
+    </tr>
+    <tr valign="top">
+      <td width="15%">1-3</td>
+      <td width="85%"><a href="/site_media/pdf/koputuksia/sivut/1995_1_1-3.pdf" target="_blank">Kenk&auml;kauppoja ja suutareita. Kenk&auml;tehdas</a></td>
+    </tr>
+    <tr valign="top">
+      <td width="15%">4</td>
+      <td width="85%">Vaatekauppoja</td>
+    </tr>
+    <tr valign="top">
+      <td width="15%">5</td>
+      <td width="85%">Kenk&auml;kauppoja,suutareita ja vaatekauppoja</td>
+    </tr>
+  </tbody>
+</table>

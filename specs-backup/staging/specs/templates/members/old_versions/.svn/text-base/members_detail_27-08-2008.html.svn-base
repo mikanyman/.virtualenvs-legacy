@@ -1,0 +1,85 @@
+<div class="clvuds" id={{ call }}>
+  
+  <div class="topnavi">
+    <ul>
+      <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/{{ app }}/{{ pg }}/?call=list" id="listLink"><span>Luettelo</span></a></li>
+      <li><a href="./?call=view" id="viewLink"><span>Tarkastele</span></a></li>
+      <li><a href="./?call=update" id="updateLink"><span>P&auml;ivit&auml;</span></a></li>
+      <li><a href="./?call=create" id="createLink"><span>Uusi</span></a></li>
+      <li><a href="./?call=delete" id="deleteLink"><span>Poista</span></a></li>
+      <li><a href="./?call=search" id="searchLink"><span>Hae</span></a></li>
+    </ul>	
+  </div>
+         
+  <div class="content">
+    <form>
+
+    <fieldset>
+      <legend><a href=".">Tunnistetiedot</a> [-]</legend>
+      <table>
+        {{ tunnistetiedot_form }}
+	    {% ifnotequal call 'view' %}{% include "clvuds/submit_button.html" %}{% endifnotequal %}
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend><a href=".">J&auml;sentiedot</a> [-]</legend>
+      <table>
+        {{ jasentiedot_form }}
+	    {% ifnotequal call 'view' %}{% include "clvuds/submit_button.html" %}{% endifnotequal %}
+      </table>
+    </fieldset>
+	  
+    <fieldset>
+      <legend><a href=".">Yhteystiedot</a> [-]</legend>
+      <table>
+        {{ yhteystiedot_form }}
+	    {% ifnotequal call 'view' %}{% include "clvuds/submit_button.html" %}{% endifnotequal %}
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend><a href=".">Henkil&ouml;n tyyppitiedot</a> [-]</legend>
+      <table>
+        {{ henk_kokotiedot_form }}
+	    {% ifnotequal call 'view' %}{% include "clvuds/submit_button.html" %}{% endifnotequal %}
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend><a href=".">Vaatteiden ja jalkineiden kokotiedot</a> [-]</legend>
+      <table>
+        {{ vaat_kokotiedot_form }}
+	    {% ifnotequal call 'view' %}{% include "clvuds/submit_button.html" %}{% endifnotequal %}
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend><a href=".">Yrityksen tiedot</a> [-]</legend>
+      <table>
+        {{ yritystiedot_form }}
+        {% ifnotequal call 'view' %}{% include "clvuds/submit_button.html" %}{% endifnotequal %}
+      </table>
+    </fieldset>
+	  
+    <fieldset>
+      <legend><a href=".">Tietojen tallentamista koskevat tiedot</a> [-]</legend>
+      <table>
+        {{ datatiedot_form }}
+	    {% ifnotequal call 'view' %}{% include "clvuds/submit_button.html" %}{% endifnotequal %}
+      </table>
+    </fieldset>
+	  
+    <fieldset>
+      <legend><a href=".">Muut tiedot</a> [-]</legend>
+      <table>
+        {{ muut_tiedot_form }}
+	    {% ifnotequal call 'view' %}{% include "clvuds/submit_button.html" %}{% endifnotequal %}
+      </table>
+    </fieldset>
+ 
+	</form>
+  </div>
+  
+</div>
+

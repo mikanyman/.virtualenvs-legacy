@@ -1,0 +1,117 @@
+
+    <table id="hotels">
+    <tr>
+      <td colspan="4">
+        {{ form.hotel.label_tag }} <label style="margin-left:20px;">({% trans "Only information for the organization team, not a booking!" %})</label>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 25%; height: 28px;">
+        <label for="id_hotel_0">
+        <input id="id_hotel_0" {% ifequal form.hotel.value "1" %}checked="checked"{% endifequal %} type="radio" name="hotel" value="Scandic Rosendahl">
+        Scandic Rosendahl
+        </label>        
+      </td>
+      <td style="width: 25%">
+        <label for="id_hotel_1">
+        <input id="id_hotel_1" {% ifequal form.hotel.value "2" %}checked="checked"{% endifequal %} type="radio" name="hotel" value="Scandic City Tampere">
+        Scandic City Tampere
+        </label>
+      </td>
+      <td style="width: 25%">
+        <label for="id_hotel_3">
+        <input id="id_hotel_3" {% ifequal form.hotel.value "4" %}checked="checked"{% endifequal %} type="radio" name="hotel" value="Omena Hotel Tampere 1">
+        Omena Hotel Tampere 1
+        </label>
+      </td>
+      <td style="width: 25%">
+        <label for="id_hotel_6">
+        <input id="id_hotel_6" {% ifequal form.hotel.value "7" %}checked="checked"{% endifequal %} type="radio" name="hotel" value="Other, Where?">
+        Other, Where?
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td style="height: 24px;">
+        <label for="id_hotel_2">
+        <input id="id_hotel_2" {% ifequal form.hotel.value "3" %}checked="checked"{% endifequal %} type="radio" name="hotel" value="Cumulus Hämeenpuisto">
+        Cumulus Hämeenpuisto
+        </label>
+      </td>
+      <td>
+        <label for="id_hotel_5">
+        <input id="id_hotel_5" {% ifequal form.hotel.value "6" %}checked="checked"{% endifequal %} type="radio" name="hotel" value="Hostel Sofia">
+        Hostel Sofia
+        </label>
+      </td>
+      <td>
+        <label for="id_hotel_4">
+        <input id="id_hotel_4" {% ifequal form.hotel.value "5" %}checked="checked"{% endifequal %} type="radio" name="hotel" value="Omena Hotel Tampere">
+        Omena Hotel Tampere 2
+        </label>
+      </td>
+      <td>
+        {{ form.hotelother }}
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        {{ form.hotelarrdate.label }} {{ form.hotelarrdate }} {{ form.hoteldepdate.label }} {{ form.hoteldepdate }}
+      </td>
+    </tr>
+    </table>
+
+
+    <table id="hotels">
+      <tr>
+        <td colspan="2" style="text-align:left">
+        {% comment %}
+          <div class="radio_horiz_label">{{ form.hotel.label }}</div>
+          <div class="radio_horiz" style="width=:600px">
+             {{ form.hotel }} {{ form.hotelother }}
+          </div>
+        {% endcomment %}
+        
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          {{ form.hotelarrdate.label }} {{ form.hotelarrdate }} {{ form.hoteldepdate.label }} {{ form.hoteldepdate }}
+        </td>
+      </tr>
+    </table>
+
+
+
+Backwards migration
+===================
+manage.py migrate myapp zero
+
+
+
+<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+
+<div id="wrap">
+<form action="" id="cakeform" onsubmit="return false;">
+<div class="cont_order">
+<fieldset>
+
+  <!-- includecandles -->
+  <label for='includecandles' class="inlinelabel">Include Candles ($5)</label>
+  <input type="checkbox" id="includecandles" name='includecandles' onclick="calculateTotal()" />
+  
+  <label for='includestripper' class="inlinelabel">Stripper ($500)</label>
+  <input type="checkbox" id="includestripper" name='includestripper' onclick="calculateTotal()" />
+
+  Total price: <div id="totalPrice"></div>
+
+</fieldset>
+</div>            
+</form>
+</div><!--End of wrap-->
+
+<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+
+
+<tr style="height: 8px;"><td colspan="2"></td></tr>
+</table>

@@ -1,0 +1,10 @@
+{% block blogbar_right %}
+<div class="blog_list">
+  <h2 class="dblue">Asiakirjat</h2>
+  <ul>
+  {% for object in content_from_callable %}
+    <li><a href="{{ object.get_absolute_url }}">{{ object.label }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+{% endblock %}

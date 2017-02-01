@@ -1,0 +1,5 @@
+Uuden blogin luominen
+=====================
+
+- Lis‰‰ blogi tiedostoon templates/include/blogilinkit.html
+- Lis‰‰ blogi lomakkeen kautta kategoriaksi: Kategoriat (Cathegory)

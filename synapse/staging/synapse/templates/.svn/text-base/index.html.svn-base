@@ -1,0 +1,23 @@
+{% extends layout %}
+{% load i18n %}
+
+{% block content %}
+    {% for entry in entries %}{{ entry.content|safe }}{% endfor %}
+{% endblock %}
+
+{% block rbox1 %}
+    <div class="roundedcornr_box_573439">
+      <div class="roundedcornr_top_573439"><div></div></div>
+      <div class="roundedcornr_content_573439">
+        <p class="box" style="font-size: 11pt; line-spacing 16pt; color: #555; padding: 16px;">
+        	We are developing<br/> 
+			our Web site<br/>
+			to serve as a hub<br/>
+			where people, ideas<br/>
+			and resources meet.<br/>
+			Stay posted!<br/>
+        </p>
+      </div>
+      <div class="roundedcornr_bottom_573439"><div></div></div>
+    </div>
+{% endblock %}

@@ -1,0 +1,101 @@
+<style type="text/css">
+p {
+	margin-top: 25px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	}
+div.wrap {
+	width:auto;
+	height: 24px;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding: 0
+        }
+div.left {
+	float: left;
+	}
+div.center {
+	float: left;
+	margin-left: 130px;
+	}
+div.right {
+	float: right;
+	}
+a.arrow {
+	text-decoration:none;
+	font-size: 12pt;
+	color: #e5a83e
+	}
+</style>
+<p>
+<img src="http://www.tallsmall.fi:8080/site_media/pics/specs/mittaus/etusivu4.jpg">
+</p>
+
+<div class="wrap">
+  <div class="left"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/1.html">&larr; Edellinen sivu</a></div>
+  <div class="center"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/sisallysluettelo.html">Sis&auml;llysluettelo</a></div>
+  <div class="right"><a class="arrow" href="http://www.tallsmall.fi/fi/all/e0/html/mittaus/3_1.html">Seuraava sivu &rarr;</a></div>
+</div>
+
+<h2>2 PIENI- JA ISOKENK&Auml;ISET RY: TAVOITTEENA<br/>OIKEAN KOKOISET KENG&Auml;T JOKAISELLE</h2>
+<p>
+Pieni- ja Isokenk&auml;isten ry "PIKRY" on perustettu vuonna 1995 lyhyiden ja pitkien, sek&auml;
+pieni- ja isojalkaisten henkil&ouml;iden valtakunnalliseksi kansanterveys- ja perhej&auml;rjest&ouml;ksi,
+joka toimii erityisesti nuorten hyv&auml;ksi. Varsinaisen toiminnan tarkoitus on edist&auml;&auml; erikokoisten
+hyvinvointia, est&auml;&auml; koosta johtuvaa syrjint&auml;&auml; ja v&auml;litt&auml;&auml; tietoa kuluttajien, viranomaisten,
+valmistajien ja j&auml;lleenmyyjien v&auml;lill&auml;. (Pieni- ja Isokenk&auml;iset ry 2009.)
+</p>
+<p>
+Yhdistyksen tavoitteena on edist&auml;&auml; globaalia yhdenvertaisuutta muiden maiden &auml;&auml;rikokoisten
+kanssa, toimia tiedottajana eri organisaatioiden v&auml;lill&auml;, edist&auml;&auml; kansainv&auml;list&auml;
+yhteisty&ouml;t&auml; ja ennen kaikkea toimia vertaistukiverkostona. Pieni- ja Isokenk&auml;isten yhdistys
+julkaisee j&auml;senlehte&auml; Keng&auml;n koputuksia ja yll&auml;pit&auml;&auml; kotisivustoa <em>www.tallsmall.fi</em>.
+Rekister&ouml;ityneit&auml; j&auml;seni&auml; on noin 550. (Pieni- ja Isokenk&auml;iset ry 2009.)
+</p>
+<p>
+Pieni- ja Isokenk&auml;iset ry on her&auml;tellyt yhteiskunnallista keskustelua suomalaisten kasvavasta
+pituudesta ja siit&auml;, ett&auml; vaate- ja kenk&auml;teollisuudella ei ole ajantasaista k&auml;sityst&auml;
+kuluttajien tarpeista. Yhdistyksen tavoitteena on k&auml;ynnist&auml;&auml; Suomessa Kokotalkoot.
+T&auml;ss&auml; opinn&auml;ytety&ouml;ss&auml; jatkokehitetty ty&ouml;v&auml;line (MITTAVA- lomake) luo pohjaa halvalle, hyv&auml;lle ja
+nopealle tiedonkeruulle. Hankkeen taustalla on tarve kehitt&auml;&auml; kansalaisten
+omatoimista mittausta varten luotettava v&auml;line. Kokotalkoiden tarkoituksena on kutsua
+kaiken ik&auml;iset ja kokoiset tallentamaan mittatietonsa internetin v&auml;lityksell&auml; valtakunnalliseen
+"mittapankkiin" ja saada reaaliaikaista tietoa arjen helpottamiseksi. (Pieni- ja
+Isokenk&auml;iset ry 2008.)
+</p>
+<p>
+Pieni- ja Isokenk&auml;iset ry:n MITTAVA-lomakkeen alkuper&auml;inen versio (LIITE 1) kehitettiin
+vuonna 2007 Opetusministeri&ouml;n tuella, yhteisty&ouml;ss&auml; Ammattikorkeakoulu Stadian
+kanssa. Alkuper&auml;isess&auml; lomakkeessa vartalon mittauskohtien m&auml;&auml;rittely perustuu naisten
+vaatetuksen mittataulukkoon N-2001, sek&auml; Eurooppalaisen standardisoimisj&auml;rjest&ouml;n
+CEN:n teknisen komitean CEN/TC 248 standardiehdotukseen. Jalkaterien mittauskohtien
+m&auml;&auml;rittelyss&auml; konsultoitiin Ammattikorkeakoulu Stadian jalkaterapian koulutusohjelman
+opettajia sek&auml; Tampereen Ammattiopiston ja Hervannan Ammattioppilaitoksen
+suutarikoulutuksen opettajia. ( Pieni- ja Isokenk&auml;iset ry 2008.)
+</p>
+<p>
+Alkuper&auml;inen MITTAVA- lomake koostui henkil&ouml;tiedoista, mittatiedoista, mittausten
+yleisohjeista, 12:sta mittatietojen merkitsemiskohdasta/mittausohjeesta sek&auml; jalkaterveyteen
+liittyvist&auml; 12 kysymyksest&auml;. Lomakkeen henkil&ouml;tiedoissa kysyttiin sukupuoli,
+ik&auml; ik&auml;ryhmitt&auml;in: alle 10, 10 -19, 20 -35 ja yli 35. Yleens&auml; k&auml;ytetty kenk&auml;koko merkittiin
+valikkoon 31 -70 v&auml;lilt&auml;. Mittauskohtia olivat pituus, rinnan ymp&auml;rys, vy&ouml;t&auml;r&ouml;n ymp&auml;rys,
+lantion ymp&auml;rys, alaraajan sivupituus, s&auml;&auml;ren pituus, pohkeen ymp&auml;rys, nilkan
+ymp&auml;rys, oikean ja vasemman jalkater&auml;n pituus, p&auml;ki&auml;n ymp&auml;rys ja rintavuus eli jalkama.
+Mittatulokset merkittiin 0,1 cm tarkkuudella.
+</p>
+<p>
+Lomakkeessa kysyttiin jalkaterveytt&auml; heikent&auml;vist&auml; vaivoista, esimerkiksi onko vastaajalla
+ollut jalkakipuja puolen vuoden aikana ja miss&auml; kohdissa kipua esiintyy. Vastaajaa
+pyydettiin arvioimaan kipua asteikolla 0 -10, jolloin 0 tarkoitti: ei lainkaan kipua ja 10:
+eritt&auml;in voimakasta kipua.
+</p>
+<p>
+Lomakkeessa kysyttiin, onko asiantuntija, esimerkiksi fysio- tai jalkaterapeutti tai kouluterveydenhoitaja,
+tutkinut jalkojen kuntoa, oliko asiakkaille suositeltu tukipohjallisia
+tai oliko vastaajalla sellaiset k&auml;yt&ouml;ss&auml;. Vastaajaa pyydettiin arvioimaan, onko h&auml;nell&auml;
+jalkater&auml;n asentovirheit&auml;, kuten esimerkiksi linttaan astuminen, sis&auml;- pitkitt&auml;iskaaren
+laskeuma, kovettumia, p&auml;ki&auml;- /poikittaiskaaren laskeuma, vaivaisenluu tai vasaravapaat.
+Lopuksi lomakkeessa oli varattu vapaata kirjoitustilaa, johon sai kirjata toiveita ja ehdotuksia
+jalkojen tutkimukseen ja hoitoon liittyen.
+</p>

@@ -1,0 +1,32 @@
+{% load i18n %}
+
+<ul class="navlist">
+  {% ifnotequal aspect "signin" %}
+  <li><a href="/accounts/signin/">{% trans "Signin" %}</a></li>
+  {% else %}
+   <li><span class="selected">{% trans "Signin" %}</span></li>
+  {% endifnotequal %}
+  
+  {% ifnotequal aspect "signup" %}
+  <li><a href="/accounts/signup/">{% trans "Signup" %}</a></li>
+  {% else %}
+   <li><span class="selected">{% trans "Signup" %}</span></li>
+  {% endifnotequal %}
+
+  {% ifnotequal aspect profile %}
+  <li><a href="/accounts/{{ profile }}/">{% trans "View profile" %}</a></li>
+  {% else %}
+   <li><span class="selected">{% trans "View profile" %}</span></li>
+  {% endifnotequal %}
+
+
+
+  {% trans "Edit details" %}
+  {% trans "Change password" %}
+  {% trans "Change email" %}
+
+
+
+  <p>profile: {{ profile }} | profile_func: {{ profile_func }} | aspect: {{ aspect }}</p>
+
+</ul>

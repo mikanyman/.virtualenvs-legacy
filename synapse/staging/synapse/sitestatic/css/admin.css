@@ -1,0 +1,17 @@
+/* 'Sites' check box */
+
+.form-row ul {
+	width: 230px;
+	}
+.form-row li {
+	list-style-type: none;
+	padding:1px 0;
+	}
+a#add_id_sites {
+	position: relative;
+	top: -46px;
+	left: 350px;
+	}
+.form-row .help {
+	display: none;
+	}

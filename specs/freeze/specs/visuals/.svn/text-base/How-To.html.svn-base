@@ -1,0 +1,47 @@
+UUDEN SIVUN TEKEMINEN
+1. members/urls.py
+2. members/views.py
+
+/usr/lib/postgresql/8.1/bin/pg_ctl -D /etc/postgresql/8.1/main/pgdata reload
+nano /etc/postgresql/8.1/main/pg_hba.conf
+
+
+# Widget					# HTML Equivalent
+# ======					# ===============
+# TextInput 				# input type='text' ...
+# PasswordInput				# input type='password' ...
+# HiddenInput				# input type='hidden' ...
+# MultipleHiddenInput		# Multiple input type='hidden' ... instances.
+# FileInput					# input type='file' ...
+# DateTimeInput				# input type='text' ...
+# Textarea 					# <textarea>...</textarea>
+# CheckboxInput				# input type='checkbox' ...
+# Select					# <select>option ...
+# NullBooleanSelect 		# Select widget with options ‘Unknown’, ‘Yes’ and ‘No’
+# SelectMultiple			# <select multiple='multiple'> option ...
+# RadioSelect				# <ul><li>input type='radio' ...
+# CheckboxSelectMultiple	# <ul><li>input type='checkbox' ...
+# MultiWidget				# Wrapper around multiple other widgets
+# SplitDateTimeWidget		# Wrapper around two TextInput widgets: one for the Date, and one for the Time.
+
+# New in Django development version: The DateTimeInput has been added since the last release.
+
+Looping through a dictionary
+============================
+    {% for form in forms_list_dict.items %}
+    <fieldset>
+      <legend><a href=".">{{ form.1 }}</a> [-]</legend>
+      <table>
+        {{ form.0 }}
+	    {% ifnotequal call 'view' %}{% include "clvuds/submit_button.html" %}{% endifnotequal %}
+      </table>
+    </fieldset>
+    {% endfor %}
+
+Cursor stuff
+============
+http://lists.initd.org/pipermail/psycopg/2007-January/005312.html
+sql = """update %s set validfrom=%%s, validto=%%s
+         where season_id=%%s""" % (table,)
+curs.execute(sql, (valfrom, valto, seasonid))
+

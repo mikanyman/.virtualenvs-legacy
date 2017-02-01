@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <div id="content">
+
+<!-- Otsikko & esittely -->
+<div id="headline"><h1>{{ site.0.headline }}</h1></div>
+<div id="abstract">{{ site.0.abstract }}</div>
+
+<!-- Taiteilijakohtaiset teoskuvat -->
+<div id="work_list">
+{% spaceless %}
+<table class="works_table">
+<tr>
+  <td>
+	<img src="{{ MEDIA_URL }}{{ image.medium_image_filename }}">
+    <div class="enlarge_field">
+      <a href="/taiteilijat/{{ artist.label }}/"><img src="{{ STATIC_URL }}img/back.gif" alt="Takaisin" title="Takaisin"/></a> 
+	</div>
+	<div class="text_field">
+  	  <strong>{{ work.title_text|upper }}</strong> {% if work.new_work %}<span class="uusi_enlarge">UUSI</span><br />{% endif %}
+  	  {{ work.mater_tech_descr }}, {{ work.creation_date }}<br />
+  	  Vedosm&auml;&auml;r&auml;: {{ work.edition_size }}<br />
+  	  Kuva-ala: {{ work.dimensions_description }} cm<br />
+	  Tuotenumero: {{ work.item_number }}<br />
+  	  <strong>Hinta: {{ work.price }} &euro;</strong><br /><br />
+	</div>
+  </td>
+</tr>
+</table>
+<div id="order_info">Yll&auml;mainitut hinnat ovat lehten&auml;, sis.alv. Kehystysneuvoja kauttamme. Ota yhteytt&auml; s&auml;hk&ouml;postitse ja pyyd&auml; esittely&auml; tai tilaa suoraan.{{ site.0.order_info }}</div>
+</div>
+{% endspaceless %}
+
+<!-- Taiteilijaesittely -->
+<div id="artist_footer">
+  <div id="artist_img">
+  	<img src="{{ STATIC_URL }}{{ artist.artist_image_filename }}">
+  </div>
+  <div id="artist_footer_text">
+  	<strong>{{ artist.person_name|upper }}</strong>{% if artist.birth_date %}, s. {{ artist.birth_date }}{% endif %}
+	<br /><br />
+	{{ artist.descriptive_note }}
+  </div>
+</div>
+
+<!-- Nimiluettelo -->
+{% spaceless %}
+<div id="artists">
+<table id="artist_names">
+<tr>
+  {% for object in object_list %}
+  <td><a class="name_link" href="/taiteilijat/{{ object.label}}/">{{ object.person_name }}</a></td>
+  {% ifequal forloop.counter 6 %}</tr><tr>{% endifequal%}
+  {% ifequal forloop.counter 12 %}</tr><tr>{% endifequal%}
+  {% ifequal forloop.counter 18 %}</tr><tr>{% endifequal%}
+  {% endfor %}
+</tr>
+</table>
+</div>
+{% endspaceless %}
+
+</div>
+{% endblock %}

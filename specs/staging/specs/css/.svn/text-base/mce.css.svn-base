@@ -1,0 +1,140 @@
+/* ---------- heading styles ---------- */
+h1 {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 4px;
+}
+h2 {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 4px;
+}
+h3 {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 4px;
+	}
+h4 {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 4px;
+	}
+	
+/* coloring BEG */
+h1 .blue, h2 .blue, h3 .blue, h4 .blue {
+	margin: 1px 0 4px 0;
+	color: #0077d4; /* MidBlue */
+	border-bottom: 1px solid #0077d4; /* MidBlue */	
+	}
+h1.blue, h2.blue, h3.blue, h4.blue {
+	margin: 1px 0 4px 0;
+	color: #0077d4; /* MidBlue */
+	}
+h1 .dblue, h2 .dblue, h3 .dblue, h4 .dblue {
+	margin: 1px 0 4px 0;
+	color: #105CB6; /* DarkBlue */
+	border-bottom: 1px solid #0077d4; /* MidBlue */	
+	}
+h1.dblue, h2.dblue, h3.dblue, h4.dblue {
+	margin: 1px 0 4px 0;
+	color: #105CB6; /* DarkBlue */
+	}
+h1 .green, h2 .green, h3 .green, h4 .green {
+	margin: 1px 0 4px 0;
+	color: #3CB371; /* MediumSeaGreen */
+	border-bottom: 1px solid #3CB371; /* MediumSeaGreen */
+	}
+h1.green, h2.green, h3.green, h4.green {
+	margin: 1px 0 4px 0;
+	color: #3CB371; /* MediumSeaGreen */
+	}
+h1 .orange, h2 .orange, h3 .orange, h4 .orange {
+	margin: 1px 0 4px 0;
+	color: #E54A14;
+	border-bottom: 1px solid #f60;
+	}
+h1.orange, h2.orange, h3.orange, h4.orange {
+	margin: 1px 0 4px 0;
+	color: #E54A14;
+	}
+h1 .grey, h2 .grey, h3 .grey, h4 .grey {
+	margin: 1px 0 4px 0;
+	color: #666;
+	border-bottom: 1px solid #f60;
+	}
+h1.grey, h2.grey, h3.grey, h4.grey {
+	margin: 1px 0 4px 0;
+	color: #666;
+	}
+/* coloring END */
+
+
+p {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TinyMCE table */
+
+.tapaamiset {
+	color: #333;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 4px;
+}
+
+table.tapaamiskalenteri {
+	border-collapse: collapse;
+	width: auto;
+	border:1px solid #bbb;
+	margin-top: 8px;
+	margin-bottom: 12px;
+	color:#002440;
+	font-family:Lucida,Arial,Helvetica,sans-serif;
+	font-size:13px;
+	}
+	
+table.tapaamiskalenteri th {
+	width: 80px;
+	font-weight: bold;
+	text-align: left;
+	background-color: #C5DAEA;
+	padding: 4px 4px 4px 12px;
+	}
+table.tapaamiskalenteri tr.white {
+	text-align: left;
+	background-color: #fafad0;
+	border-bottom:1px solid #75abea;
+	}
+table.tapaamiskalenteri tr.lblue {
+	text-align: left;
+	background-color: #fafad0;
+	border-bottom:1px solid #75abea;
+	}
+table.tapaamiskalenteri td {
+	width: 50px;
+	text-align: center;
+	padding: 2px;
+	}
+table.tapaamiskalenteri td.auto {
+	width: auto;
+	text-align: left;
+	padding: 2px;
+	}

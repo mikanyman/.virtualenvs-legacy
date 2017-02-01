@@ -1,0 +1,126 @@
+<style type="text/css">
+h1 {
+    color: #0077D4;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 4px;
+    padding: 0;
+    text-decoration: none;
+}
+.poll_text {
+    font-family: verdana;
+    font-size: 12px;
+    line-height: 16px;
+	margin-left: 80px;
+}
+td {
+    font-family: verdana;
+    font-size: 12px;
+}
+#col1_col2_left {
+    width: 779px;
+	border-right: dashed 1px #0077D4
+}
+.field_wrapper {
+	margin-bottom: 16px;
+}
+</style>
+
+<div class="poll_text">
+<!-- <h3 class="orange">Kysely avataan maanantaina 20.4.</h3><br /> -->
+<br />
+<h1>Mit&auml; odotat yhdistykselt&auml;? - Anna &auml;&auml;nesi kuulua ja vaikuta!</h1>
+<!-- LOMAKE -->
+{% if poll_sent %}
+<br /><h3 class="orange">Kiitos vastauksestasi!</h3>
+{% else %}
+<p>Sin&auml; ja perheesi olette t&auml;rkeit&auml; vaikuttajia. Jokaisen j&auml;senen palautetta tarvitaan, 
+jotta toimintamme kehittyy toiveita vastaavaksi.</p>
+<form method="post" action=".">
+	
+<div class="field_wrapper">
+  {{ form.q1text.errors }}
+  <label for="id_q1text"><strong>1. </strong>{{ form.q1text.label }}</label>
+  {{ form.q1text }}
+</div>
+<div class="field_wrapper">
+  {{ form.q2text.errors }}
+  <label for="id_q2text"><strong>2. </strong>{{ form.q2text.label }}</label>
+  {{ form.q2text }}
+</div>
+<div class="field_wrapper">
+  {{ form.q3text.errors }}
+  <label for="id_q3text"><strong>3. </strong>{{ form.q3text.label }}</label>
+  {{ form.q3text }}
+</div>
+<div class="field_wrapper">
+  {{ form.q4text.errors }}
+  <label for="id_q4text"><strong>4. </strong>{{ form.q4text.label }}</label>
+  {{ form.q4text }}
+</div>
+<p><strong>5.</strong> Numeroi t&auml;rkeysj&auml;rjestys (1, 2, 3). Yhdistyksen ty&ouml;ss&auml; t&auml;rkeint&auml; on:</p>
+<table border="0">
+<tr>
+  <td>&nbsp;</td>
+  <td><div align="center">1</div></td>
+  <td><div align="center">2</div></td>
+  <td><div align="center">3</div></td>
+</tr>
+<tr>	
+  <td>{{ form.q51radio.label }}&nbsp;&nbsp;</td>
+  <td width="20"><input type="radio" id="id_q51radio_0" name="q51radio" value="1"></td>
+  <td width="20"><input type="radio" id="id_q51radio_1" name="q51radio" value="2"></td>
+  <td width="20"><input type="radio" id="id_q51radio_2" name="q51radio" value="3"></td>
+</tr>
+<tr>
+  <td>{{ form.q52radio.label }}&nbsp;</td>
+  <td><input type="radio" id="id_q52radio_0" name="q52radio" value="1"></td>
+  <td><input type="radio" id="id_q52radio_1" name="q52radio" value="2"></td>
+  <td><input type="radio" id="id_q52radio_2" name="q52radio" value="3"></td>
+</tr>
+<tr>
+  <td>{{ form.q53radio.label }}&nbsp;</td>
+  <td><input type="radio" id="id_q53radio_0" name="q53radio" value="1"></td>
+  <td><input type="radio" id="id_q53radio_1" name="q53radio" value="2"></td>
+  <td><input type="radio" id="id_q53radio_2" name="q53radio" value="3"></td>
+</tr>
+</table>
+<br />
+<div class="field_wrapper">
+  {{ form.q6text.errors }}
+  <label for="id_q6text"><strong>6. </strong>{{ form.q6text.label }}</label>
+  {{ form.q6text }}
+</div>
+<div class="field_wrapper">
+  {{ form.q7text.errors }}
+  <label for="id_q7text"><strong>7. </strong>{{ form.q7text.label }}</label>
+  {{ form.q7text }}
+</div>
+<div class="field_wrapper">
+  {{ form.q8text.errors }}
+  <label for="id_q8text"><strong>8. </strong>{{ form.q8text.label }}</label>
+  {{ form.q8text }}
+</div>
+<div class="field_wrapper">
+  {{ form.q9text.errors }}
+  <label for="id_q9text"><strong>9. </strong>{{ form.q9text.label }}</label>
+  {{ form.q9text }}
+</div>
+<div class="field_wrapper">
+  {{ form.q10text.errors }}
+  <label for="id_q10text"><strong>10. </strong>{{ form.q10text.label }}</label>
+  {{ form.q10text }}
+</div>
+<div class="field_wrapper">
+  {{ form.q11text.errors }}
+  <label for="id_q11text"><strong>11. </strong>{{ form.q11text.label }}</label>
+  {{ form.q11text }}
+</div>
+<p><input name="laheta" type="submit" value="L&auml;het&auml;" /></p>
+</form>
+{% endif %}
+<!-- /LOMAKE -->
+</div>
+
+

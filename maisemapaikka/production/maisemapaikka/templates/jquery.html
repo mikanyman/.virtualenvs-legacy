@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Maisemapaikka</title>
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/styles.css?{% now "YmdHis" %}" />
+{{ form.media }}<!-- form.media -->
+
+<!-- Google Maps -->
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+{% block googlemaps %}{% endblock googlemaps %}
+
+<!-- jQuery -->
+<link type="text/css" href="{{ STATIC_URL }}css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript">
+$(function(){
+// Accordion
+$("#accordion").accordion({ header: "h3" });
+
+// Tabs
+$('#tabs').tabs();
+	
+// Dialog			
+$('#dialog').dialog({
+autoOpen: false,
+width: 600,
+buttons: {
+"Ok": function() { 
+$(this).dialog("close"); 
+}, 
+"Cancel": function() { 
+$(this).dialog("close"); 
+} 
+}
+});
+				
+// Dialog Link
+$('#dialog_link').click(function(){
+$('#dialog').dialog('open');
+return false;
+});
+
+// Datepicker
+$('#datepicker').datepicker({
+inline: true
+});
+				
+// Slider
+$('#slider').slider({
+range: true,
+values: [17, 67]
+});
+				
+// Progressbar
+$("#progressbar").progressbar({
+value: 20 
+});
+				
+//hover states on the static widgets
+$('#dialog_link, ul#icons li').hover(
+function() { $(this).addClass('ui-state-hover'); }, 
+function() { $(this).removeClass('ui-state-hover'); }
+);
+				
+});
+</script>
+
+</head>
+
+<body onload='initialize()'>
+<div id="topbanner">
+Topbanner...
+</div>
+
+<div class="container clearfix">
+  <div id="main">
+    <!-- jQuery -->
+    <meta charset="utf-8">
+    <script>
+    $(function() {
+    $( "#tabs" ).tabs();
+    });
+    </script>
+    <div class="demo">
+      <div id="tabs">
+        <ul>
+          <li><a href="/maisemapaikka/landscapes/" id="tabs-1">Maisemat</a></li>
+          <li><a href="/maisemapaikka/churches/" id="tabs-2">Arkkitehtuuri</a></li>
+          <li><a href="/maisemapaikka/rockart/" id="tabs-3">Muinaiskohteet</a></li>
+        </ul>
+        <div id="tabs-1">xxxxxxxxx
+          {% block description1 %}{% endblock description1 %}
+          {% block content1 %}{% endblock content1 %}
+        </div>
+        <div id="tabs-2">yyyyyyyyyyy
+          {% block description2 %}{% endblock description2 %}
+          {% block content2 %}{% endblock content2 %}
+        </div>
+        <div id="tabs-3">zzzzzzzzzzzz
+          {% block description3 %}{% endblock description3 %}
+          {% block content3 %}{% endblock content3 %}
+        </div>
+      </div><!-- /tabs -->
+    </div><!-- /demo -->    
+  </div><!-- main -->
+
+  <div id="gutter"></div>
+
+  <div id="navi">
+    <p><a href="/maisemapaikka/landscapes/time/" id="#tabs-1">Maisemat</a></p>
+    {% include "include/jquery_accordion.html" %}
+  </div>
+
+</div><!-- container -->
+
+<div id="textfooter">
+  Tiedot....
+</div>
+
+</body>
+</html>

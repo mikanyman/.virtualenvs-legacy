@@ -1,0 +1,18 @@
+{% extends "boxes/borderfade_yellow_180.html" %}
+{% load i18n %}
+
+{% block content %}
+<h2 class="orange">Liity j&auml;seneksi!</h2>
+<div class="blog_list">
+
+  <div style="margin: 8px 0px">
+  <img height="9" width="11" border="0" src="http://www.tallsmall.fi:8080/site_media/img/boxarrow_blue.gif"/> 
+  <a href="/{{ lang }}/{{ profile }}/{{ event }}/members/application/create/">{% trans "Apply for Membership" %}</a>
+  </div>
+ 
+  <div style="margin: 8px 0px">
+  <strong>Tule mukaan iloiseen, kokoistesi joukkoon!</strong>
+  </div>
+  
+</div>
+{% endblock %}

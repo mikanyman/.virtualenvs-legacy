@@ -1,0 +1,423 @@
+/* speci */
+
+body {
+    min-width: 640px; /* (2 * (col_1 fullwidth + (2 * col_2 padding))) + col_3 fullwidth */
+	background-color: #fff;
+	/*
+	background-image: url(/img/backgrounds/fading_background_8.png);
+	background-repeat: repeat-x;
+	*/
+	background: transparent url(/img/background/bg_diag_grey.gif) repeat scroll 0% 0%
+	}
+a {
+	color: #fff;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+/*
+td {
+	vertical-align: top;
+	}
+*/
+
+/* ---------- wrap ---------- */
+#wrap {
+	width: 980px;
+	margin: 0 auto;
+	border: solid 1px #666;
+	background-color: #fff;
+	}
+
+/* ---------- header, footer ---------- */
+#header {
+	height: 20px;
+	background-color: #99A8BB;
+	border-bottom: solid 1px #666;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #fff;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+#footer {
+	clear: both;
+	height: 19px;
+	background-color: #99BBA8; /* #aba */
+	border-top: solid 1px #666;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	color: #fff;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#header a, #footer a {
+	color: #fff;
+	text-align: center;
+	padding-top: 4px;
+}
+#footer span {
+	padding-left: 260px; 
+}
+
+/* ---------- headerlinks ---------- */
+#log_in_out_img {
+	float: left;
+	margin-top: 2px;
+	}
+#log_in_out_txt {
+	float: left;
+    margin-left: 6px;
+	}
+#event {
+	float: right;
+	margin-right: 16px;
+	}
+#profile {
+	float: right;
+	margin-right: 16px;
+	}
+#lang {
+    float: right;
+	margin-top: 2px;
+	}
+
+/* ---------- topbanner ---------- */
+#logo {
+	width: 940px;
+	height: 80px;
+	padding: 2px 20px 0 20px;
+	background-color: #8DA4D4;
+	}
+#logo_img {
+	float: left;
+	background-color: #fcc;
+	background-image: url(/img/specs/mitta_y.gif);
+	background-repeat: no-repeat;
+}
+#logotext {
+	float: left;
+	clear: right;
+	left: auto;
+	color: #efefef;
+	font-family: Arial;
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: 8px;
+	margin-left: 16px;
+	}
+#logo_slogan {
+	float: right;
+}
+
+/* ---------- topnavi ---------- */
+#topnavi {
+	float: left;
+	width: 100%;
+	font-family: Verdana;
+	font-size: 13px;
+	line-height: normal;
+	background: #8DA4D4 url(/img/muradora/bluepix.gif) repeat-x bottom left;
+}
+#topnavi ul {
+	margin: 0;
+	padding: 0 10px 0 20px;
+	list-style: none;
+	}
+#topnavi li {
+	display: inline;
+	margin-bottom: 0;
+	padding: 0;
+}
+#topnavi a {
+	float: left;
+	background: url("/img/muradora/tableft.gif") no-repeat left top;
+	margin: 0 2px 0 0; /* alkujaan vain nolla */
+	padding: 0 0 0 4px;
+	text-decoration: none;
+	border-bottom: solid 1px #8DA4D4;
+}
+#topnavi a span {
+	float: left;
+	background: url("/img/muradora/tabright.gif") no-repeat right top;
+	display: block;
+	padding: 4px 15px 4px 6px;
+	color: #666;
+	}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+/*
+#topnavi a span {
+	float: none;
+	}
+*/
+/* End IE5-Mac hack */
+
+#topnavi a:hover {
+	color: #E96701;
+}
+
+#topnavi a:hover span {
+	color: #E96701;
+	}
+
+#topnavi a:active {
+	background-position: 0% -42px;
+}
+
+#topnavi a:active span {
+	background-position: 100% -42px;
+	color: #F49510;
+	}
+
+body#etusivu a#etusivuLink,
+body#verkkolehti a#verkkolehtiLink,
+body#kuvagalleria a#kuvagalleriaLink,
+body#keskustele a#keskusteleLink,
+body#vaikuta a#vaikutaLink,
+body#apua_ongelmiin a#apua_ongelmiinLink,
+body#tuotteet a#tuotteetLink,
+body#yhdistys a#yhdistysLink {
+	background-position: 0% -42px;
+	border-bottom: solid 1px #fff;
+}
+
+body#etusivu a#etusivuLink span,
+body#verkkolehti a#verkkolehtiLink span,
+body#kuvagalleria a#kuvagalleriaLink span,
+body#keskustele a#keskusteleLink span,
+body#vaikuta a#vaikutaLink span,
+body#apua_ongelmiin a#apua_ongelmiinLink span,
+body#tuotteet a#tuotteetLink span,
+body#yhdistys a#yhdistysLink span {
+	background-position: 100% -42px;
+	color: #E96701;
+	}
+
+/* ---------- content ---------- */
+#content_3col {
+  padding-left: 200px; /* col_1 fullwidth */
+  padding-right: 220px; /* col_3 fullwidth + (2 * col_2 padding) */
+}
+#content_2col {
+  padding-left: 200px; /* col_1 fullwidth */
+}
+#content_3col .columns {
+	position: relative;
+	float: left;
+}
+#content_2col .columns {
+	position: relative;
+	float: left;
+}
+
+/* ---------- cols ---------- */
+#col_1 {
+	width: 180px; /* with padding = 200px */
+	padding: 10px 10px;
+	right: 220px; /* col_1 fullwidth + (2 * col_2 padding) */
+	margin-left: -100%;
+}
+#col_2 {
+	padding: 10px 10px;
+	width: 100%;
+}
+#col_3 {
+	width: 180px; /* with padding = 200px */
+	padding: 10px 10px;
+	margin-right: -220px; /* col_3 fullwidth + (2 * col_2 padding) */
+}
+* html #left {
+  left: 200px;  /* col_3 width */
+}
+/*
+#col_2w {
+	float: right;
+	width: 750px;
+	height: auto;
+	background-color: #fff;
+    background-image: url(/img/logo_etusivu.jpg);
+    background-repeat: no-repeat;
+}
+*/
+/* ---------- Leftnavi ---------- */
+
+#navigation {
+	border-top: 1px solid #efefef;
+	border-right: 1px solid #efefef;
+	border-left: 1px solid #efefef;
+}
+#navigation a:active {
+	background-color: #666;
+}
+#navigation a:hover {
+	background: #abd;
+	color: #930;
+        background-image: url(/img/navar.gif);
+        background-repeat: no-repeat;
+}
+#navigation td {
+        width: 100%;
+	text-align: left;
+	border-bottom: 1px solid #efefef;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+#navigation a {
+	display: block;
+	background: #aabbdd;
+	font: 12px Verdana;
+	color: #FFFFFF;
+	line-height: 12px;
+	letter-spacing: normal;
+	text-decoration: none;
+	padding: 8px 8px 8px 24px;
+        background-image: url(/img/navar.gif);
+	background-repeat: no-repeat;
+}
+
+/* ---------- Content boxes ---------- */
+.rbox {
+	width: auto;
+	background-color: #efefef;
+	margin-bottom: 16px;
+	color: #000;
+	font-size: 11px;
+	font-family: verdana;
+}
+.rbox_hea {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	width: auto;
+	/* border-bottom: 1px solid #000; */
+	/* background-image: url(/img/liuku.gif); */
+	background-color: #A3D48C;
+	/* background-color: #96BEC8; */
+	/* background-color: #A0C382; */
+	/* background-color: #2882BE; */
+	padding: 4px;
+}
+.rbox_content {
+	padding: 8px;
+	border-right: 1px solid #abd;
+	border-bottom: 1px solid #abd;
+	border-left: 1px solid #abd;
+}
+.midbox {
+	width: auto;
+	border: 1px solid #aabbdd;
+	background-color:#efefef;
+	color: #000;
+	font-size: 11px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+/* ---------- Heading styles ---------- */
+.hea_midbox_main {
+	color: #8C99D4;
+	font-family: Verdana;
+	font-size: 18px;
+	font-weight: bold;
+}
+.hea_midbox {
+	color: #8FBC8F;
+	font-family: Tahoma, Verdana;
+	font-size: 16px;
+	font-weight: bold;
+}
+/* ---------- Fading corners ---------- */
+.fading_corner_1 {
+	background-image: url(/img/corners/fading_corner_1.gif);
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_2 {
+	background-image: url(/img/corners/fading_corner_2.gif);
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_3 {
+	background-image: url(/img/corners/fading_corner_3.gif);
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_4 {
+	background-image: url(/img/corners/fading_corner_4.gif);
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_5 {
+	background-image: url(/img/corners/fading_corner_5.gif);
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_6 {
+	background-image: url(/img/corners/fading_corner_6.gif);
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_7 {
+	background-image: url(/img/corners/fading_corner_7.gif);
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+.fading_corner_8 {
+	background-image: url(/img/corners/fading_corner_8.gif);
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-family: verdana;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+
+/* ---------- gallery ---------- */
+
+#gallery_ots {
+	width: 656px;
+	background-color: #efefef;
+	border: 1px solid #333;
+	color: #333;
+	margin-left:8px;
+	padding-left: 8px;
+	font-size: 18px;
+}
+
+#gallery {
+	color: #333;
+}
+.imgbox {
+	vertical-align: bottom;
+	text-align: center;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+.tblspace {
+	height: 10px;
+}

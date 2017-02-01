@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <div id="content">
+
+<!-- Otsikko & esittely -->
+<div id="headline"><h1>{{ site.0.headline }}</h1></div>
+<div id="abstract">{{ site.0.abstract }}</div>
+
+<!-- Taiteilijakohtaiset teoskuvat -->
+<div id="work_list">
+{% spaceless %}
+<table class="works_table">
+<tr>
+  {% for work in works %}
+  <td>
+  	{% for key, value in image_dict.items %}
+	  {% ifequal key work.item_number %}
+	    <img src="{{ MEDIA_URL }}{{ value.0.small_image_filename }}">
+		<!-- POIKKEUSASETTELU -->
+		{% comment %}
+		{% ifequal work.item_number 83 %}<br/><br/><br/><br/>{% endifequal %}
+		{% ifequal work.item_number 85 %}<br/><br/><br/><br/>{% endifequal %}
+		{% endcomment %}
+		<!-- /POIKKEUSASETTELU -->
+	  {% endifequal %}
+	{% endfor %}
+	<br />
+    <div class="enlarge_field">
+      <a href="/teos/{{ artist.label }}/{{ work.item_number }}/"><img src="{{ STATIC_URL }}img/icon_enlarge.gif" alt="Suurenna kuva" title="Suurenna kuva"/></a>
+      {% if work.new_work %}
+	  <br style="margin-bottom: 8px" />
+	  <span class="uusi">UUSI</span>{# <img src="http://www.transdeco.fi/img/uusi.jpg"> #}
+	  <br />
+	  {% endif %}
+	</div>
+	<div class="text_field">
+  	  <strong>{{ work.title_text|upper }}</strong><br />
+  	  {% if work.message %}<span class="message">{{ work.message }}</span><br />{% endif %}
+  	  {{ work.mater_tech_descr }}, {{ work.creation_date }}<br />
+  	  Vedosm&auml;&auml;r&auml;: {{ work.edition_size }}<br />
+  	  Kuva-ala: {{ work.dimensions_description }} cm<br />
+	  Tuotenumero: {{ work.item_number }}<br />
+  	  <strong>Hinta: {{ work.price }} &euro;</strong><br /><br />
+	</div>
+  </td>
+  {% ifequal forloop.counter 3 %}</tr></table><table class="works_table"><tr>{% endifequal%}
+  {% ifequal forloop.counter 6 %}</tr></table><table class="works_table"><tr>{% endifequal%}
+  {% ifequal forloop.counter 9 %}</tr></table><table class="works_table"><tr>{% endifequal%}
+   {% ifequal forloop.counter 12 %}</tr></table><table class="works_table"><tr>{% endifequal%}
+  {% endfor %}
+</tr>
+</table>
+<div id="order_info">Yll&auml;mainitut hinnat ovat lehten&auml;, sis.alv. Kehystysneuvoja kauttamme. Ota yhteytt&auml; s&auml;hk&ouml;postitse ja pyyd&auml; esittely&auml; tai tilaa suoraan.{{ site.0.order_info }}</div>
+</div>
+{% endspaceless %}
+
+<!-- Taiteilijaesittely -->
+<div id="artist_footer">
+  <div id="artist_img">
+  	<img src="{{ MEDIA_URL }}{{ artist.artist_image_filename }}">
+  </div>
+  <div id="artist_footer_text">
+    <div style="margin:0 0 8px 0; padding:0"><strong>{{ artist.person_name|upper }}</strong>{% if artist.birth_date %}, s. {{ artist.birth_date }}{% endif %}</div>
+    <div style="margin:0; padding:0">{{ artist.descriptive_note }}</div>
+  </div>
+</div>
+
+<!-- Nimiluettelo -->
+{% spaceless %}
+<div id="artists">
+<table id="artist_names">
+<tr>
+  {% for object in object_list %}
+  <td><a class="name_link" href="/taiteilijat/{{ object.label}}/">{{ object.person_name }}</a>{% if object.new_work %}<span class="uutta">UUTTA</span>{% endif %}</td>
+  {% ifequal forloop.counter 6 %}</tr><tr>{% endifequal%}
+  {% ifequal forloop.counter 12 %}</tr><tr>{% endifequal%}
+  {% ifequal forloop.counter 18 %}</tr><tr>{% endifequal%}
+  {% endfor %}
+</tr>
+</table>
+</div>
+{% endspaceless %}
+
+</div>
+{% endblock %}

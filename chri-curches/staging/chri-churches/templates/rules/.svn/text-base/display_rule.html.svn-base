@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if object %}
+    <h1>Item Details</h1>
+    <ul>
+      <li>ID: {{ object.id }}</li>
+      <li>Description: {{ object.description }}</li>
+      <li>Item text:
+          {{ object.rule }}
+      </li>
+    </ul>
+  {% else %}
+    <h1>List of All Items</h1>
+    {% if object_list %}
+      <table class="list">
+        {% for rule in object_list %}
+        </tr>
+          <td class="{% cycle 'list_white' 'list_blue' %}">
+            <span style="float:left">{{ rule.description }}</span>
+            <span style="float:right">
+              <a href="/{{ lang }}/detail/{{ rule.id }}/">Details</a> |
+              <a href="/{{ lang }}/update/{{ rule.id }}/">Modify</a> |
+              <a href="/{{ lang }}/delete/{{ rule.id }}/">Delete</a></span>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    {% else %}
+      No items defined yet.
+    {% endif %}
+{% endif %}
+{% endblock %}

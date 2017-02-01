@@ -1,0 +1,14 @@
+Callable
+========
+
+Ideana, että ohjelmalla tuotetaan queryset skriptissä
+	ks. esim. modules/get_list.py
+Se puretaan auki templatessa
+	ks. esim. templates/common/list_latest.html
+	
+Ympärillä on vielä erikseen solun visuaalinen muotoilu, joka on
+riippumaton callable-muotoilusta.
+Myös templateen voi sisältyä visuaalista muotoilua
+
+
+templateen välitettävä muutuja on content_from_callable

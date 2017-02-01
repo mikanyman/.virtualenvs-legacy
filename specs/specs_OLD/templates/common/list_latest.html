@@ -1,0 +1,14 @@
+{% block blogbar_right %}
+<div class="blog_list">
+  <h2 class="dblue">Uusimmat</h2>
+  <ul>
+  {% for object in content_from_callable %}
+    {% ifequal tab object.tab %}
+    <li>{{ object.label }}</li>
+	{% else %}
+    <li><a href="{{ object.get_absolute_url }}">{{ object.label }}</a></li>
+	{% endifequal %}
+  {% endfor %}
+  </ul>
+</div>
+{% endblock %}

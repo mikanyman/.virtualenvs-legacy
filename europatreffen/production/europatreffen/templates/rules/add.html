@@ -1,0 +1,9 @@
+{% extends "rules/base.html" %}
+
+{% block contents %}
+<form action="." method="POST">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Add" />
+</form>
+<h3><a href="{% url rule-list %}">List rules</a></h3>
+{% endblock %}

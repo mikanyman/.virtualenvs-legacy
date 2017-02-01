@@ -1,0 +1,8 @@
+<h2 class="dblue">Blogit</h2>
+<div class="blog_list">
+  <ul>
+    <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/blog/blog_list/?blog=erika">Erika</a></li>
+    <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/blog/blog_list/?blog=maijun_palsta">Maijun palsta</a></li>
+    <li><a href="/{{ lang }}/{{ profile }}/{{ event }}/blog/blog_list/?blog=kallen_blogi">Kallen blogi</a></li>
+  </ul>
+</div>

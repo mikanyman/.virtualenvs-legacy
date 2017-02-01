@@ -1,0 +1,22 @@
+{% extends "common/base.html" %}
+
+{% block content %}
+
+<div style="margin: 10px; min-height: 500px">
+  <table>
+  <tr style="height: 200px">
+    <td style="width: 25%">{% block 5col_1_1 %}{% endblock %}</td>
+    <td style="width: 25%">{% block 5col_1_2 %}{% endblock %}</td>
+    <td style="width: 25%">{% block 5col_1_3 %}{% endblock %}</td>
+    <td style="width: 25%">{% block 5col_1_4 %}{% endblock %}</td>
+  </tr>
+  <tr style="height: 200px">
+    <td>{% block ost_suo %}{% endblock %}</td>
+    <td>{% block ost_ulk %}{% endblock %}</td>
+    <td></td>
+    <td></td>
+  </tr>
+  </table>
+</div>
+
+{% endblock %}

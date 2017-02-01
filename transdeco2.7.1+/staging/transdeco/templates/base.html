@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <title>{{ site.0.title }}</title>
+  <link href="{{ STATIC_URL }}css/styles.css" rel="stylesheet" type="text/css" />
+  {% comment %}
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23670215-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  {% endcomment %}
+</head>
+<body id="{{ pg }}" onLoad="rollover()">
+<!-- /site_media/css/styles.css -->
+<div id="wrap">
+  <div id="topbanner"><img src="{{ STATIC_URL }}img/transdeco_logo.jpg"></div>
+  <div id="topnavi">
+  	<div id="topnavi_left"></div>
+    <ul>
+      <li><a href="/" id="aloitusLink">ALOITUSSIVU</a></li>
+      <li><a href="/taiteilijat/gullichsen/" id="taiteilijatLink">TAITEILIJAT</a></li>
+      <li><a href="/yhteys/" id="yhteysLink">YHTEYDENOTOT</a></li>
+      <li><a href="/tilaus/" id="tilausLink">TILAAMINEN</a></li>
+    </ul>
+  </div>
+  {% block content %}{% endblock %}
+</div>
+</body>
+</html>

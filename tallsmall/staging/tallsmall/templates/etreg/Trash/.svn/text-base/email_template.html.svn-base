@@ -1,0 +1,13 @@
+{% extends email_from_template %}
+
+{% block subject %}
+Hi {{ user.username }}, {{ num_posts }} {{ num_posts|pluralize:"person has,people have" }} written on your wall
+{% endblock %}
+
+{% block body %}
+Hi {{ user.username }}.
+
+Check out what they wrote here:
+
+  {{ site.url }}{% url profile:view user.username %}
+{% endblock %}

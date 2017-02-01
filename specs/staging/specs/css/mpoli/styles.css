@@ -1,0 +1,104 @@
+/*
+Keltainen sivun paaotsikko h1: #fd0
+Vihreä sivun valiotsikko h2: #55e21c
+Keltainen alakappaleen otsikko h3: #fd0
+Oranssi korostevari esim alkuingressille: #f93
+*/
+
+body {
+	background-color: #324796;
+	background-image: url(/media/wrk/specs/img/mpoli/tausta.jpg);
+	background-repeat: repeat-y;
+	color: #fff;
+	font-family : 'arial', 'helvetica';
+	}
+h1 {
+	font-family : 'arial', 'helvetica';
+	color: #fd0; /* Alunperin #94C2C7 */
+	font-size: 28px;
+	margin-bottom: 1em;
+	}
+h2 {
+	font-family : 'arial', 'helvetica';
+	color: #7acf7e; /* Alunperin #94C2C7 tai #55e21c */
+	font-size: 24px;
+	margin-bottom: 1em;
+	}
+h3 {
+	font-family : 'arial', 'helvetica';
+	color: #fd0;
+	font-size: 16px;
+	margin-bottom: 8px;
+	}
+td {
+	vertical-align: top;
+	}
+table#calendar {
+	margin-top: 8px;
+	border-collapse: collapse;
+	}
+table#calendar th {
+	color: #ccc;
+	font-weight: normal;
+	width: 80px;
+	text-align: left;
+	}
+table#calendar td {
+	width: 60px;
+	text-align: right;
+	}
+table#sisallysluettelo tr {
+	height: 22px;
+}
+a {
+	font-size:12pt;
+	color : #fff;
+	font-family : 'arial', 'helvetica';
+	font-weight : normal;
+	text-decoration : underline;
+	}
+a:hover {
+	font-size:12pt;
+	color : #ccc;
+	font-family : 'arial', 'helvetica';
+	font-weight : normal;
+	text-decoration : underline;
+	}
+a.sivunumero:link {
+	color: #fd0;
+	font-weight: bold;
+}
+a.sivunumero:active {
+	color: #fff;
+	font-weight: bold;
+}
+a.sivunumero:hover {
+	color: #eee;
+	font-weight: bold;
+}
+a.sivunumero:visited {
+	color: #ccc;
+	font-weight: bold;
+}
+em {
+	color: #f6c; /* Alunperin White */
+	font-weight: bold;
+	font-style: normal;
+	}
+div.otsikko {
+	color: #fd0; /* Alunperin #ffcc00 */
+	font-weight: bold;
+	margin-bottom: 1em;
+	}
+#osastologo {
+	margin-left: 80px;
+	}
+#wrap {
+	width: 700px;
+	padding-left: 120px;
+	margin-bottom: 40px;
+	}
+#tapahtuma {
+	color: #f93;
+	}
+

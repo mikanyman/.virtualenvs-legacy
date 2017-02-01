@@ -1,0 +1,92 @@
+body {
+  color:black;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:10%;
+  line-height:28px;
+  width:800px;
+  background-image:url(akj_24082010_km_saraakallio1_paikka_kmseinama_06.jpg);
+  background-size:100%;
+}
+
+.img1 {
+  margin-left:0.5%;
+  margin-right:0.5%;
+  float:middle;
+  width:800px;
+}
+
+
+.img2 {
+ /* float:right; */
+  /*height:350px;*/
+  width:100%;
+}
+
+
+.img3 {
+  /*float:right; */
+  /*width:300px;*/
+  /*margin-left:10px; */
+   width:100%;
+}
+
+.img4 {
+  /*float:left;*/
+ /* width:300px; */
+ width:100%;
+}
+
+.tekija {
+  font-style:italic;
+  font-size:140%;
+}
+
+.vartalo {
+  width:100%;
+  margin-right:20%;
+  padding-left:40px;
+  padding-right:40px;
+  padding-top:40px;
+  padding-bottom:40px;
+  background-color:#e8dbd9;
+}
+
+a:link {
+  color:#c8341b;
+}
+
+a:visited {
+  color:#48ac1a;
+}
+
+.kuvateksti {
+  font-style:italic;
+  text-align:left;
+}
+
+.kuvateksti2 {
+  width: 300px;
+  float:right;
+  font-style:italic;
+  margin-left:1%;
+  text-align:center;
+  text-indent:1%;
+  position:bottom;
+}
+
+.kuvateksti3 {
+  width: 330px;
+  float:left;
+  font-style:italic;
+  margin-right:1%;
+  text-align:center;
+  text-indent:1%;
+  padding-right:2%;
+}
+  
+  
+  
+  
+  
+

@@ -1,0 +1,68 @@
+# specs/templates/guestbook/entry_list.html
+
+{% extends "common/3col.html" %}
+{% load webdesign %}
+
+{% block topnavi %}
+  {% ssi /var/django/dev/specs/templates/ssi/topnavi.inc parsed %}
+{% endblock %}
+
+{% block col_1 %}
+  {% include "ssi/leftnavi.inc" %}
+{% endblock %}
+
+{% block col_2 %}
+  <div id="col_2">
+
+  <div class="midbox">
+  <!-- List v1 -->
+  {% if object_list %}
+    <table>
+    <tr><th colspan="4" class="th">Otsikko</th></tr>
+    {% for object in object_list %}
+    <tr {% cycle bgcolor="#e0e0e0",bgcolor="#ffffff" %}>
+      <td width="16" align="right">
+        <a href="/x_files/{{ object.id }}/"><img src="/icon/bitcons/arrow1_se.gif"></a></td>
+      <td>
+        <a href="/x_files/{{ object.id }}/">{{ object[2] }}</a> <!--<span class="comment_count">({{ comment_count }})</class>--></td>
+      <td width="16" align="right">
+        <a href="/x_files/{{ object.id }}/edit/"><img src="/icon/bitcons/edit.gif"></a></td>
+      <td width="16" align="right">
+        <a href="/x_files/{{ object.id }}/delete/"><img src="/icon/bitcons/trash.gif"></a></td>
+    </tr>
+    {% endfor %}
+	</table>
+  {% else %}
+    Vieraskirja on viel&auml; tyhj&auml;. <a href="{{ url_base }}/create/"></>Lis&auml;&auml;</a> ensimm&auml;inen puheenvuoro.  
+  {% endif %}
+  <!-- /List -->
+  </div>
+
+    <div class="midbox">
+      {% include "boxes/fi-frontpg-etusivu-mbox2.inc" %}
+    </div>
+
+  </div>
+{% endblock %}
+
+{% block col_3 %}
+  <div id="col_3">
+
+    <div class="rbox">
+      <div class="rbox_hea">Otsikko</div>
+      <div class="rbox_content">
+        {% include "boxes/fi-frontpg-etusivu-rbox1.inc" %}
+      </div>
+    </div>
+
+    <div class="rbox">
+      <div class="rbox_hea">Otsikko</div>
+      <div class="rbox_content">
+        {% include "boxes/fi-frontpg-etusivu-rbox2.inc" %}
+      </div>
+    </div>
+
+  </div>
+{% endblock %}
+
+

@@ -1,0 +1,130 @@
+{% load i18n %}<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="cache-control" content="no-cache">
+  <title>Synapse Computing</title>
+  <script src="{{ STATIC_URL }}js/cookiehandlers.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tabs.css"/>
+</head>
+<body class="main">
+
+<img src="{{ STATIC_URL }}img/roundedcornr/573439_tl.png" class="hiddenImg">
+<img src="{{ STATIC_URL }}img/roundedcornr/573439_tr.png" class="hiddenImg">
+<img src="{{ STATIC_URL }}img/roundedcornr/573439_bl.png" class="hiddenImg">
+<img src="{{ STATIC_URL }}img/roundedcornr/573439_br.png" class="hiddenImg">
+
+<div id="wrap">
+
+  <!-- header -->
+  <div id="top">
+  	
+    <!-- sel_lang -->
+    <script type="text/javascript">
+    function setLangAndSubmit(lang) {
+        lang_dir = '/'+lang+'/';
+        page = returnCookie('cur_page');
+        document.forms[0].elements["language"].value = lang;
+        document.forms[0].elements["next"].value = lang_dir + page + '/';
+        document.forms[0].submit();
+    }
+    </script>
+    <form action="/i18n/setlang/" method="post">
+    <input type="hidden" name="language" value=""/>
+    <input type="hidden" name="next" value=""/>
+    <div id="sel_lang">
+      {% ifequal lang 'en' %}{% trans "English" %} | {% else %}<a href="javascript:setLangAndSubmit('en')">{% trans "English" %}</a> | {% endifequal %}
+      {% ifequal lang 'sv' %}{% trans "Swedish" %} | {% else%}<a href="javascript:setLangAndSubmit('sv')">{% trans "Swedish" %}</a> | {% endifequal %}
+      {% ifequal lang 'fi' %}{% trans "Finnish" %} {% else %}<a href="javascript:setLangAndSubmit('fi')">{% trans "Finnish" %}</a>{% endifequal %}
+    </div>
+    </form>
+    <!-- /sel_lang -->
+	
+  </div>
+
+  <!-- topbanner -->
+  <div id="topbanner">
+  	
+  	<div id="main_logo">
+      <img src="{{ STATIC_URL }}img/synapse_hrz.jpg" height="70px" alt="Synapse Computing Logo"/>
+	</div>
+	
+	<!-- slogan -->
+	<div id="slogan">
+      <img src="{{ STATIC_URL }}img/slogan_research.jpg" alt="Extending Cognition. Information Systems for Research & Cultural Heritage">
+	</div><!-- /slogan -->
+	
+  </div>
+  <!-- /topbanner -->
+
+  <!-- tabs -->
+  {% ifequal lang 'en' %}
+  <div id="maintabs">
+    <ul class="tabs">
+      <li {% ifequal page "company" %}class="current"{% endifequal%}><a href="/{{ lang }}/company/" 
+	    onclick="setcookie('cur_page','company')">Company</a></li>
+      <li {% ifequal page "standards" %}class="current"{% endifequal%}><a href="/{{ lang }}/standards/" 
+	    onclick="setcookie('cur_page','standards')">Standards</a></li>
+      <li {% ifequal page "technologies" %}class="current"{% endifequal%}><a href="/{{ lang }}/technologies/" 
+	    onclick="setcookie('cur_page','technologies')">Technologies</a></li>
+      <li {% ifequal page "projects" %}class="current"{% endifequal%}><a href="/{{ lang }}/projects/" 
+	    onclick="setcookie('cur_page','projects')">Projects</a></li>
+      <li {% ifequal page "products" %}class="current"{% endifequal%}><a href="/{{ lang }}/products/" 
+	    onclick="setcookie('cur_page','products')">Products</a></li>
+      <li {% ifequal page "services" %}class="current"{% endifequal%}><a href="/{{ lang }}/services/" 
+	    onclick="setcookie('cur_page','services')">Services</a></li>
+    </ul>
+  </div>
+  {% endifequal %}
+  {% ifequal lang 'sv' %}
+  <div id="maintabs">
+    <ul class="tabs">
+      <li {% ifequal page "company" %}class="current"{% endifequal%}><a href="/{{ lang }}/company/" 
+	    onclick="setcookie('cur_page','company')">F&ouml;retaget</a></li>
+      <li {% ifequal page "standards" %}class="current"{% endifequal%}><a href="/{{ lang }}/standards/" 
+	    onclick="setcookie('cur_page','standards')">Standarder</a></li>
+      <li {% ifequal page "technologies" %}class="current"{% endifequal%}><a href="/{{ lang }}/technologies/" 
+	    onclick="setcookie('cur_page','technologies')">Teknologier</a></li>
+      <li {% ifequal page "projects" %}class="current"{% endifequal%}><a href="/{{ lang }}/projects/" 
+	    onclick="setcookie('cur_page','projects')">Projekt</a></li>
+      <li {% ifequal page "products" %}class="current"{% endifequal%}><a href="/{{ lang }}/products/" 
+	    onclick="setcookie('cur_page','products')">Produkter</a></li>
+      <li {% ifequal page "services" %}class="current"{% endifequal%}><a href="/{{ lang }}/services/" 
+	    onclick="setcookie('cur_page','services')">Tj&auml;nster</a></li>
+    </ul>
+  </div>
+  {% endifequal %}
+  {% ifequal lang 'fi' %}
+  <div id="maintabs">
+    <ul class="tabs">
+      <li {% ifequal page "company" %}class="current"{% endifequal%}><a href="/{{ lang }}/company/" 
+	    onclick="setcookie('cur_page','company')">Yritys</a></li>
+      <li {% ifequal page "standards" %}class="current"{% endifequal%}><a href="/{{ lang }}/standards/" 
+	    onclick="setcookie('cur_page','standards')">Standardit</a></li>
+      <li {% ifequal page "technologies" %}class="current"{% endifequal%}><a href="/{{ lang }}/technologies/" 
+	    onclick="setcookie('cur_page','technologies')">Teknologiat</a></li>
+      <li {% ifequal page "projects" %}class="current"{% endifequal%}><a href="/{{ lang }}/projects/" 
+	    onclick="setcookie('cur_page','projects')">Projektit</a></li>
+      <li {% ifequal page "products" %}class="current"{% endifequal%}><a href="/{{ lang }}/products/" 
+	    onclick="setcookie('cur_page','products')">Tuotteet</a></li>
+      <li {% ifequal page "services" %}class="current"{% endifequal%}><a href="/{{ lang }}/services/" 
+	    onclick="setcookie('cur_page','services')">Palvelut</a></li>
+    </ul>
+  </div>
+  {% endifequal %}
+  <!-- /tabs -->
+
+  <div id="pane">{% block layout %}{% endblock %}</div>
+
+  <div id="bottom">
+    <span class="block1">Arabiankatu 2</span>
+    <span class="block"><span class="txt">00560 Helsinki</span></span>
+    <span class="block"><span class="txt">+358-41-5499004</span></span>
+    <span class="block"><span class="txt">info@synapse.computing.com</span></span>
+  </div>
+
+</div><!-- wrap -->		 
+
+</body>
+</html>
+{# http://flowplayer.org http://www.clker.com/clipart-24087.html #}

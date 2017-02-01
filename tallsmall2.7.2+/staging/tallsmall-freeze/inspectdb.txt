@@ -1,0 +1,653 @@
+# This is an auto-generated Django model module.
+# You'll have to do the following manually to clean this up:
+#     * Rearrange models' order
+#     * Make sure each model has one field with primary_key=True
+# Feel free to rename the models, but don't rename db_table values or field names.
+#
+# Also note: You'll have to insert the output of 'django-admin.py sqlcustom [appname]'
+# into your database.
+
+from django.db import models
+
+class AuthGroupPermissions(models.Model):
+    id = models.IntegerField(primary_key=True)
+    group = models.ForeignKey(AuthGroup)
+    permission = models.ForeignKey(AuthPermission)
+    class Meta:
+        db_table = u'auth_group_permissions'
+
+class AuthPermission(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=50)
+    content_type = models.ForeignKey(DjangoContentType)
+    codename = models.CharField(max_length=100)
+    class Meta:
+        db_table = u'auth_permission'
+
+class AuthUserUserPermissions(models.Model):
+    id = models.IntegerField(primary_key=True)
+    user = models.ForeignKey(AuthUser)
+    permission = models.ForeignKey(AuthPermission)
+    class Meta:
+        db_table = u'auth_user_user_permissions'
+
+class AuthUserGroups(models.Model):
+    id = models.IntegerField(primary_key=True)
+    user = models.ForeignKey(AuthUser)
+    group = models.ForeignKey(AuthGroup)
+    class Meta:
+        db_table = u'auth_user_groups'
+
+class AuthMessage(models.Model):
+    id = models.IntegerField(primary_key=True)
+    user = models.ForeignKey(AuthUser)
+    message = models.TextField()
+    class Meta:
+        db_table = u'auth_message'
+
+class ChoeEntry(models.Model):
+    id = models.IntegerField(primary_key=True)
+    first_created = models.DateTimeField()
+    ip_address = models.IPAddressField()
+    mt_sukunimi = models.CharField(max_length=40)
+    mt_etunimi = models.CharField(max_length=40)
+    mt_puhelinnumero = models.CharField(max_length=40)
+    mt_email = models.CharField(max_length=40)
+    mv_sukunimi = models.CharField(max_length=40)
+    mv_etunimi = models.CharField(max_length=40)
+    mv_katuosoite = models.CharField(max_length=40)
+    mv_postinumero = models.CharField(max_length=5)
+    mv_postitoimipaikka = models.CharField(max_length=40)
+    mv_puhelinnumero = models.CharField(max_length=40)
+    mv_email = models.CharField(max_length=40)
+    sukupuoli = models.CharField(max_length=1)
+    ikaryhma = models.CharField(max_length=1)
+    kenkakoko = models.CharField(max_length=1)
+    vartalon_pituus = models.DecimalField(max_digits=5, decimal_places=2)
+    rinnan_ymparys = models.DecimalField(max_digits=5, decimal_places=2)
+    vyotaron_ymparys = models.DecimalField(max_digits=5, decimal_places=2)
+    lantion_ymparys = models.DecimalField(max_digits=5, decimal_places=2)
+    jalan_sivupituus = models.DecimalField(max_digits=5, decimal_places=2)
+    saaren_takapituus = models.DecimalField(max_digits=5, decimal_places=2)
+    pohkeen_ymparys = models.DecimalField(max_digits=5, decimal_places=2)
+    nilkan_ymparys = models.DecimalField(max_digits=5, decimal_places=2)
+    jalkapohjan_pituus = models.DecimalField(max_digits=5, decimal_places=2)
+    pakian_ymparys = models.DecimalField(max_digits=5, decimal_places=2)
+    jalkama = models.DecimalField(max_digits=5, decimal_places=2)
+    jalkakipuja = models.CharField(max_length=1)
+    missa_jalkakipuja = models.BooleanField()
+    kipuasteikko = models.CharField(max_length=1)
+    asiantuntija = models.BooleanField()
+    tukipohjallinen_suositeltu = models.CharField(max_length=1)
+    tukipohjallinen_kaytossa = models.CharField(max_length=1)
+    asentovirhe = models.BooleanField()
+    kovettumia = models.BooleanField()
+    vaivasenluu = models.BooleanField()
+    pitk_laskeuma = models.BooleanField()
+    poik_laskeuma = models.BooleanField()
+    vasaravarpaat = models.BooleanField()
+    muuta_vaivaa = models.TextField()
+    class Meta:
+        db_table = u'choe_entry'
+
+class AuthUser(models.Model):
+    id = models.IntegerField(primary_key=True)
+    username = models.CharField(unique=True, max_length=30)
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+    email = models.CharField(max_length=75)
+    password = models.CharField(max_length=128)
+    is_staff = models.BooleanField()
+    is_active = models.BooleanField()
+    is_superuser = models.BooleanField()
+    last_login = models.DateTimeField()
+    date_joined = models.DateTimeField()
+    class Meta:
+        db_table = u'auth_user'
+
+class DjangoAdminLog(models.Model):
+    id = models.IntegerField(primary_key=True)
+    action_time = models.DateTimeField()
+    user = models.ForeignKey(AuthUser)
+    content_type = models.ForeignKey(DjangoContentType)
+    object_id = models.TextField()
+    object_repr = models.CharField(max_length=200)
+    action_flag = models.SmallIntegerField()
+    change_message = models.TextField()
+    class Meta:
+        db_table = u'django_admin_log'
+
+class DjangoFlatpageSites(models.Model):
+    id = models.IntegerField(primary_key=True)
+    flatpage = models.ForeignKey(DjangoFlatpage)
+    site = models.ForeignKey(DjangoSite)
+    class Meta:
+        db_table = u'django_flatpage_sites'
+
+class MembersEvent(models.Model):
+    id = models.IntegerField(primary_key=True)
+    tapahtuma_tyyppi = models.CharField(max_length=20)
+    tapahtuma_aika = models.DateField()
+    tapahtumakohde_vuosi = models.CharField(max_length=4)
+    created = models.DateTimeField()
+    member = models.ForeignKey(MembersMember)
+    class Meta:
+        db_table = u'members_event'
+
+class DjangoSession(models.Model):
+    session_key = models.CharField(max_length=40, primary_key=True)
+    session_data = models.TextField()
+    expire_date = models.DateTimeField()
+    class Meta:
+        db_table = u'django_session'
+
+class DjangoTemplateSites(models.Model):
+    id = models.IntegerField(primary_key=True)
+    template = models.ForeignKey(DjangoTemplate)
+    site = models.ForeignKey(DjangoSite)
+    class Meta:
+        db_table = u'django_template_sites'
+
+class MembersTest(models.Model):
+    id = models.IntegerField(primary_key=True)
+    user = models.ForeignKey(AuthUser)
+    object_created = models.DateTimeField()
+    yri = models.BooleanField()
+    class Meta:
+        db_table = u'members_test'
+
+class MembersMember(models.Model):
+    id = models.IntegerField(primary_key=True)
+    jasennumero = models.CharField(max_length=6)
+    varsinainen = models.BooleanField()
+    perhe = models.BooleanField()
+    kannatus = models.BooleanField()
+    kunnia = models.BooleanField()
+    uudet_jasenet = models.BooleanField()
+    liittymisvuosi = models.CharField(max_length=30)
+    eroaminen = models.CharField(max_length=20)
+    sukunimi = models.CharField(max_length=40)
+    etunimi = models.CharField(max_length=20)
+    ent_sukunimi = models.CharField(max_length=40)
+    arvo = models.CharField(max_length=40)
+    yritys = models.CharField(max_length=40)
+    postiosoite = models.CharField(max_length=80)
+    postitoimipaikka = models.CharField(max_length=80)
+    postinumeroalue = models.CharField(max_length=20)
+    maa_osoitteessa = models.CharField(max_length=20)
+    laani = models.CharField(max_length=20)
+    puhelin_gsm_faksi = models.CharField(max_length=80)
+    email = models.CharField(max_length=80)
+    mies = models.CharField(max_length=1)
+    nainen = models.CharField(max_length=1)
+    pituustyyppi = models.CharField(max_length=20)
+    syntymavuosi = models.CharField(max_length=20)
+    pituus = models.CharField(max_length=20)
+    kenkakoko = models.CharField(max_length=20)
+    vaatekoko = models.CharField(max_length=20)
+    vartalotyyppi = models.CharField(max_length=20)
+    paanymparys = models.CharField(max_length=20)
+    kasinekoko = models.CharField(max_length=20)
+    tietosuoja_1 = models.BooleanField()
+    tietosuoja_2 = models.BooleanField()
+    tietosuoja_3 = models.BooleanField()
+    tietosuoja_4 = models.BooleanField()
+    tietosuoja_5 = models.BooleanField()
+    muuta = models.TextField()
+    tiedot_paivitetty = models.CharField(max_length=20)
+    messuavustus = models.CharField(max_length=20)
+    muut_liikkeet = models.TextField()
+    tila = models.CharField(max_length=20)
+    yri = models.BooleanField()
+    object_created = models.DateTimeField()
+    user_id = models.IntegerField()
+    jasentyyppi = models.CharField(max_length=20)
+    class Meta:
+        db_table = u'members_member'
+
+class FrontpgArticle(models.Model):
+    id = models.IntegerField(primary_key=True)
+    headline = models.CharField(max_length=100)
+    body = models.TextField()
+    author = models.CharField(max_length=100)
+    box = models.CharField(max_length=7)
+    class Meta:
+        db_table = u'frontpg_article'
+
+class LehtiarkistoLehti(models.Model):
+    id = models.IntegerField(primary_key=True)
+    numero = models.CharField(max_length=3)
+    vuosi = models.DateField()
+    class Meta:
+        db_table = u'lehtiarkisto_lehti'
+
+class MembersApplicant(models.Model):
+    id = models.IntegerField(primary_key=True)
+    etunimi = models.CharField(max_length=40)
+    sukunimi = models.CharField(max_length=40)
+    katuosoite = models.CharField(max_length=40)
+    postinumero = models.CharField(max_length=5)
+    postitoimipaikka = models.CharField(max_length=40)
+    puhelin = models.CharField(max_length=40)
+    email = models.CharField(max_length=40)
+    parentid = models.IntegerField(db_column='parentId') # Field name made lowercase.
+    pid = models.CharField(max_length=30)
+    lisatietoja = models.TextField()
+    syntymaaika = models.CharField(max_length=10)
+    perheenjasenet = models.TextField()
+    created = models.DateTimeField()
+    modified = models.DateTimeField()
+    status = models.IntegerField()
+    tililla = models.DateField()
+    class Meta:
+        db_table = u'members_applicant'
+
+class MembersYritys(models.Model):
+    id = models.IntegerField(primary_key=True)
+    user = models.ForeignKey(AuthUser)
+    object_created = models.CharField(max_length=100)
+    jasennumero = models.CharField(max_length=6)
+    jasentyyppi = models.CharField(max_length=20)
+    varsinainen = models.CharField(max_length=10)
+    perhe = models.CharField(max_length=10)
+    kannatus = models.CharField(max_length=10)
+    kunnia = models.CharField(max_length=10)
+    yri = models.CharField(max_length=10)
+    uudet_jasenet = models.CharField(max_length=10)
+    liittymisvuosi = models.CharField(max_length=30)
+    eroaminen = models.CharField(max_length=20)
+    sukunimi = models.CharField(max_length=40)
+    etunimi = models.CharField(max_length=20)
+    ent_sukunimi = models.CharField(max_length=40)
+    arvo = models.CharField(max_length=40)
+    yritys = models.CharField(max_length=40)
+    postiosoite = models.CharField(max_length=80)
+    postitoimipaikka = models.CharField(max_length=80)
+    postinumeroalue = models.CharField(max_length=20)
+    maa_osoitteessa = models.CharField(max_length=20)
+    laani = models.CharField(max_length=20)
+    puhelin_gsm_faksi = models.CharField(max_length=100)
+    email = models.CharField(max_length=80)
+    mies = models.CharField(max_length=1)
+    nainen = models.CharField(max_length=1)
+    pituustyyppi = models.CharField(max_length=20)
+    syntymavuosi = models.CharField(max_length=20)
+    pituus = models.CharField(max_length=20)
+    kenkakoko = models.CharField(max_length=20)
+    vaatekoko = models.CharField(max_length=20)
+    vartalotyyppi = models.CharField(max_length=20)
+    paanymparys = models.CharField(max_length=20)
+    kasinekoko = models.CharField(max_length=20)
+    tietosuoja_1 = models.CharField(max_length=10)
+    tietosuoja_2 = models.CharField(max_length=10)
+    tietosuoja_3 = models.CharField(max_length=10)
+    tietosuoja_4 = models.CharField(max_length=10)
+    tietosuoja_5 = models.CharField(max_length=10)
+    muuta = models.TextField()
+    tiedot_paivitetty = models.CharField(max_length=20)
+    messuavustus = models.CharField(max_length=20)
+    muut_liikkeet = models.TextField()
+    tila = models.CharField(max_length=20)
+    class Meta:
+        db_table = u'members_yritys'
+
+class MembersYritysevent(models.Model):
+    id = models.IntegerField(primary_key=True)
+    tapahtuma_tyyppi = models.CharField(max_length=20)
+    tapahtuma_aika = models.DateField()
+    tapahtumakohde_vuosi = models.CharField(max_length=4)
+    created = models.DateTimeField()
+    member_id = models.IntegerField()
+    class Meta:
+        db_table = u'members_yritysevent'
+
+class DjangoSite(models.Model):
+    id = models.IntegerField(primary_key=True)
+    domain = models.CharField(max_length=100)
+    name = models.CharField(max_length=50)
+    class Meta:
+        db_table = u'django_site'
+
+class DjangoTemplate(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name = models.CharField(unique=True, max_length=100)
+    content = models.TextField()
+    creation_date = models.DateTimeField()
+    last_changed = models.DateTimeField()
+    class Meta:
+        db_table = u'django_template'
+
+class PortalBox(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    order = models.IntegerField()
+    class Meta:
+        db_table = u'portal_box'
+
+class PortalFormlayout(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    form = models.ForeignKey(PortalForm)
+    order = models.IntegerField()
+    legend = models.CharField(max_length=100)
+    endnote = models.TextField()
+    submit = models.CharField(max_length=30)
+    intro = models.TextField()
+    class Meta:
+        db_table = u'portal_formlayout'
+
+class PortalFeed(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=50)
+    entry = models.ForeignKey(PortalEntry)
+    include = models.ForeignKey(PortalInclude)
+    callable = models.ForeignKey(PortalCallable)
+    auth = models.BooleanField()
+    confirmation = models.CharField(max_length=20)
+    menu_id = models.IntegerField()
+    application_id = models.IntegerField()
+    class Meta:
+        db_table = u'portal_feed'
+
+class PortalCategoryPages(models.Model):
+    id = models.IntegerField(primary_key=True)
+    category = models.ForeignKey(PortalCategory)
+    page = models.ForeignKey(PortalPage)
+    class Meta:
+        db_table = u'portal_category_pages'
+
+class PortalCelllocation(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=3)
+    class Meta:
+        db_table = u'portal_celllocation'
+
+class PortalEntryCategories(models.Model):
+    id = models.IntegerField(primary_key=True)
+    entry = models.ForeignKey(PortalEntry)
+    category = models.ForeignKey(PortalCategory)
+    class Meta:
+        db_table = u'portal_entry_categories'
+
+class PortalTab(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    order = models.IntegerField()
+    visible_name = models.CharField(max_length=30)
+    class Meta:
+        db_table = u'portal_tab'
+
+class PortalEntrystatus(models.Model):
+    id = models.IntegerField(primary_key=True)
+    status = models.CharField(max_length=30)
+    order = models.IntegerField()
+    default_status = models.IntegerField()
+    class Meta:
+        db_table = u'portal_entrystatus'
+
+class PortalFeedCells(models.Model):
+    id = models.IntegerField(primary_key=True)
+    feed = models.ForeignKey(PortalFeed)
+    cell = models.ForeignKey(PortalCell)
+    class Meta:
+        db_table = u'portal_feed_cells'
+
+class PortalEntry(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=50)
+    title = models.CharField(max_length=100)
+    body = models.TextField()
+    order = models.IntegerField()
+    created = models.DateTimeField()
+    modified = models.DateTimeField()
+    creator = models.ForeignKey(AuthUser)
+    profile = models.CharField(max_length=10)
+    language = models.CharField(max_length=10)
+    entrystatus = models.CharField(max_length=20)
+    tab = models.ForeignKey(PortalTab)
+    application = models.ForeignKey(PortalApplication)
+    abstract = models.TextField()
+    list_latest = models.BooleanField()
+    show_more = models.BooleanField()
+    show_abstract = models.BooleanField()
+    class Meta:
+        db_table = u'portal_entry'
+
+class PortalMenuitem(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    page = models.ForeignKey(PortalPage)
+    application = models.ForeignKey(PortalApplication)
+    menu = models.ForeignKey(PortalMenu)
+    order = models.IntegerField()
+    submenu_id = models.IntegerField()
+    visible_name = models.CharField(max_length=30)
+    query_string = models.CharField(max_length=100)
+    class Meta:
+        db_table = u'portal_menuitem'
+
+class PortalApplication(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    order = models.IntegerField()
+    class Meta:
+        db_table = u'portal_application'
+
+class PortalForm(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    order = models.IntegerField()
+    class Meta:
+        db_table = u'portal_form'
+
+class PortalLayout(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    order = models.IntegerField()
+    class Meta:
+        db_table = u'portal_layout'
+
+class PortalInclude(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    path = models.CharField(max_length=100)
+    order = models.IntegerField()
+    class Meta:
+        db_table = u'portal_include'
+
+class PortalCell(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    page = models.ForeignKey(PortalPage)
+    order = models.IntegerField()
+    box_id = models.IntegerField()
+    application_id = models.IntegerField()
+    celllocation_id = models.IntegerField()
+    class Meta:
+        db_table = u'portal_cell'
+
+class PortalTemplate(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    order = models.IntegerField()
+    class Meta:
+        db_table = u'portal_template'
+
+class PortalCallable(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=100)
+    order = models.IntegerField()
+    call = models.CharField(max_length=100)
+    template = models.CharField(max_length=100)
+    class Meta:
+        db_table = u'portal_callable'
+
+class PortalMenu(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    order = models.IntegerField()
+    visible_name = models.CharField(max_length=30)
+    template_id = models.IntegerField()
+    class Meta:
+        db_table = u'portal_menu'
+
+class QuestionariesQuestionary(models.Model):
+    id = models.IntegerField(primary_key=True)
+    title = models.CharField(max_length=200)
+    intro = models.TextField()
+    note = models.TextField()
+    pub_date = models.DateTimeField()
+    class Meta:
+        db_table = u'questionaries_questionary'
+
+class RegistrationRegistrationprofile(models.Model):
+    id = models.IntegerField(primary_key=True)
+    user = models.ForeignKey(AuthUser)
+    activation_key = models.CharField(max_length=40)
+    class Meta:
+        db_table = u'registration_registrationprofile'
+
+class QuestionariesQuestionary1(models.Model):
+    id = models.IntegerField(primary_key=True)
+    q1text = models.TextField()
+    q2text = models.TextField()
+    q3text = models.TextField()
+    q4text = models.TextField()
+    q51radio = models.CharField(max_length=1)
+    q52radio = models.CharField(max_length=1)
+    q53radio = models.CharField(max_length=1)
+    q6text = models.TextField()
+    q7text = models.TextField()
+    q8text = models.TextField()
+    q9text = models.TextField()
+    q11text = models.TextField()
+    ip = models.IPAddressField()
+    timestamp = models.DateTimeField()
+    class Meta:
+        db_table = u'questionaries_questionary1'
+
+class TaggingTaggeditem(models.Model):
+    id = models.IntegerField(primary_key=True)
+    tag = models.ForeignKey(TaggingTag)
+    content_type = models.ForeignKey(DjangoContentType)
+    object_id = models.IntegerField()
+    class Meta:
+        db_table = u'tagging_taggeditem'
+
+class TagforumoldEntry(models.Model):
+    id = models.IntegerField()
+    username = models.CharField(max_length=100)
+    email = models.CharField(max_length=75)
+    content = models.TextField()
+    first_created = models.DateTimeField()
+    ip_address = models.IPAddressField()
+    class Meta:
+        db_table = u'tagforumOLD_entry'
+
+class TagforumEntry(models.Model):
+    id = models.IntegerField(primary_key=True)
+    username = models.CharField(max_length=100)
+    email = models.CharField(max_length=75)
+    content = models.TextField()
+    first_created = models.DateTimeField()
+    ip_address = models.IPAddressField()
+    spam = models.BooleanField()
+    tag_list = models.CharField(max_length=255)
+    class Meta:
+        db_table = u'tagforum_entry'
+
+class PortalTest(models.Model):
+    id = models.IntegerField(primary_key=True)
+    slug = models.CharField(max_length=50)
+    creator = models.ForeignKey(AuthUser)
+    class Meta:
+        db_table = u'portal_test'
+
+class AuthGroup(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name = models.CharField(unique=True, max_length=80)
+    class Meta:
+        db_table = u'auth_group'
+
+class DjangoFlatpage(models.Model):
+    id = models.IntegerField(primary_key=True)
+    url = models.CharField(max_length=100)
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    enable_comments = models.BooleanField()
+    template_name = models.CharField(max_length=70)
+    registration_required = models.BooleanField()
+    class Meta:
+        db_table = u'django_flatpage'
+
+class QuestionariesFieldtype(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=20)
+    class Meta:
+        db_table = u'questionaries_fieldtype'
+
+class PortalPage(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=30)
+    order = models.IntegerField()
+    application_id = models.IntegerField()
+    layout_id = models.IntegerField()
+    visible_name = models.CharField(max_length=50)
+    tab_id = models.IntegerField()
+    parent_id = models.IntegerField()
+    class Meta:
+        db_table = u'portal_page'
+
+class QuestionariesQuestion(models.Model):
+    id = models.IntegerField(primary_key=True)
+    questionary = models.ForeignKey(QuestionariesQuestionary)
+    question = models.CharField(max_length=200)
+    fieldtype = models.ForeignKey(QuestionariesFieldtype)
+    textarea_content = models.TextField()
+    order = models.IntegerField()
+    radio_3_horiz = models.BooleanField()
+    class Meta:
+        db_table = u'questionaries_question'
+
+class DjangoContentType(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=100)
+    app_label = models.CharField(max_length=100)
+    model = models.CharField(max_length=100)
+    class Meta:
+        db_table = u'django_content_type'
+
+class TaggingTag(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name = models.CharField(unique=True, max_length=50)
+    class Meta:
+        db_table = u'tagging_tag'
+
+class EventcalEventdate(models.Model):
+    id = models.IntegerField(primary_key=True)
+    evtimestart = models.DateTimeField()
+    event = models.ForeignKey(EventcalEvent)
+    evtimend = models.DateTimeField()
+    class Meta:
+        db_table = u'eventcal_eventdate'
+
+class PortalCategory(models.Model):
+    id = models.IntegerField(primary_key=True)
+    label = models.CharField(max_length=50)
+    visible_name = models.CharField(max_length=30)
+    class Meta:
+        db_table = u'portal_category'
+
+class EventcalEvent(models.Model):
+    id = models.IntegerField(primary_key=True)
+    theme = models.CharField(max_length=100)
+    description = models.TextField()
+    placename = models.CharField(max_length=100)
+    placedescription = models.TextField()
+    evtimestart = models.DateTimeField()
+    author = models.CharField(max_length=100)
+    first_created = models.DateTimeField()
+    evtimend = models.DateTimeField()
+    class Meta:
+        db_table = u'eventcal_event'
+

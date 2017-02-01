@@ -1,0 +1,213 @@
+{# guestbook/entry_list.html #}
+
+{% load markup %}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Anti-Spam Guestbook</title>
+</head>
+
+<BODY id="b1" bgcolor="#324796" LINK="#FFFFFF" ALINK="#FFFFFF" VLINK="CCCCCC">
+<style TYPE="text/css" title="asgb">
+
+body {
+ FONT-SIZE : 12pt;
+ BACKGROUND-COLOR: #324796;
+ background-image: url(/media/wrk/specs/img/mpoli/tausta.jpg);
+ background-repeat: repeat-y;
+ COLOR : #FFFFFF;
+ FONT-FAMILY : 'arial', 'helvetica';
+ FONT-WEIGHT : bold;
+}
+.GB {
+  color: #FFFFFF;
+  background-color: #324796;
+ background-image:url();
+}
+
+.header {
+  color:#FFFFFF;
+  background-color: #324796;
+}
+
+.small {
+  FONT-SIZE : 7pt;
+  FONT-FAMILY : 'arial', 'helvetica';
+}
+
+A:hover {
+  FONT-SIZE:12pt;
+  color : #CCCCCC;
+  FONT-FAMILY : 'arial', 'helvetica';
+  font-weight : normal;
+  TEXT-DECORATION : underline;
+}
+
+A {
+  FONT-SIZE:12pt;
+  color : #FFFFFF;
+  FONT-FAMILY : 'arial', 'helvetica';
+  font-weight : normal;
+  TEXT-DECORATION : underline;
+}
+
+A.Small {
+  FONT-SIZE:7pt;
+  color : #CCCCCC;
+  FONT-FAMILY : 'arial', 'helvetica';
+  font-weight : normal;
+  TEXT-DECORATION : none;
+}
+
+A.Small:hover {
+  FONT-SIZE:7pt;
+  color : #FFFFFF;
+  FONT-FAMILY : 'arial', 'helvetica';
+  font-weight : normal;
+  TEXT-DECORATION : none;
+}
+
+h1 {FONT-SIZE : 18pt;
+  FONT-FAMILY : 'arial', 'helvetica';
+}
+
+.bold {
+  FONT-SIZE : 9pt;font-weight :bold ;
+  FONT-FAMILY : 'arial', 'helvetica';
+}
+
+.title{
+  FONT-SIZE:18pt;
+  color :#FFFFFF;
+  FONT-FAMILY : 'arial', 'helvetica';
+}
+
+.smallbold {
+  FONT-SIZE : 7pt;
+  font-weight :bold ;
+  FONT-FAMILY : 'arial', 'helvetica';
+}
+
+.normal {
+  FONT-SIZE : 12pt;
+  font-weight : bold;
+  FONT-FAMILY : 'arial', 'helvetica';
+}
+/*
+a.koroste_kelt {
+	color: #ffdd00;
+	font-weight: bold;
+}
+*/
+</style>
+
+<table border="0" cellspacing="5" cellpadding="15">
+<tr>
+<td width="60"></td>
+<td width="772">
+
+<div align="center" id="pagetitle">
+
+<h1 style="color: white; font-size: 30px;">Vieraskirja</h1>
+<!-- <img src="http://wiki.synapse-computing.com/asgbv3/images/vieraskirja.gif"> -->
+<strong class="title"><!-- --></strong>
+J&auml;t&auml; oma tervehdyksesi Pieni- ja Isokenk&auml;iset ry:n vieraskirjaan<br>
+ja lue muiden j&auml;tt&auml;mi&auml; viestej&auml;. Ei roskapostia, kiitos!<br><br>
+Korvaa @-merkki kirjoittamalla (at) tai POISTA s&auml;hk&ouml;postiosoitteessasi.<br>
+Viestiisi vastaaja palauttaa @-merkin oikeaan muotoonsa.<br><br>
+
+<a href="/guestbook/create/">Kirjoita oma tervehdyksesi</a>  &#149; 
+<a href="http://www.tallsmall.fi">Takaisin yhdistyksen sivulle</a>
+
+</div>
+<br>
+<table align="center" width="100%" border="0" cellspacing=0 cellpadding="0">
+<tr>
+  <td colspan="2"></td>
+</tr>
+<tr>
+  <td>
+    <p>Vieraskirjassa on {{ hits }} viesti&auml;. (Sivu {{ page }}/{{ pages }})</p></td>
+  <td align="right">
+    {% ifequal page 1 %}
+      << Alkuun | 
+    {% else %}
+      << <a href="/guestbook/?page=1">Alkuun</a> | 
+    {% endifequal %}
+
+    {% ifequal has_previous 1 %}
+      < <a href="/guestbook/?page={{ previous }}">Edellinen sivu</a> | 
+    {% else %}
+      < Edellinen sivu | 
+    {% endifequal %}
+
+    {% ifequal has_next 1 %}
+      <a href="/guestbook/?page={{ next }}">Seuraava sivu</a> > | 
+    {% else %}
+      Seuraava sivu > | 
+    {% endifequal %}
+
+    {% ifequal page pages %}
+      Loppuun >>
+    {% else %}
+      <a href="/guestbook/?page={{ pages }}">Loppuun</a> >>
+    {% endifequal %}
+  </td>
+
+</tr>
+</table>
+<hr color="#FFFFFF" size="2" noshade>
+
+<!-- The messages will go here -->
+{% for entry in object_list %}
+    <p class="normal">
+    {{ entry.content|markdown:"safe" }}<!-- entry.content|markdown -->
+    <br />
+    <strong>{{ entry.username }}</strong>
+    </p>
+    <span class="small">{{ entry.first_created|date:"d.m.Y H:i" }} Viesti l&auml;hetetty IP-numerosta {{ entry.ip_address }}</span><br>
+	<!--<img src="http://wiki.synapse-computing.com/asgbv3/images/whitepix_2x2.gif" width="742" height="2">-->
+    <hr color="#FFFFFF" size="1" noshade>
+{% endfor %}
+<br /><br />
+<!-- Dont remove the above line!!! -->
+
+<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td align="right" valign="top">
+    {% ifequal page 1 %}
+      << Alkuun | 
+    {% else %}
+      << <a href="/guestbook/?page=1">Alkuun</a> | 
+    {% endifequal %}
+
+    {% ifequal has_previous 1 %}
+      < <a href="/guestbook/?page={{ previous }}">Edellinen sivu</a> | 
+    {% else %}
+      < Edellinen sivu | 
+    {% endifequal %}
+
+    {% ifequal has_next 1 %}
+      <a href="/guestbook/?page={{ next }}">Seuraava sivu</a> > | 
+    {% else %}
+      Seuraava sivu > | 
+    {% endifequal %}
+
+    {% ifequal page pages %}
+      Loppuun >>
+    {% else %}
+      <a href="/guestbook/?page={{ pages }}">Loppuun</a> >>
+    {% endifequal %}
+  </td>
+
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+

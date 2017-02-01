@@ -1,0 +1,51 @@
+{% extends "etreg/base.html" %}
+{% load i18n %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<table class="ereg_hea">
+<tbody>
+<tr>
+  <td>
+    <ul>
+    <li><a href="/etreg/create/">{% trans "Add registration" %}</a></li>
+    </ul>
+  </td>
+  <td class="rcol">
+    <div class="header">{% trans "45th European Convention 2012 Finland" %}</div>
+    <div class="date">{% trans "10th June &ndash; 17th June 2012" %}</div>
+  </td>
+</tr>
+</tbody>
+</table>
+
+<table class="ereg_1">
+<tr class="hea">
+  <td colspan="3" class="hea_bold">{% trans "Registration form" %}</td>
+  <td colspan="3" class="hea">{% trans "One registration form per person" %}</td>
+</tr>
+<!-- ---------- r 1:1 ---------- -->
+{% if object_list %}
+  {% for person in object_list %}
+  <tr>
+    <td class="{% cycle 'list_white' 'list_blue' %}"><a href="/etreg/detail/{{ person.id }}">{{ person.firstname }}</td>
+    <td class="{% cycle 'list_white' 'list_blue' %}">{{ person.lastname}}</a></td>
+    <td class="{% cycle 'list_white' 'list_blue' %}">{{ person.country }}</td>
+    <td class="{% cycle 'list_white' 'list_blue' %}">{{ person.email }}</td>
+    <td class="{% cycle 'list_white' 'list_blue' %}">{{ person.added|date:"d.m.Y" }}</td>
+    <td class="{% cycle 'list_white' 'list_blue' %}">{{ person.updated|date:"d.m.Y" }}</td>
+  </tr>
+  {% endfor %}
+{% else %}
+  <tr>
+    <td colspan="3" class="{% cycle 'list_white' 'list_blue' %}"> 
+      {% trans "No registrations yet" %}
+    </td>
+    <td colspan="3" class="{% cycle 'list_white' 'list_blue' %}">
+    </td>
+  </tr>
+{% endif %}
+</tbody>
+</table>
+{% endif %}
+{% endblock %}

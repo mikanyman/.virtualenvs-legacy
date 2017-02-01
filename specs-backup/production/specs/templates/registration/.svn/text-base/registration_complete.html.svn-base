@@ -1,0 +1,13 @@
+{% extends "layouts/2col_sidebar_right.html" %}
+{% load i18n %}
+
+{% block main %}
+<div class="form-box">
+  <fieldset>
+  <legend>{% trans "Registration complete" %}</legend>
+  <div id="message">
+    {% trans "You are now registered. Activation email sent." %}
+  </div>
+  </fieldset>
+</div>
+{% endblock %}

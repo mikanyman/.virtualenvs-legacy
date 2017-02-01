@@ -1,0 +1,75 @@
+{% extends "portal/base_rockart.html" %}
+{% load i18n %}
+
+{% block googlemaps %}
+<script>
+var map;
+var marker;
+var waypointByID = {};
+
+function initialize() {
+
+	if (GBrowserIsCompatible()) {
+		// Make sure that SVG is on.
+		if (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#SVG", "1.1")) {
+			_mSvgEnabled = true;
+			_mSvgForced = true;
+		} 
+		
+		if (document.getElementById("map_canvas")) {
+			/*map = new google.maps.Map(document.getElementById('map_canvas'), {
+				zoom: 5,
+				center: new GLatLng(),
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			});*/
+			map = new GMap2(document.getElementById("map_canvas"));
+			var center = new GLatLng(62.236273,25.734673);
+			map.setCenter(center, 7);
+			map.enableScrollWheelZoom();
+			map.addControl(new GLargeMapControl());
+			map.addControl(new GMapTypeControl());
+			map.addControl(new GScaleControl());
+			
+			<!-- Create waypoint marker overlay //-->
+			{% for waypoint in waypoints %}
+			
+			var geoY = "{{waypoint.geometry.y}}";
+			var geoX = "{{waypoint.geometry.x}}";
+			
+			geoY = parseFloat(geoY.replace(",", "."));
+			geoX = parseFloat(geoX.replace(",", "."));
+			
+			var waypoint = waypointByID[{{waypoint.id}}] = {
+				title: "{{waypoint.name}}",
+				lat: geoY,
+				lng: geoX
+			};
+			//var markerLatLng = new GLatLng(waypoint.lat, waypoint.lng);
+			//marker = new google.maps.Marker({map: map, position: markerLatLng});
+			//var infowindow = new google.maps.InfoWindow();
+			var markerLatLng = new GLatLng(waypoint.lat, waypoint.lng);
+			var marker = new GMarker(markerLatLng, {draggable:false});
+			map.addOverlay(marker);
+			
+			
+			GEvent.addListener(marker, 'click', function() {
+				marker.openInfoWindowHtml("<b>{{waypoint.name}}</b><br/><p>{{waypoint.description}}</p>");
+			});
+			{% endfor %}
+		}
+	}
+	
+}
+</script>
+{% endblock %}
+
+{% block description %}
+<span class="section_header">{% trans "Rock Art" %}</span><span class="section_aspect"> | {% trans "Map" %}</span>
+{% endblock %}
+
+{% block content %}
+<div class="map_index">
+  <div id="map_canvas" style="width: 618px; height: 600px" class="map_canvas"></div>
+</div>
+{% endblock %}
+

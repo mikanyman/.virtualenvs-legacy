@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% comment %}
+# profiles/profile_list.html
+# This will display a list of user profiles, using the
+# "list_detail.object_list generic view".
+{% endcomment %}
+
+{% block description %}
+<span class="section_header">Minun maisemani</span><span class="section_aspect"> | Profiililuettelo</span>
+{% endblock %}
+
+{% block content %}
+{% for p in object_list  %}
+<a href="{% url profiles_profile_detail p.user %}">{{ p.user }}</a><br/>
+{% endfor %}
+{% endblock %}
+
+
+

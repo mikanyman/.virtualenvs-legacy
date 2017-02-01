@@ -1,0 +1,32 @@
+{% load tagging_tags %}
+
+<div class="blog_link_set">
+  <h2>Aiheet:</h2>
+  <div class="blog_list">
+  	
+    <!-- tag cloud -->
+	<div class="tagcloud">
+    {% tag_cloud_for_model tagforum.Entry as entry_tags with steps=10 min_count=1 distribution=log %}
+    {% for tag in entry_tags %}
+        <a class="tag{{ tag.font_size }}" href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/tag/{{ tag }}/">{{ tag }}</a>
+    {% endfor %}
+	</div>
+    <!-- /tag cloud -->
+
+  	<div class="all_subjects_link">
+      <img src="http://www.tallsmall.fi:8080/site_media/img/arrows/orange_boxarrow.gif"> 	
+	  <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/">Kaikki aiheet</a>
+    </div>
+
+    <!-- tag list -->
+    {% tags_for_model tagforum.Entry as entry_tags with counts %}
+    {% for entry_tag in entry_tags %}
+    <div>
+      <a href="/{{ lang }}/{{ profile }}/{{ event }}/tagforum/tagforum_list/tag/{{ entry_tag }}/">{{ entry_tag }}</a>
+      <span class="tag_count">({{ entry_tag.count }})</span>
+    </div>
+    {% endfor %}
+    <!-- /tag list -->
+
+  </div>
+</div>

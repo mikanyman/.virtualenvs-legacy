@@ -1,0 +1,9 @@
+{% extends "rules/base.html" %}
+
+{% block contents %}
+<form method="post" action=".">{% csrf_token %}
+<p>Are you sure you want to delete "ID:{{ object.id }}, {{ object.description }}"?</p>
+<input type="submit" />
+</form>
+<h3><a href="{% url rule-list %}">List rules</a></h3>
+{% endblock %}

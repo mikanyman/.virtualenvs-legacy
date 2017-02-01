@@ -1,0 +1,16 @@
+{% extends "portal/base_rockart.html" %}
+{% load i18n %}
+
+{% block description %}
+<span class="section_header">{% trans "Rock Art" %}</span><span class="section_aspect"> | {% trans "Research" %}</span>
+{% endblock %}
+
+{% block content %}
+<div class="padding_10">
+  <ul class="navlist">
+    <li><a href="/maisemapaikka/{{ lang }}/rockart/research/">{% trans "Back to List" %}</a></li>
+  </ul>
+  <br/>
+  {{ rhtml|safe }}
+</div>
+{% endblock %}
